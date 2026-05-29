@@ -17,24 +17,24 @@
   "topbarLinks": [
     {
       "name": "Σύνδεση",
-      "url": "https://app.etherly.io/auth/login"
+      "url": "https://app.etherly.app/auth/login"
     }
   ],
   "topbarCtaButton": {
     "name": "Δοκιμάστε δωρεάν",
-    "url": "https://app.etherly.io/auth/register"
+    "url": "https://app.etherly.app/auth/register"
   },
   "versions": ["Ελληνικά", "English"],
   "anchors": [
     {
       "name": "Επικοινωνία",
       "icon": "envelope",
-      "url": "mailto:support@etherly.io"
+      "url": "mailto:support@etherly.app"
     },
     {
       "name": "Changelog",
       "icon": "megaphone",
-      "url": "https://etherly.io/changelog"
+      "url": "https://etherly.app/changelog"
     }
   ],
   "navigation": [

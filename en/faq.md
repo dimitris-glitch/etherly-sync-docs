@@ -40,7 +40,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
     1. Whether the fee category is correctly configured in Properties
     2. Whether the tax rules in Elorus are up to date
 
-    Contact support at [support@etherly.io](mailto:support@etherly.io) if the issue persists.
+    Contact support at [support@etherly.app](mailto:support@etherly.app) if the issue persists.
   </Accordion>
 
   <Accordion title="Can I cancel a document that was issued by mistake?">
@@ -125,7 +125,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
 
 <AccordionGroup>
   <Accordion title="I need help that's not covered here.">
-    Contact us at [support@etherly.io](mailto:support@etherly.io). We respond within **1 business day**. In your message, include:
+    Contact us at [support@etherly.app](mailto:support@etherly.app). We respond within **1 business day**. In your message, include:
     - The property or checkout experiencing the issue
     - The error message (if any)
     - The date you first noticed the problem

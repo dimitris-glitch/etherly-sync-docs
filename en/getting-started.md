@@ -15,7 +15,7 @@ Setup takes **4 steps** and about 10 minutes. Before you begin, make sure you ha
 
 ## Step 1: Create your account
 
-Go to [app.etherly.io/auth/register](https://app.etherly.io/auth/register) and sign up. You'll receive a verification email — click the link and you'll land directly in the setup wizard.
+Go to [app.etherly.app/auth/register](https://app.etherly.app/auth/register) and sign up. You'll receive a verification email — click the link and you'll land directly in the setup wizard.
 
 <Info>
 Your account starts with a **30-day free trial** — unlimited invoice sends, no credit card required.
