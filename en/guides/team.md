@@ -1,37 +1,37 @@
 ---
-title: "Team Management"
-description: "Add team members, set roles, and control who has access to what in your Etherly Sync account."
+title: "User Management"
+description: "Add users, set roles, and control who has access to what in your Etherly Sync account."
 ---
 
-# Team Management
+# User Management
 
-Etherly Sync supports **multiple users** per account. Each member has a role that defines exactly what they can do.
+Etherly Sync supports **multiple users** per account. Each user has a role that defines exactly what they can do. Find it under **Settings → Users**.
 
 ## Roles and permissions
 
-| Role | Invoicing | Settings | Members | Billing |
-|------|-----------|----------|---------|---------|
+| Role | Invoicing | Settings | Users | Billing |
+|------|-----------|----------|-------|---------|
 | **Owner** | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 | **Admin** | ✅ Full | ✅ Full | ❌ | ❌ |
-| **Member** | 👁️ Read-only | ❌ | ❌ | ❌ |
+| **User** | 👁️ Read-only | ❌ | ❌ | ❌ |
 
-**Owner**: Full control — can delete the account, manage billing, and manage team members.
+**Owner**: Full control — can delete the account, manage billing, and manage users.
 
-**Admin**: Can send invoices, change property settings, and run syncs — but cannot see billing or manage team members.
+**Admin**: Can send invoices, change property settings, and run syncs — but cannot see billing or manage users.
 
-**Member**: Can view checkouts and statuses, but cannot make any changes.
+**User**: Can view bookings and statuses, but cannot make any changes.
 
-## Inviting a new member
+## Inviting a new user
 
 <Steps>
-  <Step title="Go to Team">
-    Settings → **Team Members** → click **Invite Member**
+  <Step title="Go to Users">
+    **Settings** → **Users** → click **"Invite User"**
   </Step>
-  <Step title="Enter email and role">
-    Enter the new member's email and select a role (Admin or Member).
+  <Step title="Enter email, name and role">
+    Enter the new user's **Email** and **Name**, and select a **Role** (Admin or User).
   </Step>
   <Step title="Send the invitation">
-    Click **Send Invite**. The user receives an email with an acceptance link that expires in **7 days**.
+    Click **"Send Invite"**. The user receives an email with an acceptance link that expires in **7 days**.
   </Step>
   <Step title="Accepting the invitation">
     The user clicks the link, creates an account (or signs in if they already have one), and gains access automatically.
@@ -39,29 +39,21 @@ Etherly Sync supports **multiple users** per account. Each member has a role tha
 </Steps>
 
 <Note>
-If an invitation expires, resend a new one from the Team panel — there's no need to remove the member first.
+If an invitation expires, you can copy the invite link with **"Copy link"** or revoke it with **"Revoke invite"** and send a new one.
 </Note>
 
-## Changing a member's role
+## Removing a user
 
-1. Settings → **Team Members**
-2. Click **Edit** next to the member
-3. Select the new role → **Save**
-
-Role changes take effect immediately.
-
-## Removing a member
-
-1. Settings → **Team Members**
-2. Click **Remove** next to the member
+1. **Settings** → **Users**
+2. Click **"Remove user"** next to the user
 3. Confirm
 
-Access is removed **immediately** — the user can no longer sign in to the account.
+Access is removed **immediately**.
 
 <Warning>
-Only the **Owner** can remove members or change roles. If the Owner wants to leave, they must first transfer the Owner role to another member — otherwise the account is left without an Owner.
+Only the **Owner** can remove users. If the Owner wants to leave, they must first transfer the Owner role to another user — otherwise the account is left without an Owner.
 </Warning>
 
 ## Activity history
 
-Every checkout pause/resume action is recorded with the user who performed it, giving you a full audit trail of who did what and when.
+Every Pause/Unpause action is recorded with the user who performed it, giving you a full audit trail of who did what and when.
