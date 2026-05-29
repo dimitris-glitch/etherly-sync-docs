@@ -57,10 +57,6 @@ Etherly Sync is ideal for:
 - **Accountants** managing invoicing for multiple rental property owners
 - **Owners** who want full myDATA compliance without technical expertise
 
-<Note>
-If you use **Airbnb** without Hosthub, Etherly Sync supports importing payment CSV files directly from Airbnb. See the [Airbnb Import Guide](/en/guides/airbnb-import).
-</Note>
-
 ## Next step
 
 <Card title="Get started in 10 minutes →" icon="rocket" href="/en/getting-started">
