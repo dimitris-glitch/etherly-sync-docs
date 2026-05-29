@@ -1,0 +1,106 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Etherly Sync",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#6366F1",
+    "light": "#818CF8",
+    "dark": "#4338CA",
+    "background": {
+      "dark": "#0F0F13"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Σύνδεση",
+      "url": "https://app.etherly.io/auth/login"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Δοκιμάστε δωρεάν",
+    "url": "https://app.etherly.io/auth/register"
+  },
+  "versions": ["Ελληνικά", "English"],
+  "anchors": [
+    {
+      "name": "Επικοινωνία",
+      "icon": "envelope",
+      "url": "mailto:support@etherly.io"
+    },
+    {
+      "name": "Changelog",
+      "icon": "megaphone",
+      "url": "https://etherly.io/changelog"
+    }
+  ],
+  "navigation": [
+    {
+      "version": "Ελληνικά",
+      "group": "Ξεκινήστε",
+      "pages": ["intro", "getting-started"]
+    },
+    {
+      "version": "Ελληνικά",
+      "group": "Οδηγοί Χρήσης",
+      "pages": [
+        "guides/checkouts",
+        "guides/properties",
+        "guides/invoicing",
+        "guides/climate-fee",
+        "guides/auto-invoicing",
+        "guides/airbnb-import"
+      ]
+    },
+    {
+      "version": "Ελληνικά",
+      "group": "Διαχείριση",
+      "pages": ["guides/team", "guides/billing"]
+    },
+    {
+      "version": "Ελληνικά",
+      "group": "Βοήθεια",
+      "pages": ["faq"]
+    },
+    {
+      "version": "English",
+      "group": "Get Started",
+      "pages": ["en/intro", "en/getting-started"]
+    },
+    {
+      "version": "English",
+      "group": "Guides",
+      "pages": [
+        "en/guides/checkouts",
+        "en/guides/properties",
+        "en/guides/invoicing",
+        "en/guides/climate-fee",
+        "en/guides/auto-invoicing",
+        "en/guides/airbnb-import"
+      ]
+    },
+    {
+      "version": "English",
+      "group": "Management",
+      "pages": ["en/guides/team", "en/guides/billing"]
+    },
+    {
+      "version": "English",
+      "group": "Help",
+      "pages": ["en/faq"]
+    }
+  ],
+  "footerSocials": {
+    "linkedin": "https://www.linkedin.com/company/etherly-io"
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true
+  },
+  "search": {
+    "prompt": "Αναζήτηση στην τεκμηρίωση..."
+  }
+}
