@@ -51,7 +51,8 @@
         "guides/properties",
         "guides/invoicing",
         "guides/climate-fee",
-        "guides/auto-invoicing"
+        "guides/auto-invoicing",
+        "guides/declarations"
       ]
     },
     {
@@ -77,7 +78,8 @@
         "en/guides/properties",
         "en/guides/invoicing",
         "en/guides/climate-fee",
-        "en/guides/auto-invoicing"
+        "en/guides/auto-invoicing",
+        "en/guides/declarations"
       ]
     },
     {
