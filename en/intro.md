@@ -19,7 +19,7 @@ With dozens of checkouts per month and multiple properties, this becomes time-co
 
 ## How it works
 
-```
+```text
 Hosthub  ──→  Etherly Sync  ──→  Elorus  ──→  myDATA
 (Bookings)    (Automation)     (Documents)    (Tax Authority)
 ```

@@ -56,4 +56,4 @@ Only the **Owner** can remove users. If the Owner wants to leave, they must firs
 
 ## Activity history
 
-Every Pause/Unpause action is recorded with the user who performed it, giving you a full audit trail of who did what and when.
+Every action (invites, role changes, removals) is recorded with the user who performed it, giving you a full audit trail of who did what and when.

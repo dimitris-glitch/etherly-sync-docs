@@ -9,7 +9,7 @@ A **checkout** corresponds to a completed booking from Hosthub — a guest stay 
 
 ## Checkout lifecycle
 
-```
+```text
 Hosthub booking
       │
       ▼

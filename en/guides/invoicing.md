@@ -21,7 +21,7 @@ For every checkout that is sent, Etherly Sync automatically creates **three docu
     Issued immediately after the invoice.
   </Card>
   <Card title="3. Climate Resilience Fee" icon="leaf">
-    Separate cashreceipt.  
+    Separate cash receipt.  
     Calculated per night and category.  
     Split per season if the booking spans winter/summer.
   </Card>
@@ -58,7 +58,7 @@ A myDATA failure **does not cancel** the Elorus document. myDATA failure managem
 
 ## Bulk Send
 
-Select multiple checkouts with checkboxes and click **Send Selected** for simultaneous processing.
+Select multiple checkouts with checkboxes and click **Send Selected** to process them in batch.
 
 <Info>
 Bulk sends are processed **sequentially** (one at a time) to avoid Elorus API rate limits. Allow a few seconds per checkout for large batches.

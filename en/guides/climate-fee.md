@@ -43,9 +43,9 @@ If you're unsure which category applies to your property, consult your accountan
 
 | Nights | Season | Fee/night | Total |
 |--------|--------|-----------|-------|
-| 3 (Mar 28–30) | Winter | €2.00 | €6.00 |
-| 3 (Mar 31 – Apr 2) | Summer | €8.00 | €24.00 |
-| **Total** | | | **€30.00** |
+| 4 (Mar 28–31) | Winter | €2.00 | €8.00 |
+| 2 (Apr 1–2) | Summer | €8.00 | €16.00 |
+| **Total** | | | **€24.00** |
 
 In this case, the system creates **two separate** fee documents — one for the winter nights and one for the summer nights.
 

@@ -58,8 +58,8 @@ If no `READY` bookings exist at execution time, auto-invoicing completes without
 
 Auto-invoicing and manual sends **work seamlessly together**:
 
-- Bookings you've already sent manually won't be re-sent
-- You can send manually at any time, independently of the auto-invoicing schedule
+- Bookings you've already sent won't be re-sent
+- You can send at any time, independently of the auto-invoicing schedule
 - Disabling the toggle only stops the automated runs
 
 ## Changing the execution time
