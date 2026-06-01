@@ -79,4 +79,4 @@ Etherly Sync **checks before every issuance** whether documents already exist fo
 
 ## Automatic retries
 
-On failures due to rate limits or temporary Elorus API unavailability, the system **automatically retries** up to 3 times with exponential backoff. Errors 400/401/403/404 are not retried (they are permanent failures).
+On failures due to rate limits or temporary Elorus API unavailability, the system **automatically retries** up to 3 times with exponential backoff. Errors 400/401/403/404/409/422 are not retried (they are permanent failures).
