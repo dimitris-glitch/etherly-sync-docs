@@ -62,20 +62,22 @@ If the booking already has a Reservation ID from Hosthub, the field is pre-fille
 
 ## Platform mapping
 
-Etherly Sync automatically maps the booking channel to the platform code required by AADE.
+Etherly Sync automatically maps the booking channel to the platform code required by AADE. The **Channel** column in the Declarations table shows the recognized platform name — not the raw Hosthub channel string.
 
-| Booking channel | AADE code |
-|-----------------|-----------|
-| Airbnb | `AIRBNB` |
-| Booking.com | `BOOKING_COM` |
-| Clickstay | `CLICKSTAY` |
-| HomeAway / VRBO | `HOMEAWAY` |
-| Homestay | `HOMESTAY` |
-| Luxury Retreats | `LUXURY_RETREATS` |
-| Only Apartments | `ONLY_APARTMENTS` |
-| TripAdvisor Rentals / Holiday Lettings | `TRIPADVISOR_RENTALS` |
-| Phone / Direct / empty | `OTHER_DIGITAL_PLATFORMS` · `"Εκτός πλατφόρμας"` |
-| Any other channel | `OTHER_DIGITAL_PLATFORMS` · the channel name |
+| Booking channel | Column display | AADE code |
+|-----------------|----------------|-----------|
+| Airbnb, Airbnb Plus, Airbnb (Greece), etc. | Airbnb | `AIRBNB` |
+| Booking.com, Booking.com for …, etc. | Booking.com | `BOOKING_COM` |
+| Clickstay | Clickstay | `CLICKSTAY` |
+| HomeAway, VRBO, Expedia, etc. | HomeAway / VRBO | `HOMEAWAY` |
+| Homestay | Homestay | `HOMESTAY` |
+| Luxury Retreats | Luxury Retreats | `LUXURY_RETREATS` |
+| Only Apartments | Only Apartments | `ONLY_APARTMENTS` |
+| TripAdvisor, Holiday Lettings, etc. | TripAdvisor | `TRIPADVISOR_RENTALS` |
+| Phone / Direct / empty | Εκτός πλατφόρμας | `OTHER_DIGITAL_PLATFORMS` · `"Εκτός πλατφόρμας"` |
+| Any other channel | (raw name) | `OTHER_DIGITAL_PLATFORMS` · the channel name |
+
+The system also recognizes **Hosthub sub-channel composite names** (e.g. `"Booking.com for Ariadnis + Collection"`, `"Airbnb Plus"`) via substring matching — mapping is correct even when the name is not an exact match.
 
 <Warning>
 **Direct bookings** (phone, email, your own website) are always sent with `platform_name: "Εκτός πλατφόρμας"` — this is required by AADE. The system handles this automatically.

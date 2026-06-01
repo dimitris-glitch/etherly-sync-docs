@@ -62,20 +62,22 @@ description: "Υποβολή δηλώσεων στην ΑΑΔΕ μέσω AADE-Co
 
 ## Αντιστοίχιση πλατφόρμας
 
-Το Etherly Sync αντιστοιχίζει αυτόματα το κανάλι κράτησης στον κωδικό πλατφόρμας που απαιτεί η ΑΑΔΕ.
+Το Etherly Sync αντιστοιχίζει αυτόματα το κανάλι κράτησης στον κωδικό πλατφόρμας που απαιτεί η ΑΑΔΕ. Η στήλη **Κανάλι** στον πίνακα Δηλώσεων δείχνει την αναγνωρισμένη πλατφόρμα — όχι το ακατέργαστο όνομα από το Hosthub.
 
-| Κανάλι κράτησης | Κωδικός ΑΑΔΕ |
-|-----------------|--------------|
-| Airbnb | `AIRBNB` |
-| Booking.com | `BOOKING_COM` |
-| Clickstay | `CLICKSTAY` |
-| HomeAway / VRBO | `HOMEAWAY` |
-| Homestay | `HOMESTAY` |
-| Luxury Retreats | `LUXURY_RETREATS` |
-| Only Apartments | `ONLY_APARTMENTS` |
-| TripAdvisor Rentals / Holiday Lettings | `TRIPADVISOR_RENTALS` |
-| Τηλεφωνική / Direct / κενό | `OTHER_DIGITAL_PLATFORMS` · `"Εκτός πλατφόρμας"` |
-| Οποιοδήποτε άλλο κανάλι | `OTHER_DIGITAL_PLATFORMS` · το όνομα του καναλιού |
+| Κανάλι κράτησης | Εμφάνιση στη στήλη | Κωδικός ΑΑΔΕ |
+|-----------------|--------------------|--------------|
+| Airbnb, Airbnb Plus, Airbnb (Greece) κ.λπ. | Airbnb | `AIRBNB` |
+| Booking.com, Booking.com for … κ.λπ. | Booking.com | `BOOKING_COM` |
+| Clickstay | Clickstay | `CLICKSTAY` |
+| HomeAway, VRBO, Expedia κ.λπ. | HomeAway / VRBO | `HOMEAWAY` |
+| Homestay | Homestay | `HOMESTAY` |
+| Luxury Retreats | Luxury Retreats | `LUXURY_RETREATS` |
+| Only Apartments | Only Apartments | `ONLY_APARTMENTS` |
+| TripAdvisor, Holiday Lettings κ.λπ. | TripAdvisor | `TRIPADVISOR_RENTALS` |
+| Τηλεφωνική / Direct / κενό | Εκτός πλατφόρμας | `OTHER_DIGITAL_PLATFORMS` · `"Εκτός πλατφόρμας"` |
+| Οποιοδήποτε άλλο κανάλι | (ακατέργαστο όνομα) | `OTHER_DIGITAL_PLATFORMS` · το όνομα του καναλιού |
+
+Το σύστημα αναγνωρίζει και **σύνθετα ονόματα sub-channel** του Hosthub (π.χ. `"Booking.com for Ariadnis + Collection"`, `"Airbnb Plus"`) μέσω substring matching — η αντιστοίχιση γίνεται σωστά ακόμα και αν το όνομα δεν είναι ακριβές.
 
 <Warning>
 Οι **απευθείας κρατήσεις** (τηλεφωνικές, email, δικό σας site) στέλνονται πάντα με `platform_name: "Εκτός πλατφόρμας"` — αυτό επιβάλλει η ΑΑΔΕ. Το σύστημα το χειρίζεται αυτόματα.
