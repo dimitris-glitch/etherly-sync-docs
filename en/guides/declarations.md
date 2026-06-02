@@ -83,6 +83,30 @@ The system also recognizes **Hosthub sub-channel composite names** (e.g. `"Booki
 **Direct bookings** (phone, email, your own website) are always sent with `platform_name: "Εκτός πλατφόρμας"` — this is required by AADE. The system handles this automatically.
 </Warning>
 
+## Payment method
+
+Each declaration is sent to AADE with a field indicating **where the booking channel pays out** to the host. The allowed values are:
+
+| Value | Meaning |
+|-------|---------|
+| Greek bank | Payment into a Greek bank account |
+| Foreign bank | Payment into an overseas bank account |
+| Cash | Cash payment |
+| Other (via third party, voucher, etc.) | Payment via a third party, voucher, etc. |
+
+### Per-channel default
+
+In **Settings → AADE Connect** you can set a default payment method for each booking channel. Changes take effect for **all future submissions** on that channel — as long as no per-booking override is set.
+
+### Per-booking override
+
+The ✏️ pencil icon in the **Payment Method** column of the Declarations page lets you change the payment method for a single booking. The override:
+- **always takes precedence** over the channel default
+- is shown in normal colour, while channel-default values are shown muted
+- can be cleared using the **"Reset to default"** button
+
+Overrides are allowed only for declarations in **draft** or **failed (no checkpoint)** state. Submitted declarations cannot be edited.
+
 ## Declaration history
 
 The **History** tab on the Declarations page shows bookings that have already been submitted or skipped. Guest identification cannot be edited for these bookings.
