@@ -21,7 +21,7 @@ The Elorus account that appears as the "customer" on receipts — typically a re
 1. Go to Elorus → **Contacts**
 2. Find or create an active retail customer
 
-**In the property settings:**
+**In Settings → Properties → Default Receipts Contact:**
 Click the field and type the contact's **name** (3+ characters) to search.
 
 ### 2. Invoices Series
