@@ -25,7 +25,7 @@ Etherly Sync supports **multiple users** per account. Each user has a role that 
 
 <Steps>
   <Step title="Go to Users">
-    **Settings** → **Users** → click **"Invite User"**
+    **Users** → click **"Invite User"**
   </Step>
   <Step title="Enter email, name and role">
     Enter the new user's **Email** and **Name**, and select a **Role** (Admin or User).
