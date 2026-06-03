@@ -64,10 +64,10 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   <Accordion title="Why aren't new bookings syncing?">
     Possible causes:
     - **Hosthub API key expired or invalid** — check **Settings** → **Integrations**
-    - **New bookings without a checkout date** — they won't appear until a date is set in Hosthub
+    - **New bookings without a checkout date** — they won't appear until a checkout date is set in Hosthub
     - **Hosthub API timeout** — the system retries automatically, but contact support if it persists
 
-    Try a manual sync by clicking **"Sync from Hosthub"** in the Dashboard.
+    Try a manual sync by clicking **"Sync from Hosthub"** in **Bookings**.
   </Accordion>
 
   <Accordion title="A booking was cancelled in Hosthub but still shows as active. Why?">
@@ -123,7 +123,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
     The **Grace Period** activates automatically — invoicing continues normally even with 0 credits. Once the Grace Period ends, new sends are blocked until you purchase credits under **Credits** → **"Buy Credits"**.
   </Accordion>
 
-  <Accordion title="How do I set up Auto Top-up so I never run out of credits?">
+  <Accordion title="How do I set up automatic credit renewal (Auto Top-up)?">
     Go to **Credits** → **Auto Top-up** section → **"Enable Auto Top-up"**. Set the **Top-up Threshold** (e.g. 10 credits) and choose which package to purchase automatically. A saved card is required via **"Add Card"**.
   </Accordion>
 </AccordionGroup>
@@ -132,7 +132,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
 
 <AccordionGroup>
   <Accordion title="I need help that's not covered here.">
-    Contact us at [support@etherly.app](mailto:support@etherly.app). We respond within **1 business day**. In your message, include:
+    Contact us at [support@etherly.app](mailto:support@etherly.app). We typically respond within **1-2 business days**. In your message, include:
     - The property or booking experiencing the issue
     - The error message (if any)
     - The date you first noticed the problem

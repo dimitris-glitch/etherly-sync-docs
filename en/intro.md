@@ -5,7 +5,7 @@ description: "Automated invoicing for short-term rentals — from Hosthub to Elo
 
 # Welcome to Etherly Sync
 
-**Etherly Sync** is an automation platform that connects **Hosthub** (booking management) with **Elorus** (electronic invoicing), automatically generating all required fiscal documents for every short-term rental checkout.
+**Etherly Sync** is an automation platform that connects **Hosthub** (booking management) with **Elorus** (electronic invoicing), automatically generating all required fiscal documents for every short-term rental booking.
 
 ## The problem it solves
 
@@ -15,7 +15,7 @@ Every guest checkout requires creating fiscal documents in Elorus — typically 
 2. **Payment Receipt** — linked to the accommodation document
 3. **Climate Resilience Fee** — calculated per night and property category
 
-With dozens of checkouts per month and multiple properties, this becomes time-consuming and error-prone. Etherly Sync automates it entirely.
+With dozens of bookings per month and multiple properties, this becomes time-consuming and error-prone. Etherly Sync automates it entirely.
 
 ## How it works
 
@@ -24,7 +24,7 @@ Hosthub  ──→  Etherly Sync  ──→  Elorus  ──→  myDATA
 (Bookings)    (Automation)     (Documents)    (Tax Authority)
 ```
 
-The system **syncs** checkouts from Hosthub on a regular schedule, **verifies** that each property is fully configured, and **issues** the fiscal documents automatically — submitting to myDATA if enabled.
+The system **syncs** bookings from Hosthub on a regular schedule, **verifies** that each property is fully configured, and **issues** the fiscal documents automatically — submitting to myDATA if enabled.
 
 ## Core features
 
@@ -36,7 +36,7 @@ The system **syncs** checkouts from Hosthub on a regular schedule, **verifies** 
     Accommodation document, payment receipt, and climate fee — issued automatically in the correct order.
   </Card>
   <Card title="Auto-Invoicing" icon="clock">
-    Set a daily execution time and the system invoices all eligible checkouts overnight, hands-free.
+    Set a daily execution time and the system invoices all eligible bookings automatically, hands-free.
   </Card>
   <Card title="Multiple Properties & Organizations" icon="building">
     Manage dozens of properties across multiple Elorus organizations from a single dashboard.
@@ -55,7 +55,7 @@ Etherly Sync is ideal for:
 
 - **Property managers** with 5+ properties on Hosthub who spend hours on manual invoicing
 - **Accountants** managing invoicing for multiple rental property owners
-- **Owners** who want full myDATA compliance without technical expertise
+- **Owners** who want help staying compliant with myDATA obligations
 
 ## Next step
 

@@ -59,8 +59,8 @@ The example amounts €2 / €8 are illustrative only. Actual amounts are set by
   <Step title="Go to Properties">
     Select **Properties** → click the property you want to configure.
   </Step>
-  <Step title="Select Fee Category">
-    In the **Fee Category** field, the dropdown shows categories from Elorus. Select the appropriate one.
+  <Step title="Select Category">
+    In the **Category** field, the dropdown shows categories from Elorus. Select the appropriate one.
   </Step>
   <Step title="Save">
     Click **Save**. The new category applies to future documents — it does not affect already-issued ones.
@@ -72,8 +72,8 @@ The example amounts €2 / €8 are illustrative only. Actual amounts are set by
 If a property has no fee category configured:
 
 - The send **fails** with an error message
-- The checkout stays in `NEEDS_SETUP` or `ERROR`
-- Configure the category and **resend** the checkout
+- The booking stays in `NEEDS_SETUP` or `ERROR`
+- Configure the category and **resend** the booking
 
 ## Updating fee amounts
 

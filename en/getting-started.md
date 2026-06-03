@@ -97,7 +97,7 @@ Once a property is configured, its bookings appear with status **READY** (green 
 </Steps>
 
 <Check>
-Congratulations! Your first document has been issued in Elorus. If myDATA submission is enabled in your Elorus settings, the document is also forwarded to the tax authority automatically.
+Your first document has been issued successfully in Elorus. If myDATA submission is enabled in your Elorus settings, the document is also forwarded to the tax authority automatically.
 </Check>
 
 ---

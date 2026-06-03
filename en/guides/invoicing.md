@@ -51,7 +51,7 @@ Select multiple checkouts with checkboxes and click **Send Selected** to process
 
 ## SENT_WITH_ERRORS status
 
-This appears when the invoice and payment receipt were successfully issued, but the **Climate Resilience Fee** document failed.
+This appears when the Accommodation Document and Payment Receipt were successfully issued, but the **Climate Resilience Fee** document failed.
 
 **What to do:**
 1. Check the error message in the dashboard
