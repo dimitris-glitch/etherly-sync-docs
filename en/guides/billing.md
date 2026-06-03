@@ -59,7 +59,7 @@ Prevent invoicing interruptions by setting up automatic credit renewal:
 </Steps>
 
 <Note>
-If the automatic charge fails **3 times**, Auto Top-up is automatically disabled and the status shows **"Payment failed"**. Check your card and re-enable.
+If Auto Top-up fails repeatedly, you'll receive a notification and the status will show **"Payment failed"**. Check your card and re-enable Auto Top-up.
 </Note>
 
 ## Grace Period

@@ -9,13 +9,13 @@ description: "Solutions for the most common issues with Etherly Sync — from in
 
 <AccordionGroup>
   <Accordion title="My bookings show NEEDS_SETUP status. What do I do?">
-    The property isn't fully configured. Go to **Properties**, select the property, and complete all four required fields:
+    The property isn't fully configured. Go to **Properties**, select the property, and complete all required fields:
     - **Default Receipts Contact** — a customer account in Elorus
     - **Invoices Series** — a document numbering series for invoices
     - **Category** — for the Climate Resilience Fee
     - **Organization** — which Elorus organization issues the documents
 
-    After clicking **Save**, bookings change from `NEEDS_SETUP` to `READY` on the next sync (within 5 minutes).
+    After clicking **Save**, bookings change from `NEEDS_SETUP` to `READY` on the next sync.
   </Accordion>
 
   <Accordion title="My Hosthub API key has changed. How do I update it?">
@@ -71,7 +71,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   </Accordion>
 
   <Accordion title="A booking was cancelled in Hosthub but still shows as active. Why?">
-    Cancellations are detected on the next sync (within 5 minutes). Once detected, the booking is marked cancelled and removed from the invoicing queue. If it still shows as active after 15 minutes, click **"Sync from Hosthub"**.
+    Cancellations are detected on the next sync. Once detected, the booking is marked cancelled and removed from the invoicing queue. If it still shows as active, click **"Sync from Hosthub"**.
   </Accordion>
 </AccordionGroup>
 
@@ -108,7 +108,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   </Accordion>
 
   <Accordion title="Can I change the auto-invoicing execution time?">
-    Yes, anytime. **Settings** → **Automatic invoicing** → change the **Execution time** → **Save**. The change takes effect from the next execution.
+    Yes, anytime. Go to **Bookings** in the sidebar, find the **"Auto-invoicing"** toggle and change the **Execution time**. The change saves automatically and takes effect from the next execution.
   </Accordion>
 </AccordionGroup>
 

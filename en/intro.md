@@ -9,10 +9,10 @@ description: "Automated invoicing for short-term rentals — from Hosthub to Elo
 
 ## The problem it solves
 
-Every guest checkout requires creating **three** fiscal documents in Elorus:
+Every guest checkout requires creating fiscal documents in Elorus — typically three, or four if the booking spans two seasonal periods:
 
-1. **Accommodation Invoice** — myDATA type 11.2, 13% VAT
-2. **Payment Receipt** — linked to the invoice
+1. **Accommodation Document** — Receipt for private guests / Invoice for businesses, 13% VAT
+2. **Payment Receipt** — linked to the accommodation document
 3. **Climate Resilience Fee** — calculated per night and property category
 
 With dozens of checkouts per month and multiple properties, this becomes time-consuming and error-prone. Etherly Sync automates it entirely.
@@ -24,16 +24,16 @@ Hosthub  ──→  Etherly Sync  ──→  Elorus  ──→  myDATA
 (Bookings)    (Automation)     (Documents)    (Tax Authority)
 ```
 
-The system **syncs** checkouts from Hosthub every 5 minutes, **verifies** that each property is fully configured, and **issues** the fiscal documents automatically — submitting to myDATA if enabled.
+The system **syncs** checkouts from Hosthub on a regular schedule, **verifies** that each property is fully configured, and **issues** the fiscal documents automatically — submitting to myDATA if enabled.
 
 ## Core features
 
 <CardGroup cols={2}>
   <Card title="Automatic Sync" icon="arrows-rotate">
-    New bookings, changes, and cancellations are detected automatically from Hosthub every 5 minutes.
+    New bookings, changes, and cancellations are detected automatically from Hosthub. You can also trigger a manual sync from the dashboard.
   </Card>
   <Card title="3 Documents per Checkout" icon="file-invoice">
-    Accommodation invoice, payment receipt, and climate fee — issued automatically in the correct order.
+    Accommodation document, payment receipt, and climate fee — issued automatically in the correct order.
   </Card>
   <Card title="Auto-Invoicing" icon="clock">
     Set a daily execution time and the system invoices all eligible checkouts overnight, hands-free.

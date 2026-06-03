@@ -20,7 +20,7 @@ A **checkout** corresponds to a completed booking from Hosthub — a guest stay 
 
 ## Automatic sync
 
-Etherly Sync syncs with Hosthub every **5 minutes**. During each sync:
+Etherly Sync syncs automatically with Hosthub at regular intervals. During each sync:
 
 - **New bookings** are added immediately as checkouts
 - **Changes** (dates, amounts, guest info) are updated automatically
