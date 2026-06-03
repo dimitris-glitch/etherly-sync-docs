@@ -32,7 +32,7 @@ The system **syncs** checkouts from Hosthub on a regular schedule, **verifies** 
   <Card title="Automatic Sync" icon="arrows-rotate">
     New bookings, changes, and cancellations are detected automatically from Hosthub. You can also trigger a manual sync from the dashboard.
   </Card>
-  <Card title="3 Documents per Checkout" icon="file-invoice">
+  <Card title="Documents per Checkout" icon="file-invoice">
     Accommodation document, payment receipt, and climate fee — issued automatically in the correct order.
   </Card>
   <Card title="Auto-Invoicing" icon="clock">
@@ -60,5 +60,5 @@ Etherly Sync is ideal for:
 ## Next step
 
 <Card title="Get started in 10 minutes →" icon="rocket" href="/en/getting-started">
-  Connect Hosthub and Elorus and send your first invoice.
+  Connect Hosthub and Elorus and send your first document.
 </Card>

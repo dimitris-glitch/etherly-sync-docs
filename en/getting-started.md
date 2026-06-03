@@ -1,6 +1,6 @@
 ---
 title: "Getting Started"
-description: "Connect Hosthub and Elorus in 4 simple steps and send your first invoice in under 10 minutes."
+description: "Connect Hosthub and Elorus in 4 simple steps and send your first document in under 10 minutes."
 ---
 
 # Getting Started with Etherly Sync
@@ -80,7 +80,7 @@ See the detailed [Property Configuration Guide](/en/guides/properties) for step-
 
 ---
 
-## Sending your first invoice
+## Sending your first document
 
 Once a property is configured, its bookings appear with status **READY** (green indicator).
 
@@ -97,7 +97,7 @@ Once a property is configured, its bookings appear with status **READY** (green 
 </Steps>
 
 <Check>
-Congratulations! Your first invoice has been issued in Elorus. If myDATA submission is enabled in your Elorus settings, the document is also forwarded to the tax authority automatically.
+Congratulations! Your first document has been issued in Elorus. If myDATA submission is enabled in your Elorus settings, the document is also forwarded to the tax authority automatically.
 </Check>
 
 ---

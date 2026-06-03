@@ -5,7 +5,7 @@ description: "Submit declarations to AADE via AADE-Connect: manual and automatic
 
 # Short-Term Rental Declarations
 
-Every invoiced booking must be declared to AADE (Greek tax authority) via **AADE-Connect**. Etherly Sync handles this automatically on your behalf.
+If you have enabled the AADE declarations feature, eligible invoiced bookings can be submitted via **AADE-Connect** from Etherly Sync — either manually or automatically.
 
 Declarations are found under **Declarations** in the sidebar — only bookings that have been invoiced and have an AADE property mapping are shown.
 

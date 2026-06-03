@@ -7,14 +7,14 @@ description: "The three documents issued per checkout, the order they're created
 
 For every checkout that is sent, Etherly Sync automatically creates documents in Elorus, in a strictly defined order.
 
-## The 3 documents
+## The documents created
 
 <CardGroup cols={3}>
   <Card title="1. Accommodation Document" icon="file-invoice">
     The primary document for the accommodation service: **Receipt** for private guests or **Invoice** for businesses.
   </Card>
   <Card title="2. Payment Receipt" icon="receipt">
-    Linked to the invoice.  
+    Linked to the accommodation document.  
     Confirms payment received.  
     Issued immediately after the invoice.
   </Card>

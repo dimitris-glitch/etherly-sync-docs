@@ -32,7 +32,7 @@ Hosthub  ──→  Etherly Sync  ──→  Elorus  ──→  myDATA
   <Card title="Αυτόματος Συγχρονισμός" icon="arrows-rotate">
     Νέες κρατήσεις, αλλαγές και ακυρώσεις εντοπίζονται αυτόματα από την Hosthub. Μπορείτε επίσης να ξεκινήσετε χειροκίνητο συγχρονισμό από το dashboard.
   </Card>
-  <Card title="3 Παραστατικά ανά Checkout" icon="file-invoice">
+  <Card title="Παραστατικά ανά Checkout" icon="file-invoice">
     Παραστατικό διαμονής, απόδειξη εξόφλησης και τέλος κλιματικής ανθεκτικότητας — εκδίδονται αυτόματα με τη σωστή σειρά.
   </Card>
   <Card title="Αυτόματη Τιμολόγηση" icon="clock">
@@ -60,5 +60,5 @@ Hosthub  ──→  Etherly Sync  ──→  Elorus  ──→  myDATA
 ## Επόμενο βήμα
 
 <Card title="Ξεκινήστε σε 10 λεπτά →" icon="rocket" href="/getting-started">
-  Συνδέστε την Hosthub και την Elorus και στείλτε το πρώτο σας τιμολόγιο.
+  Συνδέστε την Hosthub και την Elorus και στείλτε το πρώτο σας παραστατικό.
 </Card>

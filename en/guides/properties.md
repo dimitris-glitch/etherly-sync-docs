@@ -58,7 +58,7 @@ The Elorus organization under which documents are issued. If you manage properti
     Select values for **Default Receipts Contact**, **Invoices Series**, **Category**, and **Organization** from their respective dropdowns.
   </Step>
   <Step title="Save">
-    Click **"Save"**. The property's bookings change from `NEEDS_SETUP` to `READY` on the next sync (within 5 minutes).
+    Click **"Save"**. The property's bookings change from `NEEDS_SETUP` to `READY` on the next sync.
   </Step>
 </Steps>
 
