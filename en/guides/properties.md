@@ -73,7 +73,7 @@ Use the **"Turn on property"** / **"Turn off property"** buttons for each proper
 
 ## Multiple organizations
 
-If you manage properties under **different tax IDs**, add multiple Elorus connections:
+If you manage properties under **different tax IDs**, add multiple Elorus connections. For example, if some properties are registered under a sole-trader entity and others under a company, create a separate connection for each — then map each property to the correct organization.
 
 <Steps>
   <Step title="Add a new connection">

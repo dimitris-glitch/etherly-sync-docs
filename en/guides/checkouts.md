@@ -30,7 +30,11 @@ You can also trigger a **manual sync** at any time by clicking **Sync Now** in t
 
 ## Pause / Resume
 
-Temporarily stop invoicing a checkout without deleting it.
+Stop auto-invoicing for a checkout without deleting it. Useful when you want certain bookings excluded from automatic processing — they stay in the app and won't be invoiced until you decide how to handle them.
+
+<Tip>
+For a permanent exclusion of an entire booking channel or a specific property, configure it in [Settings → Auto-Invoicing](/en/guides/auto-invoicing).
+</Tip>
 
 ### Manual Pause
 
@@ -41,7 +45,7 @@ Click **Pause** next to the checkout. It stays paused through subsequent syncs �
 If a Hosthub booking has a `##sync-skip` note, the system **automatically pauses** the checkout during sync. Remove the note from Hosthub and the checkout will resume on the next sync.
 
 <Tip>
-Use `##sync-skip` in Hosthub booking notes to pause checkouts without logging into Etherly Sync — ideal for property managers who primarily work in Hosthub.
+Useful for personal-use or family stays that don't need invoicing. Add `##sync-skip` directly in Hosthub without opening Etherly Sync.
 </Tip>
 
 ## Bookings spanning two years
