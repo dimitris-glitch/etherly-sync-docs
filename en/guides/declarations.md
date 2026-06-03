@@ -51,36 +51,36 @@ Each declaration can include the guest's identification details. Click the **pen
 
 | Type | When to use |
 |------|-------------|
-| National ID | Greek citizen with national ID card |
-| Passport | Foreign guest |
-| Tax ID (AFM) | Greek citizen with tax number (instead of national ID) |
-| Reservation ID | Channel booking ID — when no other identification is available |
+| Tax ID (AFM) | Greek guest — only an active tax number is accepted |
+| Passport | Foreign guest with a passport |
+| National ID | Foreign guest with a national identity card (e.g. EU) |
+| Reservation ID | Fallback — when no AFM or identification document is available |
 
 <Tip>
-If the booking already has a Reservation ID from Hosthub, the field is pre-filled automatically.
+If the booking already has a Reservation ID from the booking channel, the field is pre-filled automatically.
 </Tip>
 
 ## Platform mapping
 
-Etherly Sync automatically maps the booking channel to the platform code required by AADE. The **Channel** column in the Declarations table shows the recognized platform name — not the raw Hosthub channel string.
+Etherly Sync automatically maps the booking channel to the platform code required by AADE. The **Channel** column in the Declarations table shows the recognized platform name — not the raw channel string.
 
-| Booking channel | Column display | AADE code |
-|-----------------|----------------|-----------|
-| Airbnb, Airbnb Plus, Airbnb (Greece), etc. | Airbnb | `AIRBNB` |
-| Booking.com, Booking.com for …, etc. | Booking.com | `BOOKING_COM` |
-| Clickstay | Clickstay | `CLICKSTAY` |
-| HomeAway, VRBO, Expedia, etc. | HomeAway / VRBO | `HOMEAWAY` |
-| Homestay | Homestay | `HOMESTAY` |
-| Luxury Retreats | Luxury Retreats | `LUXURY_RETREATS` |
-| Only Apartments | Only Apartments | `ONLY_APARTMENTS` |
-| TripAdvisor, Holiday Lettings, etc. | TripAdvisor | `TRIPADVISOR_RENTALS` |
-| Phone / Direct / empty | Εκτός πλατφόρμας | `OTHER_DIGITAL_PLATFORMS` · `"Εκτός πλατφόρμας"` |
-| Any other channel | (raw name) | `OTHER_DIGITAL_PLATFORMS` · the channel name |
+| Booking channel | Column display |
+|-----------------|----------------|
+| Airbnb, Airbnb Plus, Airbnb (Greece), etc. | Airbnb |
+| Booking.com, Booking.com for …, etc. | Booking.com |
+| Clickstay | Clickstay |
+| HomeAway, VRBO, Expedia, etc. | HomeAway / VRBO |
+| Homestay | Homestay |
+| Luxury Retreats | Luxury Retreats |
+| Only Apartments | Only Apartments |
+| TripAdvisor, Holiday Lettings, etc. | TripAdvisor |
+| Phone / Direct / empty | Εκτός πλατφόρμας (off-platform) |
+| Any other channel | (raw channel name) |
 
-The system also recognizes **Hosthub sub-channel composite names** (e.g. `"Booking.com for Ariadnis + Collection"`, `"Airbnb Plus"`) via substring matching — mapping is correct even when the name is not an exact match.
+The system also recognizes **sub-channel composite names** (e.g. `"Booking.com for Athens"`, `"Airbnb Plus"`) via substring matching — mapping is correct even when the name is not an exact match.
 
 <Warning>
-**Direct bookings** (phone, email, your own website) are always sent with `platform_name: "Εκτός πλατφόρμας"` — this is required by AADE. The system handles this automatically.
+**Direct bookings** (phone, email, your own website) are always sent as "Εκτός πλατφόρμας" (off-platform) — this is required by AADE. The system handles this automatically.
 </Warning>
 
 ## Payment method
@@ -106,6 +106,11 @@ The ✏️ pencil icon in the **Payment Method** column of the Declarations page
 - can be cleared using the **"Reset to default"** button
 
 Overrides are allowed only for declarations in **draft** or **failed (no checkpoint)** state. Submitted declarations cannot be edited.
+
+**Resolution priority order:**
+1. Per-booking override (✏️)
+2. Per-channel default (Settings → AADE Connect)
+3. Global default: Greek bank
 
 ## Declaration history
 
