@@ -5,7 +5,7 @@ description: "Add users, set roles, and control who has access to what in your E
 
 # User Management
 
-Etherly Sync supports **multiple users** per account. Each user has a role that defines exactly what they can do. Find it under **Settings → Users**.
+Etherly Sync supports **multiple users** per account. Each user has a role that defines exactly what they can do. Find it under **Users** in the sidebar.
 
 ## Roles and permissions
 
