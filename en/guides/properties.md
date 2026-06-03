@@ -15,7 +15,7 @@ Every property needs **complete configuration** before it can be invoiced. Witho
 
 ### 1. Default Receipts Contact
 
-The Elorus account that appears as the "customer" on receipts — typically a retail account.
+The Elorus account that appears as the "customer" on receipts.
 
 **In Elorus:**
 1. Go to Elorus → **Contacts**
@@ -26,11 +26,7 @@ Click the field and type the contact's **name** (3+ characters) to search.
 
 ### 2. Invoices Series
 
-The numbering series for invoices. The **Receipts Series** field handles the series for receipts.
-
-<Warning>
-If the series isn't active in Elorus or doesn't allow the document type you're using, the send will fail. Verify under Elorus → Settings → Document Types → {select the correct type} → Numbering Sequences.
-</Warning>
+The numbering series for invoices. The **Receipts Series** field handles the series for receipts. If your business does not use numbering sequences, select **"No Series"**.
 
 ### 3. Category
 
