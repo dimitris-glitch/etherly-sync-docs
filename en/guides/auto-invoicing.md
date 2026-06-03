@@ -44,10 +44,7 @@ To exclude **individual bookings**, use [Pause](/en/guides/checkouts#pause--resu
 
 ## Execution results
 
-After each auto-invoicing run, you can see:
-- How many bookings were successfully invoiced
-- How many failed and which ones
-- Total credit consumption
+After each auto-invoicing run, the status of each booking is updated automatically in the **Checkouts** table (`SENT`, `ERROR`, etc.). If you have the **daily report** enabled (from Team Management), you also receive an email with a summary of invoiced and uninvoiced checkouts.
 
 <Note>
 If no `READY` bookings exist at execution time, auto-invoicing completes without doing anything — no error is generated.
