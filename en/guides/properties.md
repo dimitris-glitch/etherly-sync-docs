@@ -5,7 +5,11 @@ description: "How to configure each property so it's ready for automatic invoici
 
 # Property Configuration
 
-Every property synced from Hosthub needs **complete configuration** before it can be invoiced. Without it, bookings show status `NEEDS_SETUP`. Navigate to **Properties** in the sidebar.
+This is where you define everything the app needs to issue documents correctly for each property: company details, document types, taxes, service descriptions, and more. Configuration is done **once** — after that, the app can run automatically for every new booking at that property.
+
+You always retain full manual control for bookings you want to handle differently — for example, issuing an invoice instead of a receipt, sending at a different time, or excluding a booking from auto-invoicing altogether.
+
+Every property needs **complete configuration** before it can be invoiced. Without it, bookings show status `NEEDS_SETUP`.
 
 ## Required fields
 
