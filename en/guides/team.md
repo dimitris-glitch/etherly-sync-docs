@@ -44,7 +44,7 @@ If an invitation expires, you can copy the invite link with **"Copy link"** or r
 
 ## Removing a user
 
-1. **Settings** → **Users**
+1. **Users** in the sidebar
 2. Click **"Remove user"** next to the user
 3. Confirm
 
