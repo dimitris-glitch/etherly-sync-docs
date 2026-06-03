@@ -104,11 +104,6 @@ The ✏️ pencil icon in the **Payment Method** column of the Declarations page
 
 Overrides are allowed only for declarations in **draft** or **failed (no checkpoint)** state. Submitted declarations cannot be edited.
 
-**Resolution priority order:**
-1. Per-booking override (✏️)
-2. Per-channel default (Settings → AADE Connect)
-3. Global default: Greek bank
-
 ## Declaration history
 
 The **History** tab on the Declarations page shows bookings that have already been submitted or skipped. Guest identification cannot be edited for these bookings.
