@@ -10,17 +10,14 @@ Auto-invoicing runs **once daily** at an **Execution time** you choose, automati
 ## Enabling auto-invoicing
 
 <Steps>
-  <Step title="Go to Settings">
-    Select **Settings** from the sidebar.
+  <Step title="Go to Checkouts">
+    Select **Checkouts** from the sidebar.
   </Step>
-  <Step title="Enable automatic invoicing">
-    Find the **"Automatic invoicing"** section and enable the toggle.
+  <Step title="Enable the toggle">
+    Above the checkouts table, find the **"Automatic invoicing"** toggle and enable it.
   </Step>
-  <Step title="Choose Execution time">
-    Select a time between **10 PM and midnight**. 10 PM is recommended to leave time to address any errors before midnight.
-  </Step>
-  <Step title="Save">
-    Click **"Save"**. Auto-invoicing activates starting from the next **Execution time**.
+  <Step title="Set the Execution time">
+    The **"Execution time"** field appears. Select the time you want auto-invoicing to run each day. The setting saves automatically.
   </Step>
 </Steps>
 
@@ -66,4 +63,4 @@ Auto-invoicing and manual sends **work seamlessly together**:
 
 ## Changing the execution time
 
-Change the **Execution time** at any point from **Settings** → **Automatic invoicing**. The change takes effect from the next execution.
+Change the **Execution time** at any point from the **Checkouts** page (same toggle). The change saves automatically and takes effect from the next execution.
