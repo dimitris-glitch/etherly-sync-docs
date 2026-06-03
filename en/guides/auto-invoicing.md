@@ -40,7 +40,7 @@ During auto-invoicing, only bookings that meet **all** of the following are proc
 - Bookings belonging to **Off** properties
 - Cancelled bookings
 
-To exclude **individual bookings**, use [Pause](/en/guides/checkouts#pause--resume). To exclude **an entire property** (e.g. during renovation), set it to Off in [Properties](/en/guides/properties).
+To exclude **individual bookings**, use [Pause](/en/guides/checkouts#pause--resume). To exclude **an entire property** (e.g. if that property is invoiced directly in the invoicing platform), set it to Off in [Properties](/en/guides/properties).
 
 ## Execution results
 
