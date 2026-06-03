@@ -63,7 +63,7 @@ Configuration for the Transient Occupancy Tax, if applicable for this property.
 
 <Steps>
   <Step title="Go to Settings">
-    **Settings** → **"Properties"** tab. Alternatively, click the settings icon next to any `NEEDS_SETUP` booking.
+    **Settings** → **"Properties"** tab.
   </Step>
   <Step title="Select the property">
     You'll see all properties detected from Hosthub. Click on the one you want to configure.
