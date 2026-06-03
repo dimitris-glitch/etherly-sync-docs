@@ -7,21 +7,6 @@ description: "Understand the checkout lifecycle: from Hosthub sync to Elorus doc
 
 A **checkout** corresponds to a completed booking from Hosthub — a guest stay that has ended or is expected to end. Each checkout follows a predictable lifecycle.
 
-## Checkout lifecycle
-
-```text
-Hosthub booking
-      │
-      ▼
- NEEDS_SETUP ──── (configure property) ────▶ READY
-                                               │
-                                     (send invoice)
-                                               │
-                               ┌───────────────┼───────────────┐
-                               ▼               ▼               ▼
-                             SENT     SENT_WITH_ERRORS       ERROR
-```
-
 ## Status reference
 
 | Status | Color | Meaning | Action required |
@@ -31,7 +16,7 @@ Hosthub booking
 | `SENT` | 🔵 Blue | Documents issued successfully | None |
 | `SENT_WITH_ERRORS` | 🟠 Orange | Invoice/receipt OK, fee failed | Check error details |
 | `ERROR` | 🔴 Red | Send failed entirely | Review error message and retry |
-| `SPLIT` | ⬜ Gray | Anchor for a year-spanning booking | Not invoiceable (child checkouts are invoiced) |
+| `SPLIT` | ⬜ Gray | Booking spanning two calendar years | Not invoiced directly — two separate checkouts are created automatically |
 
 ## Automatic sync
 
@@ -59,14 +44,9 @@ If a Hosthub booking has a `##sync-skip` note, the system **automatically pauses
 Use `##sync-skip` in Hosthub booking notes to pause checkouts without logging into Etherly Sync — ideal for property managers who primarily work in Hosthub.
 </Tip>
 
-## Year-Boundary Split
+## Bookings spanning two years
 
-If a booking spans two calendar years (e.g., Dec 28, 2024 → Jan 3, 2025), Etherly Sync handles the fiscal year boundary automatically:
-
-1. The original booking is marked **SPLIT** (anchor) — it is not invoiced
-2. Two child checkouts are created: one for December, one for January
-3. Each child is invoiced separately in the correct fiscal year
-4. Amounts are split **proportionally** (per night)
+If a booking spans two calendar years (e.g., Dec 28, 2024 → Jan 3, 2025), the system handles it automatically: two separate checkouts are created (one per year) with amounts split proportionally per night. Each checkout is invoiced in the correct fiscal year.
 
 <Note>
 Year-Boundary Splits happen automatically. No action is required from you.
