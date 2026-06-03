@@ -14,7 +14,7 @@ A **checkout** corresponds to a completed booking from Hosthub — a guest stay 
 | `NEEDS_SETUP` | 🟡 Yellow | Property missing required configuration | Complete property setup |
 | `READY` | 🟢 Green | Ready to invoice | Send, or wait for auto-invoicing |
 | `SENT` | 🔵 Blue | Documents issued successfully | None |
-| `SENT_WITH_ERRORS` | 🟠 Orange | Invoice/receipt OK, fee failed | Check error details |
+| `SENT_WITH_ERRORS` | 🟠 Orange | Accommodation document and payment receipt OK, fee failed | Check error details |
 | `ERROR` | 🔴 Red | Send failed entirely | Review error message and retry |
 | `SPLIT` | ⬜ Gray | Booking spanning two calendar years | Not invoiced directly — two separate checkouts are created automatically |
 
@@ -26,7 +26,7 @@ Etherly Sync syncs automatically with Hosthub at regular intervals. During each 
 - **Changes** (dates, amounts, guest info) are updated automatically
 - **Cancellations** are detected and those checkouts are excluded from invoicing
 
-You can also trigger a **manual sync** at any time by clicking **Sync Now** in the dashboard.
+You can also trigger a **manual sync** at any time by clicking **Sync Now** on the **Bookings** page.
 
 ## Pause / Resume
 
@@ -58,7 +58,7 @@ Year-Boundary Splits happen automatically. No action is required from you.
 
 ## Filtering & Search
 
-In the dashboard you can filter checkouts by:
+In **Bookings** you can filter checkouts by:
 - **Status** (READY, SENT, ERROR, etc.)
 - **Property**
 - **Date range** (checkout date)

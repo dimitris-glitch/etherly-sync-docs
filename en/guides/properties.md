@@ -77,7 +77,7 @@ Use the **"Turn on property"** / **"Turn off property"** buttons for each proper
 **Off** does not stop sync. Data stays current — only invoicing is suspended. Ideal for properties under renovation or out of season.
 </Note>
 
-## Multiple organizations
+## Multiple Elorus organizations
 
 If you manage properties under **different tax IDs**, add multiple Elorus connections. For example, if some properties are registered under a sole-trader entity and others under a company, create a separate connection for each — then map each property to the correct organization.
 

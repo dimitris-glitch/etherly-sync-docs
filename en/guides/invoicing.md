@@ -54,7 +54,7 @@ Select multiple checkouts with checkboxes and click **Send Selected** to process
 This appears when the Accommodation Document and Payment Receipt were successfully issued, but the **Climate Resilience Fee** document failed.
 
 **What to do:**
-1. Check the error message in the dashboard
+1. Check the error message on the Bookings page
 2. Verify the fee category is correctly configured in Properties
 3. Check that the tax rules in Elorus are current
 

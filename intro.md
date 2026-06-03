@@ -38,7 +38,7 @@ Hosthub  ──→  Etherly Sync  ──→  Elorus  ──→  myDATA
   <Card title="Αυτόματη Τιμολόγηση" icon="clock">
     Ορίστε ώρα εκτέλεσης και το σύστημα τιμολογεί αυτόματα όλες τις έτοιμες κρατήσεις, χωρίς παρέμβαση.
   </Card>
-  <Card title="Πολλαπλά καταλύματα και Elorus organizations" icon="building">
+  <Card title="Πολλαπλά καταλύματα και οργανισμοί Elorus" icon="building">
     Διαχειριστείτε δεκάδες καταλύματα σε διαφορετικά Elorus organizations από ένα κεντρικό περιβάλλον.
   </Card>
   <Card title="Τέλος Κλιματικής Ανθεκτικότητας" icon="leaf">

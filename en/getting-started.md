@@ -70,7 +70,7 @@ Click **"Go to Dashboard"** and navigate to **Properties** in the sidebar. Each 
 | Field | What it is |
 |-------|-----------|
 | **Default Receipts Contact** | The customer account in Elorus for receipts |
-| **Invoices Series** | The document numbering series for invoices |
+| **Invoices Series / Receipts Series** | The numbering series for invoices and receipts |
 | **Category** | The category for the Climate Resilience Fee |
 | **Organization** | The Elorus organization that issues the documents |
 
