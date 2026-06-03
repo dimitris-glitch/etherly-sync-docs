@@ -18,7 +18,7 @@ Setup takes **4 steps** and about 10 minutes. Before you begin, make sure you ha
 Go to [app.etherly.app/auth/register](https://app.etherly.app/auth/register) and sign up. You'll receive a verification email — click the link and you'll land directly in the setup wizard.
 
 <Info>
-Your account starts with a **Free Trial Period of 30 days** — unlimited sends, no credit card required. After the trial ends, credits are required to send documents.
+Your account starts with a **30-day Free Trial Period** — no credit card required. Sends do not consume credits during the trial. After the trial ends, credits are required to send documents.
 </Info>
 
 ---

@@ -15,7 +15,7 @@ Draft documents **do not** consume credits — creating drafts is free.
 
 <CardGroup cols={2}>
   <Card title="Free Trial Period" icon="gift">
-    30 days of unlimited sends at no cost for new accounts. Credits are not consumed during this period.
+    30-day trial period for new accounts. Sends do not consume credits during the trial.
   </Card>
   <Card title="Grace Period" icon="clock">
     When credits run out, you can continue sending documents even with 0 credits, until you purchase more.

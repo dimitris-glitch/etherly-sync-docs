@@ -15,7 +15,7 @@ Every guest checkout requires creating fiscal documents in Elorus — typically 
 2. **Payment Receipt** — linked to the accommodation document
 3. **Climate Resilience Fee** — calculated per night and property category
 
-With dozens of bookings per month and multiple properties, this becomes time-consuming and error-prone. Etherly Sync automates it entirely.
+With dozens of bookings per month and multiple properties, this becomes time-consuming and error-prone. Etherly Sync automates most of the process, reducing manual work and errors.
 
 ## How it works
 
@@ -30,16 +30,16 @@ The system **syncs** bookings from Hosthub on a regular schedule, **verifies** t
 
 <CardGroup cols={2}>
   <Card title="Automatic Sync" icon="arrows-rotate">
-    New bookings, changes, and cancellations are detected automatically from Hosthub. You can also trigger a manual sync from the dashboard.
+    New bookings, changes, and cancellations are detected automatically from Hosthub. You can also trigger a manual sync from the Bookings page.
   </Card>
-  <Card title="Documents per Checkout" icon="file-invoice">
+  <Card title="Automatic document issuance" icon="file-invoice">
     Accommodation document, payment receipt, and climate fee — issued automatically in the correct order.
   </Card>
   <Card title="Auto-Invoicing" icon="clock">
     Set a daily execution time and the system invoices all eligible bookings automatically, hands-free.
   </Card>
-  <Card title="Multiple Properties & Organizations" icon="building">
-    Manage dozens of properties across multiple Elorus organizations from a single dashboard.
+  <Card title="Multiple properties and Elorus organizations" icon="building">
+    Manage dozens of properties across multiple Elorus organizations from a single interface.
   </Card>
   <Card title="Climate Resilience Fee" icon="leaf">
     Automatic calculation based on property category and season. For bookings spanning two seasons, separate documents are created per season.
