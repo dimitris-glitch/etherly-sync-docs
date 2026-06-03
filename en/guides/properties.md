@@ -11,26 +11,26 @@ You always retain full manual control for bookings you want to handle differentl
 
 Every property needs **complete configuration** before it can be invoiced. Without it, bookings show status `NEEDS_SETUP`.
 
-## Where to find it
-
-**Settings → "Properties" tab**
-
 ## Required fields
 
 ### 1. Default Receipts Contact
 
-The Elorus account that appears as the "customer" on receipts.
+The Elorus account that appears as the "customer" on receipts — typically a retail account.
 
 **In Elorus:**
 1. Go to Elorus → **Contacts**
 2. Find or create an active retail customer
 
-**In Properties → Default Receipts Contact:**
+**In Settings → Properties → Default Receipts Contact:**
 Click the field and type the contact's **name** (3+ characters) to search.
 
-### 2. Invoices Series / Receipts Series
+### 2. Invoices Series
 
-The numbering series for invoices (**Invoices Series**) and receipts (**Receipts Series**) respectively. If your business does not use numbering sequences, select **"No Series"**.
+The numbering series for invoices. The **Receipts Series** field handles the series for receipts.
+
+<Warning>
+If the series isn't active in Elorus or doesn't allow the document type you're using, the send will fail. Verify under Elorus → Settings → Document Types → {select the correct type} → Numbering Series.
+</Warning>
 
 ### 3. Category
 
@@ -47,45 +47,26 @@ See the [Climate Resilience Fee Guide](/en/guides/climate-fee) for the calculati
 
 The Elorus organization under which documents are issued. If you manage properties under different tax IDs, you can assign each property to a different **Organization**.
 
-### 5. Branch
-
-The Elorus branch under which documents are issued, if your business has multiple branches in Elorus.
-
-### 6. VAT
-
-The VAT rate applied to accommodation documents for this property.
-
-### 7. Transient Tax
-
-Configuration for the Transient Occupancy Tax, if applicable for this property.
-
 ## Step-by-step configuration
 
 <Steps>
-  <Step title="Go to Settings">
-    **Settings** → **"Properties"** tab.
+  <Step title="Go to Properties">
+    Select **Properties** from the sidebar. Alternatively, click the settings icon next to any `NEEDS_SETUP` booking.
   </Step>
   <Step title="Select the property">
     You'll see all properties detected from Hosthub. Click on the one you want to configure.
   </Step>
   <Step title="Fill in all fields">
-    Select values for **Default Receipts Contact**, **Invoices Series**, **Category**, **Organization**, and any other applicable fields.
+    Select values for **Default Receipts Contact**, **Invoices Series**, **Category**, and **Organization** from their respective dropdowns.
   </Step>
   <Step title="Save">
     Click **"Save"**. The property's bookings change from `NEEDS_SETUP` to `READY` on the next sync.
   </Step>
 </Steps>
 
-## Organization settings — Document Types
-
-In **Settings → "Organizations" tab**, for each Elorus organization you can define which document types the auto-invoicing uses:
-
-- **Receipts** — select the Elorus document type for receipts
-- **Invoices** — select the Elorus document type for invoices
-
 ## Enabling / Disabling a property
 
-In **Settings → Advanced**, under **"Property Invoicing"**, use the toggle next to the property.
+Use the **"Turn on property"** / **"Turn off property"** buttons for each property.
 
 | State | Invoicing | Sync |
 |-------|-----------|------|
@@ -108,7 +89,7 @@ If you manage properties under **different tax IDs**, add multiple Elorus connec
     Each connection requires a separate API key. Give it a **Connection Title** for easy identification (e.g. "My Elorus").
   </Step>
   <Step title="Assign properties">
-    Return to **Settings → Properties** and set the correct **Organization** for each property.
+    Return to **Properties** and set the correct **Organization** for each property.
   </Step>
 </Steps>
 

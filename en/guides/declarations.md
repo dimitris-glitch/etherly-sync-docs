@@ -5,7 +5,7 @@ description: "Submit declarations to AADE via AADE-Connect: manual and automatic
 
 # Short-Term Rental Declarations
 
-If you have enabled the AADE declarations feature, eligible invoiced bookings can be submitted via **AADE-Connect** from Etherly Sync — either manually or automatically.
+Every invoiced booking must be declared to AADE (Greek tax authority) via **AADE-Connect**. Etherly Sync handles this automatically on your behalf.
 
 Declarations are found under **Declarations** in the sidebar — only bookings that have been invoiced and have an AADE property mapping are shown.
 
@@ -51,41 +51,48 @@ Each declaration can include the guest's identification details. Click the **pen
 
 | Type | When to use |
 |------|-------------|
-| Tax ID (AFM) | Greek guest — only an active tax number is accepted |
-| Passport | Foreign guest with a passport |
-| National ID | Foreign guest with a national identity card (e.g. EU) |
-| Reservation ID | Fallback — when no AFM or identification document is available |
+| National ID | Greek citizen with national ID card |
+| Passport | Foreign guest |
+| Tax ID (AFM) | Greek citizen with tax number (instead of national ID) |
+| Reservation ID | Channel booking ID — when no other identification is available |
 
 <Tip>
-If the booking already has a Reservation ID from the booking channel, the field is pre-filled automatically.
+If the booking already has a Reservation ID from Hosthub, the field is pre-filled automatically.
 </Tip>
 
 ## Platform mapping
 
-Etherly Sync automatically maps the booking channel to the platform code required by AADE. The **Channel** column in the Declarations table shows the recognized platform name — not the raw channel string.
+Etherly Sync automatically maps the booking channel to the platform code required by AADE. The **Channel** column in the Declarations table shows the recognized platform name — not the raw Hosthub channel string.
 
-| Booking channel | Column display |
-|-----------------|----------------|
-| Airbnb, Airbnb Plus, Airbnb (Greece), etc. | Airbnb |
-| Booking.com, Booking.com for …, etc. | Booking.com |
-| Clickstay | Clickstay |
-| HomeAway, VRBO, Expedia, etc. | HomeAway / VRBO |
-| Homestay | Homestay |
-| Luxury Retreats | Luxury Retreats |
-| Only Apartments | Only Apartments |
-| TripAdvisor, Holiday Lettings, etc. | TripAdvisor |
-| Phone / Direct / empty | Εκτός πλατφόρμας (off-platform) |
-| Any other channel | (raw channel name) |
+| Booking channel | Column display | AADE code |
+|-----------------|----------------|-----------|
+| Airbnb, Airbnb Plus, Airbnb (Greece), etc. | Airbnb | `AIRBNB` |
+| Booking.com, Booking.com for …, etc. | Booking.com | `BOOKING_COM` |
+| Clickstay | Clickstay | `CLICKSTAY` |
+| HomeAway, VRBO, Expedia, etc. | HomeAway / VRBO | `HOMEAWAY` |
+| Homestay | Homestay | `HOMESTAY` |
+| Luxury Retreats | Luxury Retreats | `LUXURY_RETREATS` |
+| Only Apartments | Only Apartments | `ONLY_APARTMENTS` |
+| TripAdvisor, Holiday Lettings, etc. | TripAdvisor | `TRIPADVISOR_RENTALS` |
+| Phone / Direct / empty | Εκτός πλατφόρμας | `OTHER_DIGITAL_PLATFORMS` · `"Εκτός πλατφόρμας"` |
+| Any other channel | (raw name) | `OTHER_DIGITAL_PLATFORMS` · the channel name |
 
-The system also recognizes **sub-channel composite names** (e.g. `"Booking.com for Athens"`, `"Airbnb Plus"`) via substring matching — mapping is correct even when the name is not an exact match.
+The system also recognizes **Hosthub sub-channel composite names** (e.g. `"Booking.com for Ariadnis + Collection"`, `"Airbnb Plus"`) via substring matching — mapping is correct even when the name is not an exact match.
 
 <Warning>
-**Direct bookings** (phone, email, your own website) are always sent as "Εκτός πλατφόρμας" (off-platform) — this is required by AADE. The system handles this automatically.
+**Direct bookings** (phone, email, your own website) are always sent with `platform_name: "Εκτός πλατφόρμας"` — this is required by AADE. The system handles this automatically.
 </Warning>
 
 ## Payment method
 
-Each declaration is sent to AADE with a field indicating **where the booking channel pays out** to the host. The allowed values are: Greek bank, Foreign bank, Cash, Other (via third party, voucher, etc.).
+Each declaration is sent to AADE with a field indicating **where the booking channel pays out** to the host. The allowed values are:
+
+| Value | AADE code | Meaning |
+|-------|-----------|---------|
+| Greek bank | `DOMESTIC_PAYMENTS_ACCOUNT` | Payment into a Greek bank account |
+| Foreign bank | `FOREIGN_PAYMENTS_ACCOUNT` | Payment into an overseas bank account |
+| Cash | `CASH` | Cash payment |
+| Other (via third party, voucher, etc.) | `OTHER` | Payment via a third party, voucher, etc. |
 
 ### Per-channel default
 
@@ -95,7 +102,12 @@ In **Settings → AADE Connect** you can set a default payment method for each b
 
 The ✏️ pencil icon in the **Payment Method** column of the Declarations page lets you change the payment method for a single booking. The override **always takes precedence** over the channel default, and is shown in normal colour while channel-default values are shown muted.
 
-Overrides are allowed only for declarations in **draft** or **failed (no checkpoint)** state. Submitted declarations cannot be edited.
+Overrides are allowed only before a declaration has been sent to AADE Connect. Once a declaration has been dispatched — even if it later shows a failed or draft status — the payment method is locked and cannot be changed.
+
+**Resolution priority order:**
+1. Per-booking override (✏️)
+2. Per-channel default (Settings → AADE Connect)
+3. Global default: `DOMESTIC_PAYMENTS_ACCOUNT`
 
 ## Declaration history
 

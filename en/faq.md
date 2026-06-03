@@ -9,13 +9,13 @@ description: "Solutions for the most common issues with Etherly Sync — from in
 
 <AccordionGroup>
   <Accordion title="My bookings show NEEDS_SETUP status. What do I do?">
-    The property isn't fully configured. Go to **Properties**, select the property, and complete all required fields:
+    The property isn't fully configured. Go to **Properties**, select the property, and complete all four required fields:
     - **Default Receipts Contact** — a customer account in Elorus
     - **Invoices Series** — a document numbering series for invoices
     - **Category** — for the Climate Resilience Fee
     - **Organization** — which Elorus organization issues the documents
 
-    After clicking **Save**, bookings change from `NEEDS_SETUP` to `READY` on the next sync.
+    After clicking **Save**, bookings change from `NEEDS_SETUP` to `READY` on the next sync (within ~30 minutes).
   </Accordion>
 
   <Accordion title="My Hosthub API key has changed. How do I update it?">
@@ -67,11 +67,11 @@ description: "Solutions for the most common issues with Etherly Sync — from in
     - **New bookings without a checkout date** — they won't appear until a checkout date is set in Hosthub
     - **Hosthub API timeout** — the system retries automatically, but contact support if it persists
 
-    Try a manual sync by clicking **"Refresh"** in **Bookings**.
+    Try a manual sync by clicking **"Sync from Hosthub"** in **Bookings**.
   </Accordion>
 
   <Accordion title="A booking was cancelled in Hosthub but still shows as active. Why?">
-    Cancellations are detected on the next sync. Once detected, the booking is marked cancelled and removed from the invoicing queue. If it still shows as active, click **"Refresh"**.
+    Cancellations are detected on the next sync (within ~30 minutes). Once detected, the booking is marked cancelled and removed from the invoicing queue. If it still shows as active after 15 minutes, click **"Sync from Hosthub"**.
   </Accordion>
 </AccordionGroup>
 
@@ -102,24 +102,29 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   <Accordion title="Auto-invoicing didn't run last night. Why?">
     Possible causes:
     - No bookings were in `READY` status at the **Execution time**
-    - Subscription issue — check **Credits**
+    - Credits ran out — check **Credits**
+    - The account's **Grace Period** had expired
     - A rare technical issue — contact support
   </Accordion>
 
   <Accordion title="Can I change the auto-invoicing execution time?">
-    Yes, anytime. In **Bookings → Auto-invoicing**, change the **Execution time**. The change saves automatically and takes effect from the next execution.
+    Yes, anytime. **Settings** → **Automatic invoicing** → change the **Execution time** → **Save**. The change takes effect from the next execution.
   </Accordion>
 </AccordionGroup>
 
-## Billing
+## Billing & Credits
 
 <AccordionGroup>
-  <Accordion title="How is my billing calculated?">
-    You are charged per **active property** per month. A property is considered active if it has at least one successful invoicing that month. Months with no invoiced bookings are not charged. See details under **Credits**.
+  <Accordion title="When does my Free Trial Period end?">
+    The **Free Trial Period** lasts **30 days** from account creation. The exact expiry date is shown under **Credits**.
   </Accordion>
 
-  <Accordion title="How does payment work?">
-    Charges are processed automatically via **Stripe** at the end of each billing period. A saved payment card is required — add one under **Credits** → **"Add Card"**.
+  <Accordion title="What happens when my credits run out?">
+    The **Grace Period** activates automatically — invoicing continues normally even with 0 credits. Once the Grace Period ends, new sends are blocked until you purchase credits under **Credits** → **"Buy Credits"**.
+  </Accordion>
+
+  <Accordion title="How do I set up automatic credit renewal (Auto Top-up)?">
+    Go to **Credits** → **Auto Top-up** section → **"Enable Auto Top-up"**. Set the **Top-up Threshold** (e.g. 10 credits) and choose which package to purchase automatically. A saved card is required via **"Add Card"**.
   </Accordion>
 </AccordionGroup>
 

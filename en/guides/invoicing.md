@@ -42,6 +42,8 @@ A myDATA failure **does not cancel** the Elorus document. myDATA failure managem
   </Step>
   <Step title="Watch the results">
     Status changes to `SENT` (success), `SENT_WITH_ERRORS` (partial), or `ERROR` (failure). Error messages appear inline on failure.
+
+    **myDATA delay:** If myDATA is not ready immediately after document creation, the status transitions to `WAITING_MYDATA_FINALIZATION`. The system automatically retries up to 9 times (~17-hour window). If retries are exhausted, the status becomes `NEEDS_MANUAL_REVIEW` — the document was created successfully in Elorus; only myDATA finalization is pending.
   </Step>
 </Steps>
 

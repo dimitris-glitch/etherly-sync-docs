@@ -92,7 +92,7 @@ Once a property is configured, its bookings appear with status **READY** (green 
     Click the **"Send to Elorus"** button next to the booking, or select multiple for bulk sending.
   </Step>
   <Step title="Watch the status update">
-    In a few seconds, the status changes to **SENT**. A direct link to the Elorus document appears automatically.
+    In a few seconds, the status changes to **SENT**. A direct link to the Elorus document appears automatically. If myDATA submission is enabled, the status may briefly show **WAITING_MYDATA_FINALIZATION** while the tax authority registers the document — it will reach **SENT** automatically once finalization completes.
   </Step>
 </Steps>
 

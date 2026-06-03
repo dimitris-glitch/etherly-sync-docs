@@ -35,7 +35,7 @@ description: "Ρυθμίστε την ημερήσια αυτόματη τιμο
 
 ## Τι ΔΕΝ τιμολογείται αυτόματα
 
-- Κρατήσεις σε `NEEDS_SETUP`, `SENT`, `SENT_WITH_ERRORS`, `ERROR`, `SPLIT`
+- Κρατήσεις σε `NEEDS_SETUP`, `SENT`, `SENT_WITH_ERRORS`, `ERROR`, `SPLIT`, `WAITING_MYDATA_FINALIZATION`, `NEEDS_MANUAL_REVIEW`
 - Κρατήσεις σε Pause (χειροκίνητο ή μέσω `##sync-skip`)
 - Κρατήσεις καταλυμάτων που είναι **Off**
 - Ακυρωμένες κρατήσεις
