@@ -16,7 +16,7 @@ For every checkout that is sent, Etherly Sync automatically creates documents in
   <Card title="2. Payment Receipt" icon="receipt">
     Linked to the accommodation document.  
     Confirms payment received.  
-    Issued immediately after the invoice.
+    Issued immediately after the accommodation document.
   </Card>
   <Card title="3. Climate Resilience Fee" icon="leaf">
     Calculated per night and category. If the booking spans winter and summer, two separate documents are issued.
