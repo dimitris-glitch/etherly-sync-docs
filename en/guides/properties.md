@@ -17,10 +17,12 @@ Every property needs **complete configuration** before it can be invoiced. Witho
 
 The Elorus account that appears as the "customer" on receipts — typically a retail account.
 
-**How to find it in Elorus:**
+**In Elorus:**
 1. Go to Elorus → **Contacts**
 2. Find or create an active retail customer
-3. In the field, click and type a VAT number or company name (3+ characters) to search
+
+**In the property settings:**
+Click the field and type the contact's **name** (3+ characters) to search.
 
 ### 2. Invoices Series
 
