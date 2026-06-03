@@ -100,10 +100,7 @@ In **Settings → AADE Connect** you can set a default payment method for each b
 
 ### Per-booking override
 
-The ✏️ pencil icon in the **Payment Method** column of the Declarations page lets you change the payment method for a single booking. The override:
-- **always takes precedence** over the channel default
-- is shown in normal colour, while channel-default values are shown muted
-- can be cleared using the **"Reset to default"** button
+The ✏️ pencil icon in the **Payment Method** column of the Declarations page lets you change the payment method for a single booking. The override **always takes precedence** over the channel default, and is shown in normal colour while channel-default values are shown muted.
 
 Overrides are allowed only for declarations in **draft** or **failed (no checkpoint)** state. Submitted declarations cannot be edited.
 
