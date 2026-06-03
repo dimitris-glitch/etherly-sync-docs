@@ -86,7 +86,7 @@ Once a property is configured, its bookings appear with status **READY** (green 
 
 <Steps>
   <Step title="Find a READY booking">
-    In the **Dashboard** (Bookings), ready bookings are shown with a green status badge.
+    In **Bookings**, ready bookings are shown with a green status badge.
   </Step>
   <Step title="Click «Send to Elorus»">
     Click the **"Send to Elorus"** button next to the booking, or select multiple for bulk sending.

@@ -108,7 +108,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   </Accordion>
 
   <Accordion title="Can I change the auto-invoicing execution time?">
-    Yes, anytime. Go to **Bookings** in the sidebar, find the **"Auto-invoicing"** toggle and change the **Execution time**. The change saves automatically and takes effect from the next execution.
+    Yes, anytime. In **Bookings → Auto-invoicing**, change the **Execution time**. The change saves automatically and takes effect from the next execution.
   </Accordion>
 </AccordionGroup>
 

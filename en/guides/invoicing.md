@@ -35,7 +35,7 @@ A myDATA failure **does not cancel** the Elorus document. myDATA failure managem
 
 <Steps>
   <Step title="Select checkouts">
-    In the dashboard, select one or more checkouts in `READY` status using their checkboxes.
+    In **Bookings**, select one or more checkouts in `READY` status using their checkboxes.
   </Step>
   <Step title="Click «Send»">
     Use the **Send** button in the toolbar for bulk sending, or the button next to each checkout for individual sends.
