@@ -15,6 +15,8 @@ A **checkout** corresponds to a completed booking from Hosthub — a guest stay 
 | `READY` | 🟢 Green | Ready to invoice | Send, or wait for auto-invoicing |
 | `SENT` | 🔵 Blue | Documents issued successfully | None |
 | `SENT_WITH_ERRORS` | 🟠 Orange | Accommodation document and payment receipt OK, fee failed | Check error details |
+| `WAITING_MYDATA_FINALIZATION` | 🟡 Yellow | Documents created, waiting for myDATA finalization | Automatic retry in progress — wait |
+| `NEEDS_MANUAL_REVIEW` | 🟠 Orange | myDATA finalization did not complete after multiple attempts | Check in Elorus and retry manually |
 | `ERROR` | 🔴 Red | Send failed entirely | Review error message and retry |
 | `SPLIT` | ⬜ Gray | Booking spanning two calendar years | Not invoiced directly — two separate checkouts are created automatically |
 
