@@ -29,7 +29,7 @@ Click the field and type the contact's **name** (3+ characters) to search.
 The numbering series for invoices. The **Receipts Series** field handles the series for receipts.
 
 <Warning>
-If the series isn't active in Elorus or doesn't allow the document type you're using, the send will fail. Verify under Elorus → Settings → Document Series.
+If the series isn't active in Elorus or doesn't allow the document type you're using, the send will fail. Verify under Elorus → Settings → Document Types → {select the correct type} → Numbering Series.
 </Warning>
 
 ### 3. Category
