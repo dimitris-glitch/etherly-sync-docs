@@ -56,7 +56,7 @@ Auto-invoicing and manual sends **work seamlessly together**:
 
 - Bookings you've already sent won't be re-sent
 - You can send at any time, independently of the auto-invoicing schedule
-- Disabling the toggle only stops the automated runs
+- Disabling auto-invoicing leaves all bookings in the app — you can still send them manually
 
 ## Changing the execution time
 
