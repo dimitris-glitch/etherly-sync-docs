@@ -62,7 +62,7 @@ The Elorus organization under which documents are issued. If you manage properti
 
 ## Enabling / Disabling a property
 
-In **Properties**, select the property and use the **"Turn on property"** / **"Turn off property"** buttons.
+In **Properties → {property} → Advanced**, use the **"Turn on property"** / **"Turn off property"** buttons.
 
 | State | Invoicing | Sync |
 |-------|-----------|------|
