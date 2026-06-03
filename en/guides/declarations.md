@@ -85,14 +85,7 @@ The system also recognizes **sub-channel composite names** (e.g. `"Booking.com f
 
 ## Payment method
 
-Each declaration is sent to AADE with a field indicating **where the booking channel pays out** to the host. The allowed values are:
-
-| Value | Meaning |
-|-------|---------|
-| Greek bank | Payment into a Greek bank account |
-| Foreign bank | Payment into an overseas bank account |
-| Cash | Cash payment |
-| Other (via third party, voucher, etc.) | Payment via a third party, voucher, etc. |
+Each declaration is sent to AADE with a field indicating **where the booking channel pays out** to the host. The allowed values are: Greek bank, Foreign bank, Cash, Other (via third party, voucher, etc.).
 
 ### Per-channel default
 
