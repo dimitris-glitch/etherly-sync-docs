@@ -18,7 +18,7 @@ Setup takes **4 steps** and about 10 minutes. Before you begin, make sure you ha
 Go to [app.etherly.app/auth/register](https://app.etherly.app/auth/register) and sign up. You'll receive a verification email — click the link and you'll land directly in the setup wizard.
 
 <Info>
-Your account starts with a **30-day Free Trial Period** — no credit card required. Sends do not consume credits during the trial. After the trial ends, credits are required to send documents.
+Your account starts with a **Free Trial Period** — no credit card required. After the trial ends, billing is per active property per month via Stripe.
 </Info>
 
 ---
@@ -65,12 +65,12 @@ Your Elorus API key is stored **encrypted** (AES-256-GCM) and is never displayed
 
 ## Step 4: Configure your first property
 
-Click **"Go to Dashboard"** and navigate to **Properties** in the sidebar. Each property needs the following settings:
+Click **"Go to Dashboard"** and navigate to **Settings → "Properties" tab**. Each property needs the following settings:
 
 | Field | What it is |
 |-------|-----------|
 | **Default Receipts Contact** | The customer account in Elorus for receipts |
-| **Invoices Series / Receipts Series** | The numbering series for invoices and receipts |
+| **Invoices Series / Receipts Series** | Numbering series for invoices and receipts (or "No Series") |
 | **Category** | The category for the Climate Resilience Fee |
 | **Organization** | The Elorus organization that issues the documents |
 
@@ -101,6 +101,17 @@ Your first document has been issued successfully in Elorus. If myDATA submission
 </Check>
 
 ---
+
+## Available integrations
+
+Under **Settings → Integrations** you'll find all available connections:
+
+| Integration | What it does |
+|-------------|-------------|
+| **Hosthub** | Automatic booking sync |
+| **Elorus** | Document issuance and myDATA submission |
+| **Airbnb (CSV)** | Import bookings from a CSV file |
+| **AADE Connect** | Connect to AADE for short-term rental declarations |
 
 ## What's next
 

@@ -5,15 +5,15 @@ description: "Add users, set roles, and control who has access to what in your E
 
 # User Management
 
-Etherly Sync supports **multiple users** per account. Each user has a role that defines exactly what they can do. Find it under **Users** in the sidebar.
+Etherly Sync supports **multiple users** per account. Each user has a role that defines exactly what they can do. Find it in the **user dropdown menu** (click the user icon at the top right → **"Users"**).
 
 ## Roles and permissions
 
-| Role | Invoicing | Settings | Users | Billing |
-|------|-----------|----------|-------|---------|
-| **Owner** | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
-| **Admin** | ✅ Full | ✅ Full | ❌ | ❌ |
-| **User** | 👁️ Read-only | ❌ | ❌ | ❌ |
+| Role | Invoicing | Settings | Users | Billing | Report Date |
+|------|-----------|----------|-------|---------|-------------|
+| **Owner** | ✅ Full | ✅ Full | ✅ Full | ✅ Full | ✅ |
+| **Admin** | ✅ Full | ✅ Full | ❌ | ❌ | ✅ |
+| **User** | 👁️ Read-only | ❌ | ❌ | ❌ | ❌ |
 
 **Owner**: Full control — can delete the account, manage billing, and manage users.
 
@@ -25,7 +25,7 @@ Etherly Sync supports **multiple users** per account. Each user has a role that 
 
 <Steps>
   <Step title="Go to Users">
-    **Users** → click **"Invite User"**
+    Click the user icon at the top right → **"Users"** → click **"Invite User"**
   </Step>
   <Step title="Enter email, name and role">
     Enter the new user's **Email** and **Name**, and select a **Role** (Admin or User).
@@ -44,7 +44,7 @@ If an invitation expires, you can copy the invite link with **"Copy link"** or r
 
 ## Removing a user
 
-1. **Users** in the sidebar
+1. Click the user icon at the top right → **"Users"**
 2. Click **"Remove user"** next to the user
 3. Confirm
 

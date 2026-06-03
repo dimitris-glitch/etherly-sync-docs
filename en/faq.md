@@ -67,11 +67,11 @@ description: "Solutions for the most common issues with Etherly Sync — from in
     - **New bookings without a checkout date** — they won't appear until a checkout date is set in Hosthub
     - **Hosthub API timeout** — the system retries automatically, but contact support if it persists
 
-    Try a manual sync by clicking **"Sync from Hosthub"** in **Bookings**.
+    Try a manual sync by clicking **"Refresh"** in **Bookings**.
   </Accordion>
 
   <Accordion title="A booking was cancelled in Hosthub but still shows as active. Why?">
-    Cancellations are detected on the next sync. Once detected, the booking is marked cancelled and removed from the invoicing queue. If it still shows as active, click **"Sync from Hosthub"**.
+    Cancellations are detected on the next sync. Once detected, the booking is marked cancelled and removed from the invoicing queue. If it still shows as active, click **"Refresh"**.
   </Accordion>
 </AccordionGroup>
 
@@ -102,8 +102,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   <Accordion title="Auto-invoicing didn't run last night. Why?">
     Possible causes:
     - No bookings were in `READY` status at the **Execution time**
-    - Credits ran out — check **Credits**
-    - The account's **Grace Period** had expired
+    - Subscription issue — check **Credits**
     - A rare technical issue — contact support
   </Accordion>
 
@@ -112,19 +111,15 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   </Accordion>
 </AccordionGroup>
 
-## Billing & Credits
+## Billing
 
 <AccordionGroup>
-  <Accordion title="When does my Free Trial Period end?">
-    The **Free Trial Period** lasts **30 days** from account creation. The exact expiry date is shown under **Credits**.
+  <Accordion title="How is my billing calculated?">
+    You are charged per **active property** per month. A property is considered active if it has at least one successful invoicing that month. Months with no invoiced bookings are not charged. See details under **Credits**.
   </Accordion>
 
-  <Accordion title="What happens when my credits run out?">
-    The **Grace Period** activates automatically — invoicing continues normally even with 0 credits. Once the Grace Period ends, new sends are blocked until you purchase credits under **Credits** → **"Buy Credits"**.
-  </Accordion>
-
-  <Accordion title="How do I set up automatic credit renewal (Auto Top-up)?">
-    Go to **Credits** → **Auto Top-up** section → **"Enable Auto Top-up"**. Set the **Top-up Threshold** (e.g. 10 credits) and choose which package to purchase automatically. A saved card is required via **"Add Card"**.
+  <Accordion title="How does payment work?">
+    Charges are processed automatically via **Stripe** at the end of each billing period. A saved payment card is required — add one under **Credits** → **"Add Card"**.
   </Accordion>
 </AccordionGroup>
 

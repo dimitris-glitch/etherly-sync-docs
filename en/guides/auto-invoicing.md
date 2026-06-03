@@ -31,7 +31,7 @@ During auto-invoicing, only bookings that meet **all** of the following are proc
 | Paused | Not paused |
 | Property | **On** (enabled) |
 | Booking | Not cancelled |
-| Account | Active trial, Grace Period, or sufficient credits |
+| Account | Active subscription |
 
 ## What is NOT auto-invoiced
 
@@ -57,6 +57,23 @@ Auto-invoicing and manual sends **work seamlessly together**:
 - Bookings you've already sent won't be re-sent
 - You can send at any time, independently of the auto-invoicing schedule
 - Disabling auto-invoicing leaves all bookings in the app — you can still send them manually
+
+## Auto-invoicing per channel
+
+In **Settings → Advanced**, you can enable or disable auto-invoicing for each booking channel individually (Airbnb, Booking.com, Phone, etc.).
+
+- **New** bookings from a disabled channel are automatically marked **Skipped** and excluded from auto-invoicing.
+- For **existing** bookings: filter by channel in Bookings and bulk-update their status as needed.
+
+## Advanced settings (Settings → Advanced)
+
+### AADE — Tax ID lookup
+
+Enter your **AADE Login Code** and **Password** to enable automatic company lookup by tax ID when creating a new customer in Elorus.
+
+### Year-End — Booking Split
+
+Toggle for automatic cross-year booking splits. Only active when auto-invoicing is enabled.
 
 ## Changing the execution time
 

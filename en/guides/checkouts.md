@@ -26,7 +26,7 @@ Etherly Sync syncs automatically with Hosthub at regular intervals. During each 
 - **Changes** (dates, amounts, guest info) are updated automatically
 - **Cancellations** are detected and those checkouts are excluded from invoicing
 
-You can also trigger a **manual sync** at any time by clicking **Sync Now** on the **Bookings** page.
+You can also trigger a **manual sync** at any time by clicking **Refresh** on the **Bookings** page.
 
 ## Pause / Resume
 
