@@ -15,7 +15,7 @@ Every guest checkout requires creating fiscal documents in Elorus — typically 
 2. **Payment Receipt** — linked to the accommodation document
 3. **Climate Resilience Fee** — calculated per night and property category
 
-With dozens of bookings per month and multiple properties, this becomes time-consuming and error-prone. Etherly Sync automates most of the process, reducing manual work and errors.
+With dozens of bookings per month and multiple properties, this becomes time-consuming and error-prone. Etherly Sync automates it entirely.
 
 ## How it works
 
