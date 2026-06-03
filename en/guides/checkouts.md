@@ -45,7 +45,7 @@ Click **Pause** next to the checkout. It stays paused through subsequent syncs â
 If a Hosthub booking has a `##sync-skip` note, the system **automatically pauses** the checkout during sync. Remove the note from Hosthub and the checkout will resume on the next sync.
 
 <Tip>
-Useful for personal-use or family stays that don't need invoicing. Add `##sync-skip` directly in Hosthub without opening Etherly Sync.
+Useful if you want to pause document issuance for a booking directly from Hosthub.
 </Tip>
 
 ## Bookings spanning two years
