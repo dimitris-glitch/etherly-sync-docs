@@ -52,7 +52,8 @@
         "guides/invoicing",
         "guides/climate-fee",
         "guides/auto-invoicing",
-        "guides/declarations"
+        "guides/declarations",
+        "guides/aade-connect"
       ]
     },
     {
@@ -79,7 +80,8 @@
         "en/guides/invoicing",
         "en/guides/climate-fee",
         "en/guides/auto-invoicing",
-        "en/guides/declarations"
+        "en/guides/declarations",
+        "en/guides/aade-connect"
       ]
     },
     {
