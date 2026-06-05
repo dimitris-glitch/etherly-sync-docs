@@ -63,6 +63,11 @@
     },
     {
       "version": "Ελληνικά",
+      "group": "Εργαλεία",
+      "pages": ["guides/assistant"]
+    },
+    {
+      "version": "Ελληνικά",
       "group": "Βοήθεια",
       "pages": ["faq"]
     },
@@ -88,6 +93,11 @@
       "version": "English",
       "group": "Management",
       "pages": ["en/guides/team", "en/guides/billing"]
+    },
+    {
+      "version": "English",
+      "group": "Tools",
+      "pages": ["en/guides/assistant"]
     },
     {
       "version": "English",
