@@ -62,6 +62,12 @@ Prevent invoicing interruptions by setting up automatic credit renewal:
 If the automatic charge fails **1–2 times**, the status shows **"Payment failed"** and the system will retry automatically. After **3 consecutive failures**, Auto Top-up is automatically disabled and the status shows **"Disabled"**. Check your card and re-enable manually.
 </Note>
 
+## Card expiry
+
+A badge appears next to your saved card when it is approaching expiry (**"Expiring soon"**) or has already expired (**"Expired"**).
+
+We also send you a **reminder email** when your card expires within the current or next month, so you can update it in time and avoid a failed charge. To change your card: **Credits** → **"Change Card"**.
+
 ## Grace Period
 
 If credits run out, you continue sending during the **Grace Period** — your balance goes negative and is settled automatically on your next purchase.
