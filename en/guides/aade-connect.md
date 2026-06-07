@@ -24,7 +24,7 @@ If no properties appear, make sure you have connected at least one booking chann
 
 ## Rental payment method
 
-Every declaration sent to AADE requires information about **how the owner is paid** by the channel. Here you set the default per channel.
+Every declaration sent to AADE requires information about **how the booking channel (Airbnb, Booking.com, etc.) pays out the rent to your business**. This is not about how the guest pays, but the flow of money from the channel to you. Here you set the default per channel.
 
 | Option | AADE code | When to use |
 |--------|-----------|-------------|

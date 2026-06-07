@@ -85,7 +85,7 @@ The system also recognizes **Hosthub sub-channel composite names** (e.g. `"Booki
 
 ## Payment method
 
-Each declaration is sent to AADE with a field indicating **where the booking channel pays out** to the host. The allowed values are:
+Each declaration is sent to AADE with a field indicating **how the booking channel (Airbnb, Booking.com, etc.) pays out the rent to your business**. This is **not** about how the guest pays — it refers solely to the flow of money from the channel to you. The allowed values are:
 
 | Value | AADE code | Meaning |
 |-------|-----------|---------|
