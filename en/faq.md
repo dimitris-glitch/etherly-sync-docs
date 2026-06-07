@@ -52,7 +52,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
     1. **Elorus API key** — verify it's still valid in **Settings** → **Integrations**
     2. **Invoices Series** — confirm the series is active in Elorus
     3. **Organization** — ensure the organization allows the document type
-    4. **Credits** — check your balance under **Credits**
+    4. **Subscription** — check your balance under **Subscription**
 
     If none of the above resolves it, contact support with the error message.
   </Accordion>
@@ -102,7 +102,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   <Accordion title="Auto-invoicing didn't run last night. Why?">
     Possible causes:
     - No bookings were in `READY` status at the **Execution time**
-    - Credits ran out — check **Credits**
+    - Credits ran out — check **Subscription**
     - The account's **Grace Period** had expired
     - A rare technical issue — contact support
   </Accordion>
@@ -116,15 +116,15 @@ description: "Solutions for the most common issues with Etherly Sync — from in
 
 <AccordionGroup>
   <Accordion title="When does my Free Trial Period end?">
-    The **Free Trial Period** lasts **30 days** from account creation. The exact expiry date is shown under **Credits**.
+    The **Free Trial Period** lasts **30 days** from account creation. The exact expiry date is shown under **Subscription**.
   </Accordion>
 
   <Accordion title="What happens when my credits run out?">
-    The **Grace Period** activates automatically — invoicing continues normally even with 0 credits. Once the Grace Period ends, new sends are blocked until you purchase credits under **Credits** → **"Buy Credits"**.
+    The **Grace Period** activates automatically — invoicing continues normally even with 0 credits. Once the Grace Period ends, new sends are blocked until you purchase credits under **Subscription** → **"Buy Credits"**.
   </Accordion>
 
   <Accordion title="How do I set up automatic credit renewal (Auto Top-up)?">
-    Go to **Credits** → **Auto Top-up** section → **"Enable Auto Top-up"**. Set the **Top-up Threshold** (e.g. 10 credits) and choose which package to purchase automatically. A saved card is required via **"Add Card"**.
+    Go to **Subscription** → **Auto Top-up** section → **"Enable Auto Top-up"**. Set the **Top-up Threshold** (e.g. 10 credits) and choose which package to purchase automatically. A saved card is required via **"Add Card"**.
   </Accordion>
 </AccordionGroup>
 

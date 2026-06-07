@@ -5,7 +5,7 @@ description: "Understand billing plans, how credits work, the Free Trial Period,
 
 # Billing & Credits
 
-The **Billing & Credits** section is found under **Credits** in the sidebar. Every booking successfully sent consumes **1 credit** — regardless of how many documents are issued.
+The **Subscription** section is found in the sidebar. Every booking successfully sent consumes **1 credit** — regardless of how many documents are issued.
 
 <Info>
 Draft documents **do not** consume credits during the free trial period. Once the trial ends (credits billing mode), each draft send consumes 1 credit.
@@ -25,8 +25,8 @@ Draft documents **do not** consume credits during the free trial period. Once th
 ## Buying credits
 
 <Steps>
-  <Step title="Go to Credits">
-    Select **Credits** from the sidebar → **"Buy Credits"** tab
+  <Step title="Go to Subscription">
+    Select **Subscription** from the sidebar → **"Buy Credits"** tab
   </Step>
   <Step title="Choose a package">
     Select the package that matches your volume and click **"Buy Now"**.
@@ -45,7 +45,7 @@ Prevent invoicing interruptions by setting up automatic credit renewal:
 
 <Steps>
   <Step title="Enable Auto Top-up">
-    **Credits** → **Auto Top-up** section → **"Enable Auto Top-up"**
+    **Subscription** → **Auto Top-up** section → **"Enable Auto Top-up"**
   </Step>
   <Step title="Set the Top-up Threshold (credits)">
     How many credits must remain for an automatic purchase to trigger (e.g. 10 credits).
@@ -66,7 +66,7 @@ If the automatic charge fails **1–2 times**, the status shows **"Payment faile
 
 A badge appears next to your saved card when it is approaching expiry (**"Expiring soon"**) or has already expired (**"Expired"**).
 
-We also send you a **reminder email** when your card expires within the current or next month, so you can update it in time and avoid a failed charge. To change your card: **Credits** → **"Change Card"**.
+We also send you a **reminder email** when your card expires within the current or next month, so you can update it in time and avoid a failed charge. To change your card: **Subscription** → **"Change Card"**.
 
 ## Grace Period
 
@@ -76,6 +76,6 @@ If credits run out, you continue sending during the **Grace Period** — your ba
 
 View all purchases, sends, auto top-ups, and refunds under:
 
-**Credits** → **"Transaction History"** tab
+**Subscription** → **"Transaction History"** tab
 
 Each row shows: date, type (**Purchase**, **Send to Elorus**, **Auto Top-up**, **Refund**, etc.), credit amount, and new balance.
