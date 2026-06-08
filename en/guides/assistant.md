@@ -12,6 +12,7 @@ The **Etherly Assistant** is the built-in AI assistant in Etherly Sync. You'll f
 - Answer questions about how the app works
 - Help with initial setup (Hosthub, Elorus, organisations, VAT scales)
 - Automatically navigate to settings pages when needed
+- Look up bookings by guest name or ID and explain why a document was not issued
 - Save every conversation so you can resume it later
 
 ## Opening and closing
@@ -44,6 +45,19 @@ When you resume a past conversation, the input field shows the conversation titl
 ## Usage limits
 
 The Assistant operates within hourly and daily usage limits for fair use. If you approach the limit, you'll be notified inside the conversation.
+
+## Looking up a booking or document
+
+The Assistant can look up a specific booking and explain why a document was not issued or what its current status is.
+
+**Example questions:**
+- "Why was no document issued for Smith?"
+- "What is the status of booking HB-12345?"
+- "Georgiou's booking has an error — what went wrong?"
+
+The Assistant explains the status in plain language, mentions which step failed if relevant, and navigates you to settings to fix it.
+
+**What is not shown:** Guest email, phone, or other personal details are never included in responses — only name, property, dates, and status.
 
 ## Security and privacy
 

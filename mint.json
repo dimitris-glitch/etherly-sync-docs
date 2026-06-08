@@ -41,7 +41,7 @@
     {
       "version": "Ελληνικά",
       "group": "Ξεκινήστε",
-      "pages": ["intro", "getting-started"]
+      "pages": ["intro", "getting-started", "guides/onboarding"]
     },
     {
       "version": "Ελληνικά",
@@ -74,7 +74,7 @@
     {
       "version": "English",
       "group": "Get Started",
-      "pages": ["en/intro", "en/getting-started"]
+      "pages": ["en/intro", "en/getting-started", "en/guides/onboarding"]
     },
     {
       "version": "English",
