@@ -20,7 +20,7 @@ Etherly Sync automatically calculates and issues the fee document.
 | **Summer** | April 1 – October 31 |
 
 <Info>
-The exact fee amounts are pulled directly from the **tax codes in Elorus** — they are not hardcoded in Etherly Sync. If the legal amounts change, simply update them in Elorus.
+The exact fee amounts are set in the **TCA Rules** per organization, under **Settings → Organizations**. These correspond to tax codes you have created in Elorus. If the legal amounts change, update both the tax codes in Elorus and the TCA Rules under **Settings → Organizations**.
 </Info>
 
 ## Property categories

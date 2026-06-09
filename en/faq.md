@@ -47,6 +47,18 @@ description: "Solutions for the most common issues with Etherly Sync — from in
     Document cancellation is done **directly in Elorus** — it's not available through Etherly Sync. After cancelling in Elorus, the booking in Etherly Sync remains in `SENT` status. Contact support if you need the status reset for re-issuing.
   </Accordion>
 
+  <Accordion title="A booking was cancelled after an invoice was already issued. What do I do?">
+    The document remains valid — cancelling the booking does not automatically reverse it. The process is:
+
+    1. **Create a credit note in Elorus** for the accommodation invoice
+    2. **If a Climate Resilience Fee document was also issued**, cancel that separately — it is not reversed automatically
+    3. The booking in Etherly Sync remains in `SENT` status — contact support if you need the status reset for re-issuing
+
+    <Warning>
+    For the correct credit note type and myDATA obligations, consult your accountant.
+    </Warning>
+  </Accordion>
+
   <Accordion title="A send keeps failing repeatedly. What should I check?">
     In order:
     1. **Elorus API key** — verify it's still valid in **Settings** → **Integrations**
@@ -73,6 +85,17 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   <Accordion title="A booking was cancelled in Hosthub but still shows as active. Why?">
     Cancellations are detected on the next sync (within ~30 minutes). Once detected, the booking is marked cancelled and removed from the invoicing queue. If it still shows as active after 15 minutes, click **"Sync from Hosthub"**.
   </Accordion>
+
+  <Accordion title="If the Hosthub sync fails, will bookings be lost?">
+    No. Sync is **one-directional** — Etherly Sync fetches bookings from Hosthub but never deletes data due to a connection error. Bookings already synced remain safe.
+
+    If sync fails temporarily:
+    - The system retries automatically
+    - New bookings created in the meantime are retrieved on the next successful sync
+    - Booking changes (cancellations, date updates) are detected on the next sync
+
+    To trigger an immediate sync, click **"Sync from Hosthub"** on the Bookings page.
+  </Accordion>
 </AccordionGroup>
 
 ## Climate Resilience Fee
@@ -88,7 +111,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   </Accordion>
 
   <Accordion title="What happens if the fee amounts change by law?">
-    Fee amounts are pulled from the **tax codes in Elorus** — they're not hardcoded in Etherly Sync. If the law changes, simply update the amounts in Elorus and Etherly Sync retrieves them automatically on the next send.
+    Fee amounts are set in the **TCA Rules** per organization, under **Settings → Organizations**. These correspond to tax codes you have created in Elorus. If the law changes, update both the tax codes in Elorus and the TCA Rules under **Settings → Organizations**.
   </Accordion>
 
   <Accordion title="I can't find the right Category for my property. What do I do?">
@@ -125,6 +148,28 @@ description: "Solutions for the most common issues with Etherly Sync — from in
 
   <Accordion title="How do I set up automatic credit renewal (Auto Top-up)?">
     Go to **Subscription** → **Auto Top-up** section → **"Enable Auto Top-up"**. Set the **Top-up Threshold** (e.g. 10 credits) and choose which package to purchase automatically. A saved card is required via **"Add Card"**.
+  </Accordion>
+</AccordionGroup>
+
+## Special Cases
+
+<AccordionGroup>
+  <Accordion title="What happens with a 0€ booking (complimentary stay)?">
+    Etherly Sync does not issue documents for zero-amount bookings. The send will fail or produce an empty document.
+
+    If a document is needed for a complimentary stay:
+    - Create it manually directly in **Elorus**
+    - Whether a document is required and which type depends on your tax situation — consult your accountant
+
+    To keep the booking out of the invoicing queue, use **Pause** on the Bookings page.
+  </Accordion>
+
+  <Accordion title="Should I issue a receipt or an invoice for a foreign guest?">
+    General rule:
+    - **Private individual from abroad** → Retail receipt (no tax ID required)
+    - **Company from abroad** → Invoice (VAT Number or local tax ID required)
+
+    The document type is set per property under **Properties → Document Type**. For special cases (intra-EU B2B, specific tax exemptions, etc.), consult your accountant.
   </Accordion>
 </AccordionGroup>
 

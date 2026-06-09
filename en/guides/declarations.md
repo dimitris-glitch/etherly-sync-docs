@@ -7,6 +7,23 @@ description: "Submit declarations to AADE via AADE-Connect: manual and automatic
 
 Every invoiced booking must be declared to AADE (Greek tax authority) via **AADE-Connect**. Etherly Sync handles this automatically on your behalf.
 
+## myDATA and AADE-Connect: two separate obligations
+
+Many users confuse the two systems — they are independent:
+
+| | myDATA | AADE-Connect |
+|---|---|---|
+| **What it is** | Electronic invoicing record | Short-term rental stay declaration |
+| **Per** | Document (invoice, receipt) | Booking |
+| **When** | Automatically on issuance | After invoicing |
+| **Via** | Elorus (automatic) | AADE-Connect (Etherly Sync) |
+
+Etherly Sync handles both automatically: documents are sent to myDATA via Elorus when issued, and stay declarations are submitted separately via AADE-Connect.
+
+<Warning>
+A successful myDATA document submission **does not mean** the AADE-Connect declaration has been filed — and vice versa. The two obligations are tracked independently.
+</Warning>
+
 Declarations are found under **Declarations** in the sidebar — only bookings that have been invoiced and have an AADE property mapping are shown.
 
 ## Declaration statuses
@@ -112,3 +129,36 @@ Overrides are allowed only before a declaration has been sent to AADE Connect. O
 ## Declaration history
 
 The **History** tab on the Declarations page shows bookings that have already been submitted or skipped. Guest identification cannot be edited for these bookings.
+
+## AADE Connect Settings
+
+The **Settings → AADE Connect** page has two sections:
+
+### Property mapping
+
+For each property shown in the list, select the corresponding AADE property from the dropdown. This mapping is required for declaration submission — bookings without a property mapping do not appear on the Declarations page.
+
+<Note>
+If no properties appear, make sure you have connected at least one booking channel under **Settings → Integrations**.
+</Note>
+
+### Per-channel payment method default
+
+Each declaration sent to AADE requires information about **how the booking channel pays out the rent to your business**. Here you set the default per channel (Airbnb, Booking.com, etc.). This is not about how the guest pays.
+
+| Option | AADE code | When to select |
+|--------|-----------|----------------|
+| Greek bank | `DOMESTIC_PAYMENTS_ACCOUNT` | Channel pays into a Greek bank account |
+| Foreign bank | `FOREIGN_PAYMENTS_ACCOUNT` | Channel pays into an overseas bank account |
+| Cash | `CASH` | Cash payment |
+| Other | `OTHER` | Payment via third party, voucher, etc. |
+
+**Resolution priority order:**
+
+1. Per-booking override (✏️ pencil icon in the Payment Method column on the Declarations page)
+2. Per-channel default — this page
+3. Global default: `DOMESTIC_PAYMENTS_ACCOUNT`
+
+<Tip>
+Per-booking overrides are only allowed **before** a declaration has been sent. Once dispatched — even if it later shows a failed status — the payment method is locked.
+</Tip>
