@@ -25,12 +25,18 @@ To get started with Etherly Sync, you complete a few quick activation steps. You
   <Step title="Connect Elorus">
     Enter your Elorus API key and the invoicing organization.
   </Step>
-  <Step title="Trial starts">
-    Once the above are complete, your **14-day free trial** starts automatically and the panel unlocks. You get a welcome email with the end date.
+  <Step title="Finish activation">
+    Once the above are complete, you enter the panel. The final step depends on your billing mode:
+    - **Subscription:** your **14-day free trial** starts automatically and you get a welcome email with the end date.
+    - **Credits:** the screen shows **"Activation complete"** and you go straight into the panel, running on credits (no trial).
   </Step>
 </Steps>
 
-## Free trial (14 days)
+<Note>
+The activation steps (email, phone, company details, Hosthub, Elorus) are **the same for everyone**, regardless of billing mode. Only the final step differs: starting the trial for subscription vs. finishing directly for credits.
+</Note>
+
+## Free trial (14 days) — subscription accounts
 
 - The trial starts **only** when you complete all activation steps — not at registration.
 - You get full access for 14 days.
