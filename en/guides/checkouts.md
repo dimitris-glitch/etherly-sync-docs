@@ -50,6 +50,14 @@ If a Hosthub booking has a `##sync-skip` note, the system **automatically pauses
 Useful if you want to pause document issuance for a booking directly from Hosthub.
 </Tip>
 
+## Billing contact (Business Contact)
+
+Checkouts that issue an **invoice** require a **billing contact** — the _Business Contact (Required for Invoice)_ field in the checkout's expanded row. Click the field to open the search and pick a contact from Elorus.
+
+<Tip>
+If the checkout **already has** a saved contact and you opened the search by mistake, click **Cancel** inside the search panel to close it without changes — the previous contact is kept.
+</Tip>
+
 ## Bookings spanning two years
 
 If a booking spans two calendar years (e.g., Dec 28, 2024 → Jan 3, 2025), the system handles it automatically: two separate checkouts are created (one per year) with amounts split proportionally per night. Each checkout is invoiced in the correct fiscal year.
