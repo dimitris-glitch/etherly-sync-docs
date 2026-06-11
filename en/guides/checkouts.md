@@ -13,7 +13,7 @@ A **checkout** corresponds to a completed booking from Hosthub — a guest stay 
 |--------|-------|---------|----------------|
 | `NEEDS_SETUP` | 🟡 Yellow | Property missing required configuration | Complete property setup |
 | `READY` | 🟢 Green | Ready to invoice | Send, or wait for auto-invoicing |
-| `SENT` | 🔵 Blue | Documents issued successfully | None |
+| `SENT` | 🔵 Blue | Documents issued successfully — shown as **“Invoiced”** | None |
 | `SENT_WITH_ERRORS` | 🟠 Orange | Accommodation document and payment receipt OK, climate fee failed | Click **Retry** to re-attempt the failed step |
 | `WAITING_MYDATA_FINALIZATION` | 🟡 Yellow | Documents created — myDATA has not yet indexed the invoice for fee linking | Automatic retry in progress (up to ~24h) — no action required |
 | `NEEDS_MANUAL_REVIEW` | 🟠 Orange | myDATA finalization did not complete after multiple attempts | Check in Elorus and retry manually |
@@ -57,7 +57,7 @@ Checkouts that issue an **invoice** require a **billing contact** — the _Busin
 To change an **already saved** contact, click **Change**: the search opens **without deleting** the existing contact. The new contact is saved only when you select it — if saving fails, the search stays open and the previous contact remains untouched.
 
 <Tip>
-If you opened the search by mistake, click **Cancel** inside the search panel to close it without changes — the previous contact is kept.
+If you opened the search by mistake, the previous contact appears as an option below the search field — select it to keep it unchanged. The suggestion hides once you start typing and reappears if you clear the text.
 </Tip>
 
 ## Bookings spanning two years
