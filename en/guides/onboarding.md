@@ -1,6 +1,6 @@
 ---
 title: "Account activation & Free trial"
-description: "The activation steps required before entering the panel, and how the 14-day free trial works."
+description: "The activation steps required before entering the panel, and how the free trial works."
 ---
 
 # Account activation & Free trial
@@ -27,8 +27,8 @@ To get started with Etherly Sync, you complete a few quick activation steps. You
   </Step>
   <Step title="Finish activation">
     Once the above are complete, you enter the panel. The final step depends on your billing mode:
-    - **Subscription:** your **14-day free trial** starts automatically and you get a welcome email with the end date.
-    - **Credits:** the screen shows **"Activation complete"** and you go straight into the panel, running on credits (no trial).
+    - **Subscription:** your **free trial** starts automatically (the length — typically 14 days — is shown on the activation screen) and you get a welcome email with the end date.
+    - **Credits:** the screen shows **"Activation complete"** and you go straight into the panel, running on credits (no trial). Your account may start with a **credits gift** — you'll see it in the transaction history as "Signup gift".
   </Step>
 </Steps>
 
@@ -36,10 +36,10 @@ To get started with Etherly Sync, you complete a few quick activation steps. You
 The activation steps (email, phone, company details, Hosthub, Elorus) are **the same for everyone**, regardless of billing mode. Only the final step differs: starting the trial for subscription vs. finishing directly for credits.
 </Note>
 
-## Free trial (14 days) — subscription accounts
+## Free trial — subscription accounts
 
 - The trial starts **only** when you complete all activation steps — not at registration.
-- You get full access for 14 days.
+- You get full access for the whole trial (typically 14 days — the exact length and end date are shown on the activation screen and in the welcome email).
 - If you subscribe before it ends, the trial stops and you continue normally.
 - If the trial ends without a subscription, invoice sending is blocked until you subscribe (your data is preserved).
 

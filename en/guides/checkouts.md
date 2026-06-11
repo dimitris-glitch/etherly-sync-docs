@@ -54,8 +54,10 @@ Useful if you want to pause document issuance for a booking directly from Hosthu
 
 Checkouts that issue an **invoice** require a **billing contact** — the _Business Contact (Required for Invoice)_ field in the checkout's expanded row. Click the field to open the search and pick a contact from Elorus.
 
+To change an **already saved** contact, click **Change**: the search opens **without deleting** the existing contact. The new contact is saved only when you select it — if saving fails, the search stays open and the previous contact remains untouched.
+
 <Tip>
-If the checkout **already has** a saved contact and you opened the search by mistake, click **Cancel** inside the search panel to close it without changes — the previous contact is kept.
+If you opened the search by mistake, click **Cancel** inside the search panel to close it without changes — the previous contact is kept.
 </Tip>
 
 ## Bookings spanning two years
