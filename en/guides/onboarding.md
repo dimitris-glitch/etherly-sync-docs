@@ -15,6 +15,8 @@ To get started with Etherly Sync, you complete a few quick activation steps. You
   </Step>
   <Step title="Verify phone">
     Enter your phone number in international format (e.g. `+306900000000`), receive a code by SMS, and enter it to verify.
+
+    If you see "We could not send the verification code", there is a temporary problem delivering the SMS — try again shortly. "Too many attempts" means you requested several codes in a short time; wait a few minutes before retrying.
   </Step>
   <Step title="Company & contact details">
     Fill in your billing details. You can look up your company by **VAT number (ΑΦΜ)** to auto-fill, or enter details as an individual. Add your contact name too.
