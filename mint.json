@@ -53,7 +53,8 @@
         "guides/climate-fee",
         "guides/auto-invoicing",
         "guides/declarations",
-        "guides/aade-connect"
+        "guides/aade-connect",
+        "guides/airbnb"
       ]
     },
     {
@@ -86,7 +87,8 @@
         "en/guides/climate-fee",
         "en/guides/auto-invoicing",
         "en/guides/declarations",
-        "en/guides/aade-connect"
+        "en/guides/aade-connect",
+        "en/guides/airbnb"
       ]
     },
     {
