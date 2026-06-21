@@ -65,7 +65,7 @@
     {
       "version": "Ελληνικά",
       "group": "Εργαλεία",
-      "pages": ["guides/assistant"]
+      "pages": ["guides/assistant", "guides/chrome-extension"]
     },
     {
       "version": "Ελληνικά",
@@ -99,7 +99,7 @@
     {
       "version": "English",
       "group": "Tools",
-      "pages": ["en/guides/assistant"]
+      "pages": ["en/guides/assistant", "en/guides/chrome-extension"]
     },
     {
       "version": "English",
