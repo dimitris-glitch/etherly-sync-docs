@@ -15,8 +15,8 @@ A **checkout** corresponds to a completed booking from Hosthub — a guest stay 
 | `READY` | 🟢 Green | Ready to invoice | Send, or wait for auto-invoicing |
 | `SENT` | 🔵 Blue | Documents issued successfully — shown as **“Invoiced”** | None |
 | `SENT_WITH_ERRORS` | 🟠 Orange | Accommodation document and payment receipt OK, climate fee failed | Click **Retry** to re-attempt the failed step |
-| `WAITING_MYDATA_FINALIZATION` | 🟡 Yellow | Documents created — myDATA has not yet indexed the invoice for fee linking | Automatic retry in progress (up to ~24h) — no action required |
-| `NEEDS_MANUAL_REVIEW` | 🟠 Orange | myDATA finalization did not complete after multiple attempts | Check in Elorus and retry manually |
+| `WAITING_MYDATA_FINALIZATION` | 🟡 Amber — **"Waiting myDATA"** | Accommodation invoice issued — myDATA has not yet indexed it for climate fee linking | Automatic retry in progress (up to ~24h) — no action required |
+| `NEEDS_MANUAL_REVIEW` | 🔴 Red — **"Manual review"** | myDATA finalization did not complete after multiple retries (~24h) | You will receive an email notification. Check in your invoicing application and retry myDATA submission manually. |
 | `ERROR` | 🔴 Red | Send failed entirely | Review error message and retry |
 | `SPLIT` | ⬜ Gray | Booking spanning two calendar years | Not invoiced directly — two separate checkouts are created automatically |
 
