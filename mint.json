@@ -49,6 +49,7 @@
       "pages": [
         "guides/checkouts",
         "guides/properties",
+        "guides/online-check-in",
         "guides/invoicing",
         "guides/climate-fee",
         "guides/auto-invoicing",
@@ -83,6 +84,7 @@
       "pages": [
         "en/guides/checkouts",
         "en/guides/properties",
+        "en/guides/online-check-in",
         "en/guides/invoicing",
         "en/guides/climate-fee",
         "en/guides/auto-invoicing",
