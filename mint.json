@@ -61,7 +61,7 @@
     {
       "version": "Ελληνικά",
       "group": "Διαχείριση",
-      "pages": ["guides/team", "guides/billing"]
+      "pages": ["guides/team", "guides/cleaning-staff", "guides/billing"]
     },
     {
       "version": "Ελληνικά",
@@ -96,7 +96,7 @@
     {
       "version": "English",
       "group": "Management",
-      "pages": ["en/guides/team", "en/guides/billing"]
+      "pages": ["en/guides/team", "en/guides/cleaning-staff", "en/guides/billing"]
     },
     {
       "version": "English",

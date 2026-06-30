@@ -11,7 +11,11 @@ Online Check-In lets guests submit their details before they arrive at the prope
 
 ## Enabling the feature
 
-Online Check-In is enabled per account by an administrator. Once active, a modal appears with the check-in URL you need to share with guests, along with a **Check-In Settings** tab in Settings and an **Online Check-Ins** entry in the sidebar.
+Online Check-In is enabled from **Settings → Integrations**, in the **Apps** section — click **Enable** on the **Online Check-In** card, the same way you would connect Hosthub, Airbnb, or Elorus. It is not a toggle inside a settings tab; the **Check-In Settings** tab itself only appears after the feature is enabled. Once active, a modal appears with the check-in URL you need to share with guests, along with the **Check-In Settings** tab in Settings and an **Online Check-Ins** entry in the sidebar.
+
+<Note>
+The **Check-In Settings** tab has its own "Notify host when guest completes check-in" toggle under General Settings. That toggle only controls email notifications — it does not enable or disable the feature itself.
+</Note>
 
 ---
 
@@ -141,11 +145,3 @@ As soon as a guest submits the form, an email is automatically sent to **all act
 - A link to the dashboard
 
 Each user can opt out of these notifications in their notification preferences.
-
-### Guest reminder email
-
-For bookings where check-in is still pending, you can send a **manual reminder** to the guest with a link to the check-in form. This option is available from the booking detail view in the dashboard.
-
-<Note>
-The reminder requires a guest email to be on file for the booking, and can only be sent once per hour.
-</Note>
