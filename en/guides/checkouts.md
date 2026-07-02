@@ -32,7 +32,7 @@ You can also trigger a **manual sync** at any time by clicking **Refresh** on th
 
 ## Cancellation after invoicing
 
-If a booking is cancelled **after** its document has already been issued, the checkout does **not** disappear from the list — it stays visible with a red **"Cancelled"** badge, so it stands apart from normal invoiced bookings.
+If a booking is cancelled **after** its document has already been issued, the checkout does **not** disappear from the list — it stays visible with a red **"Cancelled"** badge, so it stands apart from normal invoiced bookings. The **send progress** in the expanded row keeps showing the documents that were already issued (invoice/receipt, payment, climate resilience fee) with their IDs and timestamps — the cancellation does not erase the issuance history.
 
 In this case you automatically receive an **email notification**, because action is required on your side:
 
