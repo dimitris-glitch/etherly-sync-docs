@@ -30,6 +30,23 @@ Etherly Sync syncs automatically with Hosthub at regular intervals. During each 
 
 You can also trigger a **manual sync** at any time by clicking **Refresh** on the **Bookings** page.
 
+## Cancellation after invoicing
+
+If a booking is cancelled **after** its document has already been issued, the checkout does **not** disappear from the list — it stays visible with a red **"Cancelled"** badge, so it stands apart from normal invoiced bookings.
+
+In this case you automatically receive an **email notification**, because action is required on your side:
+
+1. **Issue a credit note** in your invoicing provider (e.g. Elorus) for the document that was already issued.
+2. An **AADE cancellation declaration** may be required — consult your accountant and submit it from the [Declarations](/en/guides/declarations) page.
+
+<Warning>
+**Automatic final AADE declaration** skips cancelled bookings — nothing is submitted without your action, because the refund amount needs your confirmation.
+</Warning>
+
+<Note>
+Bookings cancelled **before** a document is issued have no fiscal significance and are not shown in the list.
+</Note>
+
 ## Pause / Resume
 
 Stop auto-invoicing for a checkout without deleting it. Useful when you want certain bookings excluded from automatic processing — they stay in the app and won't be invoiced until you decide how to handle them.

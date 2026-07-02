@@ -62,6 +62,10 @@ Enable **automatic final declaration** from the Declarations page (toggle above 
 Automatic declaration applies only to bookings invoiced **after** it is enabled — it does not retroactively process older bookings.
 </Note>
 
+<Warning>
+Bookings **cancelled after invoicing** are skipped by automatic declaration. A cancellation declaration requires the refund amount (set by you) and can only be submitted manually — consult your accountant.
+</Warning>
+
 ## Guest identification
 
 Each declaration can include the guest's identification details. Click the **pencil icon** in the "Identification" column to edit.

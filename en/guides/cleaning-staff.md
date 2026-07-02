@@ -5,7 +5,7 @@ description: 'Manage your cleaners, assign them to properties, and track which p
 
 ## What it is
 
-Cleaning Staff lets the host manage cleaners, assign them to properties, and track which properties are clean and ready for the next guest. Cleaners don't need an account on the main application — they log into a separate, mobile-friendly dashboard.
+Cleaning Staff is part of the **Online Check-In** feature. It lets the host manage cleaners, assign them to properties, and track which properties are clean and ready for the next guest. Cleaners don't need an account on the main application — they log into a separate, mobile-friendly dashboard.
 
 ---
 
@@ -18,8 +18,8 @@ There is no enable switch. The feature activates automatically as soon as you ad
 ## Adding a cleaner
 
 <Steps>
-  <Step title="Go to Check-In Settings">
-    **Settings → Check-In Settings → "Cleaning Team Management" sub-tab**
+  <Step title="Go to Online Check-In">
+    **Settings → Online Check-In → "Cleaning Team Management" sub-tab**
   </Step>
   <Step title="Add the cleaner">
     Click **"Add Cleaner"** and fill in **name** and **phone number**. The phone number must be unique within your account.

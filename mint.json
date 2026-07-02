@@ -50,6 +50,7 @@
         "guides/checkouts",
         "guides/properties",
         "guides/online-check-in",
+        "guides/cleaning-staff",
         "guides/invoicing",
         "guides/climate-fee",
         "guides/auto-invoicing",
@@ -61,7 +62,7 @@
     {
       "version": "Ελληνικά",
       "group": "Διαχείριση",
-      "pages": ["guides/team", "guides/cleaning-staff", "guides/billing"]
+      "pages": ["guides/team", "guides/billing"]
     },
     {
       "version": "Ελληνικά",
@@ -85,6 +86,7 @@
         "en/guides/checkouts",
         "en/guides/properties",
         "en/guides/online-check-in",
+        "en/guides/cleaning-staff",
         "en/guides/invoicing",
         "en/guides/climate-fee",
         "en/guides/auto-invoicing",
@@ -96,7 +98,7 @@
     {
       "version": "English",
       "group": "Management",
-      "pages": ["en/guides/team", "en/guides/cleaning-staff", "en/guides/billing"]
+      "pages": ["en/guides/team", "en/guides/billing"]
     },
     {
       "version": "English",

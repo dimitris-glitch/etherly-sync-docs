@@ -119,14 +119,27 @@ Navigate to **Online Check-Ins** in the sidebar to view all submissions.
 
 | Filter | Description |
 |---|---|
+| **Today** | Arrivals and departures for the selected day. Use the navigation arrows or the calendar next to the title to view any other day, not just today. |
+| **Pending** | Bookings where the guest hasn't started the check-in form yet |
+| **In Progress** | Bookings where the guest has started the form but hasn't submitted it yet |
 | **Completed** | Bookings with a submitted check-in |
-| **Pending** | Bookings where the check-in window is open but not yet submitted |
-| **Upcoming** | Today's and future bookings (submitted or pending) |
-| **All** | All bookings with no date filter |
+| **Upcoming** | Bookings with an arrival date from today onward, regardless of check-in status |
+
+<Note>
+There is no "All" filter — the **Today** tab gives the full picture for a given day, while the other tabs filter by status or date.
+</Note>
+
+### Search
+
+Above the list there's a search field that matches on **guest name, booking code, and property name**. The **Today** tab doesn't support search; typing while on that tab automatically switches the view to **Pending**.
+
+### Cleaning status
+
+Each booking row shows a ✨ indicator with a timestamp if the property has already been marked clean, with a tooltip showing who marked it. The detail view for a booking (**View**) has a separate **Cleaning** section with the current status, who marked it and when, and the full action history. See the [Cleaning Staff guide](/en/guides/cleaning-staff) for details.
 
 ### Booking detail
 
-Click **View** to see the full submission: phone, country, identification type and number (decrypted), arrival time, additional guests, requests, and notes.
+Click **View** to see the full submission: phone, country, identification type and number (decrypted), arrival time, additional guests, requests, notes, and cleaning status.
 
 ### Sidebar badge
 
