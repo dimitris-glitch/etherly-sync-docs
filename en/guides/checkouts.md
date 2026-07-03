@@ -36,11 +36,11 @@ If a booking is cancelled **after** its document has already been issued, the ch
 
 In this case you automatically receive an **email notification**, because action is required on your side:
 
-1. **Issue a credit note** in your invoicing provider (e.g. Elorus) for the document that was already issued.
-2. An **AADE cancellation declaration** may be required — consult your accountant and submit it from the [Declarations](/en/guides/declarations) page.
+1. **AADE declaration**: according to the official procedure, cancelled bookings can be declared as cancelled to AADE with a **zero amount** (full refund to the guest) or with the **partial amount you collected**, if your cancellation policy imposed a partial charge. On the [Declarations](/en/guides/declarations) page you set the amount and submit the declaration, or skip it.
+2. **Credit note**: if you wish to issue a credit note for the document that was already issued, you will need to do so in your invoicing provider (e.g. Elorus).
 
 <Warning>
-**Automatic final AADE declaration** skips cancelled bookings — nothing is submitted without your action, because the refund amount needs your confirmation.
+**Automatic final AADE declaration** skips cancelled bookings — nothing is submitted without your action, because the declared amount needs your confirmation.
 </Warning>
 
 <Note>

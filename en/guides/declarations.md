@@ -63,8 +63,26 @@ Automatic declaration applies only to bookings invoiced **after** it is enabled 
 </Note>
 
 <Warning>
-Bookings **cancelled after invoicing** are skipped by automatic declaration. A cancellation declaration requires the refund amount (set by you) and can only be submitted manually — consult your accountant.
+Bookings **cancelled after invoicing** are skipped by automatic declaration — even with automatic final declaration enabled, they will **never be sent automatically** to AADE.
 </Warning>
+
+### Cancelled bookings
+
+Cancelled invoiced bookings stay in the pending declarations list with an orange **"Cancelled"** badge, waiting for your action.
+
+According to the official procedure, cancelled bookings can be declared as **cancelled** to AADE:
+
+- with a **zero amount** — when the guest was not charged (full refund), or
+- with the **partial amount you collected** — if your cancellation policy imposed a partial charge.
+
+You have two options:
+
+1. **Submit a cancellation declaration**: set the amount in the amount column (0 means a full refund to the guest) and submit. Consult your accountant if you are unsure about the correct amount.
+2. **Skip**: if you do not wish to submit a declaration, skip it. The booking stays visible in the "Today" tab until the end of the day marked as "Skipped", and from the next day it moves to the **"History"** tab, where you can remove the skip if you change your mind.
+
+<Note>
+If you wish to issue a **credit note** for the document that was already issued, you will need to do so in your invoicing provider (e.g. Elorus) — credit notes are not issued from within the app.
+</Note>
 
 ## Guest identification
 
