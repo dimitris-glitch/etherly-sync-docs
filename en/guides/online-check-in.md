@@ -21,23 +21,33 @@ The **Check-In Settings** tab has its own "Notify host when guest completes chec
 
 ## Check-In Link
 
-The check-in link follows this format:
-
-```
-https://app.etherly.app/{tenantId}/checkin/{booking_id}
-```
-
-Replace `{booking_id}` with the **external booking ID** (e.g. the ID provided by Airbnb or your booking platform). The link is also available to copy from the **Check-In Settings** tab and from the bookings list in the dashboard.
+Copy the check-in link from **Settings → Online Check-In** (or from the bookings list in the dashboard). The link ends in `{booking_id}` — the only part that changes per booking: replace it with the **external booking ID** (the ID provided by Airbnb, Booking.com, or your booking platform).
 
 <Note>
-The check-in link requires no login. It is public but rate-limited, and only valid until 23:00 on the check-in day.
+The check-in link requires no login — guests open it directly. It is valid until 23:00 on the check-in day.
 </Note>
+
+### Automatic delivery via your booking platform (recommended)
+
+The most practical way to get the link to every guest is a **scheduled message (template)** in your booking platform (Airbnb, Booking.com, etc.):
+
+<Steps>
+  <Step title="Create a message template">
+    In your booking platform, create a scheduled message that is sent automatically **2–3 days before arrival**, inviting the guest to complete their online check-in via the link.
+  </Step>
+  <Step title="Use the platform's dynamic booking variable">
+    Platforms support **dynamic variables** in templates (e.g. confirmation/booking code). Put the platform's booking variable in place of `{booking_id}` — this way every guest receives their own link and Etherly automatically knows which booking the check-in belongs to.
+  </Step>
+  <Step title="Test with a real booking">
+    Send the message on a test or real booking and open the link — the check-in form should load with that booking's details.
+  </Step>
+</Steps>
 
 ---
 
 ## Access window
 
-The form is accessible from any point in the future up to **23:00 on the check-in date**. There is no minimum lead time — guests can complete their check-in at any time before arrival.
+The form is accessible from any point in the future up to **23:00 on the check-in date** — guests can complete their check-in at any time before arrival, even right after booking.
 
 Outside the window, or if the check-in has already been submitted, guests see an appropriate message.
 
@@ -58,7 +68,7 @@ Go to **Settings → Check-In Settings** to configure each property individually
 
 ### Request options
 
-Define up to 20 request options that guests can select (e.g. "Baby Cot", "Parking Information"). Each request is automatically AI-translated into 6 languages so guests see it in their own language. If the list is empty, the app defaults are used.
+Define up to 20 request options that guests can select (e.g. "Baby Cot", "Parking Information"). Each request is automatically translated into 6 languages so guests see it in their own language.
 
 ### Form preview
 
@@ -105,9 +115,8 @@ The form automatically saves the guest's progress on their device. If a guest cl
 
 ## Security & privacy
 
-- The identification number (Tax ID / Passport / National ID) is **encrypted** with AES-256-GCM before being stored in the database.
+- The identification number (Tax ID / Passport / National ID) is stored **encrypted**.
 - On the public form, the guest's name and phone are shown **partially masked** (e.g. `Di****is K*****is`).
-- Rate limiting: 20 GET/min per IP, 5 POST/10 min per IP, 3 POST/hour per booking.
 
 ---
 
@@ -126,12 +135,12 @@ Navigate to **Online Check-Ins** in the sidebar to view all submissions.
 | **Upcoming** | Bookings with an arrival date from today onward, regardless of check-in status |
 
 <Note>
-There is no "All" filter — the **Today** tab gives the full picture for a given day, while the other tabs filter by status or date.
+The **Today** tab gives the full picture for a given day, while the other tabs filter by status or date.
 </Note>
 
 ### Search
 
-Above the list there's a search field that matches on **guest name, booking code, and property name**. The **Today** tab doesn't support search; typing while on that tab automatically switches the view to **Pending**.
+Above the list there's a search field that matches on **guest name, booking code, and property name**. Search works on the status tabs; typing while on the **Today** tab automatically switches the view to **Pending**, where the search is applied.
 
 ### Cleaning status
 

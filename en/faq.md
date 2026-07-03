@@ -44,7 +44,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   </Accordion>
 
   <Accordion title="Can I cancel a document that was issued by mistake?">
-    Document cancellation is done **directly in Elorus** — it's not available through Etherly Sync. After cancelling in Elorus, the booking in Etherly Sync remains in `SENT` status. Contact support if you need the status reset for re-issuing.
+    Document cancellation is done **directly in your invoicing platform** (e.g. Elorus). After cancelling there, the booking in Etherly Sync remains in `SENT` status. Contact support if you need the status reset for re-issuing.
   </Accordion>
 
   <Accordion title="A booking was cancelled after an invoice was already issued. What do I do?">

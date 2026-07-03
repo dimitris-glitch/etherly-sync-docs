@@ -11,7 +11,7 @@ Cleaning Staff is part of the **Online Check-In** feature. It lets the host mana
 
 ## Activation
 
-There is no enable switch. The feature activates automatically as soon as you add the **first cleaner**.
+The feature activates automatically as soon as you add the **first cleaner** — no extra setup needed.
 
 ---
 
@@ -90,7 +90,6 @@ Every cleaning action — marking a property "Ready" by the cleaner, undoing it,
 
 ## Security & privacy
 
-- Cleaner login uses SMS OTP; no password is stored by the application.
-- Rate limiting on public routes: **5 SMS requests/hour per IP** for sending a code, **10 OTP verifications/10 min per IP**.
+- Cleaner login works exclusively with a **one-time code via SMS** (OTP).
 - Every cleaner action (e.g. marking a property ready) re-validates that the property is actually assigned to them.
-- No automatic email notifications are sent for cleaning tasks; the only notification is the dashboard-link SMS, which the host sends manually.
+- Cleaners are notified via the SMS containing their dashboard link — the host sends it whenever they choose.

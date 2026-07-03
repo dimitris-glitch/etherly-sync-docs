@@ -45,7 +45,7 @@ The system **syncs** bookings from Hosthub on a regular schedule, **verifies** t
     Automatic calculation based on property category and season. For bookings spanning two seasons, separate documents are created per season.
   </Card>
   <Card title="Secure & Reliable" icon="shield-check">
-    Encrypted API key storage (AES-256-GCM), duplicate prevention, automatic retries on failures.
+    Encrypted API key storage, duplicate prevention, automatic retries on failures.
   </Card>
 </CardGroup>
 

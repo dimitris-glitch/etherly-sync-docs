@@ -5,7 +5,7 @@ description: "How the Climate Resilience Fee is calculated, which property categ
 
 # Climate Resilience Fee
 
-The **Climate Resilience Fee** (Τέλος Κλιματικής Ανθεκτικότητας) is a Greek tax obligation charged per night of stay in short-term rentals. The amount depends on:
+The **Climate Resilience Fee** (Τέλος Ανθεκτικότητας στην Κλιματική Κρίση) is a Greek tax obligation charged per night of stay in short-term rentals. The amount depends on:
 
 1. **Property category** — type and characteristics
 2. **Season** — winter or summer

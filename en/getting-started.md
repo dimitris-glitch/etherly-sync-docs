@@ -58,7 +58,7 @@ Select the **"Connect Elorus"** step.
 </Steps>
 
 <Warning>
-Your Elorus API key is stored **encrypted** (AES-256-GCM) and is never displayed in plain text after saving.
+Your Elorus API key is stored **encrypted** and is never displayed in plain text after saving.
 </Warning>
 
 ---
