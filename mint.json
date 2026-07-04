@@ -67,7 +67,7 @@
     {
       "version": "Ελληνικά",
       "group": "Εργαλεία",
-      "pages": ["guides/assistant", "guides/chrome-extension"]
+      "pages": ["guides/assistant", "guides/chrome-extension", "guides/etherly-insights"]
     },
     {
       "version": "Ελληνικά",
@@ -103,7 +103,7 @@
     {
       "version": "English",
       "group": "Tools",
-      "pages": ["en/guides/assistant", "en/guides/chrome-extension"]
+      "pages": ["en/guides/assistant", "en/guides/chrome-extension", "en/guides/etherly-insights"]
     },
     {
       "version": "English",
