@@ -29,6 +29,8 @@ The feature activates automatically as soon as you add the **first cleaner** —
   </Step>
   <Step title="Send the dashboard link">
     Click the SMS icon next to the cleaner to send them their personal dashboard link. Sending is always manual — it is never sent automatically.
+
+    The link itself is shown next to the button with a copy option: if the SMS doesn't arrive, you can copy it and share it any way you like (email, a message from your own phone, etc.). Each cleaner's link is personal, short, and contains no personal data — and it keeps working even if you later update the cleaner's phone number.
   </Step>
 </Steps>
 
@@ -60,6 +62,8 @@ On their dashboard, the cleaner sees their cleaning tasks:
 - **Manual tasks** — any the host has scheduled (see below)
 
 For each task they see: property name, date, arrival/departure time, guest count, number of nights, and any task notes. They can mark a property as **"Ready"** or undo their own mark.
+
+The "Ready" mark applies to each task's specific day — every day is marked independently. Completed tasks from previous days stay visible as "Ready" for the rest of the day so the cleaner can see their action was recorded; the list clears them on a pull-to-refresh or when the day changes.
 
 <Warning>
 Cleaners **never see** guest details — name, phone number, or identification number. They only see information relevant to the property and the cleaning task.
