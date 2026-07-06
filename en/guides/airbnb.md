@@ -14,7 +14,7 @@ Etherly Sync receives Airbnb bookings automatically via two mechanisms:
 
 ### 1. Enable
 
-Go to **Settings → Airbnb** and enable the **«Email Sync»** toggle for your connection. The app gives you a unique inbound address (e.g. `airbnb+xxxxx@app.etherly.app`).
+Go to **Settings → Airbnb → Email Sync** and enable the **«Email Sync»** toggle for your connection. The app gives you a unique inbound address (e.g. `airbnb+xxxxx@app.etherly.app`).
 
 ### 2. Configure Gmail
 
