@@ -23,6 +23,30 @@ For every checkout that is sent, Etherly Sync automatically creates documents in
   </Card>
 </CardGroup>
 
+## Document Description
+
+The text shown on the service line of the Accommodation Document (e.g. "John Doe | 01/07/2026 → 03/07/2026 | City Vibes Loft") is generated from a template, which you configure under **Settings → Document Description**.
+
+Even if you haven't customized anything, an effective template is always in use: either the one you've set, or the built-in default:
+
+```
+@name @lastname | @checkindate → @checkoutdate | @accommodationname
+```
+
+**Available variables:**
+- `@name` — Guest first name
+- `@lastname` — Guest last name
+- `@checkindate` — Check-in date
+- `@checkoutdate` — Check-out date
+- `@accommodationname` — Property name
+- `@nights` — Number of nights
+- `@amount` — Total amount
+- `@currency` — Currency
+- `@channel` — Booking platform (e.g. Airbnb, Booking.com)
+- `@bookingid` — Booking reference
+
+The settings page shows a live preview of the final text using sample data, so you can see exactly how the description will appear on your documents.
+
 ## myDATA submission
 
 Every document issued in Elorus is **automatically submitted** to myDATA, provided the option is enabled in settings.
