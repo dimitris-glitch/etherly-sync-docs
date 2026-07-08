@@ -67,7 +67,12 @@
     {
       "version": "Ελληνικά",
       "group": "Εργαλεία",
-      "pages": ["guides/assistant", "guides/chrome-extension", "guides/etherly-insights"]
+      "pages": [
+        "guides/assistant",
+        "guides/chrome-extension",
+        "guides/etherly-insights",
+        "guides/data-access-api"
+      ]
     },
     {
       "version": "Ελληνικά",
@@ -103,7 +108,12 @@
     {
       "version": "English",
       "group": "Tools",
-      "pages": ["en/guides/assistant", "en/guides/chrome-extension", "en/guides/etherly-insights"]
+      "pages": [
+        "en/guides/assistant",
+        "en/guides/chrome-extension",
+        "en/guides/etherly-insights",
+        "en/guides/data-access-api"
+      ]
     },
     {
       "version": "English",

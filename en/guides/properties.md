@@ -85,6 +85,27 @@ In **Settings → "Organizations" tab**, for each Elorus organization you define
 
 The available options are **loaded dynamically from Elorus** and correspond to the document types you have created for that organization (e.g. "Service Invoice", "Retail Receipt", etc.). The selection applies to every document issued automatically for properties under that organization.
 
+## Location & Coordinates
+
+On each property card, under **"Location & Details"**, you can set the city, country, timezone and — optionally — the property's **coordinates**, its **property type** (villa, apartment, studio etc.), its **maximum guests**, **bedrooms** and **bathrooms**.
+
+The more complete the profile, the more precise the comparisons: with coordinates, guests, bedrooms and bathrooms filled in, Etherly Insights can show where your property sits against **comparable** listings in its area (rate, occupancy and revenue as a position in the distribution).
+
+Type and capacity enable comparisons against similar-profile listings in your area. For properties connected via Hosthub, capacity is filled in automatically by sync — the property type is always set by you.
+
+Coordinates enable a more precise market analysis for the property's area (e.g. comparing occupancy against your neighborhood instead of the whole city).
+
+**How to find them in Google Maps:**
+
+1. Open [Google Maps](https://maps.google.com) and locate your property.
+2. **Right-click** exactly on the property's spot.
+3. Click the coordinates shown at the top of the menu — they are copied automatically.
+4. Paste them into the **"Coordinates"** field (e.g. `37.9838, 23.7275`). Saving happens automatically.
+
+<Note>
+For properties connected via Hosthub, coordinates are filled in **automatically** from the property's details in Hosthub during sync. Anything you enter manually is preserved — sync never overwrites it.
+</Note>
+
 ## Enabling / Disabling a property
 
 In **Settings → Advanced**, under **"Property Invoicing"**, use the toggle next to the property.

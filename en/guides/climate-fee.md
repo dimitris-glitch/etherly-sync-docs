@@ -75,6 +75,12 @@ If a property has no fee category configured:
 - The booking stays in `NEEDS_SETUP` or `ERROR`
 - Configure the category and **resend** the booking
 
+## Zero-amount bookings
+
+When the guest has paid nothing (e.g. a free stay or a date block synced with a zero amount from the channel), Etherly Sync automatically skips the booking: no climate resilience fee is calculated and no documents are issued.
+
+If the booking was actually paid (e.g. outside the platform), set the real amount via the **booking override** (pencil icon on the booking row) — document issuing then proceeds normally with the new amount.
+
 ## Updating fee amounts
 
 If the law changes:

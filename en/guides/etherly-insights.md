@@ -1,11 +1,16 @@
 ---
 title: 'Etherly Insights'
-description: 'Give AI tools like Claude, ChatGPT, or Gemini access to your booking and revenue data.'
+description: 'Give AI tools like Claude, ChatGPT, or Grok access to your booking and revenue data.'
 ---
 
 ## What is Etherly Insights
 
-Etherly Insights lets AI tools (Claude, ChatGPT, Gemini, and anything else that supports MCP or OpenAPI) read your booking and revenue data, so you can ask questions like "How much revenue did I make last month?" or "Find the booking for John Smith" directly in your AI tool of choice.
+Etherly Insights lets AI tools (Claude, ChatGPT, Grok, and anything else that supports MCP) read your booking and revenue data, so you can ask questions like "How much revenue did I make last month?" or "Find the booking with ID HM-12345" directly in your AI tool of choice.
+
+<Note>
+Looking for programmatic access to your data (REST/OpenAPI, no AI tool involved)? See the
+**"Data Access (API)"** guide.
+</Note>
 
 <Note>
 Etherly Insights is **strictly read-only**. No AI tool can create, modify, or delete data through this connection.
@@ -27,7 +32,8 @@ colleague.
 - **Only your data**: Each connection sees exclusively your own business's properties,
   bookings, and revenue.
 - **Multiple connections**: You can connect more than one AI tool at the same time (e.g. Claude
-  Desktop and ChatGPT), each with its own key, and manage or revoke them independently.
+  Desktop and ChatGPT), each as a separate connected app, and manage or disconnect them
+  independently.
 
 ### Example questions
 
@@ -40,7 +46,7 @@ colleague.
 
 ## Guest privacy
 
-Guest personal details are **never** shared through Etherly Insights: name, email, phone, and identification number never appear in the results. Only non-identifying fields are allowed (nights, amounts, booking channel, guest country, and nationality derived from the phone's country code).
+Guest personal details are **never** shared through Etherly Insights: name, email, phone, and identification number never appear in the results. Only non-identifying fields are allowed (nights, amounts, booking channel, and guest country of origin — derived from the phone's country code, not actual nationality).
 
 ---
 
@@ -53,31 +59,24 @@ Guest personal details are **never** shared through Etherly Insights: name, emai
   </Step>
   <Step title="Enable the feature">
     Read the short consent notice in the popup and click **"Enable"**. Once enabled, the
-    **"Etherly Insights"** tab appears permanently in the Settings menu, and you can click
-    **"Configure"** in the same popup to continue.
-  </Step>
-  <Step title="Create an API key">
-    On the **Etherly Insights** tab, click **"New key"**, give it a label (e.g. "Claude
-    Desktop"), and click **"Create"**.
-
-    <Warning>
-    The key is shown **only once**. Copy it immediately — you won't be able to see it in full again.
-    </Warning>
+    **"Etherly Insights"** tab appears permanently in the Settings menu, with your **MCP
+    endpoint** and the list of connected apps.
   </Step>
 </Steps>
+
+<Note>
+You can skip this step if you prefer — approving a connection via Claude.ai, Grok, or ChatGPT
+(below) enables Etherly Insights automatically.
+</Note>
 
 ---
 
 ## Connecting an AI tool
 
-On the same page you'll find two endpoints:
+On the **Etherly Insights** tab you'll find your **MCP endpoint** — the URL you need to connect
+any AI tool that supports MCP.
 
-| Endpoint | Use |
-|---|---|
-| **MCP endpoint** (`/api/insights/mcp`) | For tools that support MCP (e.g. Claude Desktop, custom connectors) |
-| **OpenAPI document** (`/api/insights/v1/openapi.json`) | For tools that connect via REST/OpenAPI |
-
-### Connecting via Claude.ai (OAuth) — no API key needed
+### Connecting via Claude.ai (OAuth)
 
 Claude.ai's **"Add custom connector"** feature only supports OAuth, not a raw API key. To connect it:
 
@@ -97,9 +96,8 @@ Claude.ai's **"Add custom connector"** feature only supports OAuth, not a raw AP
     account, then click **"Allow"** to grant access.
   </Step>
   <Step title="Done">
-    The connection appears in **Settings → Etherly Insights** alongside any manually-created
-    API keys, labeled **"Connected app"**, with a **"Connected since"** date and its own
-    disconnect button.
+    The connection appears in **Settings → Etherly Insights** in the "Connected apps" list,
+    with a **"Connected since"** date and its own disconnect button.
   </Step>
 </Steps>
 
@@ -108,7 +106,7 @@ If Etherly Insights wasn't enabled yet, approving the Claude.ai connection enabl
 automatically — there's no separate manual "Enable" step first.
 </Note>
 
-### Connecting via Grok (OAuth) — no API key needed
+### Connecting via Grok (OAuth)
 
 <Steps>
   <Step title="Add the connector">
@@ -123,12 +121,11 @@ automatically — there's no separate manual "Enable" step first.
     and approve access.
   </Step>
   <Step title="Done">
-    The connection appears in **Settings → Etherly Insights** alongside any other keys or
-    connected apps.
+    The connection appears in **Settings → Etherly Insights** in the "Connected apps" list.
   </Step>
 </Steps>
 
-### Connecting via ChatGPT (OAuth) — no API key needed
+### Connecting via ChatGPT (OAuth)
 
 <Steps>
   <Step title="Enable Developer mode">
@@ -149,16 +146,9 @@ automatically — there's no separate manual "Enable" step first.
     account and approve access.
   </Step>
   <Step title="Done">
-    The connection appears in **Settings → Etherly Insights** alongside any other keys or
-    connected apps.
+    The connection appears in **Settings → Etherly Insights** in the "Connected apps" list.
   </Step>
 </Steps>
-
-### Connecting anything else (manual API key)
-
-For `mcp-remote`-based local configs, or other REST/OpenAPI tools, create an API key as
-described above and use it as a **Bearer token** in the `Authorization` header when setting
-up the connection in your AI tool.
 
 ---
 
@@ -196,10 +186,10 @@ right one. The table below shows what you can ask about.
 
 | Tool | Description |
 |---|---|
-| **booking-search** | Search for a booking by guest name or booking id |
+| **booking-search** | Find a booking by booking id, or by a partial guest name (matches are found by name, but the guest's name is never shown in the results — see Guest privacy below) |
 | **checkin-completion-status** | See which upcoming guests have completed Online Check-In |
 | **arrivals-departures** | Who's arriving/departing in a date range, flagging same-day checkout+checkin turnovers |
-| **guest-nationality-mix** | Breakdown of guest nationality for a date range |
+| **guest-nationality-mix** | Breakdown of guest country of origin (from phone country code) for a date range |
 | **list-properties** | List of your properties (name, channel, location) |
 
 ### Operations
@@ -209,14 +199,26 @@ right one. The table below shows what you can ask about.
 | **operational-backlog** | Counts of bookings pending invoicing, cancelled, paused, long-stay, or needing manual review |
 | **cleaning-readiness** | Which properties are ready for a given day, with overdue and upcoming cleaning tasks |
 
+### Local market
+
+| Tool | Description |
+|---|---|
+| **market-snapshot** | Snapshot of the short-term-rental market in your area: market occupancy, average daily rate and active listings |
+| **market-comparison** | Compare your own occupancy and average rate against the local market for a month — against listings of similar capacity when known (e.g. villa vs villas), and for future months both sides are compared on bookings confirmed so far |
+| **property-market-position** | Where one property sits against comparable listings in its area (same size profile): which range of the distribution its rate, occupancy and revenue fall into — requires coordinates, maximum guests, bedrooms and bathrooms to be filled in on the property card |
+
+<Note>
+Market tools rely on an external market-data source and have a daily usage allowance per account. Area precision improves when your properties have coordinates — see the "Property Configuration" guide.
+</Note>
+
 More tools will be added gradually.
 
 ---
 
 ## Usage limits
 
-- **Daily limit**: up to 500 calls/day in total across all your keys and connected apps
-  combined. The **Etherly Insights** tab shows a bar with today's usage against this limit.
+- **Daily limit**: up to 500 calls/day in total across all your connected apps combined. The
+  **Etherly Insights** tab shows a bar with today's usage against this limit.
 - A per-minute rate limit also applies for security reasons.
 
 If a limit is exceeded, the AI tool will receive an error and should wait before retrying.
@@ -225,11 +227,11 @@ If a limit is exceeded, the AI tool will receive an error and should wait before
 
 ## Revoking access
 
-- To revoke a specific API key, or disconnect an OAuth-connected app (e.g. Claude), click the
-  delete icon next to it in the list — both kinds are managed from the same place.
-- To fully disable Etherly Insights, click **"Disable"** — all active keys and connected apps
-  are revoked immediately.
+- To disconnect an app (e.g. Claude), click the delete icon next to it in the "Connected apps"
+  list.
+- To fully disable Etherly Insights, click **"Disable"** — all connected apps are disconnected
+  immediately.
 
 <Note>
-Revocation takes effect immediately — there is no delay or cache that would let a revoked key or disconnected app keep working.
+Revocation takes effect immediately — there is no delay or cache that would let a disconnected app keep working.
 </Note>
