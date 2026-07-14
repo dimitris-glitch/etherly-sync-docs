@@ -54,6 +54,17 @@ Login is via SMS verification code only — not a magic link. The session lasts 
 
 ---
 
+## Installing on the home screen
+
+The tasks page can be installed as an app on the cleaner's phone, so they can open it with one tap from the home screen — no need to type an address.
+
+- **On Android (Chrome):** after logging in, a message with an **"Install"** button appears — one tap adds the app to the home screen.
+- **On iPhone/iPad (Safari):** instructions are shown: tap the **Share** button, then **"Add to Home Screen"**.
+
+The message can be closed with the "X" and won't appear again on the same device. When the app is opened from the home screen, the message doesn't appear at all.
+
+---
+
 ## What the cleaner sees
 
 On their dashboard, the cleaner sees their cleaning tasks:
@@ -68,6 +79,21 @@ The "Ready" mark applies to each task's specific day — every day is marked ind
 <Warning>
 Cleaners **never see** guest details — name, phone number, or identification number. They only see information relevant to the property and the cleaning task.
 </Warning>
+
+---
+
+## Notifications for same-day changes
+
+Cleaners can receive notifications on their phone when something changes for **today** on a property assigned to them:
+
+- **New last-minute booking** — a guest arrives today, the property needs to be prepared.
+- **Booking cancellation** — today's arrival or departure was cancelled.
+
+The option lives in the cleaner's **profile** inside the tasks page (profile icon top right → "Notifications for same-day changes"). The cleaner enables it themselves on their device — the browser asks for notification permission the first time.
+
+<Note>
+On iPhone/iPad, notifications work when the app has been added to the home screen (see "Installing on the home screen" above) and is opened from there.
+</Note>
 
 ---
 

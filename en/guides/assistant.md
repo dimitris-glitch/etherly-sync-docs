@@ -1,6 +1,6 @@
 ---
 title: "Etherly Assistant"
-description: "The built-in AI assistant that answers questions, navigates the app, and saves your conversation history."
+description: "The built-in AI assistant that answers setup and performance questions, navigates the app, and saves your conversation history."
 ---
 
 # Etherly Assistant
@@ -15,6 +15,10 @@ The **Etherly Assistant** is the built-in AI assistant in Etherly Sync. Click th
 - Check sync status — worker health, last sync time, stuck or failed jobs
 - Look up a booking by guest name or ID and explain why a document was not issued
 - Navigate directly to the relevant settings page when action is needed
+- Answer performance and analytics questions about your properties — revenue, occupancy, ADR/RevPAR, channel profitability, seasonality, cleaning/operational backlog, and comparisons against the local market and competitors
+- When a performance question has no data to show yet, explain why instead of just saying "no bookings" — for example, when a booking channel's first sync is still pending
+- Explain short-term rental industry terminology — PMS, Channel Manager, RevPAR, ADR, Occupancy Rate, and more
+- Offer to connect you with the support team and log your request, if it looks like you need extra help
 
 ## What it cannot do
 

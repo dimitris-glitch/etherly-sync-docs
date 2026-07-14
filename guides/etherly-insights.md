@@ -87,13 +87,13 @@ description: 'Δώστε σε εργαλεία AI όπως το Claude, το Cha
   </Step>
   <Step title="Συμπληρώστε τα στοιχεία">
     Δώστε ένα όνομα (π.χ. «Etherly Insights») και επικολλήστε το URL του **MCP endpoint**
-    (`https://<το-domain-σας>/api/insights/mcp`) στο πεδίο **«Remote MCP server URL»**. Δεν
+    (`https://app.etherly.app/api/insights/mcp`) στο πεδίο **«Remote MCP server URL»**. Δεν
     χρειάζεται να συμπληρώσετε τα προαιρετικά πεδία «OAuth Client ID / Secret» στα Advanced
     settings — αφήστε τα κενά και πατήστε **«Add»**.
   </Step>
   <Step title="Σύνδεση και έγκριση">
     Το Claude ανοίγει μια οθόνη σύνδεσης και συναίνεσης. Συνδεθείτε με τον συνήθη λογαριασμό
-    σας στο hosthub-elorus και πατήστε **«Allow»** για να δώσετε πρόσβαση.
+    σας στο Etherly και πατήστε **«Allow»** για να δώσετε πρόσβαση.
   </Step>
   <Step title="Ολοκληρώθηκε">
     Η σύνδεση εμφανίζεται στις **Ρυθμίσεις → Etherly Insights** στη λίστα «Συνδεδεμένες
@@ -115,11 +115,11 @@ description: 'Δώστε σε εργαλεία AI όπως το Claude, το Cha
   </Step>
   <Step title="Custom connector">
     Στο παράθυρο που ανοίγει, επιλέξτε **«Custom»**, δώστε ένα όνομα (π.χ. «Etherly Insights»)
-    και επικολλήστε το URL του **MCP endpoint** (`https://<το-domain-σας>/api/insights/mcp`).
+    και επικολλήστε το URL του **MCP endpoint** (`https://app.etherly.app/api/insights/mcp`).
   </Step>
   <Step title="Σύνδεση και έγκριση">
     Το Grok ανοίγει μια οθόνη σύνδεσης και συναίνεσης. Συνδεθείτε με τον συνήθη λογαριασμό σας
-    στο hosthub-elorus και εγκρίνετε την πρόσβαση.
+    στο Etherly και εγκρίνετε την πρόσβαση.
   </Step>
   <Step title="Ολοκληρώθηκε">
     Η σύνδεση εμφανίζεται στις **Ρυθμίσεις → Etherly Insights** στη λίστα «Συνδεδεμένες
@@ -139,13 +139,13 @@ description: 'Δώστε σε εργαλεία AI όπως το Claude, το Cha
   </Step>
   <Step title="Σύνδεση και authentication">
     Στο πεδίο **«Connection»** αφήστε επιλεγμένο **«Server URL»** και επικολλήστε το URL του
-    **MCP endpoint** (`https://<το-domain-σας>/api/insights/mcp`). Στο **«Authentication»**
+    **MCP endpoint** (`https://app.etherly.app/api/insights/mcp`). Στο **«Authentication»**
     αφήστε την προεπιλογή **«OAuth»**, επιβεβαιώστε το πλαίσιο **«I understand and want to
     continue»** και πατήστε **«Create»**.
   </Step>
   <Step title="Σύνδεση και έγκριση">
     Το ChatGPT ανοίγει μια οθόνη σύνδεσης και συναίνεσης. Συνδεθείτε με τον συνήθη λογαριασμό
-    σας στο hosthub-elorus και εγκρίνετε την πρόσβαση.
+    σας στο Etherly και εγκρίνετε την πρόσβαση.
   </Step>
   <Step title="Ολοκληρώθηκε">
     Η σύνδεση εμφανίζεται στις **Ρυθμίσεις → Etherly Insights** στη λίστα «Συνδεδεμένες

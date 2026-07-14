@@ -62,7 +62,7 @@ Use your key as a **Bearer token** in the `Authorization` header:
 
 ```bash
 curl -H "Authorization: Bearer eth_data_..." \
-  "https://<your-domain>/api/data-access/v1/business-overview?from=2026-01-01&to=2026-01-31"
+  "https://app.etherly.app/api/data-access/v1/business-overview?from=2026-01-01&to=2026-01-31"
 ```
 
 ---
@@ -79,6 +79,7 @@ The same tools as Etherly Insights — each endpoint corresponds to one tool.
 | **revenue-summary** | Compare bookings, nights, and revenue for this month or week against the previous one |
 | **revenue-breakdown** | Breaks amounts down into gross revenue, taxes/fees, channel commission, and net owner payout |
 | **cancellation-analysis** | Cancellation rate overall and by booking channel, plus the revenue lost to cancellations |
+| **revenue-projection** | Revenue estimate for a future period with fill scenarios for the still-unsold nights |
 
 ### Pricing & occupancy
 
@@ -86,6 +87,7 @@ The same tools as Etherly Insights — each endpoint corresponds to one tool.
 |---|---|
 | **booking-pace** | How far a future period's occupancy has progressed compared to the same period last year |
 | **occupancy** | Occupancy rate, average nightly rate (ADR), and revenue per available room (RevPAR) per property |
+| **listed-rates** | A property's listed prices and minimum stay as shown on the channel, with a weekend/weekday summary |
 
 ### Rankings & comparisons
 
@@ -120,10 +122,19 @@ The same tools as Etherly Insights — each endpoint corresponds to one tool.
 | **market-snapshot** | Snapshot of the short-term-rental market in your area |
 | **market-comparison** | Compare your own occupancy and average rate against the local market for a month |
 | **property-market-position** | Where one property sits against comparable listings in its area |
+| **market-trends** | The local market's monthly trajectory: demand, supply (active listings) and how many days before arrival bookings are made |
+| **competitor-lineup** | The comparable listings around one property (rating, reviews, minimum stay and performance estimates) |
+| **competitor-rates** | Listed prices, availability and minimum stay of specific competitor listings for the upcoming weeks |
 
 <Note>
 Market tools rely on an external market-data source and have a daily usage allowance per account.
 </Note>
+
+### Advisor
+
+| Endpoint | Description |
+|---|---|
+| **etherly-advisor** | The Etherly revenue advisor: takes a question plus results from the other tools and returns grounded pricing and occupancy advice |
 
 ---
 

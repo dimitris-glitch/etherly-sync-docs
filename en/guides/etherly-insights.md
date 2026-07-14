@@ -87,12 +87,12 @@ Claude.ai's **"Add custom connector"** feature only supports OAuth, not a raw AP
   </Step>
   <Step title="Fill in the details">
     Give it a name (e.g. "Etherly Insights") and paste the **MCP endpoint** URL
-    (`https://<your-domain>/api/insights/mcp`) into the **"Remote MCP server URL"** field. You
+    (`https://app.etherly.app/api/insights/mcp`) into the **"Remote MCP server URL"** field. You
     don't need to fill in the optional "OAuth Client ID / Secret" fields under Advanced
     settings — leave them blank and click **"Add"**.
   </Step>
   <Step title="Sign in and approve">
-    Claude opens a sign-in and consent screen. Sign in with your usual hosthub-elorus
+    Claude opens a sign-in and consent screen. Sign in with your usual Etherly
     account, then click **"Allow"** to grant access.
   </Step>
   <Step title="Done">
@@ -114,10 +114,10 @@ automatically — there's no separate manual "Enable" step first.
   </Step>
   <Step title="Custom connector">
     In the dialog that opens, select **"Custom"**, give it a name (e.g. "Etherly Insights"),
-    and paste the **MCP endpoint** URL (`https://<your-domain>/api/insights/mcp`).
+    and paste the **MCP endpoint** URL (`https://app.etherly.app/api/insights/mcp`).
   </Step>
   <Step title="Sign in and approve">
-    Grok opens a sign-in and consent screen. Sign in with your usual hosthub-elorus account
+    Grok opens a sign-in and consent screen. Sign in with your usual Etherly account
     and approve access.
   </Step>
   <Step title="Done">
@@ -137,12 +137,12 @@ automatically — there's no separate manual "Enable" step first.
   </Step>
   <Step title="Set the connection and authentication">
     In the **"Connection"** field, leave **"Server URL"** selected and paste the **MCP
-    endpoint** URL (`https://<your-domain>/api/insights/mcp`). Under **"Authentication"**,
+    endpoint** URL (`https://app.etherly.app/api/insights/mcp`). Under **"Authentication"**,
     leave the default **"OAuth"**, check **"I understand and want to continue"**, and click
     **"Create"**.
   </Step>
   <Step title="Sign in and approve">
-    ChatGPT opens a sign-in and consent screen. Sign in with your usual hosthub-elorus
+    ChatGPT opens a sign-in and consent screen. Sign in with your usual Etherly
     account and approve access.
   </Step>
   <Step title="Done">
