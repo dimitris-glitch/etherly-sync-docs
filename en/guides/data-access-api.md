@@ -87,7 +87,7 @@ The same tools as Etherly Insights — each endpoint corresponds to one tool.
 |---|---|
 | **booking-pace** | How far a future period's occupancy has progressed compared to the same period last year |
 | **occupancy** | Occupancy rate, average nightly rate (ADR), and revenue per available room (RevPAR) per property |
-| **listed-rates** | A property's listed prices and minimum stay as shown on the channel, with a weekend/weekday summary |
+| **listed-rates** | A property's listed prices and minimum stay as shown on the channel, with a weekend/weekday summary. Availability is split out: nights open in the price list vs. nights actually free (open **and** unbooked), after cross-referencing the booking calendar |
 
 ### Rankings & comparisons
 
