@@ -129,17 +129,22 @@ automatically — there's no separate manual "Enable" step first.
 
 <Steps>
   <Step title="Enable Developer mode">
-    In ChatGPT, go to **Settings → Apps** and enable **"Developer mode"**.
+    In ChatGPT, go to **Settings → Plugins** and enable **"Developer mode"**.
   </Step>
-  <Step title="Create a new app">
-    Click **"Create app"**, give it a name (e.g. "Etherly Insights"), and optionally a short
-    description.
+  <Step title="Open the Plugins page">
+    Select **Plugins** from the ChatGPT left-hand menu or go straight to
+    [chatgpt.com/plugins](https://chatgpt.com/plugins), then click **+**.
   </Step>
-  <Step title="Set the connection and authentication">
-    In the **"Connection"** field, leave **"Server URL"** selected and paste the **MCP
-    endpoint** URL (`https://app.etherly.app/api/insights/mcp`). Under **"Authentication"**,
-    leave the default **"OAuth"**, check **"I understand and want to continue"**, and click
-    **"Create"**.
+  <Step title="Fill in the connection details">
+    Provide:
+
+    - **Name** (e.g. "Etherly Insights")
+    - **Description** (short, optional)
+    - Etherly's **MCP server HTTPS endpoint**
+      (`https://app.etherly.app/api/insights/mcp`)
+    - Authentication method: **OAuth**
+
+    Click **Create / Scan Tools**.
   </Step>
   <Step title="Sign in and approve">
     ChatGPT opens a sign-in and consent screen. Sign in with your usual Etherly
@@ -148,7 +153,17 @@ automatically — there's no separate manual "Enable" step first.
   <Step title="Done">
     The connection appears in **Settings → Etherly Insights** in the "Connected apps" list.
   </Step>
+  <Step title="Use it in a chat">
+    Open a new chat and click **+ → More → Developer mode**, then the app name — or just type
+    the name you gave it to find it.
+  </Step>
 </Steps>
+
+<Tip>
+**Quicker way:** instead of the **+**, start your question with `@` followed by the name you
+gave the app — e.g. `@Etherly what's my occupancy for August?`. That way ChatGPT reliably uses
+your Etherly data for that question.
+</Tip>
 
 ---
 

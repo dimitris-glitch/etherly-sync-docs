@@ -131,17 +131,23 @@ description: 'Δώστε σε εργαλεία AI όπως το Claude, το Cha
 
 <Steps>
   <Step title="Ενεργοποίηση Developer mode">
-    Στο ChatGPT, πηγαίνετε στις **Settings → Apps** και ενεργοποιήστε το **«Developer mode»**.
+    Στο ChatGPT, πηγαίνετε στις **Settings → Plugins** και ενεργοποιήστε το
+    **«Developer mode»**.
   </Step>
-  <Step title="Δημιουργία νέας εφαρμογής">
-    Πατήστε **«Create app»**, δώστε ένα όνομα (π.χ. «Etherly Insights») και προαιρετικά μια
-    σύντομη περιγραφή.
+  <Step title="Άνοιγμα της σελίδας Plugins">
+    Επιλέξτε **Plugins** από το αριστερό μενού του ChatGPT ή ανοίξτε απευθείας το
+    [chatgpt.com/plugins](https://chatgpt.com/plugins), και πατήστε το **+**.
   </Step>
-  <Step title="Σύνδεση και authentication">
-    Στο πεδίο **«Connection»** αφήστε επιλεγμένο **«Server URL»** και επικολλήστε το URL του
-    **MCP endpoint** (`https://app.etherly.app/api/insights/mcp`). Στο **«Authentication»**
-    αφήστε την προεπιλογή **«OAuth»**, επιβεβαιώστε το πλαίσιο **«I understand and want to
-    continue»** και πατήστε **«Create»**.
+  <Step title="Στοιχεία σύνδεσης">
+    Συμπληρώστε:
+
+    - **Όνομα** (π.χ. «Etherly Insights»)
+    - **Περιγραφή** (σύντομη, προαιρετική)
+    - Το **HTTPS endpoint του MCP server** του Etherly
+      (`https://app.etherly.app/api/insights/mcp`)
+    - Τρόπος authentication: **OAuth**
+
+    Πατήστε **Create / Scan Tools**.
   </Step>
   <Step title="Σύνδεση και έγκριση">
     Το ChatGPT ανοίγει μια οθόνη σύνδεσης και συναίνεσης. Συνδεθείτε με τον συνήθη λογαριασμό
@@ -151,7 +157,17 @@ description: 'Δώστε σε εργαλεία AI όπως το Claude, το Cha
     Η σύνδεση εμφανίζεται στις **Ρυθμίσεις → Etherly Insights** στη λίστα «Συνδεδεμένες
     εφαρμογές».
   </Step>
+  <Step title="Χρήση σε συνομιλία">
+    Ανοίξτε νέα συνομιλία και πατήστε **+ → More → Developer mode** και μετά το όνομα της
+    εφαρμογής, ή πληκτρολογήστε το όνομα που δώσατε για να τη βρείτε.
+  </Step>
 </Steps>
+
+<Tip>
+**Πιο γρήγορος τρόπος:** αντί για το **+**, γράψτε `@` και το όνομα που δώσατε στην εφαρμογή
+στην αρχή της ερώτησής σας — π.χ. `@Etherly ποια είναι η πληρότητα του Αυγούστου;`. Έτσι το
+ChatGPT χρησιμοποιεί σίγουρα τα δεδομένα του Etherly για τη συγκεκριμένη ερώτηση.
+</Tip>
 
 ---
 
