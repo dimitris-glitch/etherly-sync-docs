@@ -88,8 +88,8 @@ Once a property is configured, its bookings appear with status **READY** (green 
   <Step title="Find a READY booking">
     In **Bookings**, ready bookings are shown with a green status badge.
   </Step>
-  <Step title="Click «Send to Elorus»">
-    Click the **"Send to Elorus"** button next to the booking, or select multiple for bulk sending.
+  <Step title="Click the send button">
+    Click the send button next to the booking — it is named after the invoicing provider set for that property (for example **"Send to Elorus"**). You can also select multiple bookings for bulk sending.
   </Step>
   <Step title="Watch the status update">
     In a few seconds, the status changes to **SENT**. A direct link to the Elorus document appears automatically. If myDATA submission is enabled, the status may briefly show **WAITING_MYDATA_FINALIZATION** while the tax authority registers the document — it will reach **SENT** automatically once finalization completes.
@@ -112,6 +112,24 @@ Under **Settings → Integrations** you'll find all available connections:
 | **Elorus** | Document issuance and myDATA submission |
 | **Airbnb (CSV)** | Import bookings from a CSV file |
 | **AADE Connect** | Connect to AADE for short-term rental declarations |
+
+### Deleting a booking connection
+
+You can delete a booking connection (Hosthub or Airbnb) from
+**Settings → Integrations** using the delete icon. Deletion completes safely:
+
+- If the connection is syncing at that moment, the status
+  **"Connection is being deleted"** is shown and deletion completes
+  automatically in the background — the connection stays visible until it
+  finishes.
+- The connection's credentials are destroyed immediately when the deletion is
+  requested.
+- Check-outs with issued documents are **retained** as fiscal history,
+  together with their AADE declarations — deletion covers the connection's
+  operational data (calendars, non-invoiced bookings, properties without
+  fiscal history).
+- If deletion does not complete, the connection shows a clear status and a
+  retry button — no other action is needed.
 
 ## What's next
 

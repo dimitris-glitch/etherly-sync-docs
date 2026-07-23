@@ -78,4 +78,4 @@ View all purchases, sends, auto top-ups, and refunds under:
 
 **Subscription** → **"Transaction History"** tab
 
-Each row shows: date, type (**Purchase**, **Send to Elorus**, **Auto Top-up**, **Refund**, etc.), credit amount, and new balance.
+Each row shows: date, type (**Purchase**, **Invoice Sent**, **Auto-Renewal**, **Refund**, etc.), credit amount, and new balance.
