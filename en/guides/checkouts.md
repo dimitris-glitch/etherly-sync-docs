@@ -77,6 +77,19 @@ To change an **already saved** contact, click **Change**: the search opens **wit
 If you opened the search by mistake, the previous contact appears as an option below the search field — select it to keep it unchanged. The suggestion hides once you start typing and reappears if you clear the text.
 </Tip>
 
+## When a send does not complete
+
+Once you press **send**, the app follows the job and tells you how it ended:
+
+- **If the send fails**, a notification shows the reason. The booking stays in the same status, so you can send again once you have fixed the underlying problem.
+- **If the send is taking a while**, a notice tells you it continues in the background. Refresh the list shortly to see the final result.
+
+The details stay recorded in the **send progress**: expand the booking row and the failed step is shown with a **"Show error"** link that opens the full message.
+
+<Tip>
+The next morning's **daily report** also summarises the bookings that need attention.
+</Tip>
+
 ## Bookings spanning two years
 
 If a booking spans two calendar years (e.g., Dec 28, 2024 → Jan 3, 2025), the system handles it automatically: two separate checkouts are created (one per year) with amounts split proportionally per night. Each checkout is invoiced in the correct fiscal year.
