@@ -31,6 +31,8 @@ Every conversation is saved automatically. Click the **clock icon** in the top-r
 
 To start a new conversation, use the **reset button** in the header or the **New Chat** button in the history view.
 
+To delete a conversation, hover over its row in the history view and click the **trash icon** — you'll be asked to confirm before it is deleted. Deletion is permanent and removes the conversation together with all of its messages.
+
 ## Security and privacy
 
 Each user sees only their own conversations — even when multiple users share the same account.

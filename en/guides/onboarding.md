@@ -24,9 +24,6 @@ To get started with Etherly Sync, you complete a few quick activation steps. You
   <Step title="Connect Hosthub">
     Enter your Hosthub API key so your bookings sync.
   </Step>
-  <Step title="Connect Elorus">
-    Enter your Elorus API key and the invoicing organization.
-  </Step>
   <Step title="Finish activation">
     Once the above are complete, you enter the panel. The final step depends on your billing mode:
     - **Subscription:** your **free trial** starts automatically (the length — typically 14 days — is shown on the activation screen) and you get a welcome email with the end date.
@@ -35,8 +32,14 @@ To get started with Etherly Sync, you complete a few quick activation steps. You
 </Steps>
 
 <Note>
-The activation steps (email, phone, company details, Hosthub, Elorus) are **the same for everyone**, regardless of billing mode. Only the final step differs: starting the trial for subscription vs. finishing directly for credits.
+The activation steps (email, phone, company details, Hosthub) are **the same for everyone**, regardless of billing mode. Only the final step differs: starting the trial for subscription vs. finishing directly for credits.
 </Note>
+
+## Connecting an invoicing provider
+
+You connect your invoicing provider from the panel whenever it suits you: **Settings → Connections**. Pick the provider you use and complete the connection there.
+
+Until then you already have full access to booking sync, AADE Connect and analytics. Once the provider is connected, document issuance from your bookings becomes available too.
 
 ## Free trial — subscription accounts
 

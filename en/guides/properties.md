@@ -135,6 +135,10 @@ If you manage properties under **different tax IDs**, add multiple Elorus connec
   </Step>
 </Steps>
 
+<Note>
+A booking's documents always stay with the organization that issued them. If you change a property's organization and a send is then attempted for a booking whose documents already exist, the send stops and the booking is flagged **"Manual review"** — assign the property back to the original organization to complete it. New bookings are invoiced normally under the new organization.
+</Note>
+
 ## Copy / Paste settings
 
 If you have many properties with the same settings, use **"Copy settings"** on one property and **"Paste settings"** on the others for quick configuration.

@@ -1,15 +1,14 @@
 ---
 title: "Getting Started"
-description: "Connect Hosthub and Elorus in 4 simple steps and send your first document in under 10 minutes."
+description: "Connect Hosthub and your invoicing provider in 4 simple steps and send your first document in under 10 minutes."
 ---
 
 # Getting Started with Etherly Sync
 
 Setup takes **4 steps** and about 10 minutes. Before you begin, make sure you have:
 
-- A **Hosthub** account with at least one active property
-- An **Elorus** account with at least one organization
-- API keys for both services
+- A **Hosthub** account with at least one active property, and access to its API key
+- An account with the **invoicing provider** you use (e.g. Elorus), for issuing documents
 
 ---
 
@@ -41,31 +40,35 @@ In the setup wizard, select the **"Connect Hosthub"** step.
 
 ---
 
-## Step 3: Connect Elorus
+## Step 3: Connect your invoicing provider
 
-Select the **"Connect Elorus"** step.
+Finish activation and enter the dashboard. You connect your invoicing provider from **Settings → "Connections" tab**, whenever it suits you.
 
 <Steps>
-  <Step title="Find your Elorus API key">
-    In Elorus, go to **Settings** (top right, click on your name) → **API Settings** → "Create new key". Copy the key that will appear.
+  <Step title="Pick your provider">
+    In the "Connections" tab click **"New connection"** and choose the provider you use.
   </Step>
-  <Step title="Enter the key and Organization ID">
-    Paste the key in the **Elorus API Key** field. For the **Organization ID**: in Elorus go to Settings → Organization — the ID appears in the page URL.
+  <Step title="Complete the connection">
+    Follow the steps shown for the provider you picked. For **Elorus** you need the API key (Settings → API Settings → "Create new key") and the **Organization ID**, which appears in the URL of the Settings → Organization page.
   </Step>
-  <Step title="Test connection and continue">
-    Click **"Test connection"**. After success you'll see "Connection successful. Ready to use." Click **"Continue"**.
+  <Step title="Test the connection">
+    Click **"Test connection"**. After success the connection shows as active and you can start issuing documents.
   </Step>
 </Steps>
 
+<Info>
+Booking sync, AADE Connect and analytics work from the moment Hosthub is connected. You add the invoicing provider whenever you're ready.
+</Info>
+
 <Warning>
-Your Elorus API key is stored **encrypted** and is never displayed in plain text after saving.
+Your provider credentials are stored **encrypted** and are never displayed in plain text after saving.
 </Warning>
 
 ---
 
 ## Step 4: Configure your first property
 
-Click **"Go to Dashboard"** and navigate to **Settings → "Properties" tab**. Each property needs the following settings:
+Navigate to **Settings → "Properties" tab**. Each property needs the following settings:
 
 | Field | What it is |
 |-------|-----------|

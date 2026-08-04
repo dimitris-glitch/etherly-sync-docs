@@ -117,6 +117,12 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   <Accordion title="I can't find the right Category for my property. What do I do?">
     Categories come from the tax codes you've set up in Elorus. If the right **Category** doesn't appear, make sure you've created the corresponding tax code in Elorus. If you're unsure which category applies, consult your accountant.
   </Accordion>
+
+  <Accordion title="I saw the message “Property has no TCA category”. What does it mean?">
+    The send stopped before any document was issued, because the property has no TCA **Category** selected. The category determines the per-night fee, so it needs to be set before issuing.
+
+    Open **Settings → Properties**, pick the property's **Category**, and send again. A similar message about incomplete rates means the category is set but its summer or winter rate is missing — fill those in under **TCA Rules** in **Settings → Organizations**.
+  </Accordion>
 </AccordionGroup>
 
 ## Auto-Invoicing
