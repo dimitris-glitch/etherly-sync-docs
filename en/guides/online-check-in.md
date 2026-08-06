@@ -21,7 +21,10 @@ The **Check-In Settings** tab has its own "Notify host when guest completes chec
 
 ## Check-In Link
 
-Copy the check-in link from **Settings → Online Check-In** (or from the bookings list in the dashboard). The link ends in `{booking_id}` — the only part that changes per booking: replace it with the **external booking ID** (the ID provided by Airbnb, Booking.com, or your booking platform).
+There are two ways to share the check-in link:
+
+- **From the bookings list in the dashboard**: the copy button gives you a ready-to-send **personal link** for that specific booking — no replacement needed, just send it to your guest.
+- **From Settings → Online Check-In**: copy the link template ending in `{booking_id}` — the only part that changes per booking: replace it with the **external booking ID** (the ID provided by Airbnb, Booking.com, or your booking platform).
 
 <Note>
 The check-in link requires no login — guests open it directly. It is valid until 23:00 on the check-in day.

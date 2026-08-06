@@ -15,6 +15,47 @@ Every property needs **complete configuration** before it can be invoiced. Witho
 
 **Settings → "Properties" tab**
 
+## Finding a property in the list
+
+A **search** field sits above the list. Type part of a property's name, location or city and the list narrows immediately to the ones that match.
+
+Search works with upper or lower case and with or without accents — "χανια" finds "Χανιά". The `×` inside the field brings the full list back, and any properties you had expanded stay expanded.
+
+## Property groups
+
+Groups let you organise your properties the way you think about them — by area ("Crete", "Attica"), by owner, or any other way that suits you. Each property belongs to **one group**.
+
+Groups are purely organisational: they help you find and sort your properties in the list. Invoicing settings, taxes and automatic document issuing stay exactly as you have set them per property.
+
+### Creating a group
+
+1. **Settings → Properties → "New group"**
+2. Give it a name (up to 40 characters)
+3. Add as many properties as you want from the list in the dialog
+4. **Save**
+
+Each group name is unique, and its colour is assigned automatically so creating one stays quick. You can change it whenever you like from **Edit group**. You can create up to 20 groups.
+
+### How the list changes
+
+As soon as one group exists, the list is shown grouped: each group is a card with its name and property count, and opens on click. Properties without a group are collected under **"Ungrouped"** at the end of the list. The app remembers which groups you had open.
+
+While searching, the groups that contain matching properties are shown open.
+
+### Assigning a property to a group
+
+Three ways, same result:
+
+- **From the property's settings** — open the property and pick a group in the **Group** field at the top.
+- **From the row's `⋮` menu** — **Move to group** and pick one. It applies immediately, with an **Undo** option.
+- **From Edit group** — add or remove several properties at once and save once. This is the fastest way to do the initial organising.
+
+The edit dialog lists every property. If you pick one that already belongs to another group, the app tells you before you save. **Remove** returns the property to "Ungrouped" — the property and its settings stay.
+
+### Deleting a group
+
+From the card's `⋮` menu → **Delete group**. The group's properties return to "Ungrouped" and all their settings are kept.
+
 ## Required fields
 
 ### 1. Default Receipts Contact
