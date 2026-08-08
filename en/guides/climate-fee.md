@@ -75,6 +75,14 @@ If a property has no fee category configured:
 - The booking stays in `NEEDS_SETUP` or `ERROR`
 - Configure the category and **resend** the booking
 
+## Viewing the issued climate fee document
+
+In the expanded row of an invoiced booking, next to the **View document** button (which opens the accommodation invoice or receipt), a **View climate fee document** button opens the climate resilience fee document.
+
+The button appears once the invoicing provider returns the document link, shortly after the myDATA transmission completes. If you have just sent the booking, refresh the page in a moment.
+
+When a stay spans both seasonal periods, two climate fee documents are issued. The button then opens a list with one link per period — summer and winter — so you can view both.
+
 ## Zero-amount bookings
 
 When the guest has paid nothing (e.g. a free stay or a date block synced with a zero amount from the channel), Etherly Sync automatically skips the booking: no climate resilience fee is calculated and no documents are issued.

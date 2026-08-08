@@ -32,11 +32,18 @@ Declarations are found under **Declarations** in the sidebar — only bookings t
 |--------|---------|
 | Not submitted | Declaration has not been sent yet |
 | Sending… | Submission in progress |
-| Sent | Draft declaration sent to AADE-Connect |
-| Draft | Declaration is in draft state on AADE-Connect |
+| Processing | The submission is being processed by AADE — this can take up to an hour; no action needed |
+| Draft | The declaration has been prepared but not yet sent to AADE |
+| Draft at AADE | A provisional (draft) declaration exists at AADE awaiting finalization |
 | Submitted | Final submission — no action required |
-| Failed | Submission failed — check the error message |
+| Failed | Submission failed — the message explains whether it was a temporary AADE issue (worth retrying) or needs your action, e.g. checking your TAXISnet credentials |
 | Skipped | Manually excluded from declaration |
+
+## Property filter
+
+Above the list there is a **Property** filter that narrows declarations to one property or — if you have created [property groups](/en/guides/properties) — to a whole group. Filtering covers all of your declarations, not just the ones currently on screen.
+
+While a group is selected, a strip above the list names it, with a **Clear** button. The choice is remembered for this page. Changing the filter clears any selected bookings, so a bulk submission always covers what you are looking at.
 
 ## Manual submission
 
@@ -83,6 +90,16 @@ You have two options:
 <Note>
 If you wish to issue a **credit note** for the document that was already issued, you will need to do so in your invoicing provider (e.g. Elorus) — credit notes are not issued from within the app.
 </Note>
+
+## Pending and undeclared bookings
+
+The app tracks bookings that remain undeclared relative to the AADE deadline — the short-term stay declaration is due by the **20th of the month following the guest's departure**.
+
+- **Banner on the Declarations page**: when bookings remain undeclared more than 3 days after check-out, a persistent banner shows how many there are and how old the oldest is. The banner becomes more prominent when a deadline is approaching or has passed.
+- **Daily report email**: with automatic final declaration enabled, the daily report includes a **"Pending declarations"** section listing all undeclared bookings — every day, until they are declared or skipped. When a deadline is approaching, the email subject is flagged with ⚠️.
+- **Automatic retry**: declarations that failed due to a temporary AADE platform issue are retried automatically over the following days. If the problem needs your action (e.g. checking your TAXISnet credentials), the booking appears in the report with the relevant explanation.
+
+**Skip** removes a booking from all of the above — use it for bookings that will not be declared through the app.
 
 ## Guest identification
 

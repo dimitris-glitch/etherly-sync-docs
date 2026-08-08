@@ -60,6 +60,8 @@ Outside the window, or if the check-in has already been submitted, guests see an
 
 Go to **Settings → Check-In Settings** to configure each property individually.
 
+If you have created [property groups](/guides/properties), the list is shown grouped just like **Settings → Properties**: each group is a card showing its name and the number of properties it contains, expanding and collapsing on click, while anything without a group is collected under **"Ungrouped"** at the end. The app remembers which groups you had open.
+
 ### Basic options
 
 | Setting | Description |
@@ -140,6 +142,12 @@ Navigate to **Online Check-Ins** in the sidebar to view all submissions.
 <Note>
 The **Today** tab gives the full picture for a given day, while the other tabs filter by status or date.
 </Note>
+
+### Property filter
+
+At the top left, next to the date navigation, there is a **Property** filter: it narrows the screen to one property or — if you have created [property groups](/en/guides/properties) — to a whole group. It applies to every tab, including **Today**.
+
+While a group is selected, a strip above the list names the group you are viewing, with a **Clear** button. The choice is remembered for this page, separately from the other screens.
 
 ### Search
 

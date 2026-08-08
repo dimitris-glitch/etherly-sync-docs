@@ -102,6 +102,8 @@ Year-Boundary Splits happen automatically. No action is required from you.
 
 In **Bookings** you can filter checkouts by:
 - **Status** (READY, SENT, ERROR, etc.)
-- **Property**
+- **Property** — a single property, a [property group](/en/guides/properties) or a connection
 - **Date range** (checkout date)
 - **Paused** (yes/no)
+
+The **Property** filter gains a **"By group"** section as soon as one group exists. While a group is selected, a strip above the list names it and shows how many properties it covers, with a **Clear** button. The choice is remembered for this page.
