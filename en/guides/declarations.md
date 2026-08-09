@@ -84,7 +84,7 @@ According to the official procedure, cancelled bookings can be declared as **can
 
 You have two options:
 
-1. **Submit a cancellation declaration**: set the amount in the amount column (0 means a full refund to the guest) and submit. Consult your accountant if you are unsure about the correct amount.
+1. **Submit a cancellation declaration**: set the amount in the amount column (0 means a full refund to the guest) and submit. If you have already recorded a **collected cancellation fee** on the [Bookings](/en/guides/checkouts) page, the amount comes **prefilled** — you can change it before submitting. Consult your accountant if you are unsure about the correct amount.
 2. **Skip**: if you do not wish to submit a declaration, skip it. The booking stays visible in the "Today" tab until the end of the day marked as "Skipped", and from the next day it moves to the **"History"** tab, where you can remove the skip if you change your mind.
 
 <Note>

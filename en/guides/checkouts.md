@@ -26,7 +26,7 @@ Etherly Sync syncs automatically with Hosthub at regular intervals. During each 
 
 - **New bookings** are added immediately as checkouts
 - **Changes** (dates, amounts, guest info) are updated automatically
-- **Cancellations** are detected and those checkouts are excluded from invoicing
+- **Cancellations** are detected and the corresponding checkouts are marked as cancelled — only a cancellation fee you record gets invoiced (see below)
 
 You can also trigger a **manual sync** at any time by clicking **Refresh** on the **Bookings** page.
 
@@ -43,9 +43,16 @@ In this case you automatically receive an **email notification**, because action
 **Automatic final AADE declaration** skips cancelled bookings — nothing is submitted without your action, because the declared amount needs your confirmation.
 </Warning>
 
-<Note>
-Bookings cancelled **before** a document is issued have no fiscal significance and are not shown in the list.
-</Note>
+## Cancelled bookings and cancellation fees
+
+Every cancelled booking appears in the list with a red **"Cancelled"** badge, positioned on the **day of the cancellation** — not on the original checkout date. A November booking cancelled today shows up under today's bookings.
+
+If your cancellation policy imposed a charge and you **collected a cancellation fee**, record the amount via the **pencil icon** in the amount column:
+
+1. **Document issuance**: once an amount is saved, a document is issued **for the cancellation fee only** — with no climate resilience fee and no stay duty, since no stay took place. Issuance happens **automatically** by that day's auto-invoicing run (as long as you enter the amount before the scheduled run) or **manually** with the send button.
+2. **AADE declaration**: on the [Declarations](/en/guides/declarations) page the cancellation amount comes **prefilled** from the fee you recorded — you can change it before submitting.
+
+A cancelled booking **without** a recorded fee simply stays visible for your records — it is not counted in the day's counter and no document is issued.
 
 ## Pause / Resume
 
