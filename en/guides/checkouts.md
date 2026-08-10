@@ -113,4 +113,8 @@ In **Bookings** you can filter checkouts by:
 - **Date range** (checkout date)
 - **Paused** (yes/no)
 
-The **Property** filter gains a **"By group"** section as soon as one group exists. While a group is selected, a strip above the list names it and shows how many properties it covers, with a **Clear** button. The choice is remembered for this page.
+The **Property** filter opens as a checkbox list: **Select all** at the top, the properties grouped by [group](/en/guides/properties) — where the group's checkbox selects all of its members at once — and a search box to find one quickly. You can combine properties from different groups. With nothing ticked you see all properties.
+
+While a selection is active, a strip above the list names it and shows how many properties it covers, with a **Clear** button. The choice is remembered for this page.
+
+As soon as one group exists, the table's rows stand together by group under a heading showing the group's name and colour, with "Ungrouped" last. Inside each section the chronological order stays the same.

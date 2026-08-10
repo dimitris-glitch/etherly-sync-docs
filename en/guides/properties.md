@@ -53,6 +53,14 @@ Four ways, same result:
 
 The edit dialog lists every property. If you pick one that already belongs to another group, the app tells you before you save. **Remove** returns the property to "Ungrouped" — the property and its settings stay.
 
+### Ordering properties inside a group
+
+In the **Edit group** dialog, every member property has a handle on its left. Drag it up or down to set the order the properties appear in within the group, then press **Save**. The order you set applies everywhere the group is shown expanded.
+
+It works from the keyboard too: focus the handle, **space** or **Enter** to pick the property up, **arrow keys** to move it, **space** or **Enter** to drop it, **Escape** to cancel. Each step announces the position ("…will move to position 2 of 5").
+
+Properties you have not given an explicit position appear after the ones you have, in alphabetical order — so a group you have never reordered looks exactly as it did before.
+
 ### Organising by dragging
 
 The **Organise** button, next to "New group", puts a handle on every property row. Drag the handle onto another group card and drop it: the property moves there immediately, with an **Undo** option. Hover over a collapsed card for a moment and it opens by itself so you can see what is inside, and the card that received the property stays open after the drop.
@@ -67,15 +75,31 @@ From the card's `⋮` menu → **Delete group**. The group's properties return t
 
 ### Working inside a group
 
-Once you have groups, you can narrow any property list down to one of them. The **Property** filter gains a **"By group"** section — pick a group and the screen shows only its properties. There is also an **"Ungrouped"** option for the ones you have not organised yet, and **"All properties"** brings the full picture back.
+Once you have groups, you can narrow any property list down to the ones you care about. The **Property** filter gains a **"By group"** section — pick a group and the screen shows only its properties. There is also an **"Ungrouped"** option for the ones you have not organised yet, and **"All properties"** brings the full picture back.
 
 The filter is available on **Bookings**, **Online Check-Ins** and **AADE declarations**.
 
-Each screen remembers its own choice, so the group you work in daily is already selected next time — and a screen you were not looking at stays as you left it. While a group filter is active, a strip above the list names the group you are viewing and how many of your properties it covers, with a **Clear** button. If someone deletes the group you were viewing, the screen returns to "All properties" and tells you.
+#### Selecting with checkboxes
+
+On **Bookings** and **AADE declarations** the **Property** filter opens as a checkbox list, so you can combine whatever you want to see:
+
+- **Select all** at the top, with the properties below it grouped by group.
+- The **group's checkbox** selects or clears all of its members at once. When only some of them are selected it shows a dash.
+- You can select properties from **different groups together** — say two villas in Crete and one apartment in Attica.
+- Where you have more than one channel connection, a **"By connection"** section follows and selects all of a connection's properties the same way.
+- The **search box** at the top narrows the list as you type.
+
+The filter button shows what you picked: the property name when it is one, "{n} selected" when it is more, and "All properties" when nothing is ticked — **no checkbox means all**, so the default screen is the full picture.
+
+Each screen remembers its own choice, so the group you work in daily is already selected next time — and a screen you were not looking at stays as you left it. While a filter is active, a strip above the list names what you are viewing and how many of your properties it covers, with a **Clear** button. If someone deletes the group you were viewing, the screen returns to "All properties" and tells you.
+
+#### Group sections in the lists
+
+On **Bookings** and **AADE declarations**, as soon as one group exists, rows stand together by group under a heading showing the group's name and colour. Groups come in alphabetical order and "Ungrouped" always comes last. Inside each section the rows keep the chronological order you already had.
 
 In the properties list and in the **Settings → Check-In Settings** tab, properties are shown in collapsible cards per group, while in the **Settings → Advanced → Automatic property invoicing** table and in the cleaning-staff assignment they are shown grouped with a heading and a count per group.
 
-In the **Automatic property invoicing** table, each group heading opens and closes with a click: close the groups you are not working on right now and only the ones you want to set up stay in view. While a group is closed, its heading keeps showing the group name and how many properties it holds. The table opens with every group expanded.
+In the **Automatic property invoicing** table and in the **cleaning-staff assignment**, each group heading opens and closes with a click: close the groups you are not working on right now and only the ones you want to set up stay in view. While a group is closed, its heading keeps showing the group name and how many properties it holds. Both screens open with every group expanded.
 
 <Note>
 The **Automatic property invoicing** table also shows switched-off properties, so each group's count there includes them — while the **Settings → Properties** list counts the active ones. Every number always matches the rows it opens.

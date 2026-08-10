@@ -41,9 +41,11 @@ Declarations are found under **Declarations** in the sidebar — only bookings t
 
 ## Property filter
 
-Above the list there is a **Property** filter that narrows declarations to one property or — if you have created [property groups](/en/guides/properties) — to a whole group. Filtering covers all of your declarations, not just the ones currently on screen.
+Above the list there is a **Property** filter that narrows declarations to the properties you care about. It opens as a checkbox list: **Select all** at the top, the properties grouped by [group](/en/guides/properties) — where the group's checkbox selects all of its members at once — and a search box. You can combine properties from different groups, and with nothing ticked you see all declarations. Filtering covers all of your declarations, not just the ones currently on screen.
 
-While a group is selected, a strip above the list names it, with a **Clear** button. The choice is remembered for this page. Changing the filter clears any selected bookings, so a bulk submission always covers what you are looking at.
+While a selection is active, a strip above the list names it, with a **Clear** button. The choice is remembered for this page. Changing the filter clears any selected bookings, so a bulk submission always covers what you are looking at.
+
+As soon as one group exists, declarations stand together by group under a heading showing the group's name and colour, with "Ungrouped" last.
 
 ## Manual submission
 
@@ -85,7 +87,7 @@ According to the official procedure, cancelled bookings can be declared as **can
 You have two options:
 
 1. **Submit a cancellation declaration**: set the amount in the amount column (0 means a full refund to the guest) and submit. If you have already recorded a **collected cancellation fee** on the [Bookings](/en/guides/checkouts) page, the amount comes **prefilled** — you can change it before submitting. Consult your accountant if you are unsure about the correct amount.
-2. **Skip**: if you do not wish to submit a declaration, skip it. The booking stays visible in the "Today" tab until the end of the day marked as "Skipped", and from the next day it moves to the **"History"** tab, where you can remove the skip if you change your mind.
+2. **Skip**: if you do not wish to submit a declaration, skip it. The booking stays visible in the "To Declare" tab until the end of the day marked as "Skipped", and from the next day it moves to the **"History"** tab, where you can remove the skip if you change your mind.
 
 <Note>
 If you wish to issue a **credit note** for the document that was already issued, you will need to do so in your invoicing provider (e.g. Elorus) — credit notes are not issued from within the app.

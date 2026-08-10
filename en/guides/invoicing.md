@@ -25,13 +25,15 @@ For every checkout that is sent, Etherly Sync automatically creates documents in
 
 ## Document Description
 
-The text shown on the service line of the Accommodation Document (e.g. "John Doe | 01/07/2026 → 03/07/2026 | City Vibes Loft") is generated from a template, which you configure under **Settings → Document Description**.
+The text shown on the service line of the Accommodation Document (e.g. "BK-123456 | 01/07/2026 → 03/07/2026 | City Vibes Loft") is generated from a template, which you configure under **Settings → Document Description**.
 
 Even if you haven't customized anything, an effective template is always in use: either the one you've set, or the built-in default:
 
 ```
-@name @lastname | @checkindate → @checkoutdate | @accommodationname
+@bookingid | @checkindate → @checkoutdate | @accommodationname
 ```
+
+The default template uses the booking reference instead of the guest's name, so that less personal data reaches your invoicing provider. If you need the name in the description, add the `@name` and `@lastname` variables to your own template.
 
 **Available variables:**
 - `@name` — Guest first name
