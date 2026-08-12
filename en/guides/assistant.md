@@ -11,7 +11,7 @@ The **Etherly Assistant** is the built-in AI assistant in Etherly Sync. Click th
 
 - Answer questions about how the app works, VAT rules, myDATA, and the climate resilience fee
 - Identify missing configuration and guide you through setup step by step
-- Assign organisations, VAT rates, and climate fee rates to properties on your behalf (after confirmation)
+- Assign organisations, VAT rates, and climate fee rates to properties on your behalf (after confirmation) — each changed property's card is marked **"Updated"** in Settings → Properties, so you can see what was set
 - Check sync status — worker health, last sync time, stuck or failed jobs
 - Look up a booking by guest name or ID and explain why a document was not issued
 - Navigate directly to the relevant settings page when action is needed

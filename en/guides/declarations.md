@@ -93,6 +93,37 @@ You have two options:
 If you wish to issue a **credit note** for the document that was already issued, you will need to do so in your invoicing provider (e.g. Elorus) — credit notes are not issued from within the app.
 </Note>
 
+### Booking check before every submission
+
+Before any declaration is sent to AADE, the app confirms directly with your booking channel that the specific booking still stands. The same check runs before a document is issued.
+
+- If the channel reports the booking **has been cancelled**, the submission stops and the booking is marked as cancelled in the app. The reason appears in the daily report.
+- If the channel **does not respond** at that moment, the submission is **postponed** and retried later — nothing is sent without confirmation.
+
+<Note>
+This check applies to Hosthub connections. Other connections report cancellations to the app in their own way.
+</Note>
+
+### A declaration already exists for those dates
+
+If AADE already holds a finalised declaration for the same property and the same dates, a new declaration is not accepted. The booking is shown with a note identifying **which declaration covers it** — period, declaration number (Α/Α) and the other booking's reference — so you can see straight away what it conflicts with.
+
+To declare the booking, first cancel the existing declaration on the AADE platform. Retrying the submission from the app does not change the outcome while the other declaration is still active.
+
+<Note>
+If the existing declaration was filed directly on AADE rather than through the app, only its declaration number (Α/Α) is shown — the rest of its details live on the AADE platform.
+</Note>
+
+### Overlapping bookings
+
+When two active bookings cover **overlapping dates for the same property**, both rows are marked with a yellow **"Overlap"** badge and the pair is listed in the daily report.
+
+This means one of the two may have been cancelled on the channel without the app being told. Check your booking channel to see which one stands before declaring.
+
+<Note>
+A departure and an arrival on the **same day** is normal operation and is not flagged as an overlap.
+</Note>
+
 ## Pending and undeclared bookings
 
 The app tracks bookings that remain undeclared relative to the AADE deadline — the short-term stay declaration is due by the **20th of the month following the guest's departure**.
@@ -102,6 +133,10 @@ The app tracks bookings that remain undeclared relative to the AADE deadline —
 - **Automatic retry**: declarations that failed due to a temporary AADE platform issue are retried automatically over the following days. If the problem needs your action (e.g. checking your TAXISnet credentials), the booking appears in the report with the relevant explanation.
 
 **Skip** removes a booking from all of the above — use it for bookings that will not be declared through the app.
+
+<Note>
+Bookings on **paused properties** are not counted in the banner or the daily report. Pausing means you no longer manage that property through the app, so the related reminders stop. The bookings stay visible in the Declarations list and you can declare them at any time — if a tax obligation exists, it still applies.
+</Note>
 
 ## Guest identification
 

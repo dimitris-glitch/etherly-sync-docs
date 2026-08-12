@@ -42,6 +42,15 @@ During auto-invoicing, only bookings that meet **all** of the following are proc
 
 To exclude **individual bookings**, use [Pause](/en/guides/checkouts#pause--resume). To exclude **an entire property** (e.g. if that property is invoiced directly in the invoicing platform), set it to Off in [Properties](/en/guides/properties).
 
+## Booking check before issuing
+
+Immediately before a document is issued, the app confirms directly with your booking channel that the specific booking still stands — beyond the criteria in the table above.
+
+- If the channel reports the booking **has been cancelled**, issuing stops and the booking is marked as cancelled. The reason appears in the daily report.
+- If the channel **does not respond** at that moment, issuing is **postponed** and retried later.
+
+This way a cancellation made after the last sync does not end up as a document. The check applies to Hosthub connections.
+
 ## Execution results
 
 After each auto-invoicing run, the status of each booking is updated automatically in the **Checkouts** table (`SENT`, `ERROR`, etc.). If you have the **daily report** enabled (from Team Management), you also receive an email with a summary of invoiced and uninvoiced checkouts.

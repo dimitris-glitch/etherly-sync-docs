@@ -21,6 +21,10 @@ A **search** field sits above the list. Type part of a property's name, location
 
 Search works with upper or lower case and with or without accents — "χανια" finds "Χανιά". The `×` inside the field brings the full list back, and any properties you had expanded stay expanded.
 
+## The "Updated" mark
+
+When a property setting changes from somewhere else — for example when the **Etherly Assistant** assigns an organisation, VAT rate or stay tax after you confirm it — that property's card is briefly marked **"Updated"**. The new value appears on the card straight away, even if you already had it expanded, so you can see exactly what was set.
+
 ## Property groups
 
 Groups let you organise your properties the way you think about them — by area ("Crete", "Attica"), by owner, or any other way that suits you. Each property belongs to **one group**.
@@ -75,23 +79,23 @@ From the card's `⋮` menu → **Delete group**. The group's properties return t
 
 ### Working inside a group
 
-Once you have groups, you can narrow any property list down to the ones you care about. The **Property** filter gains a **"By group"** section — pick a group and the screen shows only its properties. There is also an **"Ungrouped"** option for the ones you have not organised yet, and **"All properties"** brings the full picture back.
+Once you have groups, you can narrow any property list down to the ones you care about. In the **Property** filter the properties appear grouped: tick a group and the screen shows its properties. There is also an **"Ungrouped"** section for the ones you have not organised yet, and **"All properties"** brings the full picture back.
 
 The filter is available on **Bookings**, **Online Check-Ins** and **AADE declarations**.
 
 #### Selecting with checkboxes
 
-On **Bookings** and **AADE declarations** the **Property** filter opens as a checkbox list, so you can combine whatever you want to see:
+On **Bookings**, **Online Check-Ins** and **AADE declarations** the **Property** filter opens the same way, as a checkbox list, so you can combine whatever you want to see:
 
 - **Select all** at the top, with the properties below it grouped by group.
-- The **group's checkbox** selects or clears all of its members at once. When only some of them are selected it shows a dash.
+- The **group's checkbox** selects or clears all of its members at once. When only some of them are selected it shows a dash. The right of the group's row shows **how many properties** it contains.
 - You can select properties from **different groups together** — say two villas in Crete and one apartment in Attica.
 - Where you have more than one channel connection, a **"By connection"** section follows and selects all of a connection's properties the same way.
 - The **search box** at the top narrows the list as you type.
 
 The filter button shows what you picked: the property name when it is one, "{n} selected" when it is more, and "All properties" when nothing is ticked — **no checkbox means all**, so the default screen is the full picture.
 
-Each screen remembers its own choice, so the group you work in daily is already selected next time — and a screen you were not looking at stays as you left it. While a filter is active, a strip above the list names what you are viewing and how many of your properties it covers, with a **Clear** button. If someone deletes the group you were viewing, the screen returns to "All properties" and tells you.
+Each screen remembers its own choice, so the group you work in daily is already selected next time — and a screen you were not looking at stays as you left it. While a filter is active, a strip above the list names what you are viewing and how many of your properties it covers, with a **Clear** button. If someone deletes the group you were viewing — or the properties you had selected are no longer available — the screen returns to "All properties" and tells you.
 
 #### Group sections in the lists
 
