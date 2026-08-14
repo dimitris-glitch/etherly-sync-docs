@@ -22,7 +22,9 @@ The feature activates automatically as soon as you add the **first cleaner** —
     **Settings → Online Check-In → "Cleaning Team Management" sub-tab**
   </Step>
   <Step title="Add the cleaner">
-    Click **"Add Cleaner"** and fill in **name** and **phone number**. The phone number must be unique within your account.
+    Click **"Add Cleaner"** and fill in **name**, **phone number** and **SMS language**. The phone number must be unique within your account.
+
+    The **SMS language** sets which language the link message is sent in. Pick the language the cleaner reads: the link SMS is usually your first contact with them, before they have ever opened the tasks page. If the cleaner later switches language inside the tasks page, their later messages follow their own choice. You can change it at any time by editing the cleaner.
   </Step>
   <Step title="Assign properties">
     Select which properties this cleaner will clean from the property list. Saving fully replaces the previous assignment — it does not add to the existing one.

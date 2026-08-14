@@ -36,21 +36,23 @@ If a booking is cancelled **after** its document has already been issued, the ch
 
 In this case you automatically receive an **email notification**, because action is required on your side:
 
-1. **AADE declaration**: according to the official procedure, cancelled bookings can be declared as cancelled to AADE with a **zero amount** (full refund to the guest) or with the **partial amount you collected**, if your cancellation policy imposed a partial charge. On the [Declarations](/en/guides/declarations) page you set the amount and submit the declaration, or skip it.
+1. **AADE declaration**: if your cancellation policy imposed a charge and you **collected a cancellation fee**, the booking is declared as cancelled with the **amount you collected** — the same amount as the issued document. On the [Declarations](/en/guides/declarations) page you can track the declaration's progress.
 2. **Credit note**: if you wish to issue a credit note for the document that was already issued, you will need to do so in your invoicing provider (e.g. Elorus).
 
 <Warning>
-**Automatic final AADE declaration** skips cancelled bookings — nothing is submitted without your action, because the declared amount needs your confirmation.
+**Automatic final AADE declaration** includes cancelled bookings for which you have recorded a collected cancellation fee — they are declared with the cancellation fee amount. Other cancelled bookings are not declared to AADE.
 </Warning>
 
 ## Cancelled bookings and cancellation fees
 
 Every cancelled booking appears in the list with a red **"Cancelled"** badge, positioned on the **day of the cancellation** — not on the original checkout date. A November booking cancelled today shows up under today's bookings.
 
-If your cancellation policy imposed a charge and you **collected a cancellation fee**, record the amount via the **pencil icon** in the amount column:
+Expanding the booking row shows the **cancellation date** in bold under **Booking Details**.
+
+If your cancellation policy imposed a charge and you **collected a cancellation fee**, expand the booking row and record the amount via the **pencil icon** on the "Cancellation fee collected" line (under Invoicing Details):
 
 1. **Document issuance**: once an amount is saved, a document is issued **for the cancellation fee only** — with no climate resilience fee and no stay duty, since no stay took place. Issuance happens **automatically** by that day's auto-invoicing run (as long as you enter the amount before the scheduled run) or **manually** with the send button.
-2. **AADE declaration**: on the [Declarations](/en/guides/declarations) page the cancellation amount comes **prefilled** from the fee you recorded — you can change it before submitting.
+2. **AADE declaration**: the booking is declared as cancelled with the **cancellation fee amount you recorded** — the same amount as the issued document. On the [Declarations](/en/guides/declarations) page you can track the declaration's progress.
 
 A cancelled booking **without** a recorded fee simply stays visible for your records — it is not counted in the day's counter and no document is issued.
 
