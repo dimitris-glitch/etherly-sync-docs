@@ -14,11 +14,11 @@ The **Hospitable** card is for hosts who already use Hospitable as their managem
 ## 1. Issue an API key in Hospitable
 
 <Steps>
-  <Step title="Open the Apps menu">
-    Sign in to Hospitable and open the **"Apps"** menu.
+  <Step title="Open Settings → Integrations">
+    Sign in to Hospitable and open **Settings** (gear) → **"Integrations"**.
   </Step>
   <Step title="Create a new key">
-    Choose **"Public API"** and then **"Add new"**.
+    Under **"Tools"**, choose **"API access"** and then **"Add new"**.
   </Step>
   <Step title="Name it and allow access">
     Give it a name (e.g. `Etherly`) and allow access to **properties** and **reservations**.
@@ -57,7 +57,7 @@ With instant updates, changes in Hospitable reach Etherly right away. Sync also 
     On the connection row click **"Set up instant updates"** — or **Configure** and then the **"Instant updates"** section. Click **Issue link** and copy it: it is shown **only then**.
   </Step>
   <Step title="Add it in Hospitable">
-    In Hospitable, open **"Apps" → "Webhooks"**, add a new webhook and paste the link.
+    In Hospitable, open **Settings → "Integrations" → "Webhooks"**, add a new webhook and paste the link.
   </Step>
   <Step title="Select the events">
     Select the **reservation**, **property** and **listing** events, then save.
