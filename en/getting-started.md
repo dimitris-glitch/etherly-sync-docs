@@ -17,7 +17,7 @@ Setup takes **4 steps** and about 10 minutes. Before you begin, make sure you ha
 Go to [app.etherly.app/auth/register](https://app.etherly.app/auth/register) and sign up. You'll receive a verification email — click the link and you'll land directly in the setup wizard.
 
 <Info>
-Your account starts with a **Free Trial Period** — no credit card required. After the trial ends, billing is per active property per month via Stripe.
+Your account starts on the **Free** plan — no card, no expiry, up to 250 checkouts a month.
 </Info>
 
 ---

@@ -1,9 +1,9 @@
 ---
-title: "Account activation & Free trial"
-description: "The activation steps required before entering the panel, and how the free trial works."
+title: "Account activation"
+description: "The activation steps required before entering the panel."
 ---
 
-# Account activation & Free trial
+# Account activation
 
 To get started with Etherly Sync, you complete a few quick activation steps. You don't enter the main panel until they're all done — the app always sends you to the next missing step.
 
@@ -25,14 +25,12 @@ To get started with Etherly Sync, you complete a few quick activation steps. You
     Enter your Hosthub API key so your bookings sync.
   </Step>
   <Step title="Finish activation">
-    Once the above are complete, you enter the panel. The final step depends on your billing mode:
-    - **Subscription:** your **free trial** starts automatically (the length — typically 14 days — is shown on the activation screen) and you get a welcome email with the end date.
-    - **Credits:** the screen shows **"Activation complete"** and you go straight into the panel, running on credits (no trial). Your account may start with a **credits gift** — you'll see it in the transaction history as "Signup gift".
+    Once the steps are done, you're in the panel. Your account starts on the **Free** plan — no card, no expiry date. If you later upgrade to Business or Agency, your first full month is free — once per account.
   </Step>
 </Steps>
 
 <Note>
-The activation steps (email, phone, company details, Hosthub) are **the same for everyone**, regardless of billing mode. Only the final step differs: starting the trial for subscription vs. finishing directly for credits.
+The activation steps (email, phone, company details, booking connection) are **the same for everyone**.
 </Note>
 
 ## Connecting an invoicing provider
@@ -40,13 +38,6 @@ The activation steps (email, phone, company details, Hosthub) are **the same for
 You connect your invoicing provider from the panel whenever it suits you: **Settings → Connections**. Pick the provider you use and complete the connection there.
 
 Until then you already have full access to booking sync, AADE Connect and analytics. Once the provider is connected, document issuance from your bookings becomes available too.
-
-## Free trial — subscription accounts
-
-- The trial starts **only** when you complete all activation steps — not at registration.
-- You get full access for the whole trial (typically 14 days — the exact length and end date are shown on the activation screen and in the welcome email).
-- If you subscribe before it ends, the trial stops and you continue normally.
-- If the trial ends without a subscription, invoice sending is blocked until you subscribe (your data is preserved).
 
 <Note>
 Until activation is complete, you only see the activation flow — not the main panel. This ensures your account is ready to issue correct invoices from day one.

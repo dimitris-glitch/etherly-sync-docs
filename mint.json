@@ -56,7 +56,8 @@
         "guides/auto-invoicing",
         "guides/declarations",
         "guides/aade-connect",
-        "guides/airbnb"
+        "guides/airbnb",
+        "guides/hospitable"
       ]
     },
     {
@@ -97,7 +98,8 @@
         "en/guides/auto-invoicing",
         "en/guides/declarations",
         "en/guides/aade-connect",
-        "en/guides/airbnb"
+        "en/guides/airbnb",
+        "en/guides/hospitable"
       ]
     },
     {

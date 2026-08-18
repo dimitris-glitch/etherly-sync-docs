@@ -64,7 +64,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
     1. **Elorus API key** — verify it's still valid in **Settings** → **Integrations**
     2. **Invoices Series** — confirm the series is active in Elorus
     3. **Organization** — ensure the organization allows the document type
-    4. **Subscription** — check your balance under **Subscription**
+    4. **Plan & Billing** — check your account status
 
     If none of the above resolves it, contact support with the error message.
   </Accordion>
@@ -131,7 +131,6 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   <Accordion title="Auto-invoicing didn't run last night. Why?">
     Possible causes:
     - No bookings were in `READY` status at the **Execution time**
-    - Credits ran out — check **Subscription**
     - The account's **Grace Period** had expired
     - A rare technical issue — contact support
   </Accordion>
@@ -141,19 +140,23 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   </Accordion>
 </AccordionGroup>
 
-## Billing & Credits
+## Plan & Billing
 
 <AccordionGroup>
-  <Accordion title="When does my Free Trial Period end?">
-    The **Free Trial Period** lasts **30 days** from account creation. The exact expiry date is shown under **Subscription**.
+  <Accordion title="How much does it cost?">
+    **Free** covers up to 250 checkouts a month. **Business** starts at €29/month and **Agency** at €59/month, with pricing following the month's volume in tiers. A month with no checkouts is not charged on any plan.
   </Accordion>
 
-  <Accordion title="What happens when my credits run out?">
-    The **Grace Period** activates automatically — invoicing continues normally even with 0 credits. Once the Grace Period ends, new sends are blocked until you purchase credits under **Subscription** → **"Buy Credits"**.
+  <Accordion title="What counts as a checkout?">
+    Every booking that had a document issued within the month — once per booking, in the month it was issued.
   </Accordion>
 
-  <Accordion title="How do I set up automatic credit renewal (Auto Top-up)?">
-    Go to **Subscription** → **Auto Top-up** section → **"Enable Auto Top-up"**. Set the **Top-up Threshold** (e.g. 10 credits) and choose which package to purchase automatically. A saved card is required via **"Add Card"**.
+  <Accordion title="What happens if I go over 250 checkouts on Free?">
+    Your subscription continues as normal. The first time within 12 months, that month's subscription is not charged extra. If it happens again within the same 12 months, the account moves to **Business** from the 1st of the following month, and we let you know by email beforehand.
+  </Accordion>
+
+  <Accordion title="How do I pay?">
+    By card at each month's close, or from your prepaid balance if you've topped one up. Both are managed in **Plan & Billing**.
   </Accordion>
 </AccordionGroup>
 

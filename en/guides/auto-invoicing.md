@@ -31,7 +31,7 @@ During auto-invoicing, only bookings that meet **all** of the following are proc
 | Paused | Not paused |
 | Property | **On** (enabled) |
 | Booking | Not cancelled |
-| Account | Active subscription |
+| Account | Active |
 
 ## What is NOT auto-invoiced
 
