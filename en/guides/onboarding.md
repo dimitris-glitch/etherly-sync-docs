@@ -21,8 +21,8 @@ To get started with Etherly Sync, you complete a few quick activation steps. You
   <Step title="Company & contact details">
     Fill in your billing details. You can look up your company by **VAT number (ΑΦΜ)** to auto-fill, or enter details as an individual. Add your contact name too.
   </Step>
-  <Step title="Connect Hosthub">
-    Enter your Hosthub API key so your bookings sync.
+  <Step title="Connect your channel manager">
+    Choose the channel manager you use — Hosthub, Airbnb, or Hospitable — and connect it so your bookings sync. For Airbnb, no API key is needed — Etherly connects directly to your Airbnb account.
   </Step>
   <Step title="Finish activation">
     Once the steps are done, you're in the panel. Your account starts on the **Free** plan — no card, no expiry date. If you later upgrade to Business or Agency, your first full month is free — once per account.
