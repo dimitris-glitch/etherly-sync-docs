@@ -36,7 +36,7 @@ During auto-invoicing, only bookings that meet **all** of the following are proc
 ## What is NOT auto-invoiced
 
 - Bookings in `NEEDS_SETUP`, `SENT`, `SENT_WITH_ERRORS`, `ERROR`, `SPLIT`
-- Paused bookings (manual Pause or `##sync-skip`)
+- Paused bookings (manual Pause or a disabled channel)
 - Bookings belonging to **Off** properties
 - Cancelled bookings
 

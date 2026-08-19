@@ -68,14 +68,6 @@ For a permanent exclusion of an entire booking channel or a specific property, c
 
 Click **Pause** next to the checkout. It stays paused through subsequent syncs — only the user can resume it with **Resume**.
 
-### Automatic skip via notes
-
-If a Hosthub booking has a `##sync-skip` note, the system **automatically pauses** the checkout during sync. Remove the note from Hosthub and the checkout will resume on the next sync.
-
-<Tip>
-Useful if you want to pause document issuance for a booking directly from Hosthub.
-</Tip>
-
 ## Billing contact (Business Contact)
 
 Checkouts that issue an **invoice** require a **billing contact** — the _Business Contact (Required for Invoice)_ field in the checkout's expanded row. Click the field to open the search and pick a contact from Elorus.
