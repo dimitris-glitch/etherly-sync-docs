@@ -172,7 +172,7 @@ Configuration for the Transient Occupancy Tax, if applicable for this property.
 
 ## Organization settings — Document Types
 
-In **Settings → "Organizations" tab**, for each Elorus organization you define which document types the auto-invoicing uses:
+In **Settings → "Tax details" tab**, for each Elorus organization you define which document types the auto-invoicing uses:
 
 - **Receipts** — the document type for accommodation receipts
 - **Invoices** — the document type for accommodation invoices

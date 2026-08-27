@@ -12,6 +12,31 @@ The **Climate Resilience Fee** (Τέλος Ανθεκτικότητας στην
 
 Etherly Sync automatically calculates and issues the fee document.
 
+## AADE form — monthly payment
+
+The **Climate Resilience Fee** page gives you the figures in the order the AADE form asks for them, so filling it in is a copy job:
+
+- Pick a **month** and see the header (number of businesses, available rooms, beds, how many were used) and the calculation lines per category, with nights and the fee for each season.
+- **Export form (CSV)** downloads the same layout for your accountant.
+- The **Per booking** view shows which stays the totals come from.
+
+The payment declaration is submitted on myAADE by the end of the following month — the page reminds you of the date.
+
+<Note>
+The fee is declared **per tax ID**. If you have more than one fiscal entity (for example a private individual and a company), the page shows a **separate form for each**, with its own figures. The "number of businesses" fills itself in: **0** for a private individual with no business registration, **1** for a business.
+</Note>
+
+<Tip>
+So each property lands on the right line, set its **AADE form type** on its card (Room/Apartment, Detached house under or over 80 sq.m., Self-catering/Villa) and its **available rooms and beds**. Properties without a type are flagged on the page.
+</Tip>
+
+<Note>
+When a month has no stays, no zero declaration is submitted — the page says so.
+</Note>
+
+The total is always the fee **owed**, regardless of whether you collected it from the guest: the obligation to pay it is independent.
+
+
 ## Seasonal periods
 
 | Season | Period |
@@ -20,7 +45,7 @@ Etherly Sync automatically calculates and issues the fee document.
 | **Summer** | April 1 – October 31 |
 
 <Info>
-The exact fee amounts are set in the **TCA Rules** per organization, under **Settings → Organizations**. These correspond to tax codes you have created in Elorus. If the legal amounts change, update both the tax codes in Elorus and the TCA Rules under **Settings → Organizations**.
+The exact fee amounts are set in the **TCA Rules** per organization, under **Settings → Tax details**. These correspond to tax codes you have created in Elorus. If the legal amounts change, update both the tax codes in Elorus and the TCA Rules under **Settings → Tax details**.
 </Info>
 
 ## Property categories

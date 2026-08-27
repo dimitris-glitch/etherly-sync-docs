@@ -18,8 +18,13 @@ To get started with Etherly Sync, you complete a few quick activation steps. You
 
     If you see "We could not send the verification code", there is a temporary problem delivering the SMS — try again shortly. "Too many attempts" means you requested several codes in a short time; wait a few minutes before retrying.
   </Step>
-  <Step title="Company & contact details">
-    Fill in your billing details. You can look up your company by **VAT number (ΑΦΜ)** to auto-fill, or enter details as an individual. Add your contact name too.
+  <Step title="Capacity & details">
+    First you state **in what capacity** you rent out your properties:
+
+    - **I am a private individual** — you declare your short-term rentals to AADE without issuing documents. You fill in your name, tax ID and address.
+    - **Registered business or company** — you issue receipts or invoices for your bookings. A **tax ID** lookup fills in your details from the registry.
+
+    The choice determines what the app does for every booking — and it can change later if your status changes (see [Private individual](/en/guides/private-individual)).
   </Step>
   <Step title="Connect your channel manager">
     Choose the channel manager you use — Hosthub, Airbnb, or Hospitable — and connect it so your bookings sync. For Airbnb, no API key is needed — Etherly connects directly to your Airbnb account.
