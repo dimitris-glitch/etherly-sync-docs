@@ -36,5 +36,5 @@ When creating the new entity, **Tax ID lookup** fills in the company name from t
 </Tip>
 
 <Note>
-With three or more properties in short-term rental, the activity is considered a business. The app flags this on your card — check it with your accountant.
+From three active AMA numbers on your tax ID onwards, registering a business becomes mandatory. The app flags this on your card.
 </Note>

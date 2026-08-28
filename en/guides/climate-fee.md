@@ -45,26 +45,22 @@ The total is always the fee **owed**, regardless of whether you collected it fro
 | **Summer** | April 1 – October 31 |
 
 <Info>
-The exact fee amounts are set in the **TCA Rules** per organization, under **Settings → Tax details**. These correspond to tax codes you have created in Elorus. If the legal amounts change, update both the tax codes in Elorus and the TCA Rules under **Settings → Tax details**.
+Fee amounts are set by law and are the same for everyone. Etherly Sync keeps them up to date — you do not need to enter them yourself. Each legislative change takes effect on the date the law specifies, so earlier declarations continue to be calculated with the amounts that applied at the time.
 </Info>
 
-## Property categories
+## How the amount is determined per property
 
-Categories correspond to tax codes you've defined in Elorus. Typical categories include:
+The amount depends on the property's **regime** and, where it matters, its floor area. On the property card you set:
 
-- Standard short-term rental
-- Villa over 80 m²
-- Studio / One-bedroom
-- Furnished apartment
+- **Regime** — Short-term rental, Rented Furnished Rooms/Apartments, Tourist Furnished Residence, or Tourist Furnished Villa.
+- **Detached house** and **floor area** — shown only when they change the fee.
 
-<Tip>
-If you're unsure which category applies to your property, consult your accountant or refer to the current Greek tax regulations on short-term rentals.
-</Tip>
+From these, the line of the AADE form on which the property counts follows automatically.
 
 ## Calculation example
 
 **Booking**: 6 nights, March 28 – April 3  
-**Category**: Standard short-term rental
+**Regime**: Short-term rental
 
 | Nights | Season | Fee/night | Total |
 |--------|--------|-----------|-------|
@@ -75,30 +71,24 @@ If you're unsure which category applies to your property, consult your accountan
 In this case, the system creates **two separate** fee documents — one for the winter nights and one for the summer nights.
 
 <Note>
-The example amounts €2 / €8 are illustrative only. Actual amounts are set by law and configured in Elorus.
+The amounts €2 / €8 are an example only. The applicable amounts are set by law.
 </Note>
 
-## Configuring the fee category
+## Configuring a property
 
 <Steps>
-  <Step title="Go to Properties">
-    Select **Properties** → click the property you want to configure.
+  <Step title="Open the property card">
+    **Settings → Properties** → click the property.
   </Step>
-  <Step title="Select Category">
-    In the **Category** field, the dropdown shows categories from Elorus. Select the appropriate one.
+  <Step title="Set the regime">
+    Choose the **Regime** and answer the questions that appear (detached house, floor area).
   </Step>
-  <Step title="Save">
-    Click **Save**. The new category applies to future documents — it does not affect already-issued ones.
+  <Step title="Fill in rooms and beds">
+    The AADE form asks for the **available rooms** and **beds**.
   </Step>
 </Steps>
 
-## What happens if no category is set
-
-If a property has no fee category configured:
-
-- The send **fails** with an error message
-- The booking stays in `NEEDS_SETUP` or `ERROR`
-- Configure the category and **resend** the booking
+While any of these is missing, the property appears with a warning on the **Climate Resilience Fee** page and its bookings wait for the configuration before being sent. Fill them in and resend the booking.
 
 ## Viewing the issued climate fee document
 
@@ -113,11 +103,3 @@ When a stay spans both seasonal periods, two climate fee documents are issued. T
 When the guest has paid nothing (e.g. a free stay or a date block synced with a zero amount from the channel), Etherly Sync automatically skips the booking: no climate resilience fee is calculated and no documents are issued.
 
 If the booking was actually paid (e.g. outside the platform), set the real amount via the **booking override** (pencil icon on the booking row) — document issuing then proceeds normally with the new amount.
-
-## Updating fee amounts
-
-If the law changes:
-
-1. Update the amounts in Elorus → Taxes
-2. Etherly Sync retrieves them automatically on the next send
-3. No changes are needed in Etherly Sync

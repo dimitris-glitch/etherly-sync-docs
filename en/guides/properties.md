@@ -126,12 +126,11 @@ Click the field and type the contact's **name** (3+ characters) to search.
 
 The numbering series for invoices (**Invoices Series**) and receipts (**Receipts Series**) respectively. If your business does not use numbering sequences, select **"No Series"**.
 
-### 3. Category
+### 3. Regime and AADE characteristics
 
-The property category used to calculate the Climate Resilience Fee:
+These determine the Climate Resilience Fee and the line of the AADE form. See the [Climate Resilience Fee guide](/guides/climate-fee).
 
-- **Standard** — standard property
-- **>80sq.m** — houses over 80 square metres
+The **Category** field is separate: it sets which provider tax appears on the document.
 
 <Tip>
 See the [Climate Resilience Fee Guide](/en/guides/climate-fee) for the calculation method and examples.
