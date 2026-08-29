@@ -209,8 +209,12 @@ In **Settings → Advanced**, under **"Property Invoicing"**, use the toggle nex
 | **Off** | ❌ Suspended | ✅ Continues |
 
 <Note>
-**Off** does not stop sync. Data stays current — only auto-invoicing is suspended. Useful when you want to handle billing manually or through a different invoicing platform.
+**Off** does not stop sync — data stays current. The property's bookings that depart on or after the day it was switched off are marked **Skipped**, and so are any new bookings that arrive while it is Off. When you switch it back On, bookings that start from that day onwards are resumed automatically; bookings that had already started stay skipped so you can decide about each one (Bookings → Resume). Exception: bookings you had resumed yourself before switching the property off are resumed automatically. Bookings you had skipped manually are not affected.
 </Note>
+
+## Activity history
+
+In **Settings → Advanced** you can see when and by whom a property was switched on or off, which bookings were skipped or resumed (manually or automatically), as well as changes to booking amounts, cancellation fees, document type, skipped AADE declarations, channels and auto-invoicing.
 
 ## Multiple Elorus organizations
 
