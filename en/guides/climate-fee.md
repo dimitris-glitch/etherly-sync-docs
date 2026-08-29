@@ -34,6 +34,10 @@ So each property lands on the right line, set its **AADE form type** on its card
 When a month has no stays, no zero declaration is submitted — the page says so.
 </Note>
 
+Each month includes the fee documents **issued** within it — that is how AADE asks for the declaration. It usually matches the departure month. In the **Per booking** view, the **Issued** column shows each document's date.
+
+Stays that have departed but have no fee document yet appear as **"No fee receipt yet"** and are left out of the total until the document is issued — the page warns you when such stays exist.
+
 The total is always the fee **owed**, regardless of whether you collected it from the guest: the obligation to pay it is independent.
 
 
@@ -69,6 +73,8 @@ From these, the line of the AADE form on which the property counts follows autom
 | **Total** | | | **€24.00** |
 
 In this case, the system creates **two separate** fee documents — one for the winter nights and one for the summer nights.
+
+For a private individual without business registration, who issues the documents outside the app, the **Per booking** view shows such a stay as two parts — one per fee period, each in the month it should be issued (e.g. "4 of 6 nights — winter part, to be issued 31/3").
 
 <Note>
 The amounts €2 / €8 are an example only. The applicable amounts are set by law.
