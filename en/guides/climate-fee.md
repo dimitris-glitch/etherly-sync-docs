@@ -27,7 +27,7 @@ The fee is declared **per tax ID**. If you have more than one fiscal entity (for
 </Note>
 
 <Tip>
-So each property lands on the right line, set its **AADE form type** on its card (Room/Apartment, Detached house under or over 80 sq.m., Self-catering/Villa) and its **available rooms and beds**. Properties without a type are flagged on the page.
+So each property lands on the right line, set its **AADE form type** on its card (Room/Apartment, Detached house under or over 80 sq.m., Self-catering/Villa) and its **available rooms and beds**. Properties without a type **or** without rooms/beds are flagged on the page, with a link to their card.
 </Tip>
 
 <Note>
