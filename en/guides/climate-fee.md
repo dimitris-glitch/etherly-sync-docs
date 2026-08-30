@@ -96,6 +96,10 @@ The amounts €2 / €8 are an example only. The applicable amounts are set by l
 
 While any of these is missing, the property appears with a warning on the **Climate Resilience Fee** page and its bookings wait for the configuration before being sent. Fill them in and resend the booking.
 
+### Checking the climate fee tax
+
+When you select a tax for a category (**Settings → Tax details**), the app confirms that the fixed amount in your invoicing application matches the legal Climate Resilience Fee amount for the properties in that category. If it differs, the rule is not saved and you see what needs to be corrected.
+
 ## Viewing the issued climate fee document
 
 In the expanded row of an invoiced booking, next to the **View document** button (which opens the accommodation invoice or receipt), a **View climate fee document** button opens the climate resilience fee document.
