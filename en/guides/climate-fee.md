@@ -34,7 +34,7 @@ So each property lands on the right line, set its **AADE form type** on its card
 When a month has no stays, no zero declaration is submitted — the page says so.
 </Note>
 
-Each month includes the fee documents **issued** within it — that is how AADE asks for the declaration. It usually matches the departure month. In the **Per booking** view, the **Issued** column shows each document's date.
+Each month includes the fee documents **issued** within it — that is how AADE asks for the declaration. It usually matches the departure month. In the **Per booking** view, the **Issued** column shows each document's date. With [auto-invoicing](/guides/auto-invoicing) enabled, a stay that crosses a rate change gets the receipt for its first part on that part's last night — and appears here in two months, one part in each.
 
 In a closed month, stays that have departed but have no fee document yet appear on the form as **"Fee receipt pending"** and are left out of the total — they will be added to the month in which their document is issued. In the current month the notice is not shown, since receipts for today's departures are issued within the day.
 

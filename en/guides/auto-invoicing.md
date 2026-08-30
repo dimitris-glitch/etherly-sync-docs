@@ -59,6 +59,12 @@ After each auto-invoicing run, the status of each booking is updated automatical
 If no `READY` bookings exist at execution time, auto-invoicing completes without doing anything — no error is generated.
 </Note>
 
+## Climate Resilience Fee for stays that cross a rate change
+
+With auto-invoicing enabled, when a stay crosses the date on which the Climate Resilience Fee rate changes (e.g. 31 March → 1 April), the fee receipt for the first part is issued automatically on its last night, so that it is declared in the correct month — in line with the legislation and the AADE guidance. The remainder is issued as usual at checkout, together with the accommodation document.
+
+This applies to auto-invoicing: with manual sends, the whole fee is issued at checkout. Both parts appear on the [Climate Resilience Fee](/guides/climate-fee) page, each in the month it was issued.
+
 ## Combining with manual sends
 
 Auto-invoicing and manual sends **work seamlessly together**:
