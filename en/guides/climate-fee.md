@@ -36,7 +36,7 @@ When a month has no stays, no zero declaration is submitted — the page says so
 
 Each month includes the fee documents **issued** within it — that is how AADE asks for the declaration. It usually matches the departure month. In the **Per booking** view, the **Issued** column shows each document's date.
 
-Stays that have departed but have no fee document yet appear as **"No fee receipt yet"** and are left out of the total until the document is issued — the page warns you when such stays exist.
+In a closed month, stays that have departed but have no fee document yet appear on the form as **"Fee receipt pending"** and are left out of the total — they will be added to the month in which their document is issued. In the current month the notice is not shown, since receipts for today's departures are issued within the day.
 
 The total is always the fee **owed**, regardless of whether you collected it from the guest: the obligation to pay it is independent.
 
