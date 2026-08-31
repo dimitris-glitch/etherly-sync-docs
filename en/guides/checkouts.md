@@ -101,10 +101,9 @@ Year-Boundary Splits happen automatically. No action is required from you.
 
 ## Sync with invoicing provider
 
-From the **⋮** menu next to the **Refresh** button, the **Sync with invoicing provider** option checks the documents that exist in your invoicing app for the month you select. Anything that appears to have been issued outside the app is shown **grouped per booking** — stay document and climate fee receipts together, when they are linked to each other or point to the same booking:
+From the **⋮** menu next to the **Refresh** button, the **Sync with invoicing provider** option checks the documents that exist in your invoicing app for the month you select. Anything that appears to have been issued outside the app is shown **grouped per booking** — stay document and climate fee receipts together, when they are linked to each other or point to the same booking. If the booking already has a document issued through the app, you will see a **Possible duplicate issuance** notice so you can check it in the provider.
 
-- **Stay documents**: if a document was issued directly in the provider (outside the app), it appears here with the booking it likely concerns — purely informational, with no change to your bookings. If the booking already has a document issued through the app, you will see a **Possible duplicate issuance** notice so you can check it in the provider. Anything that doesn't concern a booking can be permanently dismissed.
-- **Climate fee receipts**: receipts issued outside the app that are missing from the Climate Resilience Fee form — with your confirmation, per receipt, they are added to the form ([more](/guides/climate-fee)).
+With the **Include** button, the booking's documents are recorded: the booking becomes "Sent", the climate fee receipts are added to the Climate Resilience Fee form ([more](/guides/climate-fee)), and auto-invoicing will not issue duplicate documents. If the set does not include a climate fee receipt, you can issue it right afterwards from the app. With **Dismiss**, the whole set of documents is marked as reviewed.
 
 ## Filtering & Search
 
