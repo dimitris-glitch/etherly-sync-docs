@@ -99,6 +99,13 @@ If a booking spans two calendar years (e.g., Dec 28, 2024 → Jan 3, 2025), the 
 Year-Boundary Splits happen automatically. No action is required from you.
 </Note>
 
+## Sync with invoicing provider
+
+From the **⋮** menu next to the **Refresh** button, the **Sync with invoicing provider** option checks the documents that exist in your invoicing app for the month you select, in two sections:
+
+- **Stay documents**: if a document was issued directly in the provider (outside the app), it appears here with the booking it likely concerns — purely informational, with no change to your bookings. If the booking already has a document issued through the app, you will see a **Possible duplicate issuance** notice so you can check it in the provider. Anything that doesn't concern a booking can be permanently dismissed.
+- **Climate fee receipts**: receipts issued outside the app that are missing from the Climate Resilience Fee form — with your confirmation, per receipt, they are added to the form ([more](/guides/climate-fee)).
+
 ## Filtering & Search
 
 In **Bookings** you can filter checkouts by:

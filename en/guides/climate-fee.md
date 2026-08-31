@@ -36,7 +36,7 @@ When a month has no stays, no zero declaration is submitted — the page says so
 
 Each month includes the fee documents **issued** within it — that is how AADE asks for the declaration. It usually matches the departure month. In the **Per booking** view, the **Issued** column shows each document's date. A stay that crosses a rate change is split into two parts — the first issues its documents on its last night ([more](/guides/auto-invoicing)) — and appears here in two months, one part in each.
 
-With the **Sync with provider** button, the page checks the fee receipts that exist in your invoicing app for the selected month. If one was issued directly there (outside the app), it appears in a list with a suggested booking — with your confirmation it is added to the form and counts in its issue month. Anything that doesn't concern a booking can be permanently dismissed.
+With **Sync with invoicing provider** (the ⋮ menu next to Refresh) on the Checkouts page, the app checks the fee receipts that exist in your invoicing app for the month you select. If one was issued directly there (outside the app), it appears in a list with a suggested booking — with your confirmation it is added to the form and counts in its issue month. Anything that doesn't concern a booking can be permanently dismissed.
 
 In a closed month, stays that have departed but have no fee document yet appear on the form as **"Fee receipt pending"** and are left out of the total — they will be added to the month in which their document is issued. In the current month the notice is not shown, since receipts for today's departures are issued within the day.
 
