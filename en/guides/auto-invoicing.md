@@ -61,9 +61,20 @@ If no `READY` bookings exist at execution time, auto-invoicing completes without
 
 ## Climate Resilience Fee for stays that cross a rate change
 
-With auto-invoicing enabled, when a stay crosses the date on which the Climate Resilience Fee rate changes (e.g. 31 March → 1 April), the fee receipt for the first part is issued automatically on its last night, so that it is declared in the correct month — in line with the legislation and the AADE guidance. The remainder is issued as usual at checkout, together with the accommodation document.
+When a stay crosses the date on which the Climate Resilience Fee rate changes (e.g. 31 March → 1 April), the booking is automatically split into two parts — one per rate period. Each part issues its own accommodation document and its own fee receipt, with the amounts prorated across its nights. The first part is issued on its last night, so that it is declared in the correct month — in line with the legislation and the AADE guidance — and the second as usual at checkout.
 
-This applies to auto-invoicing: with manual sends, the whole fee is issued at checkout. Both parts appear on the [Climate Resilience Fee](/guides/climate-fee) page, each in the month it was issued.
+**Example**: a booking from 28 March to 3 April, 6 nights, with €600 accommodation.
+
+| Part | Period | Accommodation document | Fee receipt | Issued |
+|------|--------|------------------------|-------------|--------|
+| 1st | 28/3 – 1/4 (4 nights) | €400 | winter period, 4 nights | **31 March** |
+| 2nd | 1/4 – 3/4 (2 nights) | €200 | summer period, 2 nights | **3 April** (checkout) |
+
+With auto-invoicing enabled, each part's documents are issued automatically on the day they correspond to. With manual sends nothing is issued automatically: on the first part's issue day (31 March in the example) the part appears in **today's bookings** and you send it like any other booking of the day; the second part appears as usual on the departure day. Both parts appear on the [Climate Resilience Fee](/guides/climate-fee) page, each in the month it was issued.
+
+<Note>
+If your account needs a different handling of the rate boundary, or your accountant prefers a different approach (e.g. issuing all documents at checkout), the Etherly team can adjust it — contact us.
+</Note>
 
 ## Combining with manual sends
 

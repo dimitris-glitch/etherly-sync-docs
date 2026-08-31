@@ -34,7 +34,7 @@ So each property lands on the right line, set its **AADE form type** on its card
 When a month has no stays, no zero declaration is submitted — the page says so.
 </Note>
 
-Each month includes the fee documents **issued** within it — that is how AADE asks for the declaration. It usually matches the departure month. In the **Per booking** view, the **Issued** column shows each document's date. With [auto-invoicing](/guides/auto-invoicing) enabled, a stay that crosses a rate change gets the receipt for its first part on that part's last night — and appears here in two months, one part in each.
+Each month includes the fee documents **issued** within it — that is how AADE asks for the declaration. It usually matches the departure month. In the **Per booking** view, the **Issued** column shows each document's date. A stay that crosses a rate change is split into two parts — the first issues its documents on its last night ([more](/guides/auto-invoicing)) — and appears here in two months, one part in each.
 
 In a closed month, stays that have departed but have no fee document yet appear on the form as **"Fee receipt pending"** and are left out of the total — they will be added to the month in which their document is issued. In the current month the notice is not shown, since receipts for today's departures are issued within the day.
 
@@ -72,7 +72,7 @@ From these, the line of the AADE form on which the property counts follows autom
 | 2 (Apr 1–2) | Summer | €8.00 | €16.00 |
 | **Total** | | | **€24.00** |
 
-In this case, the system creates **two separate** fee documents — one for the winter nights and one for the summer nights.
+In this case, the booking appears in **Bookings** as two parts — one per rate period — and each issues its own accommodation document and its own fee receipt.
 
 For a private individual without business registration, who issues the documents outside the app, the **Per booking** view shows such a stay as two parts — one per fee period, each in the month it should be issued (e.g. "4 of 6 nights — winter part, to be issued 31/3").
 
