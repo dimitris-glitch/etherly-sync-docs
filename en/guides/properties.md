@@ -214,7 +214,7 @@ In **Settings → Advanced**, under **"Property Invoicing"**, use the toggle nex
 
 ## Activity history
 
-In **Settings → Advanced** you can see when and by whom a property was switched on or off, which bookings were skipped or resumed (manually or automatically), as well as changes to booking amounts, cancellation fees, document type, skipped AADE declarations, channels and auto-invoicing.
+Under **Settings → Advanced** you can see when and by whom each important action was taken: switching properties on or off, skipping or resuming bookings, document issuance and booking cancellations, changes to amounts, document type, climate fee and VAT taxes, AADE declarations, channels, and auto-invoicing. Changes made through the Nio assistant are marked "via Nio", while actions by the support team appear as "Support team".
 
 ## Multiple Elorus organizations
 
