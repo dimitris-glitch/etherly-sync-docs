@@ -99,7 +99,7 @@ Each screen remembers its own choice, so the group you work in daily is already 
 
 #### Group sections in the lists
 
-On **Bookings** and **AADE declarations**, as soon as one group exists, rows stand together by group under a heading showing the group's name and colour. Groups come in alphabetical order and "Ungrouped" always comes last. Inside each section the rows keep the chronological order you already had.
+On **Bookings**, in the **Today** tab, as soon as one group exists, properties are shown per group under a heading with the group's name and colour. Groups come in alphabetical order and "Ungrouped" always comes last.
 
 In the properties list and in the **Settings → Check-In Settings** tab, properties are shown in collapsible cards per group, while in the **Settings → Advanced → Automatic property invoicing** table and in the cleaning-staff assignment they are shown grouped with a heading and a count per group.
 

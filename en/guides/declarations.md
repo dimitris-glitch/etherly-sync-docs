@@ -45,7 +45,6 @@ Above the list there is a **Property** filter that narrows declarations to the p
 
 While a selection is active, a strip above the list names it, with a **Clear** button. The choice is remembered for this page. Changing the filter clears any selected bookings, so a bulk submission always covers what you are looking at.
 
-As soon as one group exists, declarations stand together by group under a heading showing the group's name and colour, with "Ungrouped" last.
 
 ## Manual submission
 
