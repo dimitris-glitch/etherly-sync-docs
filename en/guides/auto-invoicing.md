@@ -84,12 +84,19 @@ Auto-invoicing and manual sends **work seamlessly together**:
 - You can send at any time, independently of the auto-invoicing schedule
 - Disabling auto-invoicing leaves all bookings in the app — you can still send them manually
 
-## Auto-invoicing per channel
+## Per-channel settings
 
-In **Settings → Advanced**, you can enable or disable auto-invoicing for each booking channel individually (Airbnb, Booking.com, Phone, etc.).
+In **Settings → Channels** you configure, for each booking channel (Airbnb, Booking.com, Phone, Booking engine, etc.):
 
-- **New** bookings from a disabled channel are automatically marked **Skipped** and excluded from auto-invoicing.
-- For **existing** bookings: filter by channel in Bookings and bulk-update their status as needed.
+- **Auto-invoicing** — new bookings from a channel with the switch off are marked **Skipped** and are not invoiced automatically; they stay in the list and you can send them manually. For **existing** bookings: filter by channel in Bookings and bulk-update their status as needed.
+- **Rent payment method** — how the channel pays you out; used in Short-Term Rental declarations.
+- **Climate Resilience Fee collection** — whether the fee is collected with the booking or on site during the stay.
+
+The **Booking engine** row covers bookings from your own website (e.g. a booking engine), so they are configured independently from **Phone** (manual entries).
+
+### Per-property settings
+
+From a channel row's **⋮ → Per-property settings** menu, you can set a different value for a specific property — e.g. a different payment method for one property only. Any property setting left as **"Same as channel"** automatically follows the channel's setting; anything you set explicitly overrides it for that property only.
 
 ## Advanced settings (Settings → Advanced)
 
