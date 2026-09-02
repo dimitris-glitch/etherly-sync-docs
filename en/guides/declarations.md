@@ -5,7 +5,7 @@ description: "Submit declarations to AADE via AADE-Connect: manual and automatic
 
 # Short-Term Rental Declarations
 
-Every invoiced booking must be declared to AADE (Greek tax authority) via **AADE-Connect**. Etherly Sync handles this automatically on your behalf.
+Every short-term rental booking must be declared to AADE (Greek tax authority) via **AADE-Connect**. Etherly Sync handles this automatically on your behalf.
 
 ## myDATA and AADE-Connect: two separate obligations
 
@@ -15,7 +15,7 @@ Many users confuse the two systems — they are independent:
 |---|---|---|
 | **What it is** | Electronic invoicing record | Short-term rental stay declaration |
 | **Per** | Document (invoice, receipt) | Booking |
-| **When** | Automatically on issuance | After invoicing |
+| **When** | Automatically on issuance | When the booking is ready to declare |
 | **Via** | Elorus (automatic) | AADE-Connect (Etherly Sync) |
 
 Etherly Sync handles both automatically: documents are sent to myDATA via Elorus when issued, and stay declarations are submitted separately via AADE-Connect.
@@ -24,7 +24,7 @@ Etherly Sync handles both automatically: documents are sent to myDATA via Elorus
 A successful myDATA document submission **does not mean** the AADE-Connect declaration has been filed — and vice versa. The two obligations are tracked independently.
 </Warning>
 
-Declarations are found under **Declarations** in the sidebar — only bookings that have been invoiced and have an AADE property mapping are shown.
+Declarations are found under **Declarations** in the sidebar — bookings ready to declare with an AADE property mapping are shown: for businesses once the document is issued, for private individuals once the stay is complete.
 
 ## Declaration statuses
 
@@ -64,10 +64,10 @@ While a selection is active, a strip above the list names it, with a **Clear** b
 
 ## Automatic final declaration
 
-Enable **automatic final declaration** from the Declarations page (toggle above the table). Once enabled, newly invoiced bookings are declared automatically every day.
+Enable **automatic final declaration** from the Declarations page (toggle above the table). Once enabled, newly ready-to-declare bookings are declared automatically every day.
 
 <Note>
-Automatic declaration applies only to bookings invoiced **after** it is enabled — it does not retroactively process older bookings.
+Automatic declaration applies only to bookings that become ready **after** it is enabled — it does not retroactively process older bookings.
 </Note>
 
 <Warning>
@@ -76,7 +76,7 @@ Bookings **cancelled after invoicing** are skipped by automatic declaration — 
 
 ### Cancelled bookings
 
-Cancelled invoiced bookings stay in the pending declarations list with an orange **"Cancelled"** badge.
+Cancelled bookings stay in the pending declarations list with an orange **"Cancelled"** badge.
 
 The declared amount comes from the **collected cancellation fee** you record on the [Bookings](/en/guides/checkouts) page — it is the same amount as the issued document. The booking is declared as **cancelled** with that amount: automatically with the next run, if you have enabled automatic declaration submission, or manually with the send button.
 
