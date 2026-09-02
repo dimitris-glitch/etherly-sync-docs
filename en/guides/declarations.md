@@ -164,8 +164,6 @@ Etherly Sync automatically maps the booking channel to the platform code require
 | Phone / Direct / empty | Εκτός πλατφόρμας | `OTHER_DIGITAL_PLATFORMS` · `"Εκτός πλατφόρμας"` |
 | Any other channel | (raw name) | `OTHER_DIGITAL_PLATFORMS` · the channel name |
 
-The system also recognizes **Hosthub sub-channel composite names** (e.g. `"Booking.com for Ariadnis + Collection"`, `"Airbnb Plus"`) via substring matching — mapping is correct even when the name is not an exact match.
-
 <Warning>
 **Direct bookings** (phone, email, your own website) are always sent with `platform_name: "Εκτός πλατφόρμας"` — this is required by AADE. The system handles this automatically.
 </Warning>
