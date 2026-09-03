@@ -48,8 +48,18 @@ Every month opens into a breakdown: what was counted, which tier applied, which 
 Charges go to your card at each month's close, or come out of your **prepaid balance** if you have one. You add your card in **Plan & Billing**. If a charge doesn't go through, we retry automatically and let you know by email.
 
 <Note>
-Invoicing and AADE declarations continue as normal in every case.
+Issuing documents and AADE declarations are not affected by your limits or plan.
 </Note>
+
+## Unpaid charges
+
+If a charge remains unpaid despite the automatic retries, the account is limited gradually — always with timely email notifications and an in-app notice:
+
+- At first, only new additions are put on hold (a new fiscal entity, a new connection, new users). Everything you already have keeps working normally.
+- Later, automatic invoicing, automatic declarations and settings changes are paused — you can keep issuing and declaring manually, and booking sync continues.
+- If the balance remains unpaid for a long period, the account is fully frozen — access to your data, data export and payment remain available.
+
+Once the balance is settled — by card or by loading prepaid balance from **Plan & Billing** — everything is restored immediately. Your data always stays in place.
 
 ## Prepaid balance
 
