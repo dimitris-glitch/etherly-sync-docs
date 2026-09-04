@@ -1,6 +1,6 @@
 ---
 title: "Auto-Invoicing"
-description: "Set up nightly auto-invoicing and let Etherly Sync issue documents every evening without any manual work."
+description: "Set up nightly auto-invoicing and let DeskBoy issue documents every evening without any manual work."
 ---
 
 # Auto-Invoicing
@@ -73,7 +73,7 @@ When a stay crosses the date on which the Climate Resilience Fee rate changes (e
 With auto-invoicing enabled, each part's documents are issued automatically on the day they correspond to. With manual sends nothing is issued automatically: on the first part's issue day (31 March in the example) the part appears in **today's bookings** and you send it like any other booking of the day; the second part appears as usual on the departure day. Both parts appear on the [Climate Resilience Fee](/guides/climate-fee) page, each in the month it was issued.
 
 <Note>
-If your account needs a different handling of the rate boundary, or your accountant prefers a different approach (e.g. issuing all documents at checkout), the Etherly team can adjust it — contact us.
+If your account needs a different handling of the rate boundary, or your accountant prefers a different approach (e.g. issuing all documents at checkout), the DeskBoy team can adjust it — contact us.
 </Note>
 
 ## Combining with manual sends

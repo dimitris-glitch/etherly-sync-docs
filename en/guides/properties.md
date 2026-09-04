@@ -23,7 +23,7 @@ Search works with upper or lower case and with or without accents — "χανι�
 
 ## The "Updated" mark
 
-When a property setting changes from somewhere else — for example when the **Etherly Assistant** assigns an organisation, VAT rate or stay tax after you confirm it — that property's card is briefly marked **"Updated"**. The new value appears on the card straight away, even if you already had it expanded, so you can see exactly what was set.
+When a property setting changes from somewhere else — for example when the **DeskBoy Assistant** assigns an organisation, VAT rate or stay tax after you confirm it — that property's card is briefly marked **"Updated"**. The new value appears on the card straight away, even if you already had it expanded, so you can see exactly what was set.
 
 ## Property groups
 
@@ -182,7 +182,7 @@ The available options are **loaded dynamically from Elorus** and correspond to t
 
 On each property card, under **"Location & Details"**, you can set the city, country, timezone and — optionally — the property's **coordinates**, its **property type** (villa, apartment, studio etc.), its **maximum guests**, **bedrooms** and **bathrooms**.
 
-The more complete the profile, the more precise the comparisons: with coordinates, guests, bedrooms and bathrooms filled in, Etherly Insights can show where your property sits against **comparable** listings in its area (rate, occupancy and revenue as a position in the distribution).
+The more complete the profile, the more precise the comparisons: with coordinates, guests, bedrooms and bathrooms filled in, DeskBoy Insights can show where your property sits against **comparable** listings in its area (rate, occupancy and revenue as a position in the distribution).
 
 Type and capacity enable comparisons against similar-profile listings in your area. For properties connected via Hosthub, capacity is filled in automatically by sync — the property type is always set by you.
 

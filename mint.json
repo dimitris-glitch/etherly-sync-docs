@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Etherly Sync",
+  "name": "DeskBoy",
   "logo": {
     "light": "/logo.png",
     "dark": "/logo.png"
@@ -17,19 +17,19 @@
   "topbarLinks": [
     {
       "name": "Σύνδεση",
-      "url": "https://app.etherly.app/auth/login"
+      "url": "https://app.deskboy.app/auth/login"
     }
   ],
   "topbarCtaButton": {
     "name": "Δοκιμάστε δωρεάν",
-    "url": "https://app.etherly.app/auth/register"
+    "url": "https://app.deskboy.app/auth/register"
   },
   "versions": ["Ελληνικά", "English"],
   "anchors": [
     {
       "name": "Επικοινωνία",
       "icon": "envelope",
-      "url": "mailto:support@etherly.app"
+      "url": "mailto:support@deskboy.app"
     },
     {
       "name": "Changelog",
@@ -64,7 +64,7 @@
     {
       "version": "Ελληνικά",
       "group": "Διαχείριση",
-      "pages": ["guides/team", "guides/billing"]
+      "pages": ["guides/team", "guides/billing", "guides/language-format"]
     },
     {
       "version": "Ελληνικά",
@@ -107,7 +107,7 @@
     {
       "version": "English",
       "group": "Management",
-      "pages": ["en/guides/team", "en/guides/billing"]
+      "pages": ["en/guides/team", "en/guides/billing", "en/guides/language-format"]
     },
     {
       "version": "English",

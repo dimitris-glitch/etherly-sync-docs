@@ -5,7 +5,7 @@ description: "The three documents issued per checkout, the order they're created
 
 # How Invoicing Works
 
-For every checkout that is sent, Etherly Sync automatically creates documents in Elorus, in a strictly defined order.
+For every checkout that is sent, DeskBoy automatically creates documents in Elorus, in a strictly defined order.
 
 ## The documents created
 
@@ -54,7 +54,7 @@ The settings page shows a live preview of the final text using sample data, so y
 Every document issued in Elorus is **automatically submitted** to myDATA, provided the option is enabled in settings.
 
 <Warning>
-A myDATA failure **does not cancel** the Elorus document. myDATA failure management is handled within Elorus, not Etherly Sync.
+A myDATA failure **does not cancel** the Elorus document. myDATA failure management is handled within Elorus, not DeskBoy.
 </Warning>
 
 ## Manual send

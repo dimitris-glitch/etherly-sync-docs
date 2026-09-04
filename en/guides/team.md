@@ -1,11 +1,11 @@
 ---
 title: "User Management"
-description: "Add users, set roles, and control who has access to what in your Etherly Sync account."
+description: "Add users, set roles, and control who has access to what in your DeskBoy account."
 ---
 
 # User Management
 
-Etherly Sync supports **multiple users** per account. Each user has a role that defines exactly what they can do. Find it in the **user dropdown menu** (click the user icon at the top right → **"Users"**).
+DeskBoy supports **multiple users** per account. Each user has a role that defines exactly what they can do. Find it in the **user dropdown menu** (click the user icon at the top right → **"Users"**).
 
 ## Roles and permissions
 

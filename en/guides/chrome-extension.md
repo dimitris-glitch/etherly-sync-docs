@@ -1,11 +1,11 @@
 ---
-title: "Etherly Chrome Extension"
+title: "DeskBoy Chrome Extension"
 description: "Install and set up the Chrome Extension for automatic Airbnb reservation sync."
 ---
 
-# Etherly Chrome Extension
+# DeskBoy Chrome Extension
 
-The Etherly Chrome Extension automatically downloads your Airbnb reservations every hour and sends them to Etherly Sync — no manual action required.
+The DeskBoy Chrome Extension automatically downloads your Airbnb reservations every hour and sends them to DeskBoy — no manual action required.
 
 <Note>
 The extension requires Chrome to be open and you to be logged in to Airbnb.
@@ -19,7 +19,7 @@ The extension requires Chrome to be open and you to be logged in to Airbnb.
     Toggle on **«Developer mode»** in the top right corner.
   </Step>
   <Step title="Download and install the extension">
-    Go to **Settings → Airbnb → Chrome Extension** and click **«Install Etherly Extension»**.
+    Go to **Settings → Airbnb → Chrome Extension** and click **«Install DeskBoy Extension»**.
 
     Chrome will ask if you want to install the extension — click **«Add extension»**.
 
@@ -28,9 +28,9 @@ The extension requires Chrome to be open and you to be logged in to Airbnb.
     </Warning>
   </Step>
   <Step title="Connect the extension to your account">
-    Go to **Settings → Airbnb** in Etherly and copy your **Extension Token**.
+    Go to **Settings → Airbnb** in DeskBoy and copy your **Extension Token**.
 
-    Click the Etherly icon in the Chrome toolbar, paste the token and click **«Connect»**.
+    Click the DeskBoy icon in the Chrome toolbar, paste the token and click **«Connect»**.
   </Step>
 </Steps>
 
@@ -46,7 +46,7 @@ Every hour the extension:
 
 1. Opens the Airbnb reservations page (or uses an existing tab)
 2. Automatically downloads the CSV with reservations
-3. Sends it to Etherly Sync
+3. Sends it to DeskBoy
 4. Closes the tab if it opened it
 
 You can also trigger a sync manually by clicking **«Sync now»** from the extension popup.

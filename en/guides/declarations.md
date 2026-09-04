@@ -5,7 +5,7 @@ description: "Submit declarations to AADE via AADE-Connect: manual and automatic
 
 # Short-Term Rental Declarations
 
-Every short-term rental booking must be declared to AADE (Greek tax authority) via **AADE-Connect**. Etherly Sync handles this automatically on your behalf.
+Every short-term rental booking must be declared to AADE (Greek tax authority) via **AADE-Connect**. DeskBoy handles this automatically on your behalf.
 
 ## myDATA and AADE-Connect: two separate obligations
 
@@ -16,9 +16,9 @@ Many users confuse the two systems — they are independent:
 | **What it is** | Electronic invoicing record | Short-term rental stay declaration |
 | **Per** | Document (invoice, receipt) | Booking |
 | **When** | Automatically on issuance | When the booking is ready to declare |
-| **Via** | Elorus (automatic) | AADE-Connect (Etherly Sync) |
+| **Via** | Elorus (automatic) | AADE-Connect (DeskBoy) |
 
-Etherly Sync handles both automatically: documents are sent to myDATA via Elorus when issued, and stay declarations are submitted separately via AADE-Connect.
+DeskBoy handles both automatically: documents are sent to myDATA via Elorus when issued, and stay declarations are submitted separately via AADE-Connect.
 
 <Warning>
 A successful myDATA document submission **does not mean** the AADE-Connect declaration has been filed — and vice versa. The two obligations are tracked independently.
@@ -148,7 +148,7 @@ If the booking already has a Reservation ID from Hosthub, the field is pre-fille
 
 ## Platform mapping
 
-Etherly Sync automatically maps the booking channel to the platform code required by AADE. The **Channel** column in the Declarations table shows the recognized platform name — not the raw Hosthub channel string.
+DeskBoy automatically maps the booking channel to the platform code required by AADE. The **Channel** column in the Declarations table shows the recognized platform name — not the raw Hosthub channel string.
 
 | Booking channel | Column display | AADE code |
 |-----------------|----------------|-----------|

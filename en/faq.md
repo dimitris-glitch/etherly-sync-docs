@@ -1,6 +1,6 @@
 ---
 title: "FAQ & Troubleshooting"
-description: "Solutions for the most common issues with Etherly Sync — from initial setup to failed invoice sends."
+description: "Solutions for the most common issues with DeskBoy — from initial setup to failed invoice sends."
 ---
 
 # Frequently Asked Questions
@@ -40,11 +40,11 @@ description: "Solutions for the most common issues with Etherly Sync — from in
     1. Whether the **Category** is correctly configured in **Properties**
     2. Whether the tax rules in Elorus are up to date
 
-    Contact support at [support@etherly.app](mailto:support@etherly.app) if the issue persists.
+    Contact support at [support@deskboy.app](mailto:support@deskboy.app) if the issue persists.
   </Accordion>
 
   <Accordion title="Can I cancel a document that was issued by mistake?">
-    Document cancellation is done **directly in your invoicing platform** (e.g. Elorus). After cancelling there, the booking in Etherly Sync remains in `SENT` status. Contact support if you need the status reset for re-issuing.
+    Document cancellation is done **directly in your invoicing platform** (e.g. Elorus). After cancelling there, the booking in DeskBoy remains in `SENT` status. Contact support if you need the status reset for re-issuing.
   </Accordion>
 
   <Accordion title="A booking was cancelled after an invoice was already issued. What do I do?">
@@ -52,7 +52,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
 
     1. **Create a credit note in Elorus** for the accommodation invoice
     2. **If a Climate Resilience Fee document was also issued**, cancel that separately — it is not reversed automatically
-    3. The booking in Etherly Sync remains in `SENT` status — contact support if you need the status reset for re-issuing
+    3. The booking in DeskBoy remains in `SENT` status — contact support if you need the status reset for re-issuing
 
     <Warning>
     For the correct credit note type and myDATA obligations, consult your accountant.
@@ -87,7 +87,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
   </Accordion>
 
   <Accordion title="If the Hosthub sync fails, will bookings be lost?">
-    No. Sync is **one-directional** — Etherly Sync fetches bookings from Hosthub but never deletes data due to a connection error. Bookings already synced remain safe.
+    No. Sync is **one-directional** — DeskBoy fetches bookings from Hosthub but never deletes data due to a connection error. Bookings already synced remain safe.
 
     If sync fails temporarily:
     - The system retries automatically
@@ -164,7 +164,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
 
 <AccordionGroup>
   <Accordion title="What happens with a 0€ booking (complimentary stay)?">
-    Etherly Sync does not issue documents for zero-amount bookings. The send will fail or produce an empty document.
+    DeskBoy does not issue documents for zero-amount bookings. The send will fail or produce an empty document.
 
     If a document is needed for a complimentary stay:
     - Create it manually directly in **Elorus**
@@ -186,7 +186,7 @@ description: "Solutions for the most common issues with Etherly Sync — from in
 
 <AccordionGroup>
   <Accordion title="I need help that's not covered here.">
-    Contact us at [support@etherly.app](mailto:support@etherly.app). We typically respond within **1-2 business days**. In your message, include:
+    Contact us at [support@deskboy.app](mailto:support@deskboy.app). We typically respond within **1-2 business days**. In your message, include:
     - The property or booking experiencing the issue
     - The error message (if any)
     - The date you first noticed the problem

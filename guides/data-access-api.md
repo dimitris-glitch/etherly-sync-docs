@@ -12,7 +12,7 @@ description: 'Προγραμματιστική πρόσβαση στα δεδο�
 
 <Note>
 Ψάχνετε να συνδέσετε ένα εργαλείο AI (Claude, ChatGPT, Grok) ώστε να κάνετε ερωτήσεις στα φυσικά
-σας δεδομένα; Δείτε τον οδηγό **«Etherly Insights»**.
+σας δεδομένα; Δείτε τον οδηγό **«DeskBoy Insights»**.
 </Note>
 
 <Note>
@@ -66,14 +66,14 @@ description: 'Προγραμματιστική πρόσβαση στα δεδο�
 
 ```bash
 curl -H "Authorization: Bearer eth_data_..." \
-  "https://app.etherly.app/api/data-access/v1/business-overview?from=2026-01-01&to=2026-01-31"
+  "https://app.deskboy.app/api/data-access/v1/business-overview?from=2026-01-01&to=2026-01-31"
 ```
 
 ---
 
 ## Διαθέσιμα εργαλεία
 
-Τα ίδια εργαλεία με το Etherly Insights — κάθε endpoint αντιστοιχεί σε ένα εργαλείο.
+Τα ίδια εργαλεία με το DeskBoy Insights — κάθε endpoint αντιστοιχεί σε ένα εργαλείο.
 
 ### Έσοδα & απόδοση
 
@@ -138,7 +138,7 @@ curl -H "Authorization: Bearer eth_data_..." \
 
 | Endpoint | Περιγραφή |
 |---|---|
-| **etherly-advisor** | Ο σύμβουλος εσόδων του Etherly: δέχεται μια ερώτηση μαζί με αποτελέσματα από τα άλλα εργαλεία και επιστρέφει τεκμηριωμένη συμβουλή τιμολόγησης και πληρότητας |
+| **etherly-advisor** | Ο σύμβουλος εσόδων του DeskBoy: δέχεται μια ερώτηση μαζί με αποτελέσματα από τα άλλα εργαλεία και επιστρέφει τεκμηριωμένη συμβουλή τιμολόγησης και πληρότητας |
 
 ---
 

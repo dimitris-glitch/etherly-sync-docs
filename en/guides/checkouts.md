@@ -22,7 +22,7 @@ A **checkout** corresponds to a completed booking from Hosthub — a guest stay 
 
 ## Automatic sync
 
-Etherly Sync syncs automatically with Hosthub at regular intervals. During each sync:
+DeskBoy syncs automatically with Hosthub at regular intervals. During each sync:
 
 - **New bookings** are added immediately as checkouts
 - **Changes** (dates, amounts, guest info) are updated automatically
@@ -97,6 +97,14 @@ If a booking spans two calendar years (e.g., Dec 28, 2024 → Jan 3, 2025), the 
 
 <Note>
 Year-Boundary Splits happen automatically. No action is required from you.
+</Note>
+
+## Amount format
+
+Amounts appear in the Greek convention: a dot for thousands and a comma for decimals, with the currency symbol at the end — for example **2.345,87 €**.
+
+<Note>
+The format only affects how you see the amount on screen. The amount issued on the document and declared to AADE is the same.
 </Note>
 
 ## Sync with invoicing provider

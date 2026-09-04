@@ -10,7 +10,7 @@ The **Climate Resilience Fee** (Τέλος Ανθεκτικότητας στην
 1. **Property category** — type and characteristics
 2. **Season** — winter or summer
 
-Etherly Sync automatically calculates and issues the fee document.
+DeskBoy automatically calculates and issues the fee document.
 
 ## AADE form — monthly payment
 
@@ -51,7 +51,7 @@ The total is always the fee **owed**, regardless of whether you collected it fro
 | **Summer** | April 1 – October 31 |
 
 <Info>
-Fee amounts are set by law and are the same for everyone. Etherly Sync keeps them up to date — you do not need to enter them yourself. Each legislative change takes effect on the date the law specifies, so earlier declarations continue to be calculated with the amounts that applied at the time.
+Fee amounts are set by law and are the same for everyone. DeskBoy keeps them up to date — you do not need to enter them yourself. Each legislative change takes effect on the date the law specifies, so earlier declarations continue to be calculated with the amounts that applied at the time.
 </Info>
 
 ## How the amount is determined per property
@@ -112,6 +112,6 @@ When a stay spans both seasonal periods, two climate fee documents are issued. T
 
 ## Zero-amount bookings
 
-When the guest has paid nothing (e.g. a free stay or a date block synced with a zero amount from the channel), Etherly Sync automatically skips the booking: no climate resilience fee is calculated and no documents are issued.
+When the guest has paid nothing (e.g. a free stay or a date block synced with a zero amount from the channel), DeskBoy automatically skips the booking: no climate resilience fee is calculated and no documents are issued.
 
 If the booking was actually paid (e.g. outside the platform), set the real amount via the **booking override** (pencil icon on the booking row) — document issuing then proceeds normally with the new amount.

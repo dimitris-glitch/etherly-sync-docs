@@ -1,11 +1,11 @@
 ---
-title: "Etherly Extension για Chrome"
+title: "DeskBoy Extension για Chrome"
 description: "Εγκατάσταση και ρύθμιση του Chrome Extension για αυτόματο συγχρονισμό Airbnb κρατήσεων."
 ---
 
-# Etherly Extension για Chrome
+# DeskBoy Extension για Chrome
 
-Το Etherly Chrome Extension κατεβάζει αυτόματα τις κρατήσεις σας από το Airbnb κάθε ώρα και τις στέλνει στο Etherly Sync, χωρίς να χρειάζεται να κάνετε τίποτα χειροκίνητα.
+Το DeskBoy Chrome Extension κατεβάζει αυτόματα τις κρατήσεις σας από το Airbnb κάθε ώρα και τις στέλνει στο DeskBoy, χωρίς να χρειάζεται να κάνετε τίποτα χειροκίνητα.
 
 <Note>
 Το extension χρειάζεται να είναι ανοιχτός ο Chrome και να έχετε συνδεθεί στο Airbnb.
@@ -19,7 +19,7 @@ description: "Εγκατάσταση και ρύθμιση του Chrome Extensi
     Ενεργοποιήστε το toggle **«Developer mode»** πάνω δεξιά.
   </Step>
   <Step title="Κατεβάστε και εγκαταστήστε το extension">
-    Μεταβείτε στις **Ρυθμίσεις → Airbnb → Chrome Extension** και πατήστε **«Εγκατάσταση Etherly Extension»**.
+    Μεταβείτε στις **Ρυθμίσεις → Airbnb → Chrome Extension** και πατήστε **«Εγκατάσταση DeskBoy Extension»**.
 
     Ο Chrome θα σας ρωτήσει αν θέλετε να εγκαταστήσετε το extension — πατήστε **«Add extension»**.
 
@@ -28,9 +28,9 @@ description: "Εγκατάσταση και ρύθμιση του Chrome Extensi
     </Warning>
   </Step>
   <Step title="Συνδέστε το extension με τον λογαριασμό σας">
-    Μεταβείτε στις **Ρυθμίσεις → Airbnb** στο Etherly και αντιγράψτε το **Extension Token**.
+    Μεταβείτε στις **Ρυθμίσεις → Airbnb** στο DeskBoy και αντιγράψτε το **Extension Token**.
 
-    Κλικάρετε το εικονίδιο του Etherly στη γραμμή εργαλείων του Chrome, επικολλήστε το token και πατήστε **«Σύνδεση»**.
+    Κλικάρετε το εικονίδιο του DeskBoy στη γραμμή εργαλείων του Chrome, επικολλήστε το token και πατήστε **«Σύνδεση»**.
   </Step>
 </Steps>
 
@@ -46,7 +46,7 @@ description: "Εγκατάσταση και ρύθμιση του Chrome Extensi
 
 1. Ανοίγει τη σελίδα κρατήσεων του Airbnb (ή χρησιμοποιεί υπάρχον tab)
 2. Κατεβάζει αυτόματα το CSV με τις κρατήσεις
-3. Το στέλνει στο Etherly Sync
+3. Το στέλνει στο DeskBoy
 4. Κλείνει το tab αν το άνοιξε μόνο του
 
 Μπορείτε επίσης να ξεκινήσετε συγχρονισμό χειροκίνητα πατώντας **«Sync τώρα»** από το popup του extension.

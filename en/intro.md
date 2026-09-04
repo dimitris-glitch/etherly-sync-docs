@@ -1,11 +1,11 @@
 ---
-title: "What is Etherly Sync"
+title: "What is DeskBoy"
 description: "Automated invoicing for short-term rentals — from Hosthub to Elorus and myDATA, with zero manual work."
 ---
 
-# Welcome to Etherly Sync
+# Welcome to DeskBoy
 
-**Etherly Sync** is an automation platform that connects **Hosthub** (booking management) with **Elorus** (electronic invoicing), automatically generating all required fiscal documents for every short-term rental booking.
+**DeskBoy** is an automation platform that connects **Hosthub** (booking management) with **Elorus** (electronic invoicing), automatically generating all required fiscal documents for every short-term rental booking.
 
 ## The problem it solves
 
@@ -15,12 +15,12 @@ Every guest checkout requires creating fiscal documents in Elorus — typically 
 2. **Payment Receipt** — linked to the accommodation document
 3. **Climate Resilience Fee** — calculated per night and property category
 
-With dozens of bookings per month and multiple properties, this becomes time-consuming and error-prone. Etherly Sync automates it entirely.
+With dozens of bookings per month and multiple properties, this becomes time-consuming and error-prone. DeskBoy automates it entirely.
 
 ## How it works
 
 ```text
-Hosthub  ──→  Etherly Sync  ──→  Elorus  ──→  myDATA
+Hosthub  ──→  DeskBoy  ──→  Elorus  ──→  myDATA
 (Bookings)    (Automation)     (Documents)    (Tax Authority)
 ```
 
@@ -51,7 +51,7 @@ The system **syncs** bookings from Hosthub on a regular schedule, **verifies** t
 
 ## Who it's for
 
-Etherly Sync is ideal for:
+DeskBoy is ideal for:
 
 - **Property managers** with 5+ properties on Hosthub who spend hours on manual invoicing
 - **Accountants** managing invoicing for multiple rental property owners

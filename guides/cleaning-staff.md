@@ -43,7 +43,7 @@ description: 'Διαχειριστείτε το προσωπικό καθαρι�
 Το προσωπικό καθαρισμού δεν δημιουργεί λογαριασμό — επαληθεύει το τηλέφωνό του κάθε φορά:
 
 ```
-https://app.etherly.app/{tenantId}/cleaning
+https://app.deskboy.app/{tenantId}/cleaning
 ```
 
 1. Εισάγει το τηλέφωνό του.

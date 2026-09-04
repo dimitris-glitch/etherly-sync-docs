@@ -43,7 +43,7 @@ The feature activates automatically as soon as you add the **first cleaner** —
 Cleaners don't create an account — they verify their phone number each time:
 
 ```
-https://app.etherly.app/{tenantId}/cleaning
+https://app.deskboy.app/{tenantId}/cleaning
 ```
 
 1. They enter their phone number.

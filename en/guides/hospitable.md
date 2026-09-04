@@ -5,7 +5,7 @@ description: "Connect your Hospitable account and bring in bookings from every c
 
 # Hospitable connection
 
-If you use **Hospitable** as your management system, you can connect your account to Etherly Sync. Bookings from **every channel** you have there — Airbnb, Booking.com, Vrbo and direct — arrive automatically, along with their amounts, dates and cancellations.
+If you use **Hospitable** as your management system, you can connect your account to DeskBoy. Bookings from **every channel** you have there — Airbnb, Booking.com, Vrbo and direct — arrive automatically, along with their amounts, dates and cancellations.
 
 <Note>
 The **Hospitable** card is for hosts who already use Hospitable as their management system. If you work with Airbnb only, the **Airbnb Live** card brings your bookings straight from Airbnb.
@@ -21,21 +21,21 @@ The **Hospitable** card is for hosts who already use Hospitable as their managem
     Under **"Tools"**, choose **"API access"** and then **"Add new"**.
   </Step>
   <Step title="Name it and allow access">
-    Give it a name (e.g. `Etherly`) and allow access to **properties** and **reservations**.
+    Give it a name (e.g. `DeskBoy`) and allow access to **properties** and **reservations**.
   </Step>
   <Step title="Copy the key">
     Copy the key that appears. Hospitable shows it **once**.
   </Step>
 </Steps>
 
-## 2. Connect the account in Etherly
+## 2. Connect the account in DeskBoy
 
 <Steps>
   <Step title="Open the Hospitable card">
     Under **Settings → Integrations**, find the **Hospitable** card and click **Connect**.
   </Step>
   <Step title="Paste the key">
-    Paste the key into the **"API key (Personal Access Token)"** field and continue. Etherly checks the key with Hospitable before storing it — encrypted.
+    Paste the key into the **"API key (Personal Access Token)"** field and continue. DeskBoy checks the key with Hospitable before storing it — encrypted.
   </Step>
   <Step title="The first sync starts">
     Once the key is confirmed, the first sync starts automatically. Your properties and bookings appear as soon as it finishes.
@@ -50,7 +50,7 @@ Airbnb bookings that already arrive from another connection are **invoiced once*
 
 ## 3. Turn on instant updates
 
-With instant updates, changes in Hospitable reach Etherly right away. Sync also works without them, on a schedule.
+With instant updates, changes in Hospitable reach DeskBoy right away. Sync also works without them, on a schedule.
 
 <Steps>
   <Step title="Issue the link">

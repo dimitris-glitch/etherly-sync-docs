@@ -1,11 +1,11 @@
 ---
-title: 'Etherly Insights'
+title: 'DeskBoy Insights'
 description: 'Give AI tools like Claude, ChatGPT, or Grok access to your booking and revenue data.'
 ---
 
-## What is Etherly Insights
+## What is DeskBoy Insights
 
-Etherly Insights lets AI tools (Claude, ChatGPT, Grok, and anything else that supports MCP) read your booking and revenue data, so you can ask questions like "How much revenue did I make last month?" or "Find the booking with ID HM-12345" directly in your AI tool of choice.
+DeskBoy Insights lets AI tools (Claude, ChatGPT, Grok, and anything else that supports MCP) read your booking and revenue data, so you can ask questions like "How much revenue did I make last month?" or "Find the booking with ID HM-12345" directly in your AI tool of choice.
 
 <Note>
 Looking for programmatic access to your data (REST/OpenAPI, no AI tool involved)? See the
@@ -13,14 +13,14 @@ Looking for programmatic access to your data (REST/OpenAPI, no AI tool involved)
 </Note>
 
 <Note>
-Etherly Insights is **strictly read-only**. No AI tool can create, modify, or delete data through this connection.
+DeskBoy Insights is **strictly read-only**. No AI tool can create, modify, or delete data through this connection.
 </Note>
 
 ---
 
 ## How it works
 
-Etherly Insights isn't a separate app you open — it's a connection that gives the AI tool of
+DeskBoy Insights isn't a separate app you open — it's a connection that gives the AI tool of
 your choice access to your data, so you can ask questions naturally, the way you'd ask a
 colleague.
 
@@ -46,7 +46,7 @@ colleague.
 
 ## Guest privacy
 
-Guest personal details are **never** shared through Etherly Insights: name, email, phone, and identification number never appear in the results. Only non-identifying fields are allowed (nights, amounts, booking channel, and guest country of origin — derived from the phone's country code, not actual nationality).
+Guest personal details are **never** shared through DeskBoy Insights: name, email, phone, and identification number never appear in the results. Only non-identifying fields are allowed (nights, amounts, booking channel, and guest country of origin — derived from the phone's country code, not actual nationality).
 
 ---
 
@@ -54,26 +54,26 @@ Guest personal details are **never** shared through Etherly Insights: name, emai
 
 <Steps>
   <Step title="Go to settings">
-    Go to **Settings → API Keys** and find the **Etherly Insights** card under the Apps
+    Go to **Settings → API Keys** and find the **DeskBoy Insights** card under the Apps
     section. Click **"Enable"** — a consent popup opens.
   </Step>
   <Step title="Enable the feature">
     Read the short consent notice in the popup and click **"Enable"**. Once enabled, the
-    **"Etherly Insights"** tab appears permanently in the Settings menu, with your **MCP
+    **"DeskBoy Insights"** tab appears permanently in the Settings menu, with your **MCP
     endpoint** and the list of connected apps.
   </Step>
 </Steps>
 
 <Note>
 You can skip this step if you prefer — approving a connection via Claude.ai, Grok, or ChatGPT
-(below) enables Etherly Insights automatically.
+(below) enables DeskBoy Insights automatically.
 </Note>
 
 ---
 
 ## Connecting an AI tool
 
-On the **Etherly Insights** tab you'll find your **MCP endpoint** — the URL you need to connect
+On the **DeskBoy Insights** tab you'll find your **MCP endpoint** — the URL you need to connect
 any AI tool that supports MCP.
 
 ### Connecting via Claude.ai (OAuth)
@@ -86,23 +86,23 @@ Claude.ai's **"Add custom connector"** feature only supports OAuth, not a raw AP
     and select **"Add custom connector"**.
   </Step>
   <Step title="Fill in the details">
-    Give it a name (e.g. "Etherly Insights") and paste the **MCP endpoint** URL
-    (`https://app.etherly.app/api/insights/mcp`) into the **"Remote MCP server URL"** field. You
+    Give it a name (e.g. "DeskBoy Insights") and paste the **MCP endpoint** URL
+    (`https://app.deskboy.app/api/insights/mcp`) into the **"Remote MCP server URL"** field. You
     don't need to fill in the optional "OAuth Client ID / Secret" fields under Advanced
     settings — leave them blank and click **"Add"**.
   </Step>
   <Step title="Sign in and approve">
-    Claude opens a sign-in and consent screen. Sign in with your usual Etherly
+    Claude opens a sign-in and consent screen. Sign in with your usual DeskBoy
     account, then click **"Allow"** to grant access.
   </Step>
   <Step title="Done">
-    The connection appears in **Settings → Etherly Insights** in the "Connected apps" list,
+    The connection appears in **Settings → DeskBoy Insights** in the "Connected apps" list,
     with a **"Connected since"** date and its own disconnect button.
   </Step>
 </Steps>
 
 <Note>
-If Etherly Insights wasn't enabled yet, approving the Claude.ai connection enables it
+If DeskBoy Insights wasn't enabled yet, approving the Claude.ai connection enables it
 automatically — there's no separate manual "Enable" step first.
 </Note>
 
@@ -113,15 +113,15 @@ automatically — there's no separate manual "Enable" step first.
     In Grok, go to **Skills and Connectors → Connectors** and click **"New Connector"**.
   </Step>
   <Step title="Custom connector">
-    In the dialog that opens, select **"Custom"**, give it a name (e.g. "Etherly Insights"),
-    and paste the **MCP endpoint** URL (`https://app.etherly.app/api/insights/mcp`).
+    In the dialog that opens, select **"Custom"**, give it a name (e.g. "DeskBoy Insights"),
+    and paste the **MCP endpoint** URL (`https://app.deskboy.app/api/insights/mcp`).
   </Step>
   <Step title="Sign in and approve">
-    Grok opens a sign-in and consent screen. Sign in with your usual Etherly account
+    Grok opens a sign-in and consent screen. Sign in with your usual DeskBoy account
     and approve access.
   </Step>
   <Step title="Done">
-    The connection appears in **Settings → Etherly Insights** in the "Connected apps" list.
+    The connection appears in **Settings → DeskBoy Insights** in the "Connected apps" list.
   </Step>
 </Steps>
 
@@ -138,20 +138,20 @@ automatically — there's no separate manual "Enable" step first.
   <Step title="Fill in the connection details">
     Provide:
 
-    - **Name** (e.g. "Etherly Insights")
+    - **Name** (e.g. "DeskBoy Insights")
     - **Description** (short, optional)
-    - Etherly's **MCP server HTTPS endpoint**
-      (`https://app.etherly.app/api/insights/mcp`)
+    - DeskBoy's **MCP server HTTPS endpoint**
+      (`https://app.deskboy.app/api/insights/mcp`)
     - Authentication method: **OAuth**
 
     Click **Create / Scan Tools**.
   </Step>
   <Step title="Sign in and approve">
-    ChatGPT opens a sign-in and consent screen. Sign in with your usual Etherly
+    ChatGPT opens a sign-in and consent screen. Sign in with your usual DeskBoy
     account and approve access.
   </Step>
   <Step title="Done">
-    The connection appears in **Settings → Etherly Insights** in the "Connected apps" list.
+    The connection appears in **Settings → DeskBoy Insights** in the "Connected apps" list.
   </Step>
   <Step title="Use it in a chat">
     Open a new chat and click **+ → More → Developer mode**, then the app name — or just type
@@ -161,8 +161,8 @@ automatically — there's no separate manual "Enable" step first.
 
 <Tip>
 **Quicker way:** instead of the **+**, start your question with `@` followed by the name you
-gave the app — e.g. `@Etherly what's my occupancy for August?`. That way ChatGPT reliably uses
-your Etherly data for that question.
+gave the app — e.g. `@DeskBoy what's my occupancy for August?`. That way ChatGPT reliably uses
+your DeskBoy data for that question.
 </Tip>
 
 ---
@@ -233,7 +233,7 @@ More tools will be added gradually.
 ## Usage limits
 
 - **Daily limit**: up to 500 calls/day in total across all your connected apps combined. The
-  **Etherly Insights** tab shows a bar with today's usage against this limit.
+  **DeskBoy Insights** tab shows a bar with today's usage against this limit.
 - A per-minute rate limit also applies for security reasons.
 
 If a limit is exceeded, the AI tool will receive an error and should wait before retrying.
@@ -244,7 +244,7 @@ If a limit is exceeded, the AI tool will receive an error and should wait before
 
 - To disconnect an app (e.g. Claude), click the delete icon next to it in the "Connected apps"
   list.
-- To fully disable Etherly Insights, click **"Disable"** — all connected apps are disconnected
+- To fully disable DeskBoy Insights, click **"Disable"** — all connected apps are disconnected
   immediately.
 
 <Note>

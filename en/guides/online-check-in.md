@@ -39,7 +39,7 @@ The most practical way to get the link to every guest is a **scheduled message (
     In your booking platform, create a scheduled message that is sent automatically **2–3 days before arrival**, inviting the guest to complete their online check-in via the link.
   </Step>
   <Step title="Use the platform's dynamic booking variable">
-    Platforms support **dynamic variables** in templates (e.g. confirmation/booking code). Put the platform's booking variable in place of `{booking_id}` — this way every guest receives their own link and Etherly automatically knows which booking the check-in belongs to.
+    Platforms support **dynamic variables** in templates (e.g. confirmation/booking code). Put the platform's booking variable in place of `{booking_id}` — this way every guest receives their own link and DeskBoy automatically knows which booking the check-in belongs to.
   </Step>
   <Step title="Test with a real booking">
     Send the message on a test or real booking and open the link — the check-in form should load with that booking's details.

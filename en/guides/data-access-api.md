@@ -11,7 +11,7 @@ dashboards, spreadsheets, or internal tools with your data.
 
 <Note>
 Looking to connect an AI tool (Claude, ChatGPT, Grok) so you can ask questions about your data
-in plain language? See the **"Etherly Insights"** guide.
+in plain language? See the **"DeskBoy Insights"** guide.
 </Note>
 
 <Note>
@@ -62,14 +62,14 @@ Use your key as a **Bearer token** in the `Authorization` header:
 
 ```bash
 curl -H "Authorization: Bearer eth_data_..." \
-  "https://app.etherly.app/api/data-access/v1/business-overview?from=2026-01-01&to=2026-01-31"
+  "https://app.deskboy.app/api/data-access/v1/business-overview?from=2026-01-01&to=2026-01-31"
 ```
 
 ---
 
 ## Available tools
 
-The same tools as Etherly Insights — each endpoint corresponds to one tool.
+The same tools as DeskBoy Insights — each endpoint corresponds to one tool.
 
 ### Revenue & performance
 
@@ -134,7 +134,7 @@ Market tools rely on an external market-data source and have a daily usage allow
 
 | Endpoint | Description |
 |---|---|
-| **etherly-advisor** | The Etherly revenue advisor: takes a question plus results from the other tools and returns grounded pricing and occupancy advice |
+| **etherly-advisor** | The DeskBoy revenue advisor: takes a question plus results from the other tools and returns grounded pricing and occupancy advice |
 
 ---
 

@@ -5,11 +5,11 @@ description: "Set up automatic Airbnb booking ingestion via a direct connection,
 
 # Airbnb Sync
 
-Etherly Sync receives Airbnb bookings automatically in the following ways:
+DeskBoy receives Airbnb bookings automatically in the following ways:
 
 - **Direct connection (Airbnb Live)** — Connect your Airbnb account once and bookings arrive automatically. The simplest option.
-- **Email sync** — You forward Airbnb emails to your Etherly address. Best for real-time amounts and booking details.
-- **iCal sync** — Etherly periodically reads your property's Airbnb iCal link to confirm dates.
+- **Email sync** — You forward Airbnb emails to your DeskBoy address. Best for real-time amounts and booking details.
+- **iCal sync** — DeskBoy periodically reads your property's Airbnb iCal link to confirm dates.
 
 ## Direct Airbnb connection (Airbnb Live)
 
@@ -48,7 +48,7 @@ Deleting the connection from **Settings → Integrations** also revokes access t
 
 ### 1. Enable
 
-Go to **Settings → Airbnb → Email Sync** and enable the **«Email Sync»** toggle for your connection. The app gives you a unique inbound address (e.g. `airbnb+xxxxx@app.etherly.app`).
+Go to **Settings → Airbnb → Email Sync** and enable the **«Email Sync»** toggle for your connection. The app gives you a unique inbound address (e.g. `airbnb+xxxxx@app.deskboy.app`).
 
 ### 2. Configure Gmail
 
@@ -57,13 +57,13 @@ Go to **Settings → Airbnb → Email Sync** and enable the **«Email Sync»** t
     In Gmail → **Settings (⚙)** → **See all settings** → **«Forwarding and POP/IMAP»** tab
   </Step>
   <Step title="Add a forwarding address">
-    Click **«Add a forwarding address»** and enter the Etherly address shown in Settings.
+    Click **«Add a forwarding address»** and enter the DeskBoy address shown in Settings.
   </Step>
   <Step title="Confirm forwarding">
-    Gmail will send a confirmation email to Etherly. Etherly detects this email and shows a banner in Settings with a confirmation link. Click **«Confirm Gmail»** and follow the link.
+    Gmail will send a confirmation email to DeskBoy. DeskBoy detects this email and shows a banner in Settings with a confirmation link. Click **«Confirm Gmail»** and follow the link.
 
     <Note>
-    The confirmation link requires signing in with your Google account. Etherly cannot complete this step automatically.
+    The confirmation link requires signing in with your Google account. DeskBoy cannot complete this step automatically.
     </Note>
 
     Once you've confirmed, click **«Done»** to close the banner. The **«Gmail forwarding confirmed»** badge will appear.
@@ -71,7 +71,7 @@ Go to **Settings → Airbnb → Email Sync** and enable the **«Email Sync»** t
   <Step title="Create a filter">
     In Gmail → **Settings → Filters** → **«Create a new filter»**:
     - **From:** `automated@airbnb.com`
-    - **Action:** Forward to the Etherly address
+    - **Action:** Forward to the DeskBoy address
   </Step>
 </Steps>
 
@@ -81,7 +81,7 @@ Go to **Settings → Airbnb → Email Sync** and enable the **«Email Sync»** t
   <Step title="Copy the iCal link from Airbnb">
     In Airbnb → **Calendar** → **«Connect to other platforms»** → **«Export calendar»**. Copy the link.
   </Step>
-  <Step title="Paste into Etherly">
+  <Step title="Paste into DeskBoy">
     In **Settings → Properties**, find the property and paste the iCal link into the **«Airbnb iCal URL»** field. Enable the **«iCal Sync»** toggle.
   </Step>
 </Steps>
