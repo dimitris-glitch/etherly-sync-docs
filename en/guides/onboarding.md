@@ -40,7 +40,7 @@ The activation steps (email, phone, company details, booking connection) are **t
 
 ## Connecting an invoicing provider
 
-You connect your invoicing provider from the panel whenever it suits you: **Settings → Connections**. Pick the provider you use and complete the connection there.
+You connect your invoicing provider from the panel whenever it suits you: **Settings → Integrations**. Pick the provider you use and complete the connection there.
 
 Until then you already have full access to booking sync, AADE Connect and analytics. Once the provider is connected, document issuance from your bookings becomes available too.
 

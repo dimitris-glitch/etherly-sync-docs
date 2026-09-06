@@ -41,7 +41,7 @@ If you have changed the payment method for a specific booking (from the Declarat
 
 1. Per-booking manual override (✏️ on the Declarations page)
 2. **Per-channel default — this page**
-3. Global default: Bank in Greece
+3. General default: Bank in Greece
 
 <Tip>
 For more details on per-declaration payment method overrides, see the [Declarations Guide](/en/guides/declarations).

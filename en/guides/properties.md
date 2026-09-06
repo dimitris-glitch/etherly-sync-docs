@@ -101,7 +101,7 @@ Each screen remembers its own choice, so the group you work in daily is already 
 
 On **Bookings**, in the **Today** tab, as soon as one group exists, properties are shown per group under a heading with the group's name and colour. Groups come in alphabetical order and "Ungrouped" always comes last.
 
-In the properties list and in the **Settings → Check-In Settings** tab, properties are shown in collapsible cards per group, while in the **Settings → Advanced → Automatic property invoicing** table and in the cleaning-staff assignment they are shown grouped with a heading and a count per group.
+In the properties list and in the **Settings → Online Check-In** tab, properties are shown in collapsible cards per group, while in the **Settings → Advanced → Automatic property invoicing** table and in the cleaning-staff assignment they are shown grouped with a heading and a count per group.
 
 In the **Automatic property invoicing** table and in the **cleaning-staff assignment**, each group heading opens and closes with a click: close the groups you are not working on right now and only the ones you want to set up stay in view. While a group is closed, its heading keeps showing the group name and how many properties it holds. Both screens open with every group expanded.
 

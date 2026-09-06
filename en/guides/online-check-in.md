@@ -11,10 +11,10 @@ Online Check-In lets guests submit their details before they arrive at the prope
 
 ## Enabling the feature
 
-Online Check-In is enabled from **Settings → Integrations**, in the **Apps** section — click **Enable** on the **Online Check-In** card, the same way you would connect Hosthub, Airbnb, or Elorus. It is not a toggle inside a settings tab; the **Check-In Settings** tab itself only appears after the feature is enabled. Once active, a modal appears with the check-in URL you need to share with guests, along with the **Check-In Settings** tab in Settings and an **Online Check-Ins** entry in the sidebar.
+Online Check-In is enabled from **Settings → Integrations**, in the **Apps** section — click **Enable** on the **Online Check-In** card, the same way you would connect Hosthub, Airbnb, or Elorus. It is not a toggle inside a settings tab; the **Online Check-In** tab itself only appears after the feature is enabled. Once active, a modal appears with the check-in URL you need to share with guests, along with the **Online Check-In** tab in Settings and an **Online Check-Ins** entry in the sidebar.
 
 <Note>
-The **Check-In Settings** tab has its own "Notify host when guest completes check-in" toggle under General Settings. That toggle only controls email notifications — it does not enable or disable the feature itself.
+The **Online Check-In** tab has its own "Notify host when guest completes check-in" toggle under General Settings. That toggle only controls email notifications — it does not enable or disable the feature itself.
 </Note>
 
 ---
@@ -58,7 +58,7 @@ Outside the window, or if the check-in has already been submitted, guests see an
 
 ## Per-property settings
 
-Go to **Settings → Check-In Settings** to configure each property individually.
+Go to **Settings → Online Check-In** to configure each property individually.
 
 If you have created [property groups](/guides/properties), the list is shown grouped just like **Settings → Properties**: each group is a card showing its name and the number of properties it contains, expanding and collapsing on click, while anything without a group is collected under **"Ungrouped"** at the end. The app remembers which groups you had open.
 

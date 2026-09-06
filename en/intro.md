@@ -65,5 +65,5 @@ DeskBoy **syncs** your bookings regularly, **checks** that every property is ful
 ## Next step
 
 <Card title="Get started in 10 minutes →" icon="rocket" href="/en/getting-started">
-  Connect your booking channel, Elorus and AADE-Connect, and see your first booking ready.
+  Connect your booking channel, Elorus and AADE Connect, and see your first booking ready.
 </Card>

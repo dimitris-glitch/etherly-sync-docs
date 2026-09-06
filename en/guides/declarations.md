@@ -1,27 +1,27 @@
 ---
 title: "Short-Term Rental Declarations (AADE)"
-description: "Submit declarations to AADE via AADE-Connect: manual and automatic submission, guest identification, and platform mapping."
+description: "Submit declarations to AADE via AADE Connect: manual and automatic submission, guest identification, and platform mapping."
 ---
 
 # Short-Term Rental Declarations
 
-Every short-term rental booking must be declared to AADE (Greek tax authority) via **AADE-Connect**. DeskBoy handles this automatically on your behalf.
+Every short-term rental booking must be declared to AADE (Greek tax authority) via **AADE Connect**. DeskBoy handles this automatically on your behalf.
 
-## myDATA and AADE-Connect: two separate obligations
+## myDATA and AADE Connect: two separate obligations
 
 Many users confuse the two systems — they are independent:
 
-| | myDATA | AADE-Connect |
+| | myDATA | AADE Connect |
 |---|---|---|
 | **What it is** | Electronic invoicing record | Short-term rental stay declaration |
 | **Per** | Document (invoice, receipt) | Booking |
 | **When** | Automatically on issuance | When the booking is ready to declare |
-| **Via** | Elorus (automatic) | AADE-Connect (DeskBoy) |
+| **Via** | Elorus (automatic) | AADE Connect (DeskBoy) |
 
-DeskBoy handles both automatically: documents are sent to myDATA via Elorus when issued, and stay declarations are submitted separately via AADE-Connect.
+DeskBoy handles both automatically: documents are sent to myDATA via Elorus when issued, and stay declarations are submitted separately via AADE Connect.
 
 <Warning>
-A successful myDATA document submission **does not mean** the AADE-Connect declaration has been filed — and vice versa. The two obligations are tracked independently.
+A successful myDATA document submission **does not mean** the AADE Connect declaration has been filed — and vice versa. The two obligations are tracked independently.
 </Warning>
 
 Declarations are found under **Declarations** in the sidebar — bookings ready to declare with an AADE property mapping are shown: for businesses once the document is issued, for private individuals once the stay is complete.
@@ -191,7 +191,7 @@ Overrides are allowed only before a declaration has been sent to AADE Connect. O
 **Resolution priority order:**
 1. Per-booking override (✏️)
 2. Per-channel default (Settings → AADE Connect)
-3. Global default: `DOMESTIC_PAYMENTS_ACCOUNT`
+3. General default: `DOMESTIC_PAYMENTS_ACCOUNT`
 
 ## Declaration history
 
@@ -224,7 +224,7 @@ Each declaration sent to AADE requires information about **how the booking chann
 
 1. Per-booking override (✏️ pencil icon in the Payment Method column on the Declarations page)
 2. Per-channel default — this page
-3. Global default: `DOMESTIC_PAYMENTS_ACCOUNT`
+3. General default: `DOMESTIC_PAYMENTS_ACCOUNT`
 
 <Tip>
 Per-booking overrides are only allowed **before** a declaration has been sent. Once dispatched — even if it later shows a failed status — the payment method is locked.
