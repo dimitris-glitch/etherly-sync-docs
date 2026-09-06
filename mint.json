@@ -2,16 +2,25 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "DeskBoy",
   "logo": {
-    "light": "/logo.png",
-    "dark": "/logo.png"
+    "light": "/logo.svg",
+    "dark": "/logo.svg"
   },
   "favicon": "/favicon.ico",
   "colors": {
-    "primary": "#6366F1",
-    "light": "#818CF8",
-    "dark": "#4338CA",
+    "primary": "#2a7449",
+    "light": "#57966e",
+    "dark": "#1e5334",
     "background": {
-      "dark": "#0F0F13"
+      "light": "#f4faf6",
+      "dark": "#0a140e"
+    }
+  },
+  "font": {
+    "headings": {
+      "family": "Literata"
+    },
+    "body": {
+      "family": "Manrope"
     }
   },
   "topbarLinks": [
@@ -30,11 +39,6 @@
       "name": "Επικοινωνία",
       "icon": "envelope",
       "url": "mailto:support@deskboy.app"
-    },
-    {
-      "name": "Changelog",
-      "icon": "megaphone",
-      "url": "https://etherly.app/changelog"
     }
   ],
   "navigation": [
@@ -125,9 +129,6 @@
       "pages": ["en/faq"]
     }
   ],
-  "footerSocials": {
-    "linkedin": "https://www.linkedin.com/company/etherly-io"
-  },
   "modeToggle": {
     "default": "light",
     "isHidden": true
