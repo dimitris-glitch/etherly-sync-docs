@@ -1,64 +1,69 @@
 ---
 title: "What is DeskBoy"
-description: "Automated invoicing for short-term rentals — from Hosthub to Elorus and myDATA, with zero manual work."
+description: "Automated invoicing and AADE declarations for short-term rentals. From your bookings to the documents, myDATA, the Short-Term Stay Declaration and the Climate Resilience Fee declaration, with zero manual work."
 ---
 
 # Welcome to DeskBoy
 
-**DeskBoy** is an automation platform that connects **Hosthub** (booking management) with **Elorus** (electronic invoicing), automatically generating all required fiscal documents for every short-term rental booking.
+**DeskBoy** takes your bookings from the channel you use (**Hosthub**, **Hospitable**, **Airbnb** directly and other channels) and handles everything that follows: the tax documents in **Elorus** with submission to **myDATA**, the **Short-Term Stay Declaration** to **AADE**, and the **Climate Resilience Fee** together with its monthly payment declaration. Automatically, for every booking.
 
 ## The problem it solves
 
-Every guest checkout requires creating fiscal documents in Elorus — typically three, or four if the booking spans two seasonal periods:
+Every short-term rental booking brings three obligations:
 
-1. **Accommodation Document** — Receipt for private guests / Invoice for businesses, 13% VAT
-2. **Payment Receipt** — linked to the accommodation document
-3. **Climate Resilience Fee** — calculated per night and property category
+1. **Documents.** A stay document (receipt or invoice, 13% VAT), a payment receipt and the Climate Resilience Fee, in the right order and submitted to myDATA. If the stay spans two seasons, the fee is split.
+2. **AADE declaration.** Every stay is declared in the Short-Term Stay Registry, with the booking and platform details.
+3. **Climate Resilience Fee declaration.** Every month the fee collected is declared to AADE, per tax ID, with the figures per property category and season.
 
-With dozens of bookings per month and multiple properties, this becomes time-consuming and error-prone. DeskBoy automates it entirely.
+With dozens of bookings a month and several properties, this work eats hours and breeds mistakes. DeskBoy does it on its own. If you rent as a private individual without a business registration, it keeps only what applies to you: stay declaration and Climate Resilience Fee, without documents.
 
 ## How it works
 
 ```text
-Hosthub  ──→  DeskBoy  ──→  Elorus  ──→  myDATA
-(Bookings)    (Automation)     (Documents)    (Tax Authority)
+Hosthub / Hospitable / Airbnb / ...  ──→  DeskBoy  ──→  Elorus ──→ myDATA
+            (Bookings)                  (Automation)       ├──→ AADE: Short-Term Stay Declaration
+                                                           └──→ AADE: Climate Resilience Fee declaration (monthly)
 ```
 
-The system **syncs** bookings from Hosthub on a regular schedule, **verifies** that each property is fully configured, and **issues** the fiscal documents automatically — submitting to myDATA if enabled.
+DeskBoy **syncs** your bookings regularly, **checks** that every property is fully configured, **issues** the documents and **submits** the stay declaration, at the time you set. At the end of the month it hands you the Climate Resilience Fee declaration ready, with the figures in the order the AADE form asks for them.
 
-## Core features
+## Key features
 
 <CardGroup cols={2}>
-  <Card title="Automatic Sync" icon="arrows-rotate">
-    New bookings, changes, and cancellations are detected automatically from Hosthub. You can also trigger a manual sync from the Bookings page.
+  <Card title="Booking sync" icon="arrows-rotate">
+    New bookings, changes and cancellations arrive automatically from your channel. Manual sync whenever you want.
   </Card>
-  <Card title="Automatic document issuance" icon="file-invoice">
-    Accommodation document, payment receipt, and climate fee — issued automatically in the correct order.
+  <Card title="Documents per booking" icon="file-invoice">
+    Stay document, payment receipt and Climate Resilience Fee, in the right order, submitted to myDATA.
   </Card>
-  <Card title="Auto-Invoicing" icon="clock">
-    Set a daily execution time and the system invoices all eligible bookings automatically, hands-free.
+  <Card title="AADE declarations" icon="landmark">
+    Automatic submission of the Short-Term Stay Declaration for every booking, with status tracking and amendments.
   </Card>
-  <Card title="Multiple properties and Elorus organizations" icon="building">
-    Manage dozens of properties across multiple Elorus organizations from a single interface.
+  <Card title="Climate Resilience Fee declaration" icon="leaf">
+    The monthly payment declaration ready per tax ID: nights, property categories, seasons and totals, as the AADE form asks for them.
   </Card>
-  <Card title="Climate Resilience Fee" icon="leaf">
-    Automatic calculation based on property category and season. For bookings spanning two seasons, separate documents are created per season.
+  <Card title="Automatic invoicing" icon="clock">
+    Set a run time and DeskBoy invoices and declares all ready bookings without intervention.
   </Card>
-  <Card title="Secure & Reliable" icon="shield-check">
-    Encrypted API key storage, duplicate prevention, automatic retries on failures.
+  <Card title="Private individual" icon="user">
+    Stay declaration and Climate Resilience Fee without issuing documents, with the settings that fit your regime.
+  </Card>
+  <Card title="Online Check-In & Cleaning" icon="clipboard-check">
+    Guests fill in their details before arrival and the cleaning crew sees its schedule from the phone.
+  </Card>
+  <Card title="Nio, your assistant" icon="message">
+    Ask what is pending, why a booking was not invoiced or how to set something up, and it guides you step by step.
   </Card>
 </CardGroup>
 
-## Who it's for
+## Who it is for
 
-DeskBoy is ideal for:
-
-- **Property managers** with 5+ properties on Hosthub who spend hours on manual invoicing
-- **Accountants** managing invoicing for multiple rental property owners
-- **Owners** who want help staying compliant with myDATA obligations
+- **Property managers** with many properties on Hosthub, Hospitable or another channel, losing hours to invoicing and declarations
+- **Owners** renting one or a few properties, with or without a business registration
+- **Accountants** tracking compliance for many clients from one place
 
 ## Next step
 
 <Card title="Get started in 10 minutes →" icon="rocket" href="/en/getting-started">
-  Connect Hosthub and Elorus and send your first document.
+  Connect your booking channel, Elorus and AADE-Connect, and see your first booking ready.
 </Card>

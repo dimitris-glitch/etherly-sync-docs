@@ -23,7 +23,7 @@ Search works with upper or lower case and with or without accents — "χανι�
 
 ## The "Updated" mark
 
-When a property setting changes from somewhere else — for example when the **DeskBoy Assistant** assigns an organisation, VAT rate or stay tax after you confirm it — that property's card is briefly marked **"Updated"**. The new value appears on the card straight away, even if you already had it expanded, so you can see exactly what was set.
+When a property setting changes from somewhere else — for example when **Nio** assigns an organisation, VAT rate or stay tax after you confirm it — that property's card is briefly marked **"Updated"**. The new value appears on the card straight away, even if you already had it expanded, so you can see exactly what was set.
 
 ## Property groups
 

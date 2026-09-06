@@ -1,11 +1,11 @@
 ---
-title: "DeskBoy Assistant"
+title: "Nio"
 description: "The built-in AI assistant that answers setup and performance questions, navigates the app, and saves your conversation history."
 ---
 
-# DeskBoy Assistant
+# Nio
 
-The **DeskBoy Assistant** is the built-in AI assistant in DeskBoy. Click the button in the bottom-right corner of any page to open it (press Escape to close).
+**Nio** is the built-in AI assistant in DeskBoy. Click the button in the bottom-right corner of any page to open it (press Escape to close).
 
 ## What it can do
 
