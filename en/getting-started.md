@@ -14,7 +14,7 @@ Setup takes **4 steps** and about 10 minutes. Before you begin, make sure you ha
 
 ## Step 1: Create your account
 
-Go to [app.deskboy.app/auth/register](https://app.deskboy.app/auth/register) and sign up. You'll receive a verification email — click the link and you'll land directly in the setup wizard.
+Go to [app.deskboy.app/register](https://app.deskboy.app/register) and sign up. You'll receive a verification email — click the link and you'll land directly in the setup wizard.
 
 <Info>
 Your account starts on the **Free** plan — no card, no expiry, up to 250 checkouts a month.

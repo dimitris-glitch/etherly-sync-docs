@@ -26,12 +26,12 @@
   "topbarLinks": [
     {
       "name": "Σύνδεση",
-      "url": "https://app.deskboy.app/auth/login"
+      "url": "https://app.deskboy.app/login"
     }
   ],
   "topbarCtaButton": {
     "name": "Δοκιμάστε δωρεάν",
-    "url": "https://app.deskboy.app/auth/register"
+    "url": "https://app.deskboy.app/register"
   },
   "versions": ["Ελληνικά", "English"],
   "anchors": [
