@@ -14,12 +14,15 @@ DeskBoy supports **multiple users** per account. Each user has a role that defin
 | **Owner** | ✅ Full | ✅ Full | ✅ Full | ✅ Full | ✅ |
 | **Admin** | ✅ Full | ✅ Full | ❌ | ❌ | ✅ |
 | **User** | 👁️ Read-only | ❌ | ❌ | ❌ | ❌ |
+| **Accountant** | 👁️ Read-only and export | ❌ | ❌ | 👁️ Read-only | ✅ |
 
 **Owner**: Full control — can delete the account, manage billing, and manage users.
 
 **Admin**: Can send invoices, change property settings, and run syncs — but cannot see billing or manage users.
 
 **User**: Can view bookings and statuses, but cannot make any changes.
+
+**Accountant**: Sees bookings, documents, declarations and the Climate Resilience Fee page and can export, without changing anything. Does not count toward your plan's user limit.
 
 ## Inviting a new user
 
@@ -28,7 +31,7 @@ DeskBoy supports **multiple users** per account. Each user has a role that defin
     Click the user icon at the top right → **"Users"** → click **"Invite User"**
   </Step>
   <Step title="Enter email, name and role">
-    Enter the new user's **Email** and **Name**, and select a **Role** (Admin or User).
+    Enter the new user's **Email** and **Name**, and select a **Role** (Admin, User or Accountant).
   </Step>
   <Step title="Send the invitation">
     Click **"Send Invite"**. The user receives an email with an acceptance link that expires in **7 days**.

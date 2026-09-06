@@ -1,25 +1,17 @@
 ---
-title: "Airbnb Sync"
-description: "Set up automatic Airbnb booking ingestion via a direct connection, email forwarding or iCal."
+title: "Airbnb connection (Airbnb Live)"
+description: "Connect your Airbnb account once and bookings, amounts and cancellations arrive in DeskBoy automatically."
 ---
 
-# Airbnb Sync
+# Airbnb connection (Airbnb Live)
 
-DeskBoy receives Airbnb bookings automatically in the following ways:
-
-- **Direct connection (Airbnb Live)** — Connect your Airbnb account once and bookings arrive automatically. The simplest option.
-- **Email sync** — You forward Airbnb emails to your DeskBoy address. Best for real-time amounts and booking details.
-- **iCal sync** — DeskBoy periodically reads your property's Airbnb iCal link to confirm dates.
-
-## Direct Airbnb connection (Airbnb Live)
-
-As an alternative to email forwarding, you can connect your Airbnb account directly. Bookings, amounts and cancellations arrive automatically — no browser extension and no forwarding setup.
+With **Airbnb Live** you connect your Airbnb account once, and from then on bookings, amounts and cancellations arrive automatically, with no email forwarding and no browser extensions.
 
 It works even when your properties are already connected to another management system.
 
-### How it works
+## How the connection is made
 
-We complete the Airbnb connection together with you — you leave your details and we take it from there.
+We complete the Airbnb connection together with you: you leave your details and we take it from there.
 
 <Steps>
   <Step title="Leave your details">
@@ -29,63 +21,24 @@ We complete the Airbnb connection together with you — you leave your details a
     We receive your request and contact you shortly to arrange a short session.
   </Step>
   <Step title="You approve on Airbnb">
-    During the session we guide you step by step: you sign in to Airbnb as usual and approve access to your properties and bookings. You enter your password directly with Airbnb — our app never sees it.
+    During the session we guide you step by step: you sign in to Airbnb as usual and approve access to your properties and bookings. You enter your password directly with Airbnb; the app never sees it.
   </Step>
   <Step title="Done">
     Once approval is complete, the connection appears in **Settings → Integrations** and your properties and bookings arrive automatically.
   </Step>
 </Steps>
 
-### Are you an Airbnb co-host?
+## Are you an Airbnb co-host?
 
-If you manage a property owned by someone else, approval comes from the owner's Airbnb account — they do not need an account with the app. Let us know when we contact you, so we can guide the owner through the approval.
+If you manage a property owned by someone else, approval comes from the owner's Airbnb account; they do not need an account with the app. Let us know when we contact you, so we can guide the owner through the approval.
 
-### Disconnecting
+## What arrives automatically
 
-Deleting the connection from **Settings → Integrations** also revokes access to your Airbnb account.
+- New bookings, date and amount changes, cancellations.
+- The account's properties, as a separate set next to the ones you already have. You set each property's invoicing settings and ΤΑΚΚ category once under **Settings → Properties**.
 
-## Setting up Email Sync
+If a booking has a charge the app does not recognise yet, it appears under **Bookings** with the **"Action needed"** indicator: you check the amounts, confirm them, and the document proceeds normally.
 
-### 1. Enable
+## Disconnecting
 
-Go to **Settings → Airbnb → Email Sync** and enable the **«Email Sync»** toggle for your connection. The app gives you a unique inbound address (e.g. `airbnb+xxxxx@app.deskboy.app`).
-
-### 2. Configure Gmail
-
-<Steps>
-  <Step title="Open Gmail Settings">
-    In Gmail → **Settings (⚙)** → **See all settings** → **«Forwarding and POP/IMAP»** tab
-  </Step>
-  <Step title="Add a forwarding address">
-    Click **«Add a forwarding address»** and enter the DeskBoy address shown in Settings.
-  </Step>
-  <Step title="Confirm forwarding">
-    Gmail will send a confirmation email to DeskBoy. DeskBoy detects this email and shows a banner in Settings with a confirmation link. Click **«Confirm Gmail»** and follow the link.
-
-    <Note>
-    The confirmation link requires signing in with your Google account. DeskBoy cannot complete this step automatically.
-    </Note>
-
-    Once you've confirmed, click **«Done»** to close the banner. The **«Gmail forwarding confirmed»** badge will appear.
-  </Step>
-  <Step title="Create a filter">
-    In Gmail → **Settings → Filters** → **«Create a new filter»**:
-    - **From:** `automated@airbnb.com`
-    - **Action:** Forward to the DeskBoy address
-  </Step>
-</Steps>
-
-## Setting up iCal Sync
-
-<Steps>
-  <Step title="Copy the iCal link from Airbnb">
-    In Airbnb → **Calendar** → **«Connect to other platforms»** → **«Export calendar»**. Copy the link.
-  </Step>
-  <Step title="Paste into DeskBoy">
-    In **Settings → Properties**, find the property and paste the iCal link into the **«Airbnb iCal URL»** field. Enable the **«iCal Sync»** toggle.
-  </Step>
-</Steps>
-
-<Note>
-iCal sync runs every few hours and confirms check-in/check-out dates. Combining email + iCal gives the most complete picture of each booking.
-</Note>
+Deleting the connection from **Settings → Integrations** also revokes access to your Airbnb account. Bookings that already have documents issued are kept as tax history.

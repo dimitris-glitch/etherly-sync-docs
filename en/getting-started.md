@@ -1,152 +1,145 @@
 ---
 title: "Getting Started"
-description: "Connect Hosthub and your invoicing provider in 4 simple steps and send your first document in under 10 minutes."
+description: "Account, activation, booking-channel connection, invoicing provider and AADE Connect: the steps to your first ready booking, in about 10 minutes."
 ---
 
 # Getting Started with DeskBoy
 
-Setup takes **4 steps** and about 10 minutes. Before you begin, make sure you have:
+Setup takes about **10 minutes**. Before you begin, it helps to have at hand:
 
-- A **Hosthub** account with at least one active property, and access to its API key
-- An account with the **invoicing provider** you use (e.g. Elorus), for issuing documents
+- Access to your **booking channel**: your Hosthub API key, your Hospitable API key, or simply your Airbnb account details.
+- If you issue documents, an account with the **invoicing provider** you use (e.g. Elorus). If you rent as a private individual without a business registration, you do not need one (see [Private individual](/en/guides/private-individual)).
+- Your TAXISnet credentials for AADE declarations.
 
 ---
 
 ## Step 1: Create your account
 
-Go to [app.deskboy.app/register](https://app.deskboy.app/register) and sign up. You'll receive a verification email — click the link and you'll land directly in the setup wizard.
+Go to [app.deskboy.app/register](https://app.deskboy.app/register) and create an account, with email and password or with Google. You will receive a verification email; click the link and you land directly in the activation steps.
 
 <Info>
-Your account starts on the **Free** plan — no card, no expiry, up to 250 checkouts a month.
+Your account starts on the **Free** plan, with no card and no expiry, with up to 250 checkouts per month.
 </Info>
 
 ---
 
-## Step 2: Connect Hosthub
+## Step 2: Activation
 
-In the setup wizard, select the **"Connect Hosthub"** step.
+Three short steps, the same for everyone (details in [Account activation](/en/guides/onboarding)):
 
 <Steps>
-  <Step title="Find your Hosthub API key">
-    In Hosthub, click on your profile name at the top right, then **Settings**. At the bottom of the page you will find the API keys settings. Click "Create new API key", give it any name and Save. Copy the key that will be created.
+  <Step title="Phone verification">
+    Enter your mobile number in international format and type in the code you receive by SMS.
   </Step>
-  <Step title="Enter the key and test the connection">
-    Paste the key in the **Hosthub API Key** field and click **"Test connection"**.
+  <Step title="Capacity and details">
+    State in which capacity you rent: **private individual** (you declare to AADE without issuing documents) or **business** (you issue receipts or invoices). A tax ID lookup fills in your details from the registry.
   </Step>
-  <Step title="Confirm and continue">
-    After a successful connection you'll see "Connection successful. Property sync started." Click **"Continue"**.
+  <Step title="Connect your booking channel">
+    Pick the channel you use:
+
+    - **Hosthub**: in Hosthub click your name at the top right → **Settings** → API keys section → **Create new API key**. Copy the key, paste it into the **Hosthub API Key** field and click **Test connection**. Once you see "Connection successful. Property sync has started.", click **Continue**.
+    - **Airbnb Live**: leave your Airbnb account email and a phone number, and we complete the connection together with you in a short session (see [Airbnb connection](/en/guides/airbnb)).
+    - **Hospitable**: paste the API key you issue in Hospitable (see [Hospitable connection](/en/guides/hospitable)).
   </Step>
 </Steps>
 
+Once these are done, you enter the panel. Booking sync starts right away.
+
 ---
 
-## Step 3: Connect your invoicing provider
+## Step 3: Invoicing provider
 
-Finish activation and enter the dashboard. You connect your invoicing provider from **Settings → "Connections" tab**, whenever it suits you.
+If you issue documents, connect your provider under **Settings → Integrations**, whenever it suits you:
 
 <Steps>
-  <Step title="Pick your provider">
-    In the "Connections" tab click **"New connection"** and choose the provider you use.
+  <Step title="New connection">
+    Click **New connection** and pick the provider you use.
   </Step>
-  <Step title="Complete the connection">
-    Follow the steps shown for the provider you picked. For **Elorus** you need the API key (Settings → API Settings → "Create new key") and the **Organization ID**, which appears in the URL of the Settings → Organization page.
+  <Step title="Connection details">
+    For **Elorus** you need the API key (Settings → API settings → **Create new key**) and the **Organization ID**, shown in the URL of the Settings → Organization page.
   </Step>
   <Step title="Test the connection">
-    Click **"Test connection"**. After success the connection shows as active and you can start issuing documents.
+    Click **Test connection**. On success the connection shows as active and you can issue documents.
   </Step>
 </Steps>
 
 <Info>
-Booking sync, AADE Connect and analytics work from the moment Hosthub is connected. You add the invoicing provider whenever you're ready.
+Booking sync, AADE declarations and analytics work from the moment your channel is connected. Add the invoicing provider whenever you are ready. Provider credentials are stored encrypted.
 </Info>
 
-<Warning>
-Your provider credentials are stored **encrypted** and are never displayed in plain text after saving.
-</Warning>
-
 ---
 
-## Step 4: Configure your first property
-
-Navigate to **Settings → "Properties" tab**. Each property needs the following settings:
-
-| Field | What it is |
-|-------|-----------|
-| **Default Receipts Contact** | The customer account in Elorus for receipts |
-| **Invoices Series / Receipts Series** | Numbering series for invoices and receipts (or "No Series") |
-| **Category** | The category for the Climate Resilience Fee |
-| **Organization** | The Elorus organization that issues the documents |
-
-<Tip>
-See the detailed [Property Configuration Guide](/en/guides/properties) for step-by-step instructions.
-</Tip>
-
----
-
-## Sending your first document
-
-Once a property is configured, its bookings appear with status **READY** (green indicator).
+## Step 4: AADE Connect and your first property
 
 <Steps>
-  <Step title="Find a READY booking">
-    In **Bookings**, ready bookings are shown with a green status badge.
+  <Step title="AADE Connect">
+    Under **Settings → AADE Connect**, connect your TAXISnet credentials and match each property to its AADE property (AMA). Without a match, its bookings do not appear under Declarations (see [AADE Connect settings](/en/guides/aade-connect)).
   </Step>
-  <Step title="Click the send button">
-    Click the send button next to the booking — it is named after the invoicing provider set for that property (for example **"Send to Elorus"**). You can also select multiple bookings for bulk sending.
+  <Step title="Property setup">
+    Under **Settings → Properties**, open your first property. For the Climate Resilience Fee set its **Regime**, rooms and beds. If you issue documents, also set:
+
+    | Field | What it is |
+    |-------|------------|
+    | **Organization** | The invoicing-provider organization that issues the documents |
+    | **Default Receipts Contact** | The retail customer in Elorus used on receipts |
+    | **Invoice Series / Receipt Series** | Numbering series for invoices and receipts (or "No series") |
+    | **Category** | The ΤΑΚΚ tax that goes on the document |
+
+    Settings save automatically. See the full [property guide](/en/guides/properties).
   </Step>
-  <Step title="Watch the status update">
-    In a few seconds, the status changes to **SENT**. A direct link to the Elorus document appears automatically. If myDATA submission is enabled, the status may briefly show **WAITING_MYDATA_FINALIZATION** while the tax authority registers the document — it will reach **SENT** automatically once finalization completes.
+</Steps>
+
+---
+
+## Your first booking
+
+Once a property is fully configured, its bookings appear under **Bookings** with status **READY** (green indicator).
+
+<Steps>
+  <Step title="Send the booking">
+    Click the send button next to it. It carries your provider's name (e.g. **"Send to Elorus"**). You can also select several for a bulk send.
+  </Step>
+  <Step title="See the result">
+    Within seconds the status becomes **SENT** and the link to the document appears. The AADE declaration shows up under **Declarations**.
+  </Step>
+  <Step title="Let DeskBoy carry on by itself">
+    Enable [auto-invoicing](/en/guides/auto-invoicing) and [automatic final declaration](/en/guides/declarations), and the next bookings are handled without you.
   </Step>
 </Steps>
 
 <Check>
-Your first document has been issued successfully in Elorus. If myDATA submission is enabled in your Elorus settings, the document is also forwarded to the tax authority automatically.
+Your first document has been issued.
 </Check>
 
 ---
 
 ## Available integrations
 
-Under **Settings → Integrations** you'll find all available connections:
+Under **Settings → Integrations** you find all connections:
 
 | Integration | What it does |
-|-------------|-------------|
+|-------------|--------------|
 | **Hosthub** | Automatic booking sync |
+| **Hospitable** | Bookings from all your Hospitable channels (Airbnb, Booking.com, Vrbo, direct) |
+| **Airbnb Live** | Direct connection to your Airbnb account, bookings arrive automatically |
 | **Elorus** | Document issuance and myDATA submission |
-| **Airbnb (CSV)** | Import bookings from a CSV file |
-| **AADE Connect** | Connect to AADE for short-term rental declarations |
+| **AADE Connect** | Short-term rental declarations to AADE |
 
-### Deleting a booking connection
-
-You can delete a booking connection (Hosthub or Airbnb) from
-**Settings → Integrations** using the delete icon. Deletion completes safely:
-
-- If the connection is syncing at that moment, the status
-  **"Connection is being deleted"** is shown and deletion completes
-  automatically in the background — the connection stays visible until it
-  finishes.
-- The connection's credentials are destroyed immediately when the deletion is
-  requested.
-- Check-outs with issued documents are **retained** as fiscal history,
-  together with their AADE declarations — deletion covers the connection's
-  operational data (calendars, non-invoiced bookings, properties without
-  fiscal history).
-- If deletion does not complete, the connection shows a clear status and a
-  retry button — no other action is needed.
+A booking connection is deleted from the delete icon on its card. Its credentials are destroyed immediately, while bookings with issued documents and their declarations are kept as tax history.
 
 ## What's next
 
 <CardGroup cols={2}>
-  <Card title="Property Configuration" icon="house" href="/en/guides/properties">
-    Set up contacts, series, and fee categories for each property.
+  <Card title="Property setup" icon="house" href="/en/guides/properties">
+    Contacts, series, regime and ΤΑΚΚ category for every property.
   </Card>
-  <Card title="Auto-Invoicing" icon="clock" href="/en/guides/auto-invoicing">
-    Enable nightly auto-invoicing for zero manual work.
+  <Card title="Auto-invoicing" icon="clock" href="/en/guides/auto-invoicing">
+    Set a run time and forget manual sending.
   </Card>
-  <Card title="Understanding Bookings" icon="list-check" href="/en/guides/checkouts">
-    Learn what each booking status means and how to act on it.
+  <Card title="Bookings & statuses" icon="list-check" href="/en/guides/checkouts">
+    What each status means and what to do for each.
   </Card>
-  <Card title="Add Users" icon="users" href="/en/guides/team">
-    Invite colleagues to manage bookings alongside you.
+  <Card title="Team" icon="users" href="/en/guides/team">
+    Invite collaborators and your accountant.
   </Card>
 </CardGroup>

@@ -140,8 +140,7 @@ Market tools rely on an external market-data source and have a daily usage allow
 
 ## Usage limits
 
-- **Daily limit**: up to 500 calls/day in total across all your keys combined.
-- A per-minute rate limit also applies for security reasons.
+- A daily usage limit applies, shared across all your keys.
 
 If a limit is exceeded, you'll receive an error and should wait before retrying.
 

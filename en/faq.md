@@ -9,7 +9,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
 
 <AccordionGroup>
   <Accordion title="My bookings show NEEDS_SETUP status. What do I do?">
-    The property isn't fully configured. Go to **Properties**, select the property, and complete all four required fields:
+    The property isn't fully configured. Open **Settings → Properties**, select the property, and complete all four required fields:
     - **Default Receipts Contact** — a customer account in Elorus
     - **Invoices Series** — a document numbering series for invoices
     - **Category** — for the Climate Resilience Fee
@@ -37,7 +37,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
   <Accordion title="A booking shows SENT_WITH_ERRORS. What happened?">
     The Invoice and Receipt were **issued successfully**, but the **Climate Resilience Fee** document failed. Check:
 
-    1. Whether the **Category** is correctly configured in **Properties**
+    1. Whether the **Category** is correctly configured under **Settings → Properties**
     2. Whether the tax rules in Elorus are up to date
 
     Contact support at [support@deskboy.app](mailto:support@deskboy.app) if the issue persists.
@@ -111,7 +111,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
   </Accordion>
 
   <Accordion title="What happens if the fee amounts change by law?">
-    Fee amounts are set in the **TCA Rules** per organization, under **Settings → Tax details**. These correspond to tax codes you have created in Elorus. If the law changes, update both the tax codes in Elorus and the TCA Rules under **Settings → Tax details**.
+    The statutory amounts are kept up to date by DeskBoy. The ΤΑΚΚ tax for each category is set per organisation under **Settings → Tax details** and matches the tax codes you created in Elorus. If the law changes, update the tax codes in Elorus; the app checks that their amount matches the statutory one (see [Climate Resilience Fee](/en/guides/climate-fee)).
   </Accordion>
 
   <Accordion title="I can't find the right Category for my property. What do I do?">
@@ -121,7 +121,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
   <Accordion title="I saw the message “Property has no TCA category”. What does it mean?">
     The send stopped before any document was issued, because the property has no TCA **Category** selected. The category determines the per-night fee, so it needs to be set before issuing.
 
-    Open **Settings → Properties**, pick the property's **Category**, and send again. A similar message about incomplete rates means the category is set but its summer or winter rate is missing — fill those in under **TCA Rules** in **Settings → Tax details**.
+    Open **Settings → Properties**, pick the property's **Category**, and send again. A similar message about incomplete rates means the category is set but its summer or winter rate is missing — fill those in under **Settings → Tax details**.
   </Accordion>
 </AccordionGroup>
 
@@ -131,7 +131,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
   <Accordion title="Auto-invoicing didn't run last night. Why?">
     Possible causes:
     - No bookings were in `READY` status at the **Execution time**
-    - The account's **Grace Period** had expired
+    - The account had an unpaid charge at the stage where auto-invoicing is paused (see [Plan & Billing](/en/guides/billing))
     - A rare technical issue — contact support
   </Accordion>
 
@@ -164,7 +164,9 @@ description: "Solutions for the most common issues with DeskBoy — from initial
 
 <AccordionGroup>
   <Accordion title="What happens with a 0€ booking (complimentary stay)?">
-    DeskBoy does not issue documents for zero-amount bookings. The send will fail or produce an empty document.
+    The booking is skipped automatically: no Climate Resilience Fee is calculated and no document is issued, the same as for date blocks synced with a zero amount from the channel.
+
+    If the booking was in fact paid (e.g. outside the platform), set the real amount with **Edit booking** (pencil icon on its row) and issuance proceeds normally with the new amount.
 
     If a document is needed for a complimentary stay:
     - Create it manually directly in **Elorus**
@@ -178,7 +180,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
     - **Private individual from abroad** → Retail receipt (no tax ID required)
     - **Company from abroad** → Invoice (VAT Number or local tax ID required)
 
-    The document type is set per property under **Properties → Document Type**. For special cases (intra-EU B2B, specific tax exemptions, etc.), consult your accountant.
+    The document type is set per property under **Settings → Properties**. For special cases (intra-EU B2B, specific tax exemptions, etc.), consult your accountant.
   </Accordion>
 </AccordionGroup>
 

@@ -232,9 +232,8 @@ More tools will be added gradually.
 
 ## Usage limits
 
-- **Daily limit**: up to 500 calls/day in total across all your connected apps combined. The
-  **DeskBoy Insights** tab shows a bar with today's usage against this limit.
-- A per-minute rate limit also applies for security reasons.
+- A daily usage limit applies, shared across all your connected apps. The **DeskBoy Insights**
+  tab shows today's usage against the limit.
 
 If a limit is exceeded, the AI tool will receive an error and should wait before retrying.
 
