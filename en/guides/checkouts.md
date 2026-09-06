@@ -11,7 +11,7 @@ A **checkout** corresponds to a completed booking from Hosthub — a guest stay 
 
 | Status | Color | Meaning | Action required |
 |--------|-------|---------|----------------|
-| `NEEDS_SETUP` | 🟡 Yellow | Property missing required configuration | Complete property setup |
+| `NEEDS_SETUP` | 🟡 Yellow | Property missing required configuration | Complete property setup — or, if the tooltip mentions the climate fee tax, pick the right tax under Settings → Organizations |
 | `READY` | 🟢 Green | Ready to invoice | Send, or wait for auto-invoicing |
 | `SENT` | 🔵 Blue | Documents issued successfully — shown as **“Invoiced”** | None |
 | `SENT_WITH_ERRORS` | 🟠 Orange | Accommodation document and payment receipt OK, climate fee failed | Open the row and click **Retry** on the failed step |

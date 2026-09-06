@@ -100,7 +100,7 @@ While any of these is missing, the property appears with a warning on the **Clim
 
 ### Checking the climate fee tax
 
-When you select a tax for a category (**Settings → Tax details**), the app confirms that the fixed amount in your invoicing application matches the legal Climate Resilience Fee amount for the properties in that category. If it differs, the rule is not saved and you see what needs to be corrected.
+The app confirms that each property's climate fee tax carries the legal amount for its characteristics (detached house, floor area, regime). It does this to protect you from issuing a document with the wrong climate fee: the receipt is issued with the amount of the tax selected in your invoicing application, so a wrong tax means a wrong amount reported to AADE. When you select a tax for a category (**Settings → Organizations**), the rule is saved only if the amount matches the properties using it. If a property later no longer matches its category's tax, a warning appears next to its name under **Properties** and its bookings wait at "Needs setup" until you pick the right tax or correct the property details.
 
 ## Viewing the issued climate fee document
 
