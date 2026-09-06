@@ -168,11 +168,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
 
     If the booking was in fact paid (e.g. outside the platform), set the real amount with **Edit booking** (pencil icon on its row) and issuance proceeds normally with the new amount.
 
-    If a document is needed for a complimentary stay:
-    - Create it manually directly in **Elorus**
-    - Whether a document is required and which type depends on your tax situation — consult your accountant
-
-    To keep the booking out of the invoicing queue, use **Pause** on the Bookings page.
+    For whether a document is required for a free stay and which type, ask your accountant.
   </Accordion>
 
   <Accordion title="Should I issue a receipt or an invoice for a foreign guest?">

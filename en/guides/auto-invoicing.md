@@ -28,7 +28,7 @@ During auto-invoicing, only bookings that meet **all** of the following are proc
 | Criteria | Required state |
 |----------|---------------|
 | Booking status | `READY` |
-| Paused | Not paused |
+| Skip | Not skipped |
 | Property | **On** (enabled) |
 | Booking | Not cancelled |
 | Account | Active |
@@ -36,11 +36,11 @@ During auto-invoicing, only bookings that meet **all** of the following are proc
 ## What is NOT auto-invoiced
 
 - Bookings in `NEEDS_SETUP`, `SENT`, `SENT_WITH_ERRORS`, `ERROR`, `SPLIT`
-- Paused bookings (manual Pause or a disabled channel)
+- Skipped bookings (manually or via a disabled channel)
 - Bookings belonging to **Off** properties
 - Cancelled bookings
 
-To exclude **individual bookings**, use [Pause](/en/guides/checkouts#pause--resume). To exclude **an entire property** (e.g. if that property is invoiced directly in the invoicing platform), set it to Off in [Properties](/en/guides/properties).
+To exclude **individual bookings**, use [Skip](/en/guides/checkouts#skip--undo-skip). To exclude **an entire property** (e.g. if that property is invoiced directly in the invoicing platform), set it to Off in [Properties](/en/guides/properties).
 
 ## Booking check before issuing
 

@@ -14,7 +14,7 @@ A **checkout** corresponds to a completed booking from Hosthub — a guest stay 
 | `NEEDS_SETUP` | 🟡 Yellow | Property missing required configuration | Complete property setup |
 | `READY` | 🟢 Green | Ready to invoice | Send, or wait for auto-invoicing |
 | `SENT` | 🔵 Blue | Documents issued successfully — shown as **“Invoiced”** | None |
-| `SENT_WITH_ERRORS` | 🟠 Orange | Accommodation document and payment receipt OK, climate fee failed | Click **Retry** to re-attempt the failed step |
+| `SENT_WITH_ERRORS` | 🟠 Orange | Accommodation document and payment receipt OK, climate fee failed | Open the row and click **Retry** on the failed step |
 | `WAITING_MYDATA_FINALIZATION` | 🟡 Amber — **"Waiting myDATA"** | Accommodation invoice issued — myDATA has not yet indexed it for climate fee linking | Automatic retry in progress for about a day — no action required |
 | `NEEDS_MANUAL_REVIEW` | 🔴 Red — **"Manual review"** | myDATA finalization did not complete after about a day of retries — or the property was assigned to a different invoicing organization after documents had already been issued for the booking | **myDATA:** you will receive an email notification — check in your invoicing application and retry myDATA submission manually. **Organization change:** assign the property back to the organization that issued the documents, then retry the send. |
 | `ERROR` | 🔴 Red | Send failed entirely | Review error message and retry |
@@ -45,17 +45,17 @@ A cancelled booking **without** a recorded fee simply stays visible for your rec
 **Automatic final AADE declaration** includes only cancelled bookings with a recorded cancellation fee. A credit note for a document already issued is created in your invoicing provider (e.g. Elorus).
 </Warning>
 
-## Pause / Resume
+## Skip / Undo skip
 
-Stop auto-invoicing for a checkout without deleting it. Useful when you want certain bookings excluded from automatic processing — they stay in the app and won't be invoiced until you decide how to handle them.
+Stop auto-invoicing for a booking without deleting it. Useful when you want certain bookings excluded from automatic processing: they stay in the app marked **"Skipped"** and are not invoiced until you decide how to handle them.
 
 <Tip>
 For a permanent exclusion of an entire booking channel or a specific property, configure it in [Settings → Auto-Invoicing](/en/guides/auto-invoicing).
 </Tip>
 
-### Manual Pause
+### Manual skip
 
-Click **Pause** next to the checkout. It stays paused through subsequent syncs — only the user can resume it with **Resume**.
+From the row's **⋮** menu choose **"Skip"**. The booking stays skipped through subsequent syncs; you bring it back from the same menu with **"Undo skip"**. Who skipped or restored it and when is recorded in the activity history.
 
 ## Billing contact (Business Contact)
 
@@ -108,7 +108,7 @@ In **Bookings** you can filter checkouts by:
 - **Status** (READY, SENT, ERROR, etc.)
 - **Property** — a single property, a [property group](/en/guides/properties) or a connection
 - **Date range** (checkout date)
-- **Paused** (yes/no)
+- **Skipped** (yes/no)
 
 The **Property** filter works as in every list: checkbox selection per property or per [group](/en/guides/properties#selecting-with-checkboxes), with search, and with nothing selected you see all properties. The selection is remembered for this page.
 
