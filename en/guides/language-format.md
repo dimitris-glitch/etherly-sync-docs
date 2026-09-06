@@ -5,11 +5,11 @@ description: "How dates, times and amounts appear in the app."
 
 # Language & format
 
-**Settings → Language & format**
+**Account menu (top right, on your name) → Language & format**
 
 ## App language
 
-Ελληνικά or English. The same choice is available from your account menu, top right.
+Ελληνικά or English. The change applies immediately across the app.
 
 ## Region
 
