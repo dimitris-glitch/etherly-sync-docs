@@ -129,7 +129,7 @@ automatically — there's no separate manual "Enable" step first.
 
 <Steps>
   <Step title="Enable Developer mode">
-    In ChatGPT, go to **Settings → Plugins** and enable **"Developer mode"**.
+    In ChatGPT, go to **Settings → Security and login** and enable **"Developer mode"**.
   </Step>
   <Step title="Open the Plugins page">
     Select **Plugins** from the ChatGPT left-hand menu or go straight to

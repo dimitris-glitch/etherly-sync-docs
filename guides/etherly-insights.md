@@ -131,7 +131,7 @@ description: 'Δώσε σε εργαλεία AI όπως το Claude, το ChatG
 
 <Steps>
   <Step title="Ενεργοποίηση Developer mode">
-    Στο ChatGPT, πήγαινε στις **Settings → Plugins** και ενεργοποίησε το
+    Στο ChatGPT, πήγαινε στις **Settings → Security and login** και ενεργοποίησε το
     **«Developer mode»**.
   </Step>
   <Step title="Άνοιγμα της σελίδας Plugins">
