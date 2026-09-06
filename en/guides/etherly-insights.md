@@ -180,6 +180,7 @@ right one. The table below shows what you can ask about.
 | **revenue-summary** | Compare bookings, nights, and revenue for this month or week against the previous one |
 | **revenue-breakdown** | Breaks amounts down into gross revenue, taxes/fees, channel commission, and net owner payout |
 | **cancellation-analysis** | Cancellation rate overall and by booking channel, plus the revenue lost to cancellations |
+| **revenue-projection** | Revenue estimate for a future period with fill scenarios for the still-unsold nights |
 
 ### Pricing & occupancy
 
@@ -187,6 +188,7 @@ right one. The table below shows what you can ask about.
 |---|---|
 | **booking-pace** | How far a future period's occupancy has progressed compared to the same period last year |
 | **occupancy** | Occupancy rate, average nightly rate (ADR), and revenue per available room (RevPAR) per property |
+| **listed-rates** | A property's listed prices and minimum stay as shown on the channel, with a weekend/weekday summary. Availability is split out: nights open in the price list vs. nights actually free (open **and** unbooked), after cross-referencing the booking calendar |
 
 ### Rankings & comparisons
 
@@ -221,6 +223,16 @@ right one. The table below shows what you can ask about.
 | **market-snapshot** | Snapshot of the short-term-rental market in your area: market occupancy, average daily rate and active listings |
 | **market-comparison** | Compare your own occupancy and average rate against the local market for a month — against listings of similar capacity when known (e.g. villa vs villas), and for future months both sides are compared on bookings confirmed so far |
 | **property-market-position** | Where one property sits against comparable listings in its area (same size profile): which range of the distribution its rate, occupancy and revenue fall into — requires coordinates, maximum guests, bedrooms and bathrooms to be filled in on the property card |
+| **market-trends** | The local market's monthly trajectory: demand, supply (active listings) and how many days before arrival bookings are made |
+| **competitor-lineup** | The comparable listings around one property (rating, reviews, minimum stay and performance estimates) |
+| **competitor-rates** | Listed prices, availability and minimum stay of specific competitor listings for the upcoming weeks |
+
+### Advisor
+
+| Tool | Description |
+|---|---|
+
+| **etherly-advisor** | The DeskBoy revenue advisor: takes a question plus results from the other tools and returns grounded pricing and occupancy advice |
 
 <Note>
 Market tools rely on an external market-data source and have a daily usage allowance per account. Area precision improves when your properties have coordinates — see the "Property Configuration" guide.

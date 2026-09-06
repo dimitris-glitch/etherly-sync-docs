@@ -69,74 +69,11 @@ curl -H "Authorization: Bearer eth_data_..." \
 
 ## Available tools
 
-The same tools as DeskBoy Insights — each endpoint corresponds to one tool.
-
-### Revenue & performance
-
-| Endpoint | Description |
-|---|---|
-| **business-overview** | Total bookings, nights, revenue, and channel breakdown for a date range |
-| **revenue-summary** | Compare bookings, nights, and revenue for this month or week against the previous one |
-| **revenue-breakdown** | Breaks amounts down into gross revenue, taxes/fees, channel commission, and net owner payout |
-| **cancellation-analysis** | Cancellation rate overall and by booking channel, plus the revenue lost to cancellations |
-| **revenue-projection** | Revenue estimate for a future period with fill scenarios for the still-unsold nights |
-
-### Pricing & occupancy
-
-| Endpoint | Description |
-|---|---|
-| **booking-pace** | How far a future period's occupancy has progressed compared to the same period last year |
-| **occupancy** | Occupancy rate, average nightly rate (ADR), and revenue per available room (RevPAR) per property |
-| **listed-rates** | A property's listed prices and minimum stay as shown on the channel, with a weekend/weekday summary. Availability is split out: nights open in the price list vs. nights actually free (open **and** unbooked), after cross-referencing the booking calendar |
-
-### Rankings & comparisons
-
-| Endpoint | Description |
-|---|---|
-| **channel-profitability** | Which booking channel brings in the most net revenue per night |
-| **seasonality** | Bookings, nights, and revenue broken down by month for a calendar year |
-| **length-of-stay-value** | Compares average nightly rate between long stays (28+ nights) and shorter ones |
-| **property-leaderboard** | Ranks all your properties by revenue, bookings, or nights |
-
-### Bookings & guests
-
-| Endpoint | Description |
-|---|---|
-| **booking-search** | Find a booking by booking id, or by a partial guest name (name is never shown in the results) |
-| **checkin-completion-status** | See which upcoming guests have completed Online Check-In |
-| **arrivals-departures** | Who's arriving/departing in a date range |
-| **guest-nationality-mix** | Breakdown of guest country of origin for a date range |
-| **list-properties** | List of your properties (name, channel, location) |
-
-### Operations
-
-| Endpoint | Description |
-|---|---|
-| **operational-backlog** | Counts of bookings pending invoicing, cancelled, paused, long-stay, or needing manual review |
-| **cleaning-readiness** | Which properties are ready for a given day |
-
-### Local market
-
-| Endpoint | Description |
-|---|---|
-| **market-snapshot** | Snapshot of the short-term-rental market in your area |
-| **market-comparison** | Compare your own occupancy and average rate against the local market for a month |
-| **property-market-position** | Where one property sits against comparable listings in its area |
-| **market-trends** | The local market's monthly trajectory: demand, supply (active listings) and how many days before arrival bookings are made |
-| **competitor-lineup** | The comparable listings around one property (rating, reviews, minimum stay and performance estimates) |
-| **competitor-rates** | Listed prices, availability and minimum stay of specific competitor listings for the upcoming weeks |
+The same tools as DeskBoy Insights, one endpoint per tool (e.g. `/api/data-access/v1/occupancy`). The full list with descriptions is in the [DeskBoy Insights → Available tools](/en/guides/etherly-insights#available-tools) guide. Each endpoint's parameters and response schemas are in the **OpenAPI document**.
 
 <Note>
-Market tools rely on an external market-data source and have a daily usage allowance per account.
+Market tools rely on an external market-data source and have their own daily usage limit per account.
 </Note>
-
-### Advisor
-
-| Endpoint | Description |
-|---|---|
-| **etherly-advisor** | The DeskBoy revenue advisor: takes a question plus results from the other tools and returns grounded pricing and occupancy advice |
-
----
 
 ## Usage limits
 

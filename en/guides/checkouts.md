@@ -30,31 +30,20 @@ DeskBoy syncs automatically with Hosthub at regular intervals. During each sync:
 
 You can also trigger a **manual sync** at any time by clicking **Refresh** on the **Bookings** page.
 
-## Cancellation after invoicing
+## Cancelled bookings
 
-If a booking is cancelled **after** its document has already been issued, the checkout does **not** disappear from the list — it stays visible with a red **"Cancelled"** badge, so it stands apart from normal invoiced bookings. The **send progress** in the expanded row keeps showing the documents that were already issued (invoice/receipt, payment, climate resilience fee) with their IDs and timestamps — the cancellation does not erase the issuance history.
+Every cancelled booking stays in the list with a red **"Cancelled"** badge, placed on the **day of cancellation**, not on the original departure date. Opening its row, the cancellation date is shown in bold under **Booking details**. If documents had already been issued, the **send progress** keeps showing them with their IDs and dates: cancelling does not erase the issuance history, and you receive an **email notification** because action is needed from you.
 
-In this case you automatically receive an **email notification**, because action is required on your side:
+**If you collected a cancellation fee** (the cancellation policy imposed a charge), open the booking row and enter the amount via the **pencil** on the "Cancellation fee collected" line (under Document details):
 
-1. **AADE declaration**: if your cancellation policy imposed a charge and you **collected a cancellation fee**, the booking is declared as cancelled with the **amount you collected** — the same amount as the issued document. On the [Declarations](/en/guides/declarations) page you can track the declaration's progress.
-2. **Credit note**: if you wish to issue a credit note for the document that was already issued, you will need to do so in your invoicing provider (e.g. Elorus).
+1. **Document**: a document is issued **for the cancellation fee only**, without Climate Resilience Fee and without transient tax, since no stay took place. Automatically by the day's auto-invoicing (if you enter the amount before the run time) or manually with the send button.
+2. **AADE declaration**: the booking is declared as cancelled with the **fee amount**, the same as the document. You follow its progress under [Declarations](/en/guides/declarations).
+
+A cancelled booking **without** a recorded fee simply stays visible for your records: it does not count toward the day's counter, no document is issued and nothing is declared to AADE.
 
 <Warning>
-**Automatic final AADE declaration** includes cancelled bookings for which you have recorded a collected cancellation fee — they are declared with the cancellation fee amount. Other cancelled bookings are not declared to AADE.
+**Automatic final AADE declaration** includes only cancelled bookings with a recorded cancellation fee. A credit note for a document already issued is created in your invoicing provider (e.g. Elorus).
 </Warning>
-
-## Cancelled bookings and cancellation fees
-
-Every cancelled booking appears in the list with a red **"Cancelled"** badge, positioned on the **day of the cancellation** — not on the original checkout date. A November booking cancelled today shows up under today's bookings.
-
-Expanding the booking row shows the **cancellation date** in bold under **Booking Details**.
-
-If your cancellation policy imposed a charge and you **collected a cancellation fee**, expand the booking row and record the amount via the **pencil icon** on the "Cancellation fee collected" line (under Invoicing Details):
-
-1. **Document issuance**: once an amount is saved, a document is issued **for the cancellation fee only** — with no climate resilience fee and no stay duty, since no stay took place. Issuance happens **automatically** by that day's auto-invoicing run (as long as you enter the amount before the scheduled run) or **manually** with the send button.
-2. **AADE declaration**: the booking is declared as cancelled with the **cancellation fee amount you recorded** — the same amount as the issued document. On the [Declarations](/en/guides/declarations) page you can track the declaration's progress.
-
-A cancelled booking **without** a recorded fee simply stays visible for your records — it is not counted in the day's counter and no document is issued.
 
 ## Pause / Resume
 
@@ -121,8 +110,6 @@ In **Bookings** you can filter checkouts by:
 - **Date range** (checkout date)
 - **Paused** (yes/no)
 
-The **Property** filter opens as a checkbox list: **Select all** at the top, the properties grouped by [group](/en/guides/properties) — where the group's checkbox selects all of its members at once — and a search box to find one quickly. You can combine properties from different groups. With nothing ticked you see all properties.
-
-While a selection is active, a strip above the list names it and shows how many properties it covers, with a **Clear** button. The choice is remembered for this page.
+The **Property** filter works as in every list: checkbox selection per property or per [group](/en/guides/properties#selecting-with-checkboxes), with search, and with nothing selected you see all properties. The selection is remembered for this page.
 
 In the **Today** tab, properties are shown grouped, provided you have created groups; properties not assigned to any group go to the "Ungrouped" group at the end. The **Upcoming**, **History** and **All** tabs show bookings in a single chronological order.

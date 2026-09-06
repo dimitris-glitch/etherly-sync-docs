@@ -145,11 +145,7 @@ The **Today** tab gives the full picture for a given day, while the other tabs f
 
 ### Property filter
 
-At the top left, next to the date navigation, there is a **Property** filter: it narrows the screen to the properties you care about. It applies to every tab, including **Today**.
-
-It opens as a checkbox list — the same filter as on **Bookings** and **AADE declarations**: **Select all** at the top, the properties grouped by [group](/en/guides/properties) — where the group's checkbox selects all of its members at once and its count sits on the right — and a search box to find one quickly. You can combine properties from different groups. With nothing ticked you see all properties.
-
-While the filter is active, a strip above the list names what you are viewing, with a **Clear** button. The choice is remembered for this page, separately from the other screens.
+At the top left, next to the date navigation, there is the **Property** filter. It applies to every tab, including **Today**. The **Property** filter works as in every list: checkbox selection per property or per [group](/en/guides/properties#selecting-with-checkboxes), with search, and with nothing selected you see all properties. The selection is remembered for this page.
 
 ### Search
 

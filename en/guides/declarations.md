@@ -41,10 +41,7 @@ Declarations are found under **Declarations** in the sidebar — bookings ready 
 
 ## Property filter
 
-Above the list there is a **Property** filter that narrows declarations to the properties you care about. It opens as a checkbox list: **Select all** at the top, the properties grouped by [group](/en/guides/properties) — where the group's checkbox selects all of its members at once — and a search box. You can combine properties from different groups, and with nothing ticked you see all declarations. Filtering covers all of your declarations, not just the ones currently on screen.
-
-While a selection is active, a strip above the list names it, with a **Clear** button. The choice is remembered for this page. Changing the filter clears any selected bookings, so a bulk submission always covers what you are looking at.
-
+The **Property** filter works as in every list: checkbox selection per property or per [group](/en/guides/properties#selecting-with-checkboxes), with search, and with nothing selected you see all properties. The selection is remembered for this page. Filtering covers all your declarations, not only those on screen, and when you change the filter any selected bookings are deselected, so a bulk send always concerns what you see.
 
 ## Manual submission
 
@@ -169,63 +166,18 @@ DeskBoy automatically maps the booking channel to the platform code required by 
 
 ## Payment method
 
-Each declaration is sent to AADE with a field indicating **how the booking channel (Airbnb, Booking.com, etc.) pays out the rent to your business**. This is **not** about how the guest pays — it refers solely to the flow of money from the channel to you. The allowed values are:
-
-| Value | AADE code | Meaning |
-|-------|-----------|---------|
-| Greek bank | `DOMESTIC_PAYMENTS_ACCOUNT` | Payment into a Greek bank account |
-| Foreign bank | `FOREIGN_PAYMENTS_ACCOUNT` | Payment into an overseas bank account |
-| Cash | `CASH` | Cash payment |
-| Other (via third party, voucher, etc.) | `OTHER` | Payment via a third party, voucher, etc. |
-
-### Per-channel default
-
-In **Settings → AADE Connect** you can set a default payment method for each booking channel. Changes take effect for **all future submissions** on that channel — as long as no per-booking override is set.
+Every declaration is sent to AADE with information on **how the booking channel pays the rent to the business**: bank in Greece, bank abroad, cash or other. It is **not** about how the guest pays. You set the per-channel default under [AADE Connect settings](/en/guides/aade-connect), where you will also find the table of options.
 
 ### Per-booking override
 
-The ✏️ pencil icon in the **Payment Method** column of the Declarations page lets you change the payment method for a single booking. The override **always takes precedence** over the channel default, and is shown in normal colour while channel-default values are shown muted.
+In the **Payment method** column of the Declarations page, the ✏️ icon changes the payment method for one specific booking. The override always **takes precedence** over the channel default and is shown in normal shade, while default values are shown faded.
 
-Overrides are allowed only before a declaration has been sent to AADE Connect. Once a declaration has been dispatched — even if it later shows a failed or draft status — the payment method is locked and cannot be changed.
-
-**Resolution priority order:**
-1. Per-booking override (✏️)
-2. Per-channel default (Settings → AADE Connect)
-3. General default: `DOMESTIC_PAYMENTS_ACCOUNT`
+It is allowed only before the declaration is sent. Once sent, even if it later shows as failed or draft, the payment method is locked.
 
 ## Declaration history
 
 The **History** tab on the Declarations page shows bookings that have already been submitted or skipped. Guest identification cannot be edited for these bookings.
 
-## AADE Connect Settings
+## AADE Connect settings
 
-The **Settings → AADE Connect** page has two sections:
-
-### Property mapping
-
-For each property shown in the list, select the corresponding AADE property from the dropdown. This mapping is required for declaration submission — bookings without a property mapping do not appear on the Declarations page.
-
-<Note>
-If no properties appear, make sure you have connected at least one booking channel under **Settings → Integrations**.
-</Note>
-
-### Per-channel payment method default
-
-Each declaration sent to AADE requires information about **how the booking channel pays out the rent to your business**. Here you set the default per channel (Airbnb, Booking.com, etc.). This is not about how the guest pays.
-
-| Option | AADE code | When to select |
-|--------|-----------|----------------|
-| Greek bank | `DOMESTIC_PAYMENTS_ACCOUNT` | Channel pays into a Greek bank account |
-| Foreign bank | `FOREIGN_PAYMENTS_ACCOUNT` | Channel pays into an overseas bank account |
-| Cash | `CASH` | Cash payment |
-| Other | `OTHER` | Payment via third party, voucher, etc. |
-
-**Resolution priority order:**
-
-1. Per-booking override (✏️ pencil icon in the Payment Method column on the Declarations page)
-2. Per-channel default — this page
-3. General default: `DOMESTIC_PAYMENTS_ACCOUNT`
-
-<Tip>
-Per-booking overrides are only allowed **before** a declaration has been sent. Once dispatched — even if it later shows a failed status — the payment method is locked.
-</Tip>
+Matching properties to their AADE properties (AMA) and the per-channel payment method default are set under **Settings → AADE Connect**. Bookings without a match do not appear on the Declarations page. See [AADE Connect settings](/en/guides/aade-connect).
