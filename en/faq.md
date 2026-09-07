@@ -12,7 +12,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
     The property isn't fully configured. Open **Settings → Properties**, select the property, and complete all four required fields:
     - **Default Receipts Contact** — a customer account in Elorus
     - **Invoices Series** — a document numbering series for invoices
-    - **Category** — for the Climate Resilience Fee
+    - **ΤΑΚΚ characteristics** — for the Climate Resilience Fee
     - **Organization** — which Elorus organization issues the documents
 
     After clicking **Save**, bookings change from `NEEDS_SETUP` to `READY` on the next sync (within ~30 minutes).
@@ -37,7 +37,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
   <Accordion title="A booking shows SENT_WITH_ERRORS. What happened?">
     The Invoice and Receipt were **issued successfully**, but the **Climate Resilience Fee** document failed. Check:
 
-    1. Whether the **Category** is correctly configured under **Settings → Properties**
+    1. Whether the ΤΑΚΚ characteristics are selected on the property under **Settings → Properties**
     2. Whether the tax rules in Elorus are up to date
 
     Contact support at [support@deskboy.app](mailto:support@deskboy.app) if the issue persists.
@@ -111,17 +111,13 @@ description: "Solutions for the most common issues with DeskBoy — from initial
   </Accordion>
 
   <Accordion title="What happens if the fee amounts change by law?">
-    The statutory amounts are kept up to date by DeskBoy. The ΤΑΚΚ tax for each category is set per organisation under **Settings → Tax details** and matches the tax codes you created in Elorus. If the law changes, update the tax codes in Elorus; the app checks that their amount matches the statutory one (see [Climate Resilience Fee](/en/guides/climate-fee)).
+    The statutory amounts are kept up to date by DeskBoy. The ΤΑΚΚ tax for each amount band is matched automatically per organisation under **Settings → Tax details** with the tax codes you created in Elorus. If the law changes, update the tax codes in Elorus; the app checks that their amount matches the statutory one (see [Climate Resilience Fee](/en/guides/climate-fee)).
   </Accordion>
 
-  <Accordion title="I can't find the right Category for my property. What do I do?">
-    Categories come from the tax codes you've set up in Elorus. If the right **Category** doesn't appear, make sure you've created the corresponding tax code in Elorus. If you're unsure which category applies, consult your accountant.
-  </Accordion>
+  <Accordion title="I saw that a booking needs setup for the ΤΑΚΚ. What does it mean?">
+    The per-night ΤΑΚΚ amount follows from the property's characteristics (detached house, floor area, regime). They must be filled in on the property card under **Settings → Properties**.
 
-  <Accordion title="I saw the message “Property has no ΤΑΚΚ category”. What does it mean?">
-    The send stopped before any document was issued, because the property has no ΤΑΚΚ **Category** selected. The category determines the per-night fee, so it needs to be set before issuing.
-
-    Open **Settings → Properties**, pick the property's **Category**, and send again. A similar message about incomplete rates means the category is set but its summer or winter rate is missing — fill those in under **Settings → Tax details**.
+    If you have filled them in, the invoicing organisation needs a ΤΑΚΚ tax in the invoicing app with exactly that amount; the app matches it by itself and you can see it under **Settings → Tax details**. This is done so that a receipt with the wrong amount is never issued.
   </Accordion>
 </AccordionGroup>
 

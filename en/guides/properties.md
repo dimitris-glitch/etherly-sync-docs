@@ -130,7 +130,7 @@ The numbering series for invoices (**Invoices Series**) and receipts (**Receipts
 
 These determine the Climate Resilience Fee and the line of the AADE form. See the [Climate Resilience Fee guide](/guides/climate-fee).
 
-The **Category** field is separate: it sets which provider tax appears on the document.
+The ΤΑΚΚ tax follows automatically from the property's characteristics; you do not pick a category.
 
 <Tip>
 See the [Climate Resilience Fee Guide](/en/guides/climate-fee) for the calculation method and examples.
@@ -162,7 +162,7 @@ Configuration for the Transient Occupancy Tax, if applicable for this property.
     You'll see all properties detected from Hosthub. Click on the one you want to configure.
   </Step>
   <Step title="Fill in all fields">
-    Select values for **Default Receipts Contact**, **Invoices Series**, **Category**, **Organization**, and any other applicable fields.
+    Select values for **Default Receipts Contact**, **Invoices Series**, **Organization**, and any other applicable fields.
   </Step>
   <Step title="Done">
     Settings save automatically on every change. Once all fields are filled in, bookings change from `NEEDS_SETUP` to `READY` on the next sync.

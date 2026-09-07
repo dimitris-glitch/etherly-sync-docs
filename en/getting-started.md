@@ -83,7 +83,7 @@ Booking sync, AADE declarations and analytics work from the moment your channel 
     | **Organization** | The invoicing-provider organization that issues the documents |
     | **Default Receipts Contact** | The retail customer in Elorus used on receipts |
     | **Invoice Series / Receipt Series** | Numbering series for invoices and receipts (or "No series") |
-    | **Category** | The ΤΑΚΚ tax that goes on the document |
+    | **ΤΑΚΚ characteristics** | Detached house, floor area, regime — they decide the ΤΑΚΚ tax that goes on the document |
 
     Settings save automatically. See the full [property guide](/en/guides/properties).
   </Step>
@@ -131,7 +131,7 @@ A booking connection is deleted from the delete icon on its card. Its credential
 
 <CardGroup cols={2}>
   <Card title="Property setup" icon="house" href="/en/guides/properties">
-    Contacts, series, regime and ΤΑΚΚ category for every property.
+    Contacts, series, regime and ΤΑΚΚ characteristics for every property.
   </Card>
   <Card title="Auto-invoicing" icon="clock" href="/en/guides/auto-invoicing">
     Set a run time and forget manual sending.

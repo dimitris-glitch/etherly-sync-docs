@@ -35,7 +35,7 @@ If you manage a property owned by someone else, approval comes from the owner's 
 ## What arrives automatically
 
 - New bookings, date and amount changes, cancellations.
-- The account's properties, as a separate set next to the ones you already have. You set each property's invoicing settings and ΤΑΚΚ category once under **Settings → Properties**.
+- The account's properties, as a separate set next to the ones you already have. You set each property's invoicing settings and ΤΑΚΚ characteristics once under **Settings → Properties**.
 
 If a booking has a charge the app does not recognise yet, it appears under **Bookings** with the **"Action needed"** indicator: you check the amounts, confirm them, and the document proceeds normally.
 

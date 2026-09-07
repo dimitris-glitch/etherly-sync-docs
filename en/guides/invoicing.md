@@ -83,6 +83,6 @@ This appears when the Accommodation Document and Payment Receipt were successful
 
 **What to do:**
 1. Check the error message on the Bookings page
-2. Verify the fee category is correctly configured in Properties
+2. Verify the ΤΑΚΚ characteristics are selected on the property and that the organisation has a tax with its band amount (Tax details)
 3. Check that the tax rules in Elorus are current
 
