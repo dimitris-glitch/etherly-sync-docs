@@ -58,6 +58,9 @@ If you issue documents, connect your provider under **Settings → Integrations*
   <Step title="Connection details">
     For **Elorus** you need the API key (Settings → API settings → **Create new key**) and the **Organization ID**, shown in the URL of the Settings → Organization page.
   </Step>
+  <Step title="Fiscal details">
+    Enter the tax id, and the legal form and business name are filled in from the AADE registry. They are needed for the AADE declarations and the VAT regime.
+  </Step>
   <Step title="Test the connection">
     Click **Test connection**. On success the connection shows as active and you can issue documents.
   </Step>
