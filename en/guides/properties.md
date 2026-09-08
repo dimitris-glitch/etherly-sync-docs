@@ -178,6 +178,10 @@ In **Settings → "Tax details" tab**, for each Elorus organization you define w
 
 The available options are **loaded dynamically from Elorus** and correspond to the document types you have created for that organization (e.g. "Service Invoice", "Retail Receipt", etc.). The selection applies to every document issued automatically for properties under that organization.
 
+### Organization tax details
+
+If an organization has no tax details yet, click **"Fill in fiscal details"** on its card. Enter the tax ID (AFM) and the business name and legal form are filled in from the AADE registry. You can correct them before saving. The details drive the VAT regime, the AADE declarations and the Climate Resilience Fee form, which is issued per tax ID.
+
 ## Location & Coordinates
 
 On each property card, under **"Location & Details"**, you can set the city, country, timezone and — optionally — the property's **coordinates**, its **property type** (villa, apartment, studio etc.), its **maximum guests**, **bedrooms** and **bathrooms**.
