@@ -17,22 +17,18 @@ You do not need to connect an invoicing provider: as a private individual you do
 
 ## Where to find your details
 
-**Settings → Tax details** has an **Individual** tab with your name, tax ID and properties. From there you **Edit** your details and use **Change status** when needed.
+**Settings → Tax details** has an **Individual** tab with your name, tax ID and properties. From there you **Edit** your details.
 
 ## If you register a business
 
-From the **Individual** tab → **Change status**, pick what now applies:
+The business, sole proprietorship or company, is a new tab with its own details. Add it from **Settings → Tax details → Add organization** (or by connecting your invoicing provider under Integrations) with the legal form, the business name and the tax ID. **Tax ID lookup** fills in the name from the AADE registry.
 
-**Sole proprietorship** — you keep the same tax ID. You enter the **registration date at the tax office** and the change applies from that day: bookings that departed before it stay under the private-individual regime. After the change, connect an invoicing provider for automatic document issuing.
+Then, under **Properties**, pick the new business in the **Organization** field of a property and choose **Move all properties**. From then on every booking that has not been invoiced yet, past, current and upcoming, is invoiced with the business's details if you choose to invoice it. Documents already issued stay as they are. The "Individual" tab remains for your history and you can delete it once it has no properties left.
 
-**Legal entity** (private company, general partnership, S.A., etc.) — the company has its own tax ID, so a **new fiscal entity** is created with its details. The "Individual" tab remains for your history. Then:
-
-1. Add an invoicing provider for the company.
-2. Assign its properties to the new entity.
-3. Property registry numbers are issued per tax ID and do not carry over: after registering the properties under the company's tax ID, map them to the new registry numbers under **Settings → AADE Declarations**.
+If the business has a new tax ID (a company), the property registry numbers (AMA) do not carry over: after registering the properties under the new tax ID, connect AADE with the business's credentials and map the properties to the new registry numbers under **Settings → AADE Declarations**. With a sole proprietorship the tax ID and the registry numbers stay the same.
 
 <Tip>
-When creating the new entity, **Tax ID lookup** fills in the company name from the registry. If the tax ID is not found or the service does not respond, type the name manually and carry on.
+**Tax ID lookup** fills in the name from the registry. If the tax ID is not found or the service does not respond, type the name manually and carry on.
 </Tip>
 
 <Note>

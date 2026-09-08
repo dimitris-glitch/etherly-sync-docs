@@ -140,6 +140,8 @@ See the [Climate Resilience Fee Guide](/en/guides/climate-fee) for the calculati
 
 The Elorus organization under which documents are issued. If you manage properties under different tax IDs, you can assign each property to a different **Organization**.
 
+On the Free plan all properties belong to the same organization (or the private individual). If you pick another organization for one property, the app offers either **Move all properties** to it or **Upgrade** to spread properties across organizations. After the move, every booking not yet invoiced is invoiced by the new organization. Documents already issued stay as they are. If the organization has no fiscal details yet, the move still goes through and invoices are issued by your provider. Fill in its details under Organizations for the AADE declarations.
+
 ### 5. Branch
 
 The Elorus branch under which documents are issued, if your business has multiple branches in Elorus.

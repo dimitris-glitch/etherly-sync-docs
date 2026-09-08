@@ -23,10 +23,10 @@ Every booking that had a **document issued** within the month counts as one chec
 
 <CardGroup cols={3}>
   <Card title="Free" icon="seedling">
-    €0 — up to 250 checkouts a month, 1 fiscal entity, 1 booking connection, 1 user + accountant, unlimited properties.
+    €0 — up to 250 checkouts a month, all properties under one invoicing organization, 1 booking connection, 1 user + accountant, unlimited properties.
   </Card>
   <Card title="Business" icon="building">
-    From €29/month — multiple fiscal entities and connections, a team with roles, Cleaning, the Data Access API, phone support.
+    From €29/month — properties across multiple organizations and connections, a team with roles, Cleaning, the Data Access API, phone support.
   </Card>
   <Card title="Agency" icon="briefcase">
     From €59/month — everything in Business, plus owner statements, commission invoicing and white-label.
@@ -55,7 +55,7 @@ Issuing documents and AADE declarations are not affected by your limits or plan.
 
 If a charge remains unpaid despite the automatic retries, the account is limited gradually — always with timely email notifications and an in-app notice:
 
-- At first, only new additions are put on hold (a new fiscal entity, a new connection, new users). Everything you already have keeps working normally.
+- At first, only new additions are put on hold (properties under a second organization, a new connection, new users). Everything you already have keeps working normally.
 - Later, automatic invoicing, automatic declarations and settings changes are paused — you can keep issuing and declaring manually, and booking sync continues.
 - If the balance remains unpaid for a long period, the account is fully frozen — access to your data, data export and payment remain available.
 
