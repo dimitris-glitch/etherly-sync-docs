@@ -1,6 +1,6 @@
 ---
 title: "Climate Resilience Fee"
-description: "How the Climate Resilience Fee is calculated, which property categories exist, and how to configure your property correctly."
+description: "How the Climate Resilience Fee is calculated, which property characteristics determine it, and how to configure your property correctly."
 ---
 
 # Climate Resilience Fee
@@ -98,9 +98,18 @@ The amounts €2 / €8 are an example only. The applicable amounts are set by l
 
 While any of these is missing, the property appears with a warning on the **Climate Resilience Fee** page and its bookings wait for the configuration before being sent. Fill them in and resend the booking.
 
-### Checking the climate fee tax
+### The climate-fee tax on the organisation
 
-The app confirms that each property's climate fee tax carries the legal amount for its characteristics (detached house, floor area, regime). It does this to protect you from issuing a document with the wrong climate fee: the receipt is issued with the amount of the tax selected in your invoicing application, so a wrong tax means a wrong amount reported to AADE. When you select a tax for a category (**Settings → Organizations**), the rule is saved only if the amount matches the properties using it. If a property later no longer matches its category's tax, a warning appears next to its name under **Properties** and its bookings wait at "Needs setup" until you pick the right tax or correct the property details.
+The climate-fee receipt is issued with the amount of the tax that exists in your invoicing app — which is why the app insists the tax carries exactly the legal amount for each property's characteristics. This way a receipt with the wrong amount is never reported to AADE.
+
+Under **Settings → Tax details**, on the organisation card, the **Climate Resilience Fee** section shows every **AADE category** that already has a tax, with its legal amounts (summer and winter per night), how many of your properties belong to it, and which tax of your invoicing app is selected for each period.
+
+Each property belongs to one AADE category, which follows from its characteristics (regime, detached house, floor area). The organisation needs its own tax for each category and period (summer/winter), because the invoicing app derives both the amount and the category of the receipt from the tax. The first time, once you fill in a property's characteristics, the **Climate-fee tax** field on its card asks you to pick, for each period, a tax from a list holding only the taxes that carry the category's legal amount. Taxes already selected on another category appear in the list but cannot be picked — so you can see they exist, in case you put them on the wrong category. The app never picks one itself; anything you have not chosen stays "No selection". Each tax is matched to one category and period only. To move a tax to another category, first remove it from the one it is already matched to. If no tax carries the right amount, create it in your invoicing app with the AADE category the message names and press **Refresh taxes**. Under **Tax details** you see the categories that already have a tax and change it later.
+
+- **Tax missing** — the message tells you which amount and which AADE category is needed. Create a climate-fee tax with a fixed amount per night and that category in your invoicing app and press **refresh**.
+- **The tax changed** — if you change or delete the tax in your invoicing app, the section shows it and the bookings of that category's properties wait at "Needs setup" until it is fixed.
+
+On each property card the **Climate-fee tax** field shows the property's AADE category, its amounts and whether the organisation has a tax for both periods. If one is missing, you pick the tax right there, or fix the property's characteristics if they are wrong.
 
 ## Viewing the issued climate fee document
 

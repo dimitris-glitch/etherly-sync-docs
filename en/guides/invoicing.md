@@ -19,7 +19,7 @@ For every checkout that is sent, DeskBoy automatically creates documents in Elor
     Issued immediately after the accommodation document.
   </Card>
   <Card title="3. Climate Resilience Fee" icon="leaf">
-    Calculated per night and category. If the booking spans winter and summer, two separate documents are issued.
+    Calculated per night, at the legal amount of the property's band. If the booking spans winter and summer, two separate documents are issued.
   </Card>
 </CardGroup>
 
