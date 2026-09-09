@@ -33,6 +33,12 @@ The feature activates automatically as soon as you add the **first cleaner** —
     Click the SMS icon next to the cleaner to send them their personal dashboard link. Sending is always manual — it is never sent automatically.
 
     The link itself is shown next to the button with a copy option: if the SMS doesn't arrive, you can copy it and share it any way you like (email, a message from your own phone, etc.). Each cleaner's link is personal, short, and contains no personal data — and it keeps working even if you later update the cleaner's phone number.
+
+    After sending, the status of the last SMS appears below the button, with the time it went out: **Delivered**, **Sent**, **Sending**, **Not delivered**, **Failed** or **Unknown status**.
+
+    When the status is **Not delivered** or **Failed**, it means the message did not reach the phone: check the number, or share the link another way by copying the link.
+
+    The status updates once the mobile operator confirms delivery, often several seconds after sending. So you can check the delivery status shortly after you send.
   </Step>
 </Steps>
 
