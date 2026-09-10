@@ -14,7 +14,7 @@ The **Settings → AADE Connect** page has two sections:
 
 ## Property mapping
 
-For each property in the list, select the corresponding AADE property from the dropdown. This mapping is required for short-term rental declaration submissions.
+For each property in the list, select the corresponding AADE property from the dropdown. This mapping is required for short-term rental declaration submissions. After connecting, map each property to its AADE property (AMA) from the AADE Connect settings. Until then, its bookings appear in Declarations without the option to submit.
 
 <Note>
 If no properties appear, make sure you have connected at least one booking channel in Settings.

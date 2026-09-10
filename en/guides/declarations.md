@@ -64,7 +64,7 @@ The **Property** filter works as in every list: checkbox selection per property 
 Enable **automatic final declaration** from the Declarations page (toggle above the table). Once enabled, newly ready-to-declare bookings are declared automatically every day.
 
 <Note>
-Automatic declaration applies only to bookings that become ready **after** it is enabled — it does not retroactively process older bookings.
+Automatic declaration applies only to bookings that become ready to declare **after** it is enabled: for businesses when the document is issued, for private individuals when the stay is complete. Earlier bookings are not affected.
 </Note>
 
 <Warning>
@@ -118,7 +118,7 @@ A departure and an arrival on the **same day** is normal operation and is not fl
 
 The app tracks bookings that remain undeclared relative to the AADE deadline — the short-term stay declaration is due by the **20th of the month following the guest's departure**.
 
-- **Banner on the Declarations page**: when bookings remain undeclared more than 3 days after check-out, a persistent banner shows how many there are and how old the oldest is. The banner becomes more prominent when a deadline is approaching or has passed.
+- **Banner on the Declarations page**: when bookings remain undeclared more than 3 days after check-out, a persistent banner shows how many there are and how old the oldest is. The banner becomes more prominent when a deadline is approaching or has passed. “OK” closes it for the day. If some of them belong to a property that is not yet mapped to an AADE property, a second box says so and takes you to the setting. Those bookings appear in the list with the submit button disabled until you map the property to its AMA.
 - **Daily report email**: with automatic final declaration enabled, the daily report includes a **"Pending declarations"** section listing all undeclared bookings — every day, until they are declared or skipped. When a deadline is approaching, the email subject is flagged with ⚠️.
 - **Automatic retry**: declarations that failed due to a temporary AADE platform issue are retried automatically over the following days. If the problem needs your action (e.g. checking your TAXISnet credentials), the booking appears in the report with the relevant explanation.
 
@@ -176,7 +176,7 @@ It is allowed only before the declaration is sent. Once sent, even if it later s
 
 ## Declaration history
 
-The **History** tab on the Declarations page shows bookings that have already been submitted or skipped. Guest identification cannot be edited for these bookings.
+The **History** tab on the Declarations page shows previous bookings: those already submitted or skipped, and older pending ones you can still declare from there. Guest identification cannot be edited for these bookings.
 
 ## AADE Connect settings
 
