@@ -5,7 +5,7 @@ description: "Automated invoicing and AADE declarations for short-term rentals. 
 
 # Welcome to DeskBoy
 
-**DeskBoy** takes your bookings from the channel you use (**Hosthub**, **Hospitable**, **Airbnb** directly and other channels) and handles everything that follows: the tax documents in **Elorus** with submission to **myDATA**, the **Short-Term Stay Declaration** to **AADE**, and the **Climate Resilience Fee** together with its monthly payment declaration. Automatically, for every booking.
+**DeskBoy** takes your bookings from the channel you use (**Hosthub**, **Hospitable**, **Smoobu**, **Airbnb** directly and other channels) and handles everything that follows: the tax documents in **Elorus** with submission to **myDATA**, the **Short-Term Stay Declaration** to **AADE**, and the **Climate Resilience Fee** together with its monthly payment declaration. Automatically, for every booking.
 
 ## The problem it solves
 
@@ -58,7 +58,7 @@ DeskBoy **syncs** your bookings regularly, **checks** that every property is ful
 
 ## Who it is for
 
-- **Property managers** with many properties on Hosthub, Hospitable or another channel, losing hours to invoicing and declarations
+- **Property managers** with many properties on Hosthub, Hospitable, Smoobu or another channel, losing hours to invoicing and declarations
 - **Owners** renting one or a few properties, with or without a business registration
 - **Accountants** tracking compliance for many clients from one place
 

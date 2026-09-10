@@ -27,7 +27,7 @@ To get started with DeskBoy, you complete a few quick activation steps. You don'
     The choice determines what the app does for every booking — and it can change later if your status changes (see [Private individual](/en/guides/private-individual)).
   </Step>
   <Step title="Connect your channel manager">
-    Choose the channel manager you use — Hosthub, Airbnb, or Hospitable — and connect it so your bookings sync. For Airbnb, no API key is needed — DeskBoy connects directly to your Airbnb account.
+    Choose the channel manager you use — Hosthub, Airbnb, Hospitable, or Smoobu — and connect it so your bookings sync. For Airbnb, no API key is needed — DeskBoy connects directly to your Airbnb account.
   </Step>
   <Step title="Finish activation">
     Once the steps are done, you're in the panel. Your account starts on the **Free** plan — no card, no expiry date. If you later upgrade to Business or Agency, your first full month is free — once per account.
