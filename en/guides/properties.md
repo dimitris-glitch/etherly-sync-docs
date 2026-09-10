@@ -186,7 +186,7 @@ If an organization has no tax details yet, click **"Fill in fiscal details"** on
 
 ## Location & Coordinates
 
-On each property card, under **"Location & Details"**, you can set the city, country, timezone and — optionally — the property's **coordinates**, its **property type** (villa, apartment, studio etc.), its **maximum guests**, **bedrooms** and **bathrooms**.
+On each property card, under **"Location & Details"**, you can set the city, country, timezone and — optionally — the property's **coordinates**, its **property type** (villa, apartment, studio etc.), its **maximum guests**, **bedrooms** and **bathrooms**. The timezone is filled in automatically from the property's country. We only ask for it when the country has more than one timezone.
 
 The more complete the profile, the more precise the comparisons: with coordinates, guests, bedrooms and bathrooms filled in, DeskBoy Insights can show where your property sits against **comparable** listings in its area (rate, occupancy and revenue as a position in the distribution).
 
