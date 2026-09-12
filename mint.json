@@ -69,7 +69,13 @@
     {
       "version": "Ελληνικά",
       "group": "Διαχείριση",
-      "pages": ["guides/team", "guides/billing", "guides/language-format"]
+      "pages": [
+        "guides/team",
+        "guides/billing",
+        "guides/language-format",
+        "guides/sign-in",
+        "guides/data-storage"
+      ]
     },
     {
       "version": "Ελληνικά",
@@ -108,7 +114,13 @@
     {
       "version": "English",
       "group": "Management",
-      "pages": ["en/guides/team", "en/guides/billing", "en/guides/language-format"]
+      "pages": [
+        "en/guides/team",
+        "en/guides/billing",
+        "en/guides/language-format",
+        "en/guides/sign-in",
+        "en/guides/data-storage"
+      ]
     },
     {
       "version": "English",
