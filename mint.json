@@ -63,7 +63,8 @@
         "guides/aade-connect",
         "guides/airbnb",
         "guides/hospitable",
-        "guides/smoobu"
+        "guides/smoobu",
+        "guides/lodgify"
       ]
     },
     {
@@ -108,7 +109,8 @@
         "en/guides/aade-connect",
         "en/guides/airbnb",
         "en/guides/hospitable",
-        "en/guides/smoobu"
+        "en/guides/smoobu",
+        "en/guides/lodgify"
       ]
     },
     {
