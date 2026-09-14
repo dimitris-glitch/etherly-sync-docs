@@ -11,7 +11,7 @@ If you use **Lodgify** for your website and your bookings, you can connect your 
 
 <Steps>
   <Step title="Open settings">
-    Sign in to Lodgify and open the menu at the top right → **Settings**.
+    Sign in to Lodgify and open the menu at the bottom left → **Settings**.
   </Step>
   <Step title="Open Public API">
     In the settings menu choose **"Public API"**. Your key is already there.
@@ -61,14 +61,14 @@ If updates stop arriving, **"Re-register"** creates new entries in Lodgify in pl
 
 ## What "booking in manual review" means
 
-If a booking carries an **extra charge** — cleaning, tourist tax, the Climate Resilience Fee — it is recorded under **Bookings** marked **"Needs action"** and is **not invoiced automatically**.
+Extra charges on a booking, such as the cleaning fee, are invoiced **together with the stay**.
 
-The reason is that Lodgify does not state the **VAT rate per charge**, and the correct rate differs: cleaning is not taxed the same way as tourist tax, and the Climate Resilience Fee is issued on its own document. Without that, an automatic document would go out in your name with the wrong VAT — so the app stops and shows it to you.
+If a booking carries a charge whose **name the app does not recognize**, it is recorded under **Bookings** marked **"Needs action"** and is **not invoiced until the charge is recognized**. You name the charges yourself in Lodgify, and a charge the app cannot identify would produce a document with the wrong amount in your name. So the app stops and shows it to you.
 
-The marker clears on its own once the booking no longer carries the charge.
+The marker clears on its own once the charge is recognized or the booking no longer carries it. If you see it, send us the charge name exactly as it appears in Lodgify so we can add it.
 
 <Tip>
-Bookings with **no** extra charge are invoiced as usual and do not pass through here.
+Bookings with stay, discounts and cleaning are invoiced as usual and do not pass through here.
 </Tip>
 
 ## Managing the connection

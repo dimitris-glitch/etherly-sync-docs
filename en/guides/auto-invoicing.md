@@ -1,6 +1,6 @@
 ---
 title: "Auto-Invoicing"
-description: "Set up nightly auto-invoicing and let DeskBoy issue documents every evening without any manual work."
+description: "Set up daily auto-invoicing and let DeskBoy issue documents at the time you choose, without any manual work."
 ---
 
 # Auto-Invoicing

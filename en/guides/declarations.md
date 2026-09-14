@@ -75,6 +75,10 @@ Bookings **cancelled after invoicing** are skipped by automatic declaration — 
 
 Cancelled bookings stay in the pending declarations list with an orange **"Cancelled"** badge.
 
+<Note>
+The status filter on the Bookings page does not affect this one: cancelled bookings always appear here, because they need a cancellation declaration.
+</Note>
+
 The declared amount comes from the **collected cancellation fee** you record on the [Bookings](/en/guides/checkouts) page — it is the same amount as the issued document. The booking is declared as **cancelled** with that amount: automatically with the next run, if you have enabled automatic declaration submission, or manually with the send button.
 
 If you do not wish to submit a declaration, use **Skip**. The booking stays visible in the "To Declare" tab until the end of the day marked as "Skipped", and from the next day it moves to the **"History"** tab, where you can remove the skip if you change your mind.

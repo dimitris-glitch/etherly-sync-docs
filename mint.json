@@ -30,7 +30,7 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Δοκιμάστε δωρεάν",
+    "name": "Δοκίμασε δωρεάν",
     "url": "https://app.deskboy.app/register"
   },
   "versions": ["Ελληνικά", "English"],
@@ -44,7 +44,7 @@
   "navigation": [
     {
       "version": "Ελληνικά",
-      "group": "Ξεκινήστε",
+      "group": "Πρώτα βήματα",
       "pages": ["intro", "getting-started", "guides/onboarding"]
     },
     {

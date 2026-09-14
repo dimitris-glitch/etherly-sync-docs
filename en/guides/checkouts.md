@@ -110,6 +110,8 @@ In **Bookings** you can filter checkouts by:
 - **Date range** (checkout date)
 - **Skipped** (yes/no)
 
-The **Property** filter works as in every list: checkbox selection per property or per [group](/en/guides/properties#selecting-with-checkboxes), with search, and with nothing selected you see all properties. The selection is remembered for this page.
+The **Property** filter works as in every list: checkbox selection per property or per [group](/en/guides/properties#selecting-with-checkboxes), with search, and with nothing selected you see all properties. The selection is remembered and also applies on the [Declarations](/en/guides/declarations) page, so you don't have to pick it twice.
+
+Cancelled bookings are hidden from the list by default, so you only see the ones that need action. Bring them back from **More filters → Status → All**. Your choice is remembered across sessions.
 
 In the **Today** tab, properties are shown grouped, provided you have created groups; properties not assigned to any group go to the "Ungrouped" group at the end. The **Upcoming**, **History** and **All** tabs show bookings in a single chronological order.
