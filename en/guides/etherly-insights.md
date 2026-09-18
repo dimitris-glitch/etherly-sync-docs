@@ -232,7 +232,7 @@ right one. The table below shows what you can ask about.
 | Tool | Description |
 |---|---|
 
-| **etherly-advisor** | The DeskBoy revenue advisor: takes a question plus results from the other tools and returns grounded pricing and occupancy advice |
+| **deskboy-advisor** | The DeskBoy revenue advisor: takes a question plus results from the other tools and returns grounded pricing and occupancy advice |
 
 <Note>
 Market tools rely on an external market-data source and have a daily usage allowance per account. Area precision improves when your properties have coordinates — see the "Property Configuration" guide.
