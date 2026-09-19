@@ -1,0 +1,38 @@
+/*
+ * Custom CSS του help center (το Mintlify φορτώνει κάθε .css του content directory).
+ *
+ * Τα <Note> callouts ήταν μπλε — ξένα στην παλέτα DeskBoy. Παίρνουν ουδέτερο
+ * slate με πράσινη αριστερή ράβδο (ιδιοκτήτης 19/09/2026), ώστε να ξεχωρίζουν
+ * και από τα <Warning> (κεχριμπάρι) και από τα <Tip> (πράσινο φόντο):
+ *   light: φόντο #F8FAFC, περίγραμμα #E2E8F0, ράβδος 4px #16A34A,
+ *          κείμενο #334155, εικονίδιο #16A34A
+ *   dark:  φόντο #1E293B, περίγραμμα #334155, ράβδος 4px #22C55E,
+ *          κείμενο #E2E8F0, εικονίδιο #4ADE80
+ * Ό,τι άλλο βρίσκεται μέσα στο callout (σύνδεσμοι, έντονα, code) ακολουθεί το
+ * χρώμα κειμένου — το Mintlify τα δηλώνει text-current.
+ */
+.callout[data-callout-type='note'] {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  border-left: 4px solid #16a34a !important;
+}
+.callout[data-callout-type='note'],
+.callout[data-callout-type='note'] * {
+  color: #334155 !important;
+}
+.callout[data-callout-type='note'] svg {
+  color: #16a34a !important;
+}
+
+html.dark .callout[data-callout-type='note'] {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  border-left: 4px solid #22c55e !important;
+}
+html.dark .callout[data-callout-type='note'],
+html.dark .callout[data-callout-type='note'] * {
+  color: #e2e8f0 !important;
+}
+html.dark .callout[data-callout-type='note'] svg {
+  color: #4ade80 !important;
+}

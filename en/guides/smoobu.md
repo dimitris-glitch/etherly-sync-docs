@@ -76,9 +76,9 @@ If updates stop arriving, **"Re-register"** creates a new entry in Smoobu in pla
 
 ## What "booking needs review" means
 
-If a booking has an **extra charge** the app doesn't recognise yet, the booking appears under **Bookings** marked as **needing action**, waiting for you to confirm it.
+If a booking has an **extra charge** the app doesn't handle yet, or its amounts don't add up, it appears under **Bookings** marked as **needing action** and **is not invoiced until that is resolved**. A notice on the home page says what happened, and its button shows you which bookings are affected.
 
-This is deliberate: every channel names its charges differently, and the amount that gets declared has to be the amount actually received. That way a charge such as a city tax never ends up on the wrong document. You review the booking, confirm the amounts, and the document proceeds as normal.
+This is deliberate: the amount on the document has to be the amount actually received, so a charge such as a city tax never ends up on a wrong document in your name. If the booking has no amount or its amounts don't add up, correct it in Smoobu and it updates on the next sync. For an extra charge, contact support.
 
 ## Managing the connection
 
