@@ -86,3 +86,14 @@ This appears when the Accommodation Document and Payment Receipt were successful
 2. Verify the ΤΑΚΚ characteristics are selected on the property and that the organisation has a tax with its band amount (Tax details)
 3. Check that the tax rules in Elorus are current
 
+## Sending the receipt to the guest
+
+On issue, the guest receives an email with a link to the receipt, sent under your business name. In the booking's timeline you can see where and when it was sent and whether it was delivered. If the booking has no email address or the platform's address has expired, the email is not sent. If the guest wants the receipt at a different email, change the address with the pencil in the booking details, before or after issue, and press “Send document” or “Resend”. Hover over the step's status to see every send that was made, to which address, and what happened to it. In **Settings → Advanced** you choose which documents are emailed, receipts or invoices, and to which guests: from your business's country or from abroad. A guest on holiday rarely needs a receipt from a business in another country, so the default sends invoices only. Automatic sending applies to stays that ended recently. For older ones, or when your settings do not send, the “Not sent” step explains why and you can send manually with “Send document”.
+
+<Note>
+If the booking has no guest country, the document is sent only when it is enabled both for guests from your country and for guests from abroad.
+</Note>
+
+<Note>
+Bookings from Booking.com and Expedia come with a temporary email address provided by the platform to protect the guest's personal details. While it is active, any message sent there is forwarded by the platform to the guest's real email. It expires about 7 days after check-out; after that DeskBoy does not send to that address, because the message would bounce, and shows "Channel address expired" instead. If an address bounces the message, the receipt is not sent there again: change the address with the pencil, or download it from “View document” and send it from your own email. Any address you enter with the pencil never expires, even if it is the same as the channel's.
+</Note>

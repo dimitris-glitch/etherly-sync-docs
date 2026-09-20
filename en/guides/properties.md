@@ -106,6 +106,10 @@ In the properties list and in the **Settings → Online Check-In** tab, properti
 In the **Automatic property invoicing** table and in the **cleaning-staff assignment**, each group heading opens and closes with a click: close the groups you are not working on right now and only the ones you want to set up stay in view. While a group is closed, its heading keeps showing the group name and how many properties it holds. Both screens open with every group expanded.
 
 <Note>
+With many properties the list starts collapsed. Open it with "Show property list", and the app remembers on your device whether you left it open or closed.
+</Note>
+
+<Note>
 The **Automatic property invoicing** table also shows switched-off properties, so each group's count there includes them — while the **Settings → Properties** list counts the active ones. Every number always matches the rows it opens.
 </Note>
 

@@ -85,7 +85,7 @@ The next morning's **daily report** also summarises the bookings that need atten
 If a booking spans two calendar years (e.g., Dec 28, 2024 → Jan 3, 2025), the system handles it automatically: two separate checkouts are created (one per year) with amounts split proportionally per night. Each checkout is invoiced in the correct fiscal year.
 
 <Note>
-Year-Boundary Splits happen automatically. No action is required from you.
+The year-end split happens automatically as long as the switch in Advanced settings is on — and it is on by default.
 </Note>
 
 ## Amount format

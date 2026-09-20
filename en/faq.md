@@ -167,6 +167,10 @@ description: "Solutions for the most common issues with DeskBoy — from initial
     For whether a document is required for a free stay and which type, ask your accountant.
   </Accordion>
 
+  <Accordion title="Are blocks (closed dates) in my PMS invoiced?">
+    No. Blocks are not bookings: they do not appear in the bookings list and are never invoiced, regardless of channel settings. If you enter your own stay as a regular booking with an amount, it is treated as a phone booking.
+  </Accordion>
+
   <Accordion title="Should I issue a receipt or an invoice for a foreign guest?">
     General rule:
     - **Private individual from abroad** → Retail receipt (no tax ID required)

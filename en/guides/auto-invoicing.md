@@ -88,6 +88,8 @@ Auto-invoicing and manual sends **work seamlessly together**:
 
 In **Settings → Channels** you configure, for each booking channel (Airbnb, Booking.com, Phone, Booking engine, etc.):
 
+All channels start enabled; disable any you do not want invoiced automatically.
+
 - **Auto-invoicing** — new bookings from a channel with the switch off are marked **Skipped** and are not invoiced automatically; they stay in the list and you can send them manually. For **existing** bookings: filter by channel in Bookings and bulk-update their status as needed.
 - **Rent payment method** — how the channel pays you out; used in Short-Term Rental declarations.
 - **Climate Resilience Fee collection** — whether the fee is collected with the booking or on site during the stay.
@@ -106,7 +108,7 @@ Enter your **AADE Login Code** and **Password** to enable automatic company look
 
 ### Year-End — Booking Split
 
-Toggle for automatic cross-year booking splits. Only active when auto-invoicing is enabled.
+Toggle for automatic cross-year booking splits. Only active when auto-invoicing is enabled. It is enabled by default.
 
 ## Changing the execution time
 
