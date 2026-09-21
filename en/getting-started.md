@@ -54,14 +54,23 @@ Once these are done, you enter the panel. Booking sync starts right away.
 If you issue documents, connect your provider under **Settings → Integrations**, whenever it suits you:
 
 <Steps>
-  <Step title="New connection">
-    Click **New connection** and pick the provider you use.
+  <Step title="Open the connection form">
+    In the **Apps** section find the **Elorus** card and click **Connect**. Fill the fields in order, fetching each value from Elorus as you need it.
   </Step>
-  <Step title="Connection details">
-    For **Elorus** you need the API key (Settings → API settings → **Create new key**) and the **Organization ID**, shown in the URL of the Settings → Organization page.
+  <Step title="Connection title">
+    A short name so you can tell this connection apart inside the app.
+  </Step>
+  <Step title="API Key">
+    In Elorus: click your name (top right) → **user profile**. The API key is at the bottom of the page — copy it and paste it straight into the field.
+  </Step>
+  <Step title="Organization title">
+    The name of your organization, as you want to tell it apart.
+  </Step>
+  <Step title="Organization ID">
+    In Elorus: **Settings → Organization**. The ID is in the **"Organization ID"** field — copy it and paste it in.
   </Step>
   <Step title="Fiscal details">
-    Enter the tax id, and the legal form and business name are filled in from the AADE registry. They are needed for the AADE declarations and the VAT regime.
+    Enter the tax id and click **Search**. The legal form and business name are filled in from the AADE registry. They are needed for the AADE declarations and the VAT regime.
   </Step>
   <Step title="Test the connection">
     Click **Test connection**. On success the connection shows as active and you can issue documents.

@@ -5,7 +5,9 @@ description: "The built-in AI assistant that answers setup and performance quest
 
 # Nio
 
-**Nio** is the built-in AI assistant in DeskBoy. Click the button in the bottom-right corner of any page to open it (press Escape to close).
+**Nio** is the built-in AI assistant in DeskBoy. Click the button in the bottom-right corner of any page to open it.
+
+Pin Nio from the top of the panel to keep it in its own column next to your content. Unpinned, it floats over the page and closes with Escape.
 
 ## What it can do
 
