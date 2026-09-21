@@ -148,7 +148,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
   </Accordion>
 
   <Accordion title="What happens if I go over 250 checkouts on Free?">
-    Your subscription continues as normal. The first time within 12 months, that month's subscription is not charged extra. If it happens again within the same 12 months, the account moves to **Business** from the 1st of the following month, and we let you know by email beforehand.
+    Your subscription continues as normal and the month is not charged. The first time within 12 months we simply let you know. If it happens again within the same 12 months, we send you a **Business** proposal with the price that matches your volume. Business starts only if you accept it, from the 1st of the following month. If not, you stay on Free with no charge.
   </Accordion>
 
   <Accordion title="How do I pay?">
