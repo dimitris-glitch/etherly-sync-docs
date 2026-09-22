@@ -1,14 +1,24 @@
 ---
 title: "AADE Connect Settings"
-description: "Configure property mappings and default payment methods per booking channel."
+description: "Connect your AADE account and configure property mappings and default payment methods per booking channel."
 ---
 
 # AADE Connect Settings
 
-The **Settings → AADE Connect** page has two sections:
+Setup happens on two pages, in this order: first you create the connection under **Integrations**, then you configure the rest under **Settings → AADE Connect**.
 
-1. **Property mapping** — link each Hosthub property to the corresponding AADE property
+---
+
+## Connecting to AADE
+
+Before anything else, create the connection. Open **Settings → Integrations**, find the **AADE Connect** card and press **Enable**. Fill in the title you want the connection to have, your **AADE Username** and **Password**. Press **Test connection** and, once it succeeds, press **Save** — until the test succeeds, Save stays disabled.
+
+Once the connection exists, continue to **Settings → AADE Connect**, where two sections await you:
+
+1. **Property mapping** — link each of your properties to the corresponding AADE property
 2. **Rental payment method** — set a default payment method for each booking channel
+
+This page lists properties only once a connection exists.
 
 ---
 
