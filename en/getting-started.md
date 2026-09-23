@@ -7,7 +7,7 @@ description: "Account, activation, booking-channel connection, invoicing provide
 
 Setup takes about **10 minutes**. Before you begin, it helps to have at hand:
 
-- Access to your **booking channel**: your Hosthub API key, your Hospitable API key, your Smoobu key and secret, your Lodgify API key, or simply your Airbnb account details.
+- Access to your **booking channel**: your Hosthub API key, your Hospitable API key, your Smoobu key and secret, your Lodgify API key, your Hostaway Account ID and API key, or simply your Airbnb account details.
 - If you issue documents, an account with the **invoicing provider** you use (e.g. Elorus). If you rent as a private individual without a business registration, you do not need one (see [Private individual](/en/guides/private-individual)).
 - Your TAXISnet credentials for AADE declarations.
 
@@ -42,6 +42,7 @@ Three short steps, the same for everyone (details in [Account activation](/en/gu
     - **Hospitable**: paste the API key you issue in Hospitable (see [Hospitable connection](/en/guides/hospitable)).
     - **Smoobu**: paste the API Key and API Secret you create in Smoobu (see [Smoobu connection](/en/guides/smoobu)).
     - **Lodgify**: paste the API key from Lodgify's Public API (see [Lodgify connection](/en/guides/lodgify)).
+    - **Hostaway**: paste your Account ID and the API key you create in Hostaway (see [Hostaway connection](/en/guides/hostaway)).
   </Step>
 </Steps>
 
@@ -137,6 +138,7 @@ Under **Settings → Integrations** you find all connections:
 | **Hospitable** | Bookings from all your Hospitable channels (Airbnb, Booking.com, Vrbo, direct) |
 | **Smoobu** | Bookings from all your Smoobu channels (Airbnb, Booking.com, Vrbo, direct) |
 | **Lodgify** | Bookings from your Lodgify website, booking engine and channels |
+| **Hostaway** | Bookings from all your Hostaway channels (Airbnb, Booking.com, Vrbo, direct) |
 | **Airbnb Live** | Direct connection to your Airbnb account, bookings arrive automatically |
 | **Elorus** | Document issuance and myDATA submission |
 | **AADE Connect** | Short-term rental declarations to AADE |

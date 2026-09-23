@@ -24,11 +24,40 @@ The **Online Check-In** tab has its own "Notify host when guest completes check-
 There are two ways to share the check-in link:
 
 - **From the bookings list in the dashboard**: the copy button gives you a ready-to-send **personal link** for that specific booking — no replacement needed, just send it to your guest.
-- **From Settings → Online Check-In**: copy the link template ending in `{booking_id}` — the only part that changes per booking: replace it with the **external booking ID** (the ID provided by Airbnb, Booking.com, or your booking platform).
+- **From Settings → Online Check-In → "Links & Messages"**: there you find the link ready for each booking channel, together with a ready-made message for your guest.
 
 <Note>
 The check-in link requires no login — guests open it directly. It is valid until 23:00 on the check-in day.
 </Note>
+
+<Note>
+The form offers the guest only the hours you set for that property. So they learn the correct arrival and departure limits indirectly — if the options start at 15:00, they cannot state an arrival at 13:00.
+</Note>
+
+<Note>
+If the guest does not complete the online check-in, the AADE declaration is submitted with the booking reference in place of the identification detail. On the **Declarations** screen it appears as-is, so it stands apart from a tax ID or a passport.
+</Note>
+
+### A link per channel
+
+Each channel has its own link, ending in that channel's own variable:
+
+| Channel | Variable |
+|---|---|
+| Booking.com | `[RESERVATION_ID]` |
+| Airbnb | `[Confirmation code]` |
+
+Press **Copy** on your channel's row and paste the link into its message template. On Airbnb the variable arrives ready.
+
+For **Expedia, Vrbo, Agoda and direct bookings**, open **Other channels**: replace `[booking_id]` with each guest's booking reference.
+
+<Note>
+If Airbnb shows text instead of a variable, delete `{Confirmation code}` and add the variable from the editor's **+** menu.
+</Note>
+
+### Ready-made message for your guest
+
+Next to the links there is a ready-made message in English. The subject sits apart from the body, so you can put it in the channel's own subject field. Pick a platform and the link inside the message takes the right variable; **Copy text** copies the body of the message.
 
 ### Automatic delivery via your booking platform (recommended)
 
@@ -36,7 +65,7 @@ The most practical way to get the link to every guest is a **scheduled message (
 
 <Steps>
   <Step title="Create a message template">
-    In your booking platform, create a scheduled message that is sent automatically **2–3 days before arrival**, inviting the guest to complete their online check-in via the link.
+    In your booking platform, create a scheduled message that is sent automatically **2–3 days before arrival**, inviting the guest to complete their online check-in via the link. That way you learn the arrival and departure times, and you collect the guest identification details needed for AADE declarations.
   </Step>
   <Step title="Use the platform's dynamic booking variable">
     Platforms support **dynamic variables** in templates (e.g. confirmation/booking code). Put the platform's booking variable in place of `{booking_id}` — this way every guest receives their own link and DeskBoy automatically knows which booking the check-in belongs to.

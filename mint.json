@@ -64,7 +64,8 @@
         "guides/airbnb",
         "guides/hospitable",
         "guides/smoobu",
-        "guides/lodgify"
+        "guides/lodgify",
+        "guides/hostaway"
       ]
     },
     {
@@ -110,7 +111,8 @@
         "en/guides/airbnb",
         "en/guides/hospitable",
         "en/guides/smoobu",
-        "en/guides/lodgify"
+        "en/guides/lodgify",
+        "en/guides/hostaway"
       ]
     },
     {
