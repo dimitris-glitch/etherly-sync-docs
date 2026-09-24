@@ -23,6 +23,24 @@ For every checkout that is sent, DeskBoy automatically creates documents in Elor
   </Card>
 </CardGroup>
 
+## Final send and Draft
+
+With a **final send**, manually or automatically with [auto-invoicing](/en/guides/auto-invoicing), your invoicing app issues:
+
+1. the right accommodation document: a receipt or an invoice,
+2. its payment receipt,
+3. the Climate Resilience Fee (ΤΑΚΚ).
+
+In addition, the accommodation document is sent to the guest's email, if you have set it in DeskBoy to go out automatically.
+
+A **draft** only creates a provisional accommodation document in your invoicing app. It is not sent to AADE (myDATA) and comes without a payment receipt or ΤΑΚΚ. It is mainly useful for testing, so you can make sure the amount and the description come out right. It is not an official AADE document.
+
+To turn a draft into a final document, choose **"Send as Final"** on the booking's row. The draft is replaced by a final document with the booking's current details. Auto-invoicing does the same for the day's drafts.
+
+<Note>
+Changes you made to the draft in your invoicing app are not carried over to the final document.
+</Note>
+
 ## Document Description
 
 The text shown on the service line of the Accommodation Document (e.g. "BK-123456 | 01/07/2026 → 03/07/2026 | City Vibes Loft") is generated from a template, which you configure under **Settings → Document Description**.

@@ -39,21 +39,11 @@ If you use **Lodgify** for your website and your bookings, you can connect your 
 Lodgify properties are added as a **separate set**, alongside the ones you already have. Each set keeps its own **Climate Resilience Fee** characteristics and its own invoicing settings — you set those once under **Properties**.
 </Note>
 
-## 3. Turn on instant updates
+## Instant updates
 
-With instant updates, changes to your bookings reach DeskBoy right away. Sync also works without them, on a schedule — just more slowly.
+When you connect, **instant updates** turn on by themselves: DeskBoy registers update entries in your Lodgify account — one per kind of change — so changes to your bookings arrive right away. They are the only entries it makes there.
 
-<Steps>
-  <Step title="Open the setting">
-    On the connection row click **"Set up instant updates"** — or **Configure** and then the **"Instant updates"** section.
-  </Step>
-  <Step title="Click 'Turn on instant updates'">
-    DeskBoy registers update entries in your Lodgify account — one per kind of change. They are the only entries it creates there, and they are removed when you turn them off.
-  </Step>
-  <Step title="Confirm">
-    The badge changes to **"On"**, and as soon as the first update arrives the time of the last one appears.
-  </Step>
-</Steps>
+Under the connection's **Configure**, the **"Instant updates"** section shows the **"On"** badge and the time of the last update. From there you can turn them off any time — sync carries on with the scheduled checks, just more slowly.
 
 <Tip>
 If updates stop arriving, **"Re-register"** creates new entries in Lodgify in place of the previous ones.

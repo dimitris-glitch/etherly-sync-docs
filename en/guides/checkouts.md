@@ -57,6 +57,14 @@ For a permanent exclusion of an entire booking channel or a specific property, c
 
 From the row's **⋮** menu choose **"Skip"**. The booking stays skipped through subsequent syncs; you bring it back from the same menu with **"Undo skip"**. Who skipped or restored it and when is recorded in the activity history.
 
+## Document issued outside DeskBoy
+
+If you issue a booking's document elsewhere, e.g. an invoice in AADE's e-timologio, choose **"Issued outside DeskBoy"** from the row's **⋮** menu. DeskBoy will not issue documents for the booking, but will still declare it to AADE and include it in the climate resilience fee form using the booking's amounts. Issue the climate resilience fee receipt in the same place where you issued the document.
+
+<Note>
+"Skip" also excludes the booking from the AADE declaration. Use it only for bookings that will not be declared.
+</Note>
+
 ## Billing contact (Business Contact)
 
 Checkouts that issue an **invoice** require a **billing contact** — the _Business Contact (Required for Invoice)_ field in the checkout's expanded row. Click the field to open the search and pick a contact from Elorus.

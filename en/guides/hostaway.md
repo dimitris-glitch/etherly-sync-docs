@@ -50,21 +50,11 @@ Hostaway properties are added as a **separate set**, alongside the ones you alre
 If the same properties are already connected through another connection, keep one source per property, so that each booking is invoiced once.
 </Note>
 
-## 3. Turn on instant updates
+## Instant updates
 
-With instant updates, changes to your bookings reach DeskBoy right away. Sync also works without them, on a schedule — just more slowly.
+When you connect, **instant updates** turn on by themselves: DeskBoy registers an updates entry in your Hostaway account so changes to your bookings arrive right away. It is the only entry it makes there.
 
-<Steps>
-  <Step title="Open the setting">
-    On the connection row click **"Set up instant updates"** — or **Configure** and then the **"Instant updates"** section.
-  </Step>
-  <Step title="Click 'Turn on instant updates'">
-    DeskBoy registers an updates entry in your Hostaway account. It is the only entry it makes there, and it is removed when you turn them off.
-  </Step>
-  <Step title="Confirm">
-    The badge changes to **"On"**, and as soon as the first update arrives the time of the last one appears.
-  </Step>
-</Steps>
+Under the connection's **Configure**, the **"Instant updates"** section shows the **"On"** badge and the time of the last update. From there you can turn them off any time — sync carries on with the scheduled checks, just more slowly.
 
 <Tip>
 If the **"Instant updates"** section under **Configure** shows **"Paused in Hostaway"**, Hostaway has stopped sending updates. This happens when Hostaway can't deliver them for a while, or when they're turned off there. Click **"Turn on again"** — meanwhile, changes arrive with the scheduled checks.

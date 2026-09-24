@@ -27,11 +27,13 @@ During auto-invoicing, only bookings that meet **all** of the following are proc
 
 | Criteria | Required state |
 |----------|---------------|
-| Booking status | `READY` |
+| Booking status | Ready to send, or a draft awaiting final send |
 | Skip | Not skipped |
 | Property | **On** (enabled) |
 | Booking | Not cancelled |
 | Account | Active |
+
+The day's drafts are replaced by final documents.
 
 ## What is NOT auto-invoiced
 
