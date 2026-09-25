@@ -33,7 +33,7 @@ With a **final send**, manually or automatically with [auto-invoicing](/en/guide
 
 In addition, the accommodation document is sent to the guest's email, if you have set it in DeskBoy to go out automatically.
 
-A **draft** only creates a provisional accommodation document in your invoicing app. It is not sent to AADE (myDATA) and comes without a payment receipt or ΤΑΚΚ. It is mainly useful for testing, so you can make sure the amount and the description come out right. It is not an official AADE document.
+A **draft** only creates a provisional accommodation document, with the same amount the final document would have. It is not sent to AADE (myDATA) and comes without a payment receipt or ΤΑΚΚ, because these are linked to an issued document; they are issued on final send. It is mainly useful for testing, so you can make sure the amount and the description come out right. It is not an official AADE document.
 
 To turn a draft into a final document, choose **"Send as Final"** on the booking's row. The draft is replaced by a final document with the booking's current details. Auto-invoicing does the same for the day's drafts.
 
