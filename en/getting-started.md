@@ -46,7 +46,7 @@ Three short steps, the same for everyone (details in [Account activation](/en/gu
   </Step>
 </Steps>
 
-Once these are done, you enter the panel. Booking sync starts right away.
+Once these are done, you enter the panel. Booking sync starts right away — for Hospitable, Smoobu, Lodgify and Hostaway, as soon as our team finishes the connection (within 24 hours).
 
 ---
 

@@ -43,8 +43,8 @@ Smoobu also has an older **Profile → API Key** page. What you need here are th
   <Step title="Paste the Key and the Secret">
     Fill in the **"Key"** and **"Secret"** fields and continue. DeskBoy checks the details with Smoobu before storing them — encrypted.
   </Step>
-  <Step title="The first sync starts">
-    Once the details are confirmed, the first sync starts automatically. Your properties and bookings appear as soon as it finishes.
+  <Step title="We finish the connection">
+    Once the details are confirmed, our team finishes the connection within 24 hours and emails you as soon as it's live. Every new connection goes through this check, so your bookings and amounts match your account from the very first document. The first sync then starts automatically, and your properties and bookings appear as soon as it finishes.
   </Step>
 </Steps>
 

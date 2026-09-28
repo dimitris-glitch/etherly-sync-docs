@@ -30,8 +30,8 @@ If you use **Lodgify** for your website and your bookings, you can connect your 
   <Step title="Paste the key">
     Fill in the **"API key"** field and continue. DeskBoy checks the key with Lodgify before storing it — encrypted.
   </Step>
-  <Step title="The first sync starts">
-    Once the key is confirmed, the first sync starts automatically. Your properties and bookings appear as soon as it finishes.
+  <Step title="We finish the connection">
+    Once the details are confirmed, our team finishes the connection within 24 hours and emails you as soon as it's live. Every new connection goes through this check, so your bookings and amounts match your account from the very first document. The first sync then starts automatically, and your properties and bookings appear as soon as it finishes.
   </Step>
 </Steps>
 

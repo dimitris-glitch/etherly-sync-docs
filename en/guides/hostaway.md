@@ -39,8 +39,8 @@ Hostaway shows the **API key once**, at the moment you create it. If you lose it
   <Step title="Paste the Account ID and API key">
     Fill in the **"Account ID"** and **"API key"** fields and click **Connect**. DeskBoy checks the details with Hostaway before storing them — encrypted.
   </Step>
-  <Step title="The first sync starts">
-    Once the details are confirmed, the first sync starts automatically. If you're told it will start at the next scheduled check, you can also start it now from the Dashboard. Your properties and bookings appear as soon as it finishes.
+  <Step title="We finish the connection">
+    Once the details are confirmed, our team finishes the connection within 24 hours and emails you as soon as it's live. Every new connection goes through this check, so your bookings and amounts match your account from the very first document. The first sync then starts automatically, and your properties and bookings appear as soon as it finishes.
   </Step>
 </Steps>
 
