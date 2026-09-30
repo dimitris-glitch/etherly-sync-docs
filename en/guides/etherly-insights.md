@@ -227,13 +227,6 @@ right one. The table below shows what you can ask about.
 | **competitor-lineup** | The comparable listings around one property (rating, reviews, minimum stay and performance estimates) |
 | **competitor-rates** | Listed prices, availability and minimum stay of specific competitor listings for the upcoming weeks |
 
-### Advisor
-
-| Tool | Description |
-|---|---|
-
-| **deskboy-advisor** | The DeskBoy revenue advisor: takes a question plus results from the other tools and returns grounded pricing and occupancy advice |
-
 <Note>
 Market tools rely on an external market-data source and have a daily usage allowance per account. Area precision improves when your properties have coordinates — see the "Property Configuration" guide.
 </Note>

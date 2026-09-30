@@ -5,7 +5,7 @@ description: "Connect your AADE account and configure property mappings and defa
 
 # AADE Connect Settings
 
-Setup happens on two pages, in this order: first you create the connection under **Integrations**, then you configure the rest under **Settings → AADE Connect**.
+Setup happens on three pages, in this order: first you create the connection under **Integrations**, then you map your properties under **Settings → AADE Connect** and set the payment method per channel under **Settings → Channels**.
 
 ---
 
@@ -13,12 +13,10 @@ Setup happens on two pages, in this order: first you create the connection under
 
 Before anything else, create the connection. Open **Settings → Integrations**, find the **AADE Connect** card and press **Enable**. Fill in the title you want the connection to have, your **AADE Username** and **Password**. Press **Test connection** and, once it succeeds, press **Save** — until the test succeeds, Save stays disabled.
 
-Once the connection exists, continue to **Settings → AADE Connect**, where two sections await you:
+Once the connection exists, continue with two settings:
 
-1. **Property mapping** — link each of your properties to the corresponding AADE property
-2. **Rental payment method** — set a default payment method for each booking channel
-
-This page lists properties only once a connection exists.
+1. **Property mapping**, under **Settings → AADE Connect**: link each of your properties to the corresponding AADE property. This page lists properties only once a connection exists.
+2. **Rental payment method**, under **Settings → Channels**: set a default payment method for each booking channel.
 
 ---
 
@@ -34,14 +32,16 @@ If no properties appear, make sure you have connected at least one booking chann
 
 ## Rental payment method
 
-Every declaration sent to AADE requires information about **how the booking channel (Airbnb, Booking.com, etc.) pays out the rent to your business**. This is not about how the guest pays, but the flow of money from the channel to you. Here you set the default per channel.
+Every declaration sent to AADE requires information about **how the booking channel (Airbnb, Booking.com, etc.) pays out the rent to your business**. This is not about how the guest pays, but the flow of money from the channel to you. You set the default per channel under **Settings → Channels**.
 
-| Option | AADE code | When to use |
+| Option in DeskBoy | On the AADE form | When to use |
 |--------|-----------|-------------|
-| Bank in Greece | `DOMESTIC_PAYMENTS_ACCOUNT` | Channel pays into a Greek bank account |
-| Bank abroad | `FOREIGN_PAYMENTS_ACCOUNT` | Channel pays into a foreign bank account |
-| Cash | `CASH` | Payment in cash |
-| Other | `OTHER` | Payment via third party, voucher, etc. |
+| Bank in Greece | Λογαριασμός Πληρωμών Ημεδαπής | You have set the channel to pay you into an account at a Greek bank |
+| Bank abroad | Λογαριασμός Πληρωμών Αλλοδαπής | You have set the channel to pay you into an account at a bank abroad |
+| Cash | Μετρητά | Payment in cash |
+| Other | Λοιποί | Payment via third party, voucher, etc. |
+
+The AADE form shows these options in Greek.
 
 **The setting applies per channel** — Airbnb, Booking.com, VRBO etc. each have their own default.
 
@@ -50,7 +50,7 @@ Every declaration sent to AADE requires information about **how the booking chan
 If you have changed the payment method for a specific booking (from the Declarations page), that value takes precedence:
 
 1. Per-booking manual override (✏️ on the Declarations page)
-2. **Per-channel default — this page**
+2. **Per-channel default** (Settings → Channels)
 3. General default: Bank in Greece
 
 <Tip>

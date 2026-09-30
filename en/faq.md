@@ -147,10 +147,6 @@ description: "Solutions for the most common issues with DeskBoy — from initial
     Every booking that had a document issued within the month — once per booking, in the month it was issued.
   </Accordion>
 
-  <Accordion title="What happens if I go over 250 checkouts on Free?">
-    Your subscription continues as normal and the month is not charged. The first time within 12 months we simply let you know. If it happens again within the same 12 months, we send you a **Business** proposal with the price that matches your volume. Business starts only if you accept it, from the 1st of the following month. If not, you stay on Free with no charge.
-  </Accordion>
-
   <Accordion title="How do I pay?">
     By card at each month's close, or from your prepaid balance if you've topped one up. Both are managed in **Plan & Billing**.
   </Accordion>

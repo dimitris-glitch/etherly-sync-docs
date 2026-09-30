@@ -151,26 +151,26 @@ If the booking already has a Reservation ID from Hosthub, the field is pre-fille
 
 DeskBoy automatically maps the booking channel to the platform code required by AADE. The **Channel** column in the Declarations table shows the recognized platform name — not the raw Hosthub channel string.
 
-| Booking channel | Column display | AADE code |
+| Booking channel | Column display | On the AADE form |
 |-----------------|----------------|-----------|
-| Airbnb, Airbnb Plus, Airbnb (Greece), etc. | Airbnb | `AIRBNB` |
-| Booking.com, Booking.com for …, etc. | Booking.com | `BOOKING_COM` |
-| Clickstay | Clickstay | `CLICKSTAY` |
-| HomeAway, VRBO, Expedia, etc. | HomeAway / VRBO | `HOMEAWAY` |
-| Homestay | Homestay | `HOMESTAY` |
-| Luxury Retreats | Luxury Retreats | `LUXURY_RETREATS` |
-| Only Apartments | Only Apartments | `ONLY_APARTMENTS` |
-| TripAdvisor, Holiday Lettings, etc. | TripAdvisor | `TRIPADVISOR_RENTALS` |
-| Phone / Direct / empty | Εκτός πλατφόρμας | `OTHER_DIGITAL_PLATFORMS` · `"Εκτός πλατφόρμας"` |
-| Any other channel | (raw name) | `OTHER_DIGITAL_PLATFORMS` · the channel name |
+| Airbnb, Airbnb Plus, Airbnb (Greece), etc. | Airbnb | Airbnb |
+| Booking.com, Booking.com for …, etc. | Booking.com | Booking.com |
+| Clickstay | Clickstay | Clickstay |
+| HomeAway, VRBO, Expedia, etc. | HomeAway / VRBO | HomeAway |
+| Homestay | Homestay | Homestay |
+| Luxury Retreats | Luxury Retreats | Luxury Retreats |
+| Only Apartments | Only Apartments | Only-apartments |
+| TripAdvisor, Holiday Lettings, etc. | TripAdvisor | TripAdvisor Rentals/Holiday Lettings |
+| Phone / Direct / empty | Εκτός πλατφόρμας | Άλλες ψηφιακές πλατφόρμες, named "Εκτός πλατφόρμας" |
+| Any other channel | (the channel name) | Άλλες ψηφιακές πλατφόρμες, with the channel name |
 
 <Warning>
-**Direct bookings** (phone, email, your own website) are always sent with `platform_name: "Εκτός πλατφόρμας"` — this is required by AADE. The system handles this automatically.
+**Direct bookings** (phone, email, your own website) are always declared as "Εκτός πλατφόρμας", as AADE requires. DeskBoy does this automatically.
 </Warning>
 
 ## Payment method
 
-Every declaration is sent to AADE with information on **how the booking channel pays the rent to the business**: bank in Greece, bank abroad, cash or other. It is **not** about how the guest pays. You set the per-channel default under [AADE Connect settings](/en/guides/aade-connect), where you will also find the table of options.
+Every declaration is sent to AADE with information on **how the booking channel pays the rent to the business**: bank in Greece, bank abroad, cash or other. It is **not** about how the guest pays. You set the per-channel default under **Settings → Channels**. The table of options is in the [AADE Connect](/en/guides/aade-connect) guide.
 
 ### Per-booking override
 
@@ -184,4 +184,4 @@ The **History** tab on the Declarations page shows previous bookings: those alre
 
 ## AADE Connect settings
 
-Matching properties to their AADE properties (AMA) and the per-channel payment method default are set under **Settings → AADE Connect**. Bookings without a match do not appear on the Declarations page. See [AADE Connect settings](/en/guides/aade-connect).
+Matching properties to their AADE properties (AMA) is done under **Settings → AADE Connect**, and the per-channel payment method default under **Settings → Channels**. Bookings without a match do not appear on the Declarations page. See [AADE Connect settings](/en/guides/aade-connect).
