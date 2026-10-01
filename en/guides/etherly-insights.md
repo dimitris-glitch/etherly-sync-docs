@@ -1,11 +1,11 @@
 ---
-title: 'DeskBoy Insights'
+title: 'DeskBoy MCP'
 description: 'Give AI tools like Claude, ChatGPT, or Grok access to your booking and revenue data.'
 ---
 
-## What is DeskBoy Insights
+## What is DeskBoy MCP
 
-DeskBoy Insights lets AI tools (Claude, ChatGPT, Grok, and anything else that supports MCP) read your booking and revenue data, so you can ask questions like "How much revenue did I make last month?" or "Find the booking with ID HM-12345" directly in your AI tool of choice.
+DeskBoy MCP lets AI tools (Claude, ChatGPT, Grok, and anything else that supports MCP) read your booking and revenue data, so you can ask questions like "How much revenue did I make last month?" or "Find the booking with ID HM-12345" directly in your AI tool of choice.
 
 <Note>
 Looking for programmatic access to your data (REST/OpenAPI, no AI tool involved)? See the
@@ -13,14 +13,14 @@ Looking for programmatic access to your data (REST/OpenAPI, no AI tool involved)
 </Note>
 
 <Note>
-DeskBoy Insights is **strictly read-only**. No AI tool can create, modify, or delete data through this connection.
+DeskBoy MCP is **strictly read-only**. No AI tool can create, modify, or delete data through this connection.
 </Note>
 
 ---
 
 ## How it works
 
-DeskBoy Insights isn't a separate app you open — it's a connection that gives the AI tool of
+DeskBoy MCP isn't a separate app you open — it's a connection that gives the AI tool of
 your choice access to your data, so you can ask questions naturally, the way you'd ask a
 colleague.
 
@@ -46,7 +46,7 @@ colleague.
 
 ## Guest privacy
 
-Guest personal details are **never** shared through DeskBoy Insights: name, email, phone, and identification number never appear in the results. Only non-identifying fields are allowed (nights, amounts, booking channel, and guest country of origin — derived from the phone's country code, not actual nationality).
+Guest personal details are **never** shared through DeskBoy MCP: name, email, phone, and identification number never appear in the results. Only non-identifying fields are allowed (nights, amounts, booking channel, and guest country of origin — derived from the phone's country code, not actual nationality).
 
 ---
 
@@ -54,26 +54,26 @@ Guest personal details are **never** shared through DeskBoy Insights: name, emai
 
 <Steps>
   <Step title="Go to settings">
-    Go to **Settings → API Keys** and find the **DeskBoy Insights** card under the Apps
+    Go to **Settings → API Keys** and find the **DeskBoy MCP** card under the Apps
     section. Click **"Enable"** — a consent popup opens.
   </Step>
   <Step title="Enable the feature">
     Read the short consent notice in the popup and click **"Enable"**. Once enabled, the
-    **"DeskBoy Insights"** tab appears permanently in the Settings menu, with your **MCP
+    **"DeskBoy MCP"** tab appears permanently in the Settings menu, with your **MCP
     endpoint** and the list of connected apps.
   </Step>
 </Steps>
 
 <Note>
 You can skip this step if you prefer — approving a connection via Claude.ai, Grok, or ChatGPT
-(below) enables DeskBoy Insights automatically.
+(below) enables DeskBoy MCP automatically.
 </Note>
 
 ---
 
 ## Connecting an AI tool
 
-On the **DeskBoy Insights** tab you'll find your **MCP endpoint** — the URL you need to connect
+On the **DeskBoy MCP** tab you'll find your **MCP endpoint** — the URL you need to connect
 any AI tool that supports MCP.
 
 ### Connecting via Claude.ai (OAuth)
@@ -86,7 +86,7 @@ Claude.ai's **"Add custom connector"** feature only supports OAuth, not a raw AP
     and select **"Add custom connector"**.
   </Step>
   <Step title="Fill in the details">
-    Give it a name (e.g. "DeskBoy Insights") and paste the **MCP endpoint** URL
+    Give it a name (e.g. "DeskBoy MCP") and paste the **MCP endpoint** URL
     (`https://app.deskboy.app/api/insights/mcp`) into the **"Remote MCP server URL"** field. You
     don't need to fill in the optional "OAuth Client ID / Secret" fields under Advanced
     settings — leave them blank and click **"Add"**.
@@ -96,13 +96,13 @@ Claude.ai's **"Add custom connector"** feature only supports OAuth, not a raw AP
     account, then click **"Allow"** to grant access.
   </Step>
   <Step title="Done">
-    The connection appears in **Settings → DeskBoy Insights** in the "Connected apps" list,
+    The connection appears in **Settings → DeskBoy MCP** in the "Connected apps" list,
     with a **"Connected since"** date and its own disconnect button.
   </Step>
 </Steps>
 
 <Note>
-If DeskBoy Insights wasn't enabled yet, approving the Claude.ai connection enables it
+If DeskBoy MCP wasn't enabled yet, approving the Claude.ai connection enables it
 automatically — there's no separate manual "Enable" step first.
 </Note>
 
@@ -113,7 +113,7 @@ automatically — there's no separate manual "Enable" step first.
     In Grok, go to **Skills and Connectors → Connectors** and click **"New Connector"**.
   </Step>
   <Step title="Custom connector">
-    In the dialog that opens, select **"Custom"**, give it a name (e.g. "DeskBoy Insights"),
+    In the dialog that opens, select **"Custom"**, give it a name (e.g. "DeskBoy MCP"),
     and paste the **MCP endpoint** URL (`https://app.deskboy.app/api/insights/mcp`).
   </Step>
   <Step title="Sign in and approve">
@@ -121,7 +121,7 @@ automatically — there's no separate manual "Enable" step first.
     and approve access.
   </Step>
   <Step title="Done">
-    The connection appears in **Settings → DeskBoy Insights** in the "Connected apps" list.
+    The connection appears in **Settings → DeskBoy MCP** in the "Connected apps" list.
   </Step>
 </Steps>
 
@@ -138,7 +138,7 @@ automatically — there's no separate manual "Enable" step first.
   <Step title="Fill in the connection details">
     Provide:
 
-    - **Name** (e.g. "DeskBoy Insights")
+    - **Name** (e.g. "DeskBoy MCP")
     - **Description** (short, optional)
     - DeskBoy's **MCP server HTTPS endpoint**
       (`https://app.deskboy.app/api/insights/mcp`)
@@ -151,7 +151,7 @@ automatically — there's no separate manual "Enable" step first.
     account and approve access.
   </Step>
   <Step title="Done">
-    The connection appears in **Settings → DeskBoy Insights** in the "Connected apps" list.
+    The connection appears in **Settings → DeskBoy MCP** in the "Connected apps" list.
   </Step>
   <Step title="Use it in a chat">
     Open a new chat and click **+ → More → Developer mode**, then the app name — or just type
@@ -237,7 +237,7 @@ More tools will be added gradually.
 
 ## Usage limits
 
-- A daily usage limit applies, shared across all your connected apps. The **DeskBoy Insights**
+- A daily usage limit applies, shared across all your connected apps. The **DeskBoy MCP**
   tab shows today's usage against the limit.
 
 If a limit is exceeded, the AI tool will receive an error and should wait before retrying.
@@ -248,7 +248,7 @@ If a limit is exceeded, the AI tool will receive an error and should wait before
 
 - To disconnect an app (e.g. Claude), click the delete icon next to it in the "Connected apps"
   list.
-- To fully disable DeskBoy Insights, click **"Disable"** — all connected apps are disconnected
+- To fully disable DeskBoy MCP, click **"Disable"** — all connected apps are disconnected
   immediately.
 
 <Note>

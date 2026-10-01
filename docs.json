@@ -1,0 +1,188 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "DeskBoy",
+  "logo": {
+    "light": "/logo.svg",
+    "dark": "/logo.svg"
+  },
+  "favicon": "/favicon.ico",
+  "colors": {
+    "primary": "#2a7449",
+    "light": "#57966e",
+    "dark": "#1e5334"
+  },
+  "background": {
+    "color": {
+      "light": "#f4faf6",
+      "dark": "#0a140e"
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Literata"
+    },
+    "body": {
+      "family": "Manrope"
+    }
+  },
+  "appearance": {
+    "default": "light",
+    "strict": true
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Σύνδεση",
+        "href": "https://app.deskboy.app/login"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Δοκίμασε δωρεάν",
+      "href": "https://app.deskboy.app/register"
+    }
+  },
+  "search": {
+    "prompt": "Search... / Αναζήτηση..."
+  },
+  "api": {
+    "playground": {
+      "display": "simple"
+    }
+  },
+  "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Επικοινωνία",
+          "icon": "envelope",
+          "href": "mailto:support@deskboy.app"
+        }
+      ]
+    },
+    "versions": [
+      {
+        "version": "Ελληνικά",
+        "groups": [
+          {
+            "group": "Πρώτα βήματα",
+            "pages": ["intro", "getting-started", "guides/automation-control", "guides/onboarding"]
+          },
+          {
+            "group": "Οδηγοί Χρήσης",
+            "pages": [
+              "guides/checkouts",
+              "guides/properties",
+              "guides/property-groups",
+              "guides/online-check-in",
+              "guides/cleaning-staff",
+              "guides/invoicing",
+              "guides/private-individual",
+              "guides/climate-fee",
+              "guides/auto-invoicing",
+              "guides/declarations",
+              "guides/aade-connect",
+              "guides/airbnb",
+              "guides/hospitable",
+              "guides/smoobu",
+              "guides/lodgify",
+              "guides/hostaway",
+              "guides/hostfully"
+            ]
+          },
+          {
+            "group": "Διαχείριση",
+            "pages": [
+              "guides/team",
+              "guides/billing",
+              "guides/language-format",
+              "guides/sign-in",
+              "guides/data-storage"
+            ]
+          },
+          {
+            "group": "Εργαλεία",
+            "pages": ["guides/assistant", "guides/etherly-insights", "guides/data-access-api"]
+          },
+          {
+            "group": "Βοήθεια",
+            "pages": ["faq"]
+          },
+          {
+            "group": "Αναφορά API",
+            "openapi": {
+              "source": "api-reference/data-access.openapi.json",
+              "directory": "api-reference"
+            }
+          }
+        ]
+      },
+      {
+        "version": "English",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "en/intro",
+              "en/getting-started",
+              "en/guides/automation-control",
+              "en/guides/onboarding"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "en/guides/checkouts",
+              "en/guides/properties",
+              "en/guides/property-groups",
+              "en/guides/online-check-in",
+              "en/guides/cleaning-staff",
+              "en/guides/invoicing",
+              "en/guides/private-individual",
+              "en/guides/climate-fee",
+              "en/guides/auto-invoicing",
+              "en/guides/declarations",
+              "en/guides/aade-connect",
+              "en/guides/airbnb",
+              "en/guides/hospitable",
+              "en/guides/smoobu",
+              "en/guides/lodgify",
+              "en/guides/hostaway",
+              "en/guides/hostfully"
+            ]
+          },
+          {
+            "group": "Management",
+            "pages": [
+              "en/guides/team",
+              "en/guides/billing",
+              "en/guides/language-format",
+              "en/guides/sign-in",
+              "en/guides/data-storage"
+            ]
+          },
+          {
+            "group": "Tools",
+            "pages": [
+              "en/guides/assistant",
+              "en/guides/etherly-insights",
+              "en/guides/data-access-api"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": ["en/faq"]
+          },
+          {
+            "group": "API Reference",
+            "openapi": {
+              "source": "api-reference/data-access.openapi.json",
+              "directory": "en/api-reference"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -41,7 +41,7 @@ Declarations are found under **Declarations** in the sidebar — bookings ready 
 
 ## Property filter
 
-The **Property** filter works as in every list: checkbox selection per property or per [group](/en/guides/properties#selecting-with-checkboxes), with search, and with nothing selected you see all properties. The selection is remembered for this page. Filtering covers all your declarations, not only those on screen, and when you change the filter any selected bookings are deselected, so a bulk send always concerns what you see.
+The **Property** filter works as in every list: checkbox selection per property or per [group](/en/guides/property-groups#groups-on-other-screens), with search, and with nothing selected you see all properties. The selection is remembered for this page. Filtering covers all your declarations, not only those on screen, and when you change the filter any selected bookings are deselected, so a bulk send always concerns what you see.
 
 ## Manual submission
 

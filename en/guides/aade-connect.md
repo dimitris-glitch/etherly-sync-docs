@@ -11,7 +11,9 @@ Setup happens on three pages, in this order: first you create the connection und
 
 ## Connecting to AADE
 
-Before anything else, create the connection. Open **Settings → Integrations**, find the **AADE Connect** card and press **Enable**. Fill in the title you want the connection to have, your **AADE Username** and **Password**. Press **Test connection** and, once it succeeds, press **Save** — until the test succeeds, Save stays disabled.
+Before anything else, create the connection. Open **Settings → Integrations**, find the **AADE Connect** card and press **Connect**. Fill in the title you want the connection to have, your **AADE Username** and **Password**. Press **Test connection** and, once it succeeds, press **Save** — until the test succeeds, Save stays disabled.
+
+For properties registered under another account in AADE's Short-Term Stay Registry, add another connection with **New Connection** on the same card.
 
 Once the connection exists, continue with two settings:
 

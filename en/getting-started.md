@@ -7,7 +7,7 @@ description: "Account, activation, booking-channel connection, invoicing provide
 
 Setup takes about **10 minutes**. Before you begin, it helps to have at hand:
 
-- Access to your **booking channel**: your Hosthub API key, your Hospitable API key, your Smoobu key and secret, your Lodgify API key, your Hostaway Account ID and API key, or simply your Airbnb account details.
+- Access to your **booking channel**: your Hosthub API key, your Hospitable API key, your Smoobu key and secret, your Lodgify API key, your Hostaway Account ID and API key, your Hostfully API key, or simply your Airbnb account details.
 - If you issue documents, an account with the **invoicing provider** you use (e.g. Elorus). If you rent as a private individual without a business registration, you do not need one (see [Private individual](/en/guides/private-individual)).
 - Your TAXISnet credentials for AADE declarations.
 
@@ -43,10 +43,11 @@ Three short steps, the same for everyone (details in [Account activation](/en/gu
     - **Smoobu**: paste the API Key and API Secret you create in Smoobu (see [Smoobu connection](/en/guides/smoobu)).
     - **Lodgify**: paste the API key from Lodgify's Public API (see [Lodgify connection](/en/guides/lodgify)).
     - **Hostaway**: paste your Account ID and the API key you create in Hostaway (see [Hostaway connection](/en/guides/hostaway)).
+    - **Hostfully**: paste the API key from Hostfully's Agency Settings (see [Hostfully connection](/en/guides/hostfully)).
   </Step>
 </Steps>
 
-Once these are done, you enter the panel. Booking sync starts right away — for Hospitable, Smoobu, Lodgify and Hostaway, as soon as our team finishes the connection (within 24 hours).
+Once these are done, you enter the panel. Booking sync starts right away — for Hospitable, Smoobu, Lodgify, Hostaway and Hostfully, as soon as our team finishes the connection (within 24 hours).
 
 ---
 
@@ -56,19 +57,19 @@ If you issue documents, connect your provider under **Settings → Integrations*
 
 <Steps>
   <Step title="Open the connection form">
-    In the **Apps** section find the **Elorus** card and click **Connect**. Fill the fields in order, fetching each value from Elorus as you need it.
+    In the **Apps** section, find the **Elorus** card and click **Connect** (or **New Connection** if you already have an Elorus connection). Also open [Elorus](https://app.elorus.com) in a second tab: that's where you'll copy the API key and the Organization ID from. Fill in the form fields in order.
   </Step>
   <Step title="Connection title">
     A short name so you can tell this connection apart inside the app.
   </Step>
-  <Step title="API Key">
-    In Elorus: click your name (top right) → **user profile**. The API key is at the bottom of the page — copy it and paste it straight into the field.
+  <Step title="API Key — in Elorus">
+    In the Elorus tab, click your name (top right) → **User profile**. The API key is at the bottom of the page. Copy it and paste it straight into the **API Key** field of the DeskBoy form.
   </Step>
   <Step title="Organization title">
     The name of your organization, as you want to tell it apart.
   </Step>
-  <Step title="Organization ID">
-    In Elorus: **Settings → Organization**. The ID is in the **"Organization ID"** field — copy it and paste it in.
+  <Step title="Organization ID — in Elorus">
+    In the Elorus tab, go to **Settings → Organization**. The ID is in the **“Organization ID”** field. Copy it and paste it into the **Organization ID** field of the DeskBoy form.
   </Step>
   <Step title="Fiscal details">
     Enter the tax id and click **Search**. The legal form and business name are filled in from the AADE registry. They are needed for the AADE declarations and the VAT regime.
@@ -96,7 +97,7 @@ Booking sync, AADE declarations and analytics work from the moment your channel 
     | Field | What it is |
     |-------|------------|
     | **Organization** | The invoicing-provider organization that issues the documents |
-    | **Default Receipts Contact** | The retail customer in Elorus used on receipts |
+    | **Default Receipts Contact** | The Elorus contact that receipts are issued to ([how to create it](/en/guides/properties#default-receipts-contact)) |
     | **Invoice Series / Receipt Series** | Numbering series for invoices and receipts (or "No series") |
     | **ΤΑΚΚ characteristics** | Detached house, floor area, regime — they decide the ΤΑΚΚ tax that goes on the document |
 
@@ -108,7 +109,7 @@ Booking sync, AADE declarations and analytics work from the moment your channel 
 
 ## Your first booking
 
-Once a property is fully configured, its bookings appear under **Bookings** with status **READY** (green indicator).
+Once a property is fully configured, its bookings appear under **Bookings** ready to invoice, labelled **“Due today”**, **“Upcoming”** or **“Overdue”**.
 
 <Steps>
   <Step title="Send the booking">
@@ -139,6 +140,7 @@ Under **Settings → Integrations** you find all connections:
 | **Smoobu** | Bookings from all your Smoobu channels (Airbnb, Booking.com, Vrbo, direct) |
 | **Lodgify** | Bookings from your Lodgify website, booking engine and channels |
 | **Hostaway** | Bookings from all your Hostaway channels (Airbnb, Booking.com, Vrbo, direct) |
+| **Hostfully** | Bookings from your Hostfully channels (Airbnb, Booking.com, Vrbo, direct) |
 | **Airbnb Live** | Direct connection to your Airbnb account, bookings arrive automatically |
 | **Elorus** | Document issuance and myDATA submission |
 | **AADE Connect** | Short-term rental declarations to AADE |

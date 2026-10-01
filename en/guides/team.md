@@ -30,6 +30,7 @@ DeskBoy supports **multiple users** per account. Each user has a role that defin
 | Add and edit properties | ✅ | ✅ | ❌ | ❌ |
 | Settings | ✅ | ✅ | ❌ | ❌ |
 | Connections (booking channels, invoicing provider, AADE) | ✅ | ✅ | ❌ | ❌ |
+| API keys and webhooks with guest details | ✅ | ❌ | ❌ | ❌ |
 | Invite and remove Users and Accountants | ✅ | ✅ | ❌ | ❌ |
 | Invite and remove Admins | ✅ | ❌ | ❌ | ❌ |
 | View billing and receipts | ✅ | ✅ | ❌ | ✅ |
@@ -57,6 +58,10 @@ Payments stay with the Owner, so no charge is ever made without them.
     The user clicks the link, creates an account (or signs in if they already have one), and gains access automatically.
   </Step>
 </Steps>
+
+<Note>
+If you already belong to another DeskBoy account, accepting moves you to the new one: your access to the previous account ends and you sign in again.
+</Note>
 
 <Note>
 If an invitation expires, you can copy the invite link with **"Copy link"** or revoke it with **"Revoke invite"** and send a new one.

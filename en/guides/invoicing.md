@@ -23,6 +23,14 @@ For every checkout that is sent, DeskBoy automatically creates documents in Elor
   </Card>
 </CardGroup>
 
+## Document types per organization
+
+In **Settings → Tax details**, on each organization's card, in **Match document types with Elorus**, you choose which Elorus document type DeskBoy uses for receipts and which for invoices (e.g. "Service Receipt", "Service Invoice"). The options load from Elorus.
+
+### Organization tax details
+
+If an organization has no tax details yet, press **Fill in fiscal details** on its card. Enter the tax ID: the name and legal form are filled in from AADE's registry, and you can correct them before saving. The details are needed for the VAT regime, the AADE declarations and the Climate Resilience Fee form, which is one per tax ID.
+
 ## Final send and Draft
 
 With a **final send**, manually or automatically with [auto-invoicing](/en/guides/auto-invoicing), your invoicing app issues:
@@ -69,7 +77,7 @@ The settings page shows a live preview of the final text using sample data, so y
 
 ## myDATA submission
 
-Every document issued in Elorus is **automatically submitted** to myDATA, provided the option is enabled in settings.
+Elorus itself submits the documents to myDATA — nothing needs to be set up in DeskBoy for this.
 
 <Warning>
 A myDATA failure **does not cancel** the Elorus document. myDATA failure management is handled within Elorus, not DeskBoy.
@@ -79,15 +87,15 @@ A myDATA failure **does not cancel** the Elorus document. myDATA failure managem
 
 <Steps>
   <Step title="Select checkouts">
-    In **Bookings**, select one or more checkouts in `READY` status using their checkboxes.
+    In **Bookings**, select one or more checkouts **ready to invoice** using their checkboxes.
   </Step>
   <Step title="Click «Send»">
     Use the **Send** button in the toolbar for bulk sending, or the button next to each checkout for individual sends.
   </Step>
   <Step title="Watch the results">
-    Status changes to `SENT` (success), `SENT_WITH_ERRORS` (partial), or `ERROR` (failure). Error messages appear inline on failure.
+    The label changes to **“Invoiced”** or **“Partial”**. On failure, the error message appears on the row.
 
-    **myDATA delay:** If myDATA is not ready immediately after document creation, the status transitions to `WAITING_MYDATA_FINALIZATION`. The system retries automatically for about a day. If retries are exhausted, the status becomes `NEEDS_MANUAL_REVIEW` — the document was created successfully in Elorus; only myDATA finalization is pending.
+    **myDATA delay:** If myDATA is not ready immediately after document creation, the booking shows **“Waiting myDATA”**. The system retries automatically for about a day. If retries are exhausted, it shows **“Manual review”** — the document was created successfully in Elorus; only myDATA finalization is pending.
   </Step>
 </Steps>
 
@@ -95,7 +103,7 @@ A myDATA failure **does not cancel** the Elorus document. myDATA failure managem
 
 Select multiple checkouts with checkboxes and click **Send Selected** to process them in batch.
 
-## SENT_WITH_ERRORS status
+## “Partial” label
 
 This appears when the Accommodation Document and Payment Receipt were successfully issued, but the **Climate Resilience Fee** document failed.
 

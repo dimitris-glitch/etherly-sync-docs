@@ -89,7 +89,7 @@ Outside the window, or if the check-in has already been submitted, guests see an
 
 Go to **Settings → Online Check-In** to configure each property individually.
 
-If you have created [property groups](/guides/properties), the list is shown grouped just like **Settings → Properties**: each group is a card showing its name and the number of properties it contains, expanding and collapsing on click, while anything without a group is collected under **"Ungrouped"** at the end. The app remembers which groups you had open.
+If you have created [property groups](/en/guides/property-groups), the list is shown grouped just like **Settings → Properties**: each group is a card showing its name and the number of properties it contains, expanding and collapsing on click, while anything without a group is collected under **"Ungrouped"** at the end. The app remembers which groups you had open.
 
 ### Basic options
 
@@ -174,7 +174,7 @@ The **Today** tab gives the full picture for a given day, while the other tabs f
 
 ### Property filter
 
-At the top left, next to the date navigation, there is the **Property** filter. It applies to every tab, including **Today**. The **Property** filter works as in every list: checkbox selection per property or per [group](/en/guides/properties#selecting-with-checkboxes), with search, and with nothing selected you see all properties. The selection is remembered for this page.
+At the top left, next to the date navigation, there is the **Property** filter. It applies to every tab, including **Today**. The **Property** filter works as in every list: checkbox selection per property or per [group](/en/guides/property-groups#groups-on-other-screens), with search, and with nothing selected you see all properties. The selection is remembered for this page.
 
 ### Search
 

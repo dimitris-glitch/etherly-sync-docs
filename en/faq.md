@@ -8,14 +8,14 @@ description: "Solutions for the most common issues with DeskBoy — from initial
 ## Setup & Connection
 
 <AccordionGroup>
-  <Accordion title="My bookings show NEEDS_SETUP status. What do I do?">
+  <Accordion title="My bookings show “Needs setup”. What do I do?">
     The property isn't fully configured. Open **Settings → Properties**, select the property, and complete all four required fields:
-    - **Default Receipts Contact** — a customer account in Elorus
+    - **Default Receipts Contact** — the Elorus contact for receipts ([how to create it](/en/guides/properties#default-receipts-contact))
     - **Invoices Series** — a document numbering series for invoices
     - **ΤΑΚΚ characteristics** — for the Climate Resilience Fee
     - **Organization** — which Elorus organization issues the documents
 
-    After clicking **Save**, bookings change from `NEEDS_SETUP` to `READY` on the next sync (within ~30 minutes).
+    After you click **Save**, the “Needs setup” label goes away on the next sync.
   </Accordion>
 
   <Accordion title="My Hosthub API key has changed. How do I update it?">
@@ -23,7 +23,16 @@ description: "Solutions for the most common issues with DeskBoy — from initial
   </Accordion>
 
   <Accordion title="Can I have multiple Elorus organizations under the same account?">
-    Yes. Go to **Settings** → **Integrations** → **"New Connection"** to add a new Elorus API key. Each property can then be independently assigned to a different **Organization** — useful if you manage properties under different tax IDs.
+    Yes. Go to **Settings → Integrations** and, in the **Apps** section, click **New Connection** on the **Elorus** card. The steps are the same as for the first connection. Each property can then be independently assigned to a different **Organization**, useful if you manage properties under different tax IDs.
+  </Accordion>
+
+  <Accordion title="Can I add more connections?">
+    Yes, from **Settings → Integrations**, on each service's card:
+    - **Elorus**: for properties under a different tax ID, add their organization — or **New Connection**, if it is in another Elorus account (see [Properties under different tax IDs](/en/guides/properties#properties-under-different-tax-ids)).
+    - **AADE Connect**: click **New Connection** for properties registered under another account in AADE's Short-Term Stay Registry, e.g. another owner's.
+    - **Booking channels**: each channel connects once, and you can have different channels together, e.g. Hosthub and Smoobu.
+
+    How many connections your plan includes is shown in [Plan & Billing](/en/guides/billing).
   </Accordion>
 </AccordionGroup>
 
@@ -34,8 +43,12 @@ description: "Solutions for the most common issues with DeskBoy — from initial
     The **Default Receipts Contact** configured for the property doesn't exist or is inactive in Elorus. Check Elorus → Contacts to confirm the contact is active, then re-select it from **Properties**.
   </Accordion>
 
-  <Accordion title="A booking shows SENT_WITH_ERRORS. What happened?">
-    The Invoice and Receipt were **issued successfully**, but the **Climate Resilience Fee** document failed. Check:
+  <Accordion title="A booking shows “Manual review” after I changed the property's organization. What do I do?">
+    The booking had already received a document from the previous organization but was not completed (e.g. it was “Partial”). All of a booking's documents must come from the same organization, so it does not continue with the new one. To complete it, temporarily set the property back to the original organization and send it again. Bookings without a document are invoiced by the new organization as normal.
+  </Accordion>
+
+  <Accordion title="A booking shows “Partial”. What happened?">
+    The Invoice and Receipt were **issued**, but the **Climate Resilience Fee** receipt failed. Open the booking's row and click **Retry**. If it fails again, check:
 
     1. Whether the ΤΑΚΚ characteristics are selected on the property under **Settings → Properties**
     2. Whether the tax rules in Elorus are up to date
@@ -44,7 +57,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
   </Accordion>
 
   <Accordion title="Can I cancel a document that was issued by mistake?">
-    Document cancellation is done **directly in your invoicing platform** (e.g. Elorus). After cancelling there, the booking in DeskBoy remains in `SENT` status. Contact support if you need the status reset for re-issuing.
+    Document cancellation is done **directly in your invoicing platform** (e.g. Elorus). After cancelling there, the booking in DeskBoy stays **“Invoiced”**. Contact support if you need the status reset for re-issuing.
   </Accordion>
 
   <Accordion title="A booking was cancelled after an invoice was already issued. What do I do?">
@@ -52,7 +65,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
 
     1. **Create a credit note in Elorus** for the accommodation invoice
     2. **If a Climate Resilience Fee document was also issued**, cancel that separately — it is not reversed automatically
-    3. The booking in DeskBoy remains in `SENT` status — contact support if you need the status reset for re-issuing
+    3. The booking in DeskBoy stays **“Invoiced”** — contact support if you need the status reset for re-issuing
 
     <Warning>
     For the correct credit note type and myDATA obligations, consult your accountant.
@@ -126,7 +139,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
 <AccordionGroup>
   <Accordion title="Auto-invoicing didn't run last night. Why?">
     Possible causes:
-    - No bookings were in `READY` status at the **Execution time**
+    - No bookings were **ready to invoice** at the **Execution time**
     - The account had an unpaid charge at the stage where auto-invoicing is paused (see [Plan & Billing](/en/guides/billing))
     - A rare technical issue — contact support
   </Accordion>
@@ -167,12 +180,23 @@ description: "Solutions for the most common issues with DeskBoy — from initial
     No. Blocks are not bookings: they do not appear in the bookings list and are never invoiced, regardless of channel settings. If you enter your own stay as a regular booking with an amount, it is treated as a phone booking.
   </Accordion>
 
+  <Accordion title="My guest asked for an invoice. What do I do?">
+    You prepare the invoice from DeskBoy, without going into Elorus: if the company isn't in your contacts yet, you create it from the booking and it's added to Elorus.
+
+    Open the booking in **Bookings** and:
+    1. In **Document Type**, choose **Invoice**.
+    2. In **Customer**, search for the company by name or VAT number.
+    3. If it isn't there, press **Add new Business Contact** and fill in its details. For a Greek company, enter the VAT number and press the search button next to it: the name, tax office and address fill in by themselves. This works once you've entered your [AADE access details](/en/guides/auto-invoicing#aade-—-tax-id-lookup) in **Settings → Advanced**.
+
+    You can enter the details whenever the guest gives them to you, even for a booking a month away — you'll find it under **Upcoming**. With **Automatic invoicing** on, the invoice is issued on its own on check-out day and, with the default settings, emailed to the guest. You don't need to remember to issue it.
+  </Accordion>
+
   <Accordion title="Should I issue a receipt or an invoice for a foreign guest?">
     General rule:
     - **Private individual from abroad** → Retail receipt (no tax ID required)
     - **Company from abroad** → Invoice (VAT Number or local tax ID required)
 
-    The document type is set per property under **Settings → Properties**. For special cases (intra-EU B2B, specific tax exemptions, etc.), consult your accountant.
+    The document type is set on each booking (default: Receipt) — see [My guest asked for an invoice](#my-guest-asked-for-an-invoice-what-do-i-do). For special cases (intra-EU B2B, specific tax exemptions, etc.), consult your accountant.
   </Accordion>
 </AccordionGroup>
 

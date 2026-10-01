@@ -37,12 +37,12 @@ The day's drafts are replaced by final documents.
 
 ## What is NOT auto-invoiced
 
-- Bookings in `NEEDS_SETUP`, `SENT`, `SENT_WITH_ERRORS`, `ERROR`, `SPLIT`
+- Bookings that are not ready to invoice: **“Needs setup”**, **“Invoiced”**, **“Partial”**, **“Split in two”**, **“Waiting myDATA”**, **“Manual review”**
 - Skipped bookings (manually or via a disabled channel)
 - Bookings belonging to **Off** properties
 - Cancelled bookings
 
-To exclude **individual bookings**, use [Skip](/en/guides/checkouts#skip--undo-skip). To exclude **an entire property** (e.g. if that property is invoiced directly in the invoicing platform), set it to Off in [Properties](/en/guides/properties).
+To exclude **individual bookings**, use [Skip](/en/guides/checkouts#skip--undo-skip). To exclude **an entire property** (e.g. if that property is invoiced directly in the invoicing platform), set it to Off in [Properties](/en/guides/properties#turning-invoicing-on-and-off).
 
 ## Booking check before issuing
 
@@ -55,10 +55,10 @@ This way a cancellation made after the last sync does not end up as a document. 
 
 ## Execution results
 
-After each auto-invoicing run, the status of each booking is updated automatically in the **Checkouts** table (`SENT`, `ERROR`, etc.). If you have the **daily report** enabled (from Team Management), you also receive an email with a summary of invoiced and uninvoiced checkouts.
+After each auto-invoicing run, the status of each booking is updated automatically in the **Checkouts** table (e.g. **“Invoiced”**, **“Partial”**). If you have the **daily report** enabled (from Team Management), you also receive an email with a summary of invoiced and uninvoiced checkouts.
 
 <Note>
-If no `READY` bookings exist at execution time, auto-invoicing completes without doing anything — no error is generated.
+If no bookings are ready to invoice at execution time, auto-invoicing completes without doing anything — no error is generated.
 </Note>
 
 ## Climate Resilience Fee for stays that cross a rate change
@@ -106,7 +106,15 @@ From a channel row's **⋮ → Per-property settings** menu, you can set a diffe
 
 ### AADE — Tax ID lookup
 
-Enter your **AADE Login Code** and **Password** to enable automatic company lookup by tax ID when creating a new customer in Elorus.
+When you create a new company for an invoice, you only enter its VAT number; the name, tax office and address are filled in from AADE.
+
+It needs an **Access Code** and a **User Password**: special codes you create once at AADE, only for this lookup.
+
+1. Sign in to AADE's [«Διαχείριση Ειδικών Κωδικών»](https://www1.aade.gr/sgsisapps/tokenservices/protected/displayConsole.htm) (Special Codes Management) application.
+2. If your business is a legal entity, press **«Επιλογή Ρόλου»** (Select role), choose to act as the legal entity's representative and pick the company's VAT number.
+3. Under **«Διαθέσιμες Υπηρεσίες»** (Available Services) choose **«Αναζήτηση Βασικών Στοιχείων Μητρώου Επιχειρήσεων - Δημιουργία Ειδικού Κωδικού»** (Business Registry lookup — create special code) and create the codes.
+
+Then, in **Settings → Advanced**, section **AADE - VAT Number Lookup**, enter them and press **Test Connection and Save**.
 
 ### Year-End — Booking Split
 

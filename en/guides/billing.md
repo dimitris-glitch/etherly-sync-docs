@@ -57,7 +57,7 @@ If a charge remains unpaid despite the automatic retries, the account is limited
 
 - At first, only new additions are put on hold (properties under a second organization, a new connection, new users). Everything you already have keeps working normally.
 - Later, automatic invoicing, automatic declarations and settings changes are paused — you can keep issuing and declaring manually, and booking sync continues.
-- If the balance remains unpaid for a long period, the account is fully frozen — access to your data, data export and payment remain available.
+- If the balance remains unpaid for a long period, the account is fully frozen — access to your data, data export, payment, and revoking access you have granted (team members, keys) remain available.
 
 Once the balance is settled — by card or by loading prepaid balance from **Plan & Billing** — everything is restored immediately. Your data always stays in place.
 

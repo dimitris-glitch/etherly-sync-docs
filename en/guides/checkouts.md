@@ -9,16 +9,15 @@ A **checkout** corresponds to a completed booking from Hosthub — a guest stay 
 
 ## Status reference
 
-| Status | Color | Meaning | Action required |
-|--------|-------|---------|----------------|
-| `NEEDS_SETUP` | 🟡 Yellow | Property missing required configuration | Complete property setup under Settings → Properties. If the tooltip mentions the climate fee tax, pick it in the **Climate-fee tax** field on the property's card — you change it later under Settings → Tax details |
-| `READY` | 🟢 Green | Ready to invoice | Send, or wait for auto-invoicing |
-| `SENT` | 🔵 Blue | Documents issued successfully — shown as **“Invoiced”** | None |
-| `SENT_WITH_ERRORS` | 🟠 Orange | Accommodation document and payment receipt OK, climate fee failed | Open the row and click **Retry** on the failed step |
-| `WAITING_MYDATA_FINALIZATION` | 🟡 Amber — **"Waiting myDATA"** | Accommodation invoice issued — myDATA has not yet indexed it for climate fee linking | Automatic retry in progress for about a day — no action required |
-| `NEEDS_MANUAL_REVIEW` | 🔴 Red — **"Manual review"** | myDATA finalization did not complete after about a day of retries — or myDATA permanently rejected the accommodation document — or the property was assigned to a different invoicing organization after documents had already been issued for the booking | **myDATA:** you will receive an email notification — check in your invoicing application and retry myDATA submission manually. **Permanent myDATA rejection:** the reason is shown in the booking's send timeline; correct and resubmit the document from your invoicing application. **Organization change:** assign the property back to the organization that issued the documents, then retry the send. |
-| `ERROR` | 🔴 Red | Send failed entirely | Review error message and retry |
-| `SPLIT` | ⬜ Gray | Booking spanning two calendar years | Not invoiced directly — two separate checkouts are created automatically |
+| Label | Meaning | What to do |
+|-------|---------|------------|
+| **Needs setup** | Property missing required configuration | Complete property setup under Settings → Properties. If the tooltip mentions the climate fee tax, pick it in the **Climate-fee tax** field on the property's card — you change it later under Settings → Tax details |
+| **Due today** / **Upcoming** / **Overdue** | Ready to invoice; the label says when | Click **Send**, or wait for auto-invoicing |
+| **Invoiced** | Documents issued | None |
+| **Partial** | Accommodation document and payment receipt issued, climate fee receipt failed | Click **Retry** on the booking's row |
+| **Waiting myDATA** | Accommodation invoice issued — myDATA has not yet indexed it for climate fee linking | Automatic retry in progress for about a day — no action required |
+| **Manual review** | myDATA finalization did not complete after about a day of retries — or myDATA permanently rejected the accommodation document — or the property was assigned to a different invoicing organization after documents had already been issued for the booking | **myDATA:** you will receive an email notification — check in your invoicing application and retry myDATA submission manually. **Permanent myDATA rejection:** the reason is shown in the booking's send timeline; correct and resubmit the document from your invoicing application. **Organization change:** assign the property back to the organization that issued the documents, then retry the send. |
+| **Split in two** | Booking spanning two calendar years | Not invoiced directly — two separate checkouts are created automatically |
 
 ## Automatic sync
 
@@ -113,13 +112,13 @@ With the **Sync** button, the booking's documents are recorded: the booking beco
 ## Filtering & Search
 
 In **Bookings** you can filter checkouts by:
-- **Status** (READY, SENT, ERROR, etc.)
-- **Property** — a single property, a [property group](/en/guides/properties) or a connection
+- **Status** (under “More filters”): “Failed”, “Skipped”, “Cancelled”. Cancelled bookings are hidden by default.
+- **Property** — a single property, a [property group](/en/guides/property-groups) or a connection
 - **Date range** (checkout date)
 - **Skipped** (yes/no)
 
-The **Property** filter works as in every list: checkbox selection per property or per [group](/en/guides/properties#selecting-with-checkboxes), with search, and with nothing selected you see all properties. The selection is remembered and also applies on the [Declarations](/en/guides/declarations) page, so you don't have to pick it twice.
+The **Property** filter works as in every list: checkbox selection per property or per [group](/en/guides/property-groups#groups-on-other-screens), with search, and with nothing selected you see all properties. The selection is remembered and also applies on the [Declarations](/en/guides/declarations) page, so you don't have to pick it twice.
 
 Cancelled bookings are hidden from the list by default, so you only see the ones that need action. Bring them back from **More filters → Status → All**. Your choice is remembered across sessions.
 
-In the **Today** tab, properties are shown grouped, provided you have created groups; properties not assigned to any group go to the "Ungrouped" group at the end. The **Upcoming**, **History** and **All** tabs show bookings in a single chronological order.
+In the **Departures today** tab, properties are shown grouped, provided you have created groups; properties not assigned to any group go to the "Ungrouped" group at the end. The **Upcoming**, **History** and **All** tabs show bookings in a single chronological order.
