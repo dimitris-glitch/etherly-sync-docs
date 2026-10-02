@@ -42,6 +42,10 @@ colleague.
 - "What arrivals do I have tomorrow, and which are ready for check-in?"
 - "What was my cancellation rate last month?"
 
+### Ready-made prompts
+
+In AI tools that show ready-made prompts, like Claude in the **"+"** menu, you'll find DeskBoy prompts for common analyses, e.g. **Pricing review**, **Seasonality** and **Booking channels**. Pick one, optionally fill in a property or period, and the AI tool runs the analysis on your own data.
+
 ---
 
 ## Guest privacy

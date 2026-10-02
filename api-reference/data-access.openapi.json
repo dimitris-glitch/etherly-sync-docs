@@ -89,7 +89,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -240,7 +240,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -364,7 +364,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -435,7 +435,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -550,7 +550,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "ETag": {
                 "schema": {
@@ -683,7 +683,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "ETag": {
                 "schema": {
@@ -712,7 +712,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -836,7 +836,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -907,7 +907,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -975,7 +975,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -1137,7 +1137,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -1495,7 +1495,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -1619,7 +1619,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -1690,7 +1690,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -1805,7 +1805,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "ETag": {
                 "schema": {
@@ -2145,7 +2145,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "ETag": {
                 "schema": {
@@ -2174,7 +2174,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -2298,7 +2298,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -2369,7 +2369,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -2437,7 +2437,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -2577,7 +2577,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -2768,7 +2768,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -2892,7 +2892,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -2963,7 +2963,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -3078,7 +3078,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "ETag": {
                 "schema": {
@@ -3251,7 +3251,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "ETag": {
                 "schema": {
@@ -3280,7 +3280,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -3404,7 +3404,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -3475,7 +3475,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -3543,7 +3543,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -3700,7 +3700,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -3945,7 +3945,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -4069,7 +4069,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -4140,7 +4140,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -4255,7 +4255,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "ETag": {
                 "schema": {
@@ -4482,7 +4482,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "ETag": {
                 "schema": {
@@ -4511,7 +4511,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -4635,7 +4635,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -4706,7 +4706,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -4774,7 +4774,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -4923,7 +4923,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -5107,7 +5107,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -5231,7 +5231,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -5302,7 +5302,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -5431,7 +5431,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -5583,7 +5583,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -5707,7 +5707,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -5778,7 +5778,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -5907,7 +5907,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -6052,7 +6052,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -6176,7 +6176,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -6247,7 +6247,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -6367,7 +6367,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Content-Disposition": {
                 "schema": {
@@ -6744,7 +6744,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -6806,7 +6806,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -6930,7 +6930,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -7001,7 +7001,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -7104,7 +7104,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Content-Disposition": {
                 "schema": {
@@ -7481,7 +7481,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -7543,7 +7543,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -7667,7 +7667,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -7738,7 +7738,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -7806,7 +7806,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -7874,7 +7874,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -7994,7 +7994,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Content-Disposition": {
                 "schema": {
@@ -8204,7 +8204,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -8266,7 +8266,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -8390,7 +8390,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -8461,7 +8461,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -8564,7 +8564,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Content-Disposition": {
                 "schema": {
@@ -8774,7 +8774,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -8836,7 +8836,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -8960,7 +8960,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -9031,7 +9031,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -9099,7 +9099,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -9167,7 +9167,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -9287,7 +9287,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Content-Disposition": {
                 "schema": {
@@ -9551,7 +9551,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -9613,7 +9613,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -9737,7 +9737,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -9808,7 +9808,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -9911,7 +9911,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Content-Disposition": {
                 "schema": {
@@ -10175,7 +10175,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
@@ -10237,7 +10237,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -10361,7 +10361,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -10432,7 +10432,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -10500,7 +10500,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               }
             },
             "content": {
@@ -10568,7 +10568,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "UTC epoch seconds when the oldest request leaves the window (Remaining goes up)"
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
               "Retry-After": {
                 "schema": {
