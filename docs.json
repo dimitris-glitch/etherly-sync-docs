@@ -184,5 +184,143 @@
         ]
       }
     ]
-  }
+  },
+  "redirects": [
+    {
+      "source": "/api-reference/resources/list-properties",
+      "destination": "/api-reference/properties/list-properties"
+    },
+    {
+      "source": "/api-reference/resources/get-a-property",
+      "destination": "/api-reference/properties/get-a-property"
+    },
+    {
+      "source": "/api-reference/resources/list-bookings",
+      "destination": "/api-reference/bookings/list-bookings"
+    },
+    {
+      "source": "/api-reference/resources/get-a-booking",
+      "destination": "/api-reference/bookings/get-a-booking"
+    },
+    {
+      "source": "/api-reference/resources/list-documents",
+      "destination": "/api-reference/documents/list-documents"
+    },
+    {
+      "source": "/api-reference/resources/get-a-document",
+      "destination": "/api-reference/documents/get-a-document"
+    },
+    {
+      "source": "/api-reference/resources/list-aade-declarations",
+      "destination": "/api-reference/aade-declarations/list-aade-declarations"
+    },
+    {
+      "source": "/api-reference/resources/get-an-aade-declaration",
+      "destination": "/api-reference/aade-declarations/get-an-aade-declaration"
+    },
+    {
+      "source": "/api-reference/resources/list-check-ins",
+      "destination": "/api-reference/check-ins/list-check-ins"
+    },
+    {
+      "source": "/api-reference/resources/revenue-report",
+      "destination": "/api-reference/reports/revenue-report"
+    },
+    {
+      "source": "/api-reference/resources/occupancy-report",
+      "destination": "/api-reference/reports/occupancy-report"
+    },
+    {
+      "source": "/api-reference/resources/export-bookings",
+      "destination": "/api-reference/exports/export-bookings"
+    },
+    {
+      "source": "/api-reference/resources/download-a-bookings-export",
+      "destination": "/api-reference/exports/download-a-bookings-export"
+    },
+    {
+      "source": "/api-reference/resources/export-documents",
+      "destination": "/api-reference/exports/export-documents"
+    },
+    {
+      "source": "/api-reference/resources/download-a-documents-export",
+      "destination": "/api-reference/exports/download-a-documents-export"
+    },
+    {
+      "source": "/api-reference/resources/export-aade-declarations",
+      "destination": "/api-reference/exports/export-aade-declarations"
+    },
+    {
+      "source": "/api-reference/resources/download-an-aade-declarations-export",
+      "destination": "/api-reference/exports/download-an-aade-declarations-export"
+    },
+    {
+      "source": "/en/api-reference/resources/list-properties",
+      "destination": "/en/api-reference/properties/list-properties"
+    },
+    {
+      "source": "/en/api-reference/resources/get-a-property",
+      "destination": "/en/api-reference/properties/get-a-property"
+    },
+    {
+      "source": "/en/api-reference/resources/list-bookings",
+      "destination": "/en/api-reference/bookings/list-bookings"
+    },
+    {
+      "source": "/en/api-reference/resources/get-a-booking",
+      "destination": "/en/api-reference/bookings/get-a-booking"
+    },
+    {
+      "source": "/en/api-reference/resources/list-documents",
+      "destination": "/en/api-reference/documents/list-documents"
+    },
+    {
+      "source": "/en/api-reference/resources/get-a-document",
+      "destination": "/en/api-reference/documents/get-a-document"
+    },
+    {
+      "source": "/en/api-reference/resources/list-aade-declarations",
+      "destination": "/en/api-reference/aade-declarations/list-aade-declarations"
+    },
+    {
+      "source": "/en/api-reference/resources/get-an-aade-declaration",
+      "destination": "/en/api-reference/aade-declarations/get-an-aade-declaration"
+    },
+    {
+      "source": "/en/api-reference/resources/list-check-ins",
+      "destination": "/en/api-reference/check-ins/list-check-ins"
+    },
+    {
+      "source": "/en/api-reference/resources/revenue-report",
+      "destination": "/en/api-reference/reports/revenue-report"
+    },
+    {
+      "source": "/en/api-reference/resources/occupancy-report",
+      "destination": "/en/api-reference/reports/occupancy-report"
+    },
+    {
+      "source": "/en/api-reference/resources/export-bookings",
+      "destination": "/en/api-reference/exports/export-bookings"
+    },
+    {
+      "source": "/en/api-reference/resources/download-a-bookings-export",
+      "destination": "/en/api-reference/exports/download-a-bookings-export"
+    },
+    {
+      "source": "/en/api-reference/resources/export-documents",
+      "destination": "/en/api-reference/exports/export-documents"
+    },
+    {
+      "source": "/en/api-reference/resources/download-a-documents-export",
+      "destination": "/en/api-reference/exports/download-a-documents-export"
+    },
+    {
+      "source": "/en/api-reference/resources/export-aade-declarations",
+      "destination": "/en/api-reference/exports/export-aade-declarations"
+    },
+    {
+      "source": "/en/api-reference/resources/download-an-aade-declarations-export",
+      "destination": "/en/api-reference/exports/download-an-aade-declarations-export"
+    }
+  ]
 }

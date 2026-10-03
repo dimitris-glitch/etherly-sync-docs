@@ -14,10 +14,25 @@ A **checkout** corresponds to a completed booking from Hosthub — a guest stay 
 | **Needs setup** | Property missing required configuration | Complete property setup under Settings → Properties. If the tooltip mentions the climate fee tax, pick it in the **Climate-fee tax** field on the property's card — you change it later under Settings → Tax details |
 | **Due today** / **Upcoming** / **Overdue** | Ready to invoice; the label says when | Click **Send**, or wait for auto-invoicing |
 | **Invoiced** | Documents issued | None |
-| **Partial** | Accommodation document and payment receipt issued, climate fee receipt failed | Click **Retry** on the booking's row |
+| **Partial** | The document was issued but a later step (payment or climate fee) didn't complete | Click **Retry** on the booking's row |
 | **Waiting myDATA** | Accommodation invoice issued — myDATA has not yet indexed it for climate fee linking | Automatic retry in progress for about a day — no action required |
 | **Manual review** | myDATA finalization did not complete after about a day of retries — or myDATA permanently rejected the accommodation document — or the property was assigned to a different invoicing organization after documents had already been issued for the booking | **myDATA:** you will receive an email notification — check in your invoicing application and retry myDATA submission manually. **Permanent myDATA rejection:** the reason is shown in the booking's send timeline; correct and resubmit the document from your invoicing application. **Organization change:** assign the property back to the organization that issued the documents, then retry the send. |
 | **Split in two** | Booking spanning two calendar years | Not invoiced directly — two separate checkouts are created automatically |
+
+## Booking actions {#booking-actions}
+
+From the arrow next to the booking's button (on mobile, the card's button) you choose what happens to the booking. On a computer, hover over an option to see what it does; on mobile it is shown under each option. When an option isn't available, it says why.
+
+| Action | What it does |
+|--------|--------------|
+| **Send** / **Send as Final** | Issues the stay document, the payment and the climate fee, transmitted to myDATA. Available from the departure day; before that, the booking's button sends a Draft. |
+| **Send as Draft** | A draft stay document for checking, without payment or climate fee. Not sent to myDATA. |
+| **Send as Final**, on a draft | The draft is replaced by a final document with the booking's current details. If you already made it final in Elorus, the booking keeps that one and no second is issued. |
+| **Cancel Draft** | Deletes the draft in Elorus too; the booking is ready to send again. If the draft was already deleted in Elorus, the booking is simply cleared. |
+| **Sync from Elorus** | In the booking's "Document" step. Checks what happened in Elorus: a draft made final there → the booking becomes "Invoiced"; a deleted draft → the booking is ready to send again. On an invoiced booking it brings in the payment and climate fee if you issued them there. |
+| **Retry** | When a send didn't complete ("Partial"). Picks up from the failed step without issuing again what was issued. |
+| **Skip** / **Undo skip** | The booking isn't invoiced, automatically or otherwise, isn't declared to AADE and isn't in the climate-fee return until you undo it. Not possible once it has a document or a submitted declaration. |
+| **Issued outside DeskBoy** / **Issue from DeskBoy instead** | For a document you issued in another system, e.g. e-timologio. DeskBoy issues no documents but declares the booking to AADE. Undoing makes it ready to issue again while the declaration isn't submitted. |
 
 ## Automatic sync
 
@@ -54,11 +69,13 @@ For a permanent exclusion of an entire booking channel or a specific property, c
 
 ### Manual skip
 
-From the row's **⋮** menu choose **"Skip"**. The booking stays skipped through subsequent syncs; you bring it back from the same menu with **"Undo skip"**. Who skipped or restored it and when is recorded in the activity history.
+From the arrow next to the booking's button (on mobile, the card's button) choose **"Skip"**. The booking shows **"Skipped"**. Not possible once the booking has a document or a submitted AADE declaration; the booking also leaves the climate-fee return. The booking stays skipped through subsequent syncs; you bring it back from the same menu with **"Undo skip"**. Who skipped or restored it and when is recorded in the activity history.
 
-## Document issued outside DeskBoy
+## Document issued outside DeskBoy {#issued-outside}
 
-If you issue a booking's document elsewhere, e.g. an invoice in AADE's e-timologio, choose **"Issued outside DeskBoy"** from the row's **⋮** menu. DeskBoy will not issue documents for the booking, but will still declare it to AADE and include it in the climate resilience fee form using the booking's amounts. Issue the climate resilience fee receipt in the same place where you issued the document.
+If you issue a booking's document elsewhere, e.g. an invoice in AADE's e-timologio, choose **"Issued outside DeskBoy"** from the arrow next to the booking's button (on mobile, the card's button). DeskBoy will not issue documents for the booking, but will still declare it to AADE and include it in the climate resilience fee form using the booking's amounts. Issue the climate resilience fee receipt in the same place where you issued the document.
+
+Not offered when DeskBoy already has a document for the booking, including a draft. If you issued the document directly in Elorus, use [Sync with invoicing provider](#provider-sync): it records the document itself. If the booking was skipped, marking it lifts the skip. **"Issue from DeskBoy instead"** makes it ready to issue again while its AADE declaration isn't submitted.
 
 <Note>
 "Skip" also excludes the booking from the AADE declaration. Use it only for bookings that will not be declared.
@@ -103,11 +120,13 @@ Amounts appear in the Greek convention: a dot for thousands and a comma for deci
 The format only affects how you see the amount on screen. The amount issued on the document and declared to AADE is the same.
 </Note>
 
-## Sync with invoicing provider
+## Sync with invoicing provider {#provider-sync}
 
 Sync is useful when a document was issued manually in your invoicing provider, outside the app: it brings that information into the app, so the short-term rental declaration and the Climate Resilience Fee form work correctly. From the **⋮** menu next to the **Refresh** button, the **Sync with invoicing provider** option checks the documents that exist in your invoicing app for the month you select. Anything that appears to have been issued outside the app is shown **grouped per booking** — stay document and climate fee receipts together, when they are linked to each other or point to the same booking. If the booking already has a document issued through the app, you will see a **Possible duplicate issuance** notice so you can check it in the provider.
 
-With the **Sync** button, the booking's documents are recorded: the booking becomes "Sent", the climate fee receipts are added to the Climate Resilience Fee form ([more](/guides/climate-fee)), and auto-invoicing will not issue duplicate documents. If the set does not include a climate fee receipt, you can issue it right afterwards from the app. With **Dismiss**, the whole set of documents is marked as reviewed.
+With the **Sync** button, the booking's documents are recorded: the booking becomes **"Invoiced"**, the climate fee receipts are added to the Climate Resilience Fee form ([more](/en/guides/climate-fee)), and auto-invoicing will not issue duplicate documents. If the set does not include a climate fee receipt, you can issue it right afterwards from the app. With **Ignore**, the whole set of documents is marked as reviewed.
+
+For a document in a system DeskBoy doesn't read, e.g. e-timologio, choose ["Issued outside DeskBoy"](#issued-outside). Syncing also lifts the booking's skip.
 
 ## Filtering & Search
 

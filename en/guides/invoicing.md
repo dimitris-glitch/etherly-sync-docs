@@ -49,6 +49,10 @@ To turn a draft into a final document, choose **"Send as Final"** on the booking
 Changes you made to the draft in your invoicing app are not carried over to the final document.
 </Note>
 
+### When the draft changes in Elorus
+
+If you delete or finalise a draft directly in Elorus, open the booking and press **"Sync from Elorus"** in the "Document" step: the booking is updated with what happened there. "Send as Final" does the same on its own.
+
 ## Document Description
 
 The text shown on the service line of the Accommodation Document (e.g. "BK-123456 | 01/07/2026 → 03/07/2026 | City Vibes Loft") is generated from a template, which you configure under **Settings → Document Description**.
@@ -105,7 +109,7 @@ Select multiple checkouts with checkboxes and click **Send Selected** to process
 
 ## “Partial” label
 
-This appears when the Accommodation Document and Payment Receipt were successfully issued, but the **Climate Resilience Fee** document failed.
+"Partial" means the document was issued but a later step (payment or climate fee) didn't complete. Press **"Retry"** on the booking's row.
 
 **What to do:**
 1. Check the error message on the Bookings page

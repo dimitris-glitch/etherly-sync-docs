@@ -10,7 +10,6 @@ description: "Solutions for the most common issues with DeskBoy — from initial
 <AccordionGroup>
   <Accordion title="My bookings show “Needs setup”. What do I do?">
     The property isn't fully configured. Open **Settings → Properties**, select the property, and complete all four required fields:
-    - **Default Receipts Contact** — the Elorus contact for receipts ([how to create it](/en/guides/properties#default-receipts-contact))
     - **Invoices Series** — a document numbering series for invoices
     - **ΤΑΚΚ characteristics** — for the Climate Resilience Fee
     - **Organization** — which Elorus organization issues the documents
@@ -92,11 +91,11 @@ description: "Solutions for the most common issues with DeskBoy — from initial
     - **New bookings without a checkout date** — they won't appear until a checkout date is set in Hosthub
     - **Hosthub API timeout** — the system retries automatically, but contact support if it persists
 
-    Try a manual sync by clicking **"Sync from Hosthub"** in **Bookings**.
+    Try a manual sync by clicking **"Refresh"** (syncs all connections) in **Bookings**.
   </Accordion>
 
   <Accordion title="A booking was cancelled in Hosthub but still shows as active. Why?">
-    Cancellations are detected on the next sync (within ~30 minutes). Once detected, the booking is marked cancelled and removed from the invoicing queue. If it still shows as active after 15 minutes, click **"Sync from Hosthub"**.
+    Cancellations are detected on the next sync (within ~30 minutes). Once detected, the booking is marked cancelled and removed from the invoicing queue. If it still shows as active after 15 minutes, click **"Refresh"** (syncs all connections).
   </Accordion>
 
   <Accordion title="If the Hosthub sync fails, will bookings be lost?">
@@ -107,7 +106,7 @@ description: "Solutions for the most common issues with DeskBoy — from initial
     - New bookings created in the meantime are retrieved on the next successful sync
     - Booking changes (cancellations, date updates) are detected on the next sync
 
-    To trigger an immediate sync, click **"Sync from Hosthub"** on the Bookings page.
+    To trigger an immediate sync, click **"Refresh"** (syncs all connections) on the Bookings page.
   </Accordion>
 </AccordionGroup>
 

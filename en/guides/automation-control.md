@@ -16,9 +16,9 @@ DeskBoy can issue documents and submit declarations without you doing anything. 
 ## You choose what is automated
 
 - **Time**: automatic invoicing runs once a day, at the **Execution time** you set — e.g. in the evening, after the day's check-outs.
-- **Channel**: in **Settings → Channels** you turn off automatic invoicing for any channel you like — e.g. for phone bookings (**Τηλεφωνικές**), if you want to decide on each one yourself. Its bookings are **Skipped** and you send them whenever you want. Skipping also excludes a booking from the AADE declaration, until you undo it.
+- **Channel**: in **Settings → Channels** you turn off automatic invoicing for any channel you like — e.g. for phone bookings (**Τηλεφωνικές**), if you want to decide on each one yourself. Its bookings are **Skipped** and you send them after undoing the skip. Skipping also excludes a booking from the AADE declaration, until you undo it.
 - **Property**: in **Settings → Advanced**, under **Active Properties**, you turn off invoicing for a property — e.g. one you invoice directly in Elorus.
-- **Booking**: with **Skip** you exclude a booking — e.g. one whose document you will issue later, outside DeskBoy. Before it is issued, you change its type to **Invoice** (e.g. when the guest asks for an invoice for their company) or its amount (e.g. when the amount paid differs from the channel's).
+- **Booking**: with **Skip** you exclude a booking — e.g. a booking that won't be declared. For a booking you invoice in another system, choose **"Issued outside DeskBoy"**; it is still declared. Before it is issued, you change its type to **Invoice** (e.g. when the guest asks for an invoice for their company) or its amount (e.g. when the amount paid differs from the channel's).
 - **Email to the guest**: in **Settings → Advanced** you choose which documents are sent and to which guests — e.g. only invoices, which guests need for their company.
 
 ## Whatever isn't ready waits

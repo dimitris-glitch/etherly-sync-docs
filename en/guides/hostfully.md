@@ -81,7 +81,7 @@ If you see this badge on the connection, or a notice about it on the home page, 
 
 ### If Hostfully doesn't respond
 
-If you see a message that we couldn't reach Hostfully, or that it isn't accepting requests right now, try again later — if the message shows a time, after that time. Your API key doesn't need changing.
+If you see a message that we couldn't reach Hostfully, or that it isn't accepting requests right now, try again later — if the message shows a time, after that time. You don't need a new API key for this.
 
 ### "Inactive"
 

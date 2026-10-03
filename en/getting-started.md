@@ -97,7 +97,7 @@ Booking sync, AADE declarations and analytics work from the moment your channel 
     | Field | What it is |
     |-------|------------|
     | **Organization** | The invoicing-provider organization that issues the documents |
-    | **Default Receipts Contact** | The Elorus contact that receipts are issued to ([how to create it](/en/guides/properties#default-receipts-contact)) |
+    | **Customer on receipts** | Which Elorus contact receipts are issued to. If you don't set one, they go to "Retail Guest" automatically ([details](/en/guides/properties#customer-on-receipts)) |
     | **Invoice Series / Receipt Series** | Numbering series for invoices and receipts (or "No series") |
     | **ΤΑΚΚ characteristics** | Detached house, floor area, regime — they decide the ΤΑΚΚ tax that goes on the document |
 
@@ -113,7 +113,7 @@ Once a property is fully configured, its bookings appear under **Bookings** read
 
 <Steps>
   <Step title="Send the booking">
-    Click the send button next to it. It carries your provider's name (e.g. **"Send to Elorus"**). You can also select several for a bulk send.
+    Click **"Send"** next to it. You can also select several for a bulk send.
   </Step>
   <Step title="See the result">
     Within seconds the status becomes **SENT** and the link to the document appears. The AADE declaration shows up under **Declarations**.

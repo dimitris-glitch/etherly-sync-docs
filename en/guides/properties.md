@@ -47,17 +47,14 @@ Shows the property's AADE category and the organization's tax for summer and win
 
 **VAT** is the rate of the accommodation documents — the standard rate for accommodation is 13%. If a rate is missing in Elorus, it is created there. Set the **Stay Tax** only if it applies to the property.
 
-### Default Receipts Contact
+### Customer on receipts
 
-Elorus issues every receipt to a contact, even when the guest is a private individual. That's why it needs a retail contact that the property's accommodation receipts are issued to — this is the one you set here. Without it, receipts can't be issued automatically and the property's bookings stay in "Needs setup". For an invoice to a company, see [My guest asked for an invoice](/en/faq#my-guest-asked-for-an-invoice-what-do-i-do).
+Elorus issues every receipt to a contact, even when the guest is a private individual. This is where you choose which one:
 
-**If you don't have one, create it in Elorus:**
-1. Open **Contacts** and press **Add** (top right).
-2. Enter "Retail" in **First name** and "Guest" in **Last name**.
-3. Set the client type to private individual.
-4. Press **Save** — the other fields can stay empty.
+- **One contact for all receipts** — the property's receipts are issued to the contact in the **Default Receipts Contact** field. If you don't choose a contact, the app creates and uses a "Retail Guest" contact automatically.
+- **A separate contact with the guest's details, for each booking** — a contact with the guest's name and country is created in Elorus, and the receipt is issued to it. If a booking has no guest name, the receipt is issued to the "Retail Guest" contact.
 
-**Then, in DeskBoy:** in **Settings → Properties** open the property, click the **Default Receipts Contact** field and type "Retail" to find it. The same contact can be set on all properties of the same organization: with **Copy settings** / **Paste settings**, or ask **Nio** to set it on the ones that don't have it.
+The setting carries over to other properties with **Copy settings** / **Paste settings**. For an invoice to a company, see [My guest asked for an invoice](/en/faq#my-guest-asked-for-an-invoice-what-do-i-do).
 
 ### Branch
 
@@ -88,7 +85,7 @@ In a card's header press **Copy settings**, then **Paste settings** on each othe
 
 ### Properties under different tax IDs
 
-Each tax ID is one organization. If the organization is in the same Elorus account, add it in **Settings → Tax details** with **Add Elorus Organization**. If it is in another Elorus account, first add a connection: **Settings → Integrations** → **Elorus** card → **New Connection**, with that account's API key. Then pick the right **Organization** on each property.
+Each tax ID is one organization. If the organization is in the same Elorus account, add it in **Settings → Tax details** with **Add Elorus Organization**. If it is in another Elorus account, first add a connection: **Settings → Integrations** → **Elorus** card → **New Connection**, with that account's API key. Then pick the right **Organization** on each property. If you change a property's organization, its unsent invoice bookings lose the company you had picked, because it belongs to the previous organization; pick it again from the new one before sending.
 
 <Note>
 On the Free plan all properties belong to one organization (or the private individual). If you pick another organization on a property, the app offers to **move all** properties to it or to **upgrade**, for properties across more organizations. After the move, bookings not yet invoiced are invoiced by the new organization; documents already issued stay as they are.

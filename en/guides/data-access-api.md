@@ -108,8 +108,9 @@ curl -H "Authorization: Bearer deskboy_data_..." \
 
 ## Available tools
 
-Beyond the above, the API offers the same analysis tools as DeskBoy MCP, one endpoint per
-tool (e.g. `/api/data-access/v1/occupancy`). The full list with descriptions is in the
+Beyond the above, the API offers the same analysis tools as DeskBoy MCP. Their endpoints are
+described in the OpenAPI document (`/api/data-access/v1/openapi.json`), and the list with
+descriptions is in the
 [DeskBoy MCP → Available tools](/en/guides/etherly-insights#available-tools) guide.
 
 <Note>

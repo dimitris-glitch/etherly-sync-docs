@@ -109,9 +109,9 @@ curl -H "Authorization: Bearer deskboy_data_..." \
 
 ## Διαθέσιμα εργαλεία
 
-Εκτός από τα παραπάνω, το API δίνει τα ίδια εργαλεία ανάλυσης με το DeskBoy MCP, ένα endpoint
-ανά εργαλείο (π.χ. `/api/data-access/v1/occupancy`). Η πλήρης λίστα με περιγραφές βρίσκεται στον
-οδηγό [DeskBoy MCP → Διαθέσιμα εργαλεία](/guides/etherly-insights).
+Εκτός από τα παραπάνω, το API δίνει τα ίδια εργαλεία ανάλυσης με το DeskBoy MCP. Τα endpoints
+τους περιγράφονται στο OpenAPI έγγραφο (`/api/data-access/v1/openapi.json`) και η λίστα με
+περιγραφές στον οδηγό [DeskBoy MCP → Διαθέσιμα εργαλεία](/guides/etherly-insights).
 
 <Note>
 Τα εργαλεία αγοράς βασίζονται σε εξωτερική πηγή δεδομένων αγοράς και έχουν δικό τους ημερήσιο όριο χρήσης ανά λογαριασμό.
