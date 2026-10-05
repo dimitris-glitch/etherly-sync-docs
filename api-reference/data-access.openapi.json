@@ -33,6 +33,9 @@
       "name": "Exports"
     },
     {
+      "name": "Account"
+    },
+    {
       "name": "Webhooks"
     }
   ],
@@ -143,7 +146,8 @@
             "type": [
               "integer",
               "null"
-            ]
+            ],
+            "description": "Number of guests on the booking; null when not available"
           },
           "guestCountry": {
             "type": [
@@ -152,19 +156,27 @@
             ],
             "description": "The guest's country, as the booking provider reports it or as given at online check-in — usually ISO 3166-1 alpha-2"
           },
+          "phoneCountry": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Two-letter country code (ISO 3166-1 alpha-2, or XK for Kosovo) from the international calling code of the guest's phone number — not the guest's nationality"
+          },
           "nationality": {
             "type": [
               "string",
               "null"
             ],
-            "description": "ISO 3166-1 alpha-2, from the country code of the guest's phone number — not their nationality; it can differ from guestCountry"
+            "deprecated": true,
+            "description": "Deprecated — use phoneCountry, which has the same value"
           },
           "currency": {
             "type": "string"
           },
           "amountCents": {
             "type": "integer",
-            "description": "Gross accommodation amount"
+            "description": "Total amount of the booking as its booking provider reports it, including any fees it carries (such as cleaning or the climate resilience fee); on a split part, prorated to its nights. Can be zero or negative. When manuallyCorrected is true, the corrected amount."
           },
           "amountBreakdown": {
             "type": [
@@ -321,7 +333,8 @@
             "type": [
               "integer",
               "null"
-            ]
+            ],
+            "description": "Collected cancellation fee, as recorded in DeskBoy; null when none is recorded"
           },
           "split": {
             "type": [
@@ -379,7 +392,7 @@
                   "issued_externally",
                   "unknown"
                 ],
-                "description": "- needs_setup: the property's invoicing settings need completing in DeskBoy\n- ready: the accommodation document has not been issued yet — also for cancelled, historical and future bookings\n- issued: all documents were issued\n- issued_with_errors: the accommodation document was issued; the payment receipt or the climate resilience fee receipt failed\n- partially_issued: not all of the booking's documents were issued — usually the accommodation document is still a draft\n- failed: issuing failed before the accommodation document was issued — see failedAt\n- split: the stay was split; documents are issued on its parts (see split)\n- awaiting_mydata: the accommodation document was issued; the climate resilience fee receipt follows once myDATA registers it\n- needs_review: held for review — the booking in DeskBoy shows why\n- issued_externally: the accommodation document was issued outside DeskBoy, so it is not in /documents\n- unknown: a newer status not listed here",
+                "description": "- needs_setup: the property's invoicing settings need completing in DeskBoy\n- ready: the accommodation document has not been issued yet — also for cancelled, historical and future bookings\n- issued: all documents were issued\n- issued_with_errors: the accommodation document was issued; the payment receipt or the climate resilience fee receipt failed\n- partially_issued: not all of the booking's documents were issued — usually the accommodation document is still a draft\n- failed: issuing failed before the accommodation document was issued — see failedAt\n- split: the stay was split; documents are issued on its parts (see split)\n- awaiting_mydata: the accommodation document was issued; the climate resilience fee receipt follows once myDATA registers it\n- needs_review: held for review — the booking in DeskBoy shows why\n- issued_externally: the accommodation document was issued outside DeskBoy, so it is not in /documents or in a booking's documents\n- unknown: a newer status not listed here",
                 "x-enumDescriptions": {
                   "needs_setup": "the property's invoicing settings need completing in DeskBoy",
                   "ready": "the accommodation document has not been issued yet — also for cancelled, historical and future bookings",
@@ -390,7 +403,7 @@
                   "split": "the stay was split; documents are issued on its parts (see split)",
                   "awaiting_mydata": "the accommodation document was issued; the climate resilience fee receipt follows once myDATA registers it",
                   "needs_review": "held for review — the booking in DeskBoy shows why",
-                  "issued_externally": "the accommodation document was issued outside DeskBoy, so it is not in /documents",
+                  "issued_externally": "the accommodation document was issued outside DeskBoy, so it is not in /documents or in a booking's documents",
                   "unknown": "a newer status not listed here"
                 }
               },
@@ -429,6 +442,13 @@
               "issuedAt",
               "failedAt"
             ]
+          },
+          "documents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BookingDocument"
+            },
+            "description": "The fiscal documents recorded as issued for this booking — the same as /documents?bookingId=<id>"
           },
           "historicalImport": {
             "type": "boolean"
@@ -487,6 +507,7 @@
           "nights",
           "guestCount",
           "guestCountry",
+          "phoneCountry",
           "nationality",
           "currency",
           "amountCents",
@@ -497,12 +518,35 @@
           "cancellationFeeCents",
           "split",
           "invoicing",
+          "documents",
           "historicalImport",
           "bookedAt",
           "createdAt",
           "updatedAt"
         ],
         "description": "The same record as GET /bookings/{id}, as it is when the event is sent"
+      },
+      "BookingDocument": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Matches id in /documents"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "service_receipt",
+              "service_invoice",
+              "payment_receipt",
+              "climate_fee_receipt"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "type"
+        ]
       },
       "BookingUpdatedEvent": {
         "type": "object",
@@ -1133,13 +1177,15 @@
             "type": [
               "integer",
               "null"
-            ]
+            ],
+            "description": "Number of bedrooms, as entered in the property settings; null when not entered"
           },
           "baths": {
             "type": [
               "number",
               "null"
-            ]
+            ],
+            "description": "Number of bathrooms in steps of 0.5, as entered in the property settings; null when not entered"
           },
           "createdAt": {
             "type": "string",
@@ -1341,7 +1387,8 @@
             "type": [
               "integer",
               "null"
-            ]
+            ],
+            "description": "Number of guests on the booking; null when not available"
           },
           "guestCountry": {
             "type": [
@@ -1350,19 +1397,27 @@
             ],
             "description": "The guest's country, as the booking provider reports it or as given at online check-in — usually ISO 3166-1 alpha-2"
           },
+          "phoneCountry": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Two-letter country code (ISO 3166-1 alpha-2, or XK for Kosovo) from the international calling code of the guest's phone number — not the guest's nationality"
+          },
           "nationality": {
             "type": [
               "string",
               "null"
             ],
-            "description": "ISO 3166-1 alpha-2, from the country code of the guest's phone number — not their nationality; it can differ from guestCountry"
+            "deprecated": true,
+            "description": "Deprecated — use phoneCountry, which has the same value"
           },
           "currency": {
             "type": "string"
           },
           "amountCents": {
             "type": "integer",
-            "description": "Gross accommodation amount"
+            "description": "Total amount of the booking as its booking provider reports it, including any fees it carries (such as cleaning or the climate resilience fee); on a split part, prorated to its nights. Can be zero or negative. When manuallyCorrected is true, the corrected amount."
           },
           "amountBreakdown": {
             "type": [
@@ -1519,7 +1574,8 @@
             "type": [
               "integer",
               "null"
-            ]
+            ],
+            "description": "Collected cancellation fee, as recorded in DeskBoy; null when none is recorded"
           },
           "split": {
             "type": [
@@ -1577,7 +1633,7 @@
                   "issued_externally",
                   "unknown"
                 ],
-                "description": "- needs_setup: the property's invoicing settings need completing in DeskBoy\n- ready: the accommodation document has not been issued yet — also for cancelled, historical and future bookings\n- issued: all documents were issued\n- issued_with_errors: the accommodation document was issued; the payment receipt or the climate resilience fee receipt failed\n- partially_issued: not all of the booking's documents were issued — usually the accommodation document is still a draft\n- failed: issuing failed before the accommodation document was issued — see failedAt\n- split: the stay was split; documents are issued on its parts (see split)\n- awaiting_mydata: the accommodation document was issued; the climate resilience fee receipt follows once myDATA registers it\n- needs_review: held for review — the booking in DeskBoy shows why\n- issued_externally: the accommodation document was issued outside DeskBoy, so it is not in /documents\n- unknown: a newer status not listed here",
+                "description": "- needs_setup: the property's invoicing settings need completing in DeskBoy\n- ready: the accommodation document has not been issued yet — also for cancelled, historical and future bookings\n- issued: all documents were issued\n- issued_with_errors: the accommodation document was issued; the payment receipt or the climate resilience fee receipt failed\n- partially_issued: not all of the booking's documents were issued — usually the accommodation document is still a draft\n- failed: issuing failed before the accommodation document was issued — see failedAt\n- split: the stay was split; documents are issued on its parts (see split)\n- awaiting_mydata: the accommodation document was issued; the climate resilience fee receipt follows once myDATA registers it\n- needs_review: held for review — the booking in DeskBoy shows why\n- issued_externally: the accommodation document was issued outside DeskBoy, so it is not in /documents or in a booking's documents\n- unknown: a newer status not listed here",
                 "x-enumDescriptions": {
                   "needs_setup": "the property's invoicing settings need completing in DeskBoy",
                   "ready": "the accommodation document has not been issued yet — also for cancelled, historical and future bookings",
@@ -1588,7 +1644,7 @@
                   "split": "the stay was split; documents are issued on its parts (see split)",
                   "awaiting_mydata": "the accommodation document was issued; the climate resilience fee receipt follows once myDATA registers it",
                   "needs_review": "held for review — the booking in DeskBoy shows why",
-                  "issued_externally": "the accommodation document was issued outside DeskBoy, so it is not in /documents",
+                  "issued_externally": "the accommodation document was issued outside DeskBoy, so it is not in /documents or in a booking's documents",
                   "unknown": "a newer status not listed here"
                 }
               },
@@ -1627,6 +1683,13 @@
               "issuedAt",
               "failedAt"
             ]
+          },
+          "documents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BookingDocument"
+            },
+            "description": "The fiscal documents recorded as issued for this booking — the same as /documents?bookingId=<id>"
           },
           "historicalImport": {
             "type": "boolean"
@@ -1685,6 +1748,7 @@
           "nights",
           "guestCount",
           "guestCountry",
+          "phoneCountry",
           "nationality",
           "currency",
           "amountCents",
@@ -1695,6 +1759,7 @@
           "cancellationFeeCents",
           "split",
           "invoicing",
+          "documents",
           "historicalImport",
           "bookedAt",
           "createdAt",
@@ -2275,7 +2340,14 @@
                 },
                 "channel": {
                   "type": "string",
-                  "description": "Display name: known platforms under one name (e.g. Airbnb, Booking.com), direct bookings as \"Phone / Direct bookings\", other channels as the provider reports them"
+                  "description": "Display name: known platforms under one name (e.g. Airbnb, Booking.com), direct bookings as \"Phone / Direct bookings\", other channels as the provider reports them. Rows are grouped by channelCode, so two rows can show the same name; where a row's bookings carry different names, the most common one"
+                },
+                "channelCode": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Normalised channel code — matches channelCode in /bookings; null when the bookings have none, and the row then groups them by channel"
                 },
                 "currency": {
                   "type": "string"
@@ -2305,6 +2377,7 @@
                 "propertyId",
                 "propertyName",
                 "channel",
+                "channelCode",
                 "currency",
                 "stays",
                 "nights",
@@ -2526,6 +2599,104 @@
           "month",
           "data"
         ]
+      },
+      "CurrentKey": {
+        "type": "object",
+        "properties": {
+          "tenantId": {
+            "type": "string",
+            "description": "Your account id — the same as tenantId in webhook events"
+          },
+          "key": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "prefix": {
+                "type": "string"
+              },
+              "scopes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "What this key can read"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time",
+                "description": "ISO 8601 date-time"
+              },
+              "expiresAt": {
+                "type": "string",
+                "format": "date-time",
+                "description": "When the key expires"
+              }
+            },
+            "required": [
+              "label",
+              "prefix",
+              "scopes",
+              "createdAt",
+              "expiresAt"
+            ]
+          },
+          "usage": {
+            "type": "object",
+            "properties": {
+              "used": {
+                "type": "integer"
+              },
+              "limit": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "null when the account has no daily limit"
+              },
+              "resetsAt": {
+                "type": "string",
+                "format": "date-time",
+                "description": "When usage resets (midnight, Greek time)"
+              }
+            },
+            "required": [
+              "used",
+              "limit",
+              "resetsAt"
+            ],
+            "description": "Today's usage for the account, all keys together"
+          },
+          "errorBudget": {
+            "type": "object",
+            "properties": {
+              "remaining": {
+                "type": "integer",
+                "description": "Requests answered 400 or 403 that this key can still make today, before its calls are paused until resetsAt"
+              },
+              "limit": {
+                "type": "integer"
+              },
+              "resetsAt": {
+                "type": "string",
+                "format": "date-time",
+                "description": "ISO 8601 date-time"
+              }
+            },
+            "required": [
+              "remaining",
+              "limit",
+              "resetsAt"
+            ]
+          }
+        },
+        "required": [
+          "tenantId",
+          "key",
+          "usage",
+          "errorBudget"
+        ]
       }
     },
     "parameters": {}
@@ -2600,6 +2771,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -2650,6 +2833,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -2714,6 +2909,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -2751,6 +2958,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -2834,6 +3053,18 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "ETag": {
                 "schema": {
                   "type": "string"
@@ -2885,6 +3116,18 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "ETag": {
                 "schema": {
                   "type": "string"
@@ -2913,6 +3156,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -2971,6 +3226,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -3008,6 +3275,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -3042,6 +3321,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -3291,6 +3582,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -3314,6 +3617,7 @@
                       "nights": 5,
                       "guestCount": 4,
                       "guestCountry": "DE",
+                      "phoneCountry": "DE",
                       "nationality": "DE",
                       "currency": "EUR",
                       "amountCents": 125000,
@@ -3330,6 +3634,20 @@
                         "issuedAt": "2026-08-15T09:30:12.000Z",
                         "failedAt": null
                       },
+                      "documents": [
+                        {
+                          "id": "WyJhY2MiLCJFTE9SVVMiLCIzMTA0ODg3Il0",
+                          "type": "service_receipt"
+                        },
+                        {
+                          "id": "WyJwYXkiLCJFTE9SVVMiLCIzMTA0ODg4Il0",
+                          "type": "payment_receipt"
+                        },
+                        {
+                          "id": "WyJmZWUiLCJFTE9SVVMiLCIzMTA0ODg5Il0",
+                          "type": "climate_fee_receipt"
+                        }
+                      ],
                       "historicalImport": false,
                       "bookedAt": "2026-05-21T17:44:03.000Z",
                       "createdAt": "2026-05-21T17:50:00.000Z",
@@ -3361,6 +3679,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -3425,6 +3755,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -3462,6 +3804,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -3545,6 +3899,18 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "ETag": {
                 "schema": {
                   "type": "string"
@@ -3571,6 +3937,7 @@
                   "nights": 5,
                   "guestCount": 4,
                   "guestCountry": "DE",
+                  "phoneCountry": "DE",
                   "nationality": "DE",
                   "currency": "EUR",
                   "amountCents": 125000,
@@ -3587,6 +3954,20 @@
                     "issuedAt": "2026-08-15T09:30:12.000Z",
                     "failedAt": null
                   },
+                  "documents": [
+                    {
+                      "id": "WyJhY2MiLCJFTE9SVVMiLCIzMTA0ODg3Il0",
+                      "type": "service_receipt"
+                    },
+                    {
+                      "id": "WyJwYXkiLCJFTE9SVVMiLCIzMTA0ODg4Il0",
+                      "type": "payment_receipt"
+                    },
+                    {
+                      "id": "WyJmZWUiLCJFTE9SVVMiLCIzMTA0ODg5Il0",
+                      "type": "climate_fee_receipt"
+                    }
+                  ],
                   "historicalImport": false,
                   "bookedAt": "2026-05-21T17:44:03.000Z",
                   "createdAt": "2026-05-21T17:50:00.000Z",
@@ -3616,6 +3997,18 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "ETag": {
                 "schema": {
                   "type": "string"
@@ -3644,6 +4037,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -3702,6 +4107,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -3739,6 +4156,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -3773,6 +4202,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -3923,6 +4364,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -3972,6 +4425,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -4036,6 +4501,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -4073,6 +4550,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -4156,6 +4645,18 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "ETag": {
                 "schema": {
                   "type": "string"
@@ -4206,6 +4707,18 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "ETag": {
                 "schema": {
                   "type": "string"
@@ -4234,6 +4747,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -4292,6 +4817,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -4329,6 +4866,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -4363,6 +4912,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -4525,6 +5086,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -4582,6 +5155,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -4646,6 +5231,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -4683,6 +5280,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -4766,6 +5375,18 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "ETag": {
                 "schema": {
                   "type": "string"
@@ -4824,6 +5445,18 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "ETag": {
                 "schema": {
                   "type": "string"
@@ -4852,6 +5485,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -4910,6 +5555,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -4947,6 +5604,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -4981,6 +5650,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -5134,6 +5815,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -5186,6 +5879,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -5250,6 +5955,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -5287,6 +6004,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -5383,6 +6112,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -5403,6 +6144,7 @@
                       "propertyId": "cm4x7k2q10001l5p8zv3h9d2a",
                       "propertyName": "Villa Anemos",
                       "channel": "Airbnb",
+                      "channelCode": "airbnb",
                       "currency": "EUR",
                       "stays": 4,
                       "nights": 21,
@@ -5436,6 +6178,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -5494,6 +6248,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -5531,6 +6297,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -5627,6 +6405,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -5680,6 +6470,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -5738,6 +6540,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -5775,6 +6589,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -5839,6 +6665,19 @@
             "description": "csv (UTF-8 with BOM, for spreadsheets — the default) or json",
             "name": "format",
             "in": "query"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "el"
+              ],
+              "description": "el: semicolon-separated, with decimal commas, for Excel with Greek regional settings. CSV only"
+            },
+            "required": false,
+            "description": "el: semicolon-separated, with decimal commas, for Excel with Greek regional settings. CSV only",
+            "name": "locale",
+            "in": "query"
           }
         ],
         "responses": {
@@ -5863,11 +6702,23 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "Content-Disposition": {
                 "schema": {
                   "type": "string"
                 },
-                "description": "attachment; filename=\"deskboy-<type>-<month>.<format>\""
+                "description": "attachment; filename=\"deskboy-<type>-<month>.<format>\", or deskboy-<type>-<month>-el.csv with locale=el"
               }
             },
             "content": {
@@ -5876,7 +6727,7 @@
                   "type": "string",
                   "description": "UTF-8 with BOM, CRLF line endings, one header row. Amounts as decimals"
                 },
-                "example": "id,externalBookingId,externalReservationId,provider,channel,channelCode,propertyId,propertyName,checkinDate,checkoutDate,nights,guestCount,guestCountry,nationality,currency,amount,manuallyCorrected,cancelled,cancelledAt,cancellationFee,splitParentId,splitDivided,splitReason,splitSegment,invoicingStatus,documentType,skipped,issuedAt,failedAt,historicalImport,bookedAt,createdAt,updatedAt\r\ncm4x7k9r40007l5p8c1n6w0qe,hh-558201,HMX4Q2ZP8A,HOSTHUB,Airbnb,airbnb,cm4x7k2q10001l5p8zv3h9d2a,Villa Anemos,2026-08-10,2026-08-15,5,4,DE,DE,EUR,1250.00,false,false,,,,,,,issued,receipt,false,2026-08-15T09:30:12.000Z,,false,2026-05-21T17:44:03.000Z,2026-05-21T17:50:00.000Z,2026-08-15T09:30:12.000Z\r\n"
+                "example": "id,externalBookingId,externalReservationId,provider,channel,channelCode,propertyId,propertyName,checkinDate,checkoutDate,nights,guestCount,guestCountry,nationality,currency,amount,manuallyCorrected,cancelled,cancelledAt,cancellationFee,splitParentId,splitDivided,splitReason,splitSegment,invoicingStatus,documentType,skipped,issuedAt,failedAt,historicalImport,bookedAt,createdAt,updatedAt,phoneCountry\r\ncm4x7k9r40007l5p8c1n6w0qe,hh-558201,HMX4Q2ZP8A,HOSTHUB,Airbnb,airbnb,cm4x7k2q10001l5p8zv3h9d2a,Villa Anemos,2026-08-10,2026-08-15,5,4,DE,DE,EUR,1250.00,false,false,,,,,,,issued,receipt,false,2026-08-15T09:30:12.000Z,,false,2026-05-21T17:44:03.000Z,2026-05-21T17:50:00.000Z,2026-08-15T09:30:12.000Z,DE\r\n"
               },
               "application/json": {
                 "schema": {
@@ -5900,6 +6751,7 @@
                       "nights": 5,
                       "guestCount": 4,
                       "guestCountry": "DE",
+                      "phoneCountry": "DE",
                       "nationality": "DE",
                       "currency": "EUR",
                       "amountCents": 125000,
@@ -5916,6 +6768,20 @@
                         "issuedAt": "2026-08-15T09:30:12.000Z",
                         "failedAt": null
                       },
+                      "documents": [
+                        {
+                          "id": "WyJhY2MiLCJFTE9SVVMiLCIzMTA0ODg3Il0",
+                          "type": "service_receipt"
+                        },
+                        {
+                          "id": "WyJwYXkiLCJFTE9SVVMiLCIzMTA0ODg4Il0",
+                          "type": "payment_receipt"
+                        },
+                        {
+                          "id": "WyJmZWUiLCJFTE9SVVMiLCIzMTA0ODg5Il0",
+                          "type": "climate_fee_receipt"
+                        }
+                      ],
                       "historicalImport": false,
                       "bookedAt": "2026-05-21T17:44:03.000Z",
                       "createdAt": "2026-05-21T17:50:00.000Z",
@@ -5946,6 +6812,24 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
+              "Location": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "statusUrl as a full URL — GET it with the same API key to download the file"
               },
               "Retry-After": {
                 "schema": {
@@ -5987,6 +6871,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -6045,6 +6941,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -6082,6 +6990,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -6153,11 +7073,23 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "Content-Disposition": {
                 "schema": {
                   "type": "string"
                 },
-                "description": "attachment; filename=\"deskboy-<type>-<month>.<format>\""
+                "description": "attachment; filename=\"deskboy-<type>-<month>.<format>\", or deskboy-<type>-<month>-el.csv with locale=el"
               }
             },
             "content": {
@@ -6166,7 +7098,7 @@
                   "type": "string",
                   "description": "UTF-8 with BOM, CRLF line endings, one header row. Amounts as decimals"
                 },
-                "example": "id,externalBookingId,externalReservationId,provider,channel,channelCode,propertyId,propertyName,checkinDate,checkoutDate,nights,guestCount,guestCountry,nationality,currency,amount,manuallyCorrected,cancelled,cancelledAt,cancellationFee,splitParentId,splitDivided,splitReason,splitSegment,invoicingStatus,documentType,skipped,issuedAt,failedAt,historicalImport,bookedAt,createdAt,updatedAt\r\ncm4x7k9r40007l5p8c1n6w0qe,hh-558201,HMX4Q2ZP8A,HOSTHUB,Airbnb,airbnb,cm4x7k2q10001l5p8zv3h9d2a,Villa Anemos,2026-08-10,2026-08-15,5,4,DE,DE,EUR,1250.00,false,false,,,,,,,issued,receipt,false,2026-08-15T09:30:12.000Z,,false,2026-05-21T17:44:03.000Z,2026-05-21T17:50:00.000Z,2026-08-15T09:30:12.000Z\r\n"
+                "example": "id,externalBookingId,externalReservationId,provider,channel,channelCode,propertyId,propertyName,checkinDate,checkoutDate,nights,guestCount,guestCountry,nationality,currency,amount,manuallyCorrected,cancelled,cancelledAt,cancellationFee,splitParentId,splitDivided,splitReason,splitSegment,invoicingStatus,documentType,skipped,issuedAt,failedAt,historicalImport,bookedAt,createdAt,updatedAt,phoneCountry\r\ncm4x7k9r40007l5p8c1n6w0qe,hh-558201,HMX4Q2ZP8A,HOSTHUB,Airbnb,airbnb,cm4x7k2q10001l5p8zv3h9d2a,Villa Anemos,2026-08-10,2026-08-15,5,4,DE,DE,EUR,1250.00,false,false,,,,,,,issued,receipt,false,2026-08-15T09:30:12.000Z,,false,2026-05-21T17:44:03.000Z,2026-05-21T17:50:00.000Z,2026-08-15T09:30:12.000Z,DE\r\n"
               },
               "application/json": {
                 "schema": {
@@ -6190,6 +7122,7 @@
                       "nights": 5,
                       "guestCount": 4,
                       "guestCountry": "DE",
+                      "phoneCountry": "DE",
                       "nationality": "DE",
                       "currency": "EUR",
                       "amountCents": 125000,
@@ -6206,6 +7139,20 @@
                         "issuedAt": "2026-08-15T09:30:12.000Z",
                         "failedAt": null
                       },
+                      "documents": [
+                        {
+                          "id": "WyJhY2MiLCJFTE9SVVMiLCIzMTA0ODg3Il0",
+                          "type": "service_receipt"
+                        },
+                        {
+                          "id": "WyJwYXkiLCJFTE9SVVMiLCIzMTA0ODg4Il0",
+                          "type": "payment_receipt"
+                        },
+                        {
+                          "id": "WyJmZWUiLCJFTE9SVVMiLCIzMTA0ODg5Il0",
+                          "type": "climate_fee_receipt"
+                        }
+                      ],
                       "historicalImport": false,
                       "bookedAt": "2026-05-21T17:44:03.000Z",
                       "createdAt": "2026-05-21T17:50:00.000Z",
@@ -6236,6 +7183,24 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
+              "Location": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "statusUrl as a full URL — GET it with the same API key to download the file"
               },
               "Retry-After": {
                 "schema": {
@@ -6277,6 +7242,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -6335,6 +7312,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -6372,6 +7361,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -6406,6 +7407,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -6440,6 +7453,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -6504,6 +7529,19 @@
             "description": "csv (UTF-8 with BOM, for spreadsheets — the default) or json",
             "name": "format",
             "in": "query"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "el"
+              ],
+              "description": "el: semicolon-separated, with decimal commas, for Excel with Greek regional settings. CSV only"
+            },
+            "required": false,
+            "description": "el: semicolon-separated, with decimal commas, for Excel with Greek regional settings. CSV only",
+            "name": "locale",
+            "in": "query"
           }
         ],
         "responses": {
@@ -6528,11 +7566,23 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "Content-Disposition": {
                 "schema": {
                   "type": "string"
                 },
-                "description": "attachment; filename=\"deskboy-<type>-<month>.<format>\""
+                "description": "attachment; filename=\"deskboy-<type>-<month>.<format>\", or deskboy-<type>-<month>-el.csv with locale=el"
               }
             },
             "content": {
@@ -6591,6 +7641,24 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
+              "Location": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "statusUrl as a full URL — GET it with the same API key to download the file"
+              },
               "Retry-After": {
                 "schema": {
                   "type": "string"
@@ -6631,6 +7699,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -6689,6 +7769,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -6726,6 +7818,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -6797,11 +7901,23 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "Content-Disposition": {
                 "schema": {
                   "type": "string"
                 },
-                "description": "attachment; filename=\"deskboy-<type>-<month>.<format>\""
+                "description": "attachment; filename=\"deskboy-<type>-<month>.<format>\", or deskboy-<type>-<month>-el.csv with locale=el"
               }
             },
             "content": {
@@ -6860,6 +7976,24 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
+              "Location": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "statusUrl as a full URL — GET it with the same API key to download the file"
+              },
               "Retry-After": {
                 "schema": {
                   "type": "string"
@@ -6900,6 +8034,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -6958,6 +8104,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -6995,6 +8153,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -7029,6 +8199,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -7063,6 +8245,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -7127,6 +8321,19 @@
             "description": "csv (UTF-8 with BOM, for spreadsheets — the default) or json",
             "name": "format",
             "in": "query"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "el"
+              ],
+              "description": "el: semicolon-separated, with decimal commas, for Excel with Greek regional settings. CSV only"
+            },
+            "required": false,
+            "description": "el: semicolon-separated, with decimal commas, for Excel with Greek regional settings. CSV only",
+            "name": "locale",
+            "in": "query"
           }
         ],
         "responses": {
@@ -7151,11 +8358,23 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "Content-Disposition": {
                 "schema": {
                   "type": "string"
                 },
-                "description": "attachment; filename=\"deskboy-<type>-<month>.<format>\""
+                "description": "attachment; filename=\"deskboy-<type>-<month>.<format>\", or deskboy-<type>-<month>-el.csv with locale=el"
               }
             },
             "content": {
@@ -7222,6 +8441,24 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
+              "Location": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "statusUrl as a full URL — GET it with the same API key to download the file"
+              },
               "Retry-After": {
                 "schema": {
                   "type": "string"
@@ -7262,6 +8499,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -7320,6 +8569,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -7357,6 +8618,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               },
               "Retry-After": {
                 "schema": {
@@ -7428,11 +8701,23 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "Content-Disposition": {
                 "schema": {
                   "type": "string"
                 },
-                "description": "attachment; filename=\"deskboy-<type>-<month>.<format>\""
+                "description": "attachment; filename=\"deskboy-<type>-<month>.<format>\", or deskboy-<type>-<month>-el.csv with locale=el"
               }
             },
             "content": {
@@ -7499,6 +8784,24 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
+              "Location": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "statusUrl as a full URL — GET it with the same API key to download the file"
+              },
               "Retry-After": {
                 "schema": {
                   "type": "string"
@@ -7539,6 +8842,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -7597,6 +8912,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -7634,6 +8961,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -7668,6 +9007,18 @@
                   "type": "string"
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
               }
             },
             "content": {
@@ -7703,6 +9054,18 @@
                 },
                 "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
               },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
               "Retry-After": {
                 "schema": {
                   "type": "string"
@@ -7725,6 +9088,303 @@
         },
         "summary": "Download an AADE declarations export",
         "description": "The file of an export that was prepared in the background. It is kept for a limited time; request the export again after that."
+      }
+    },
+    "/me": {
+      "get": {
+        "operationId": "getCurrentKey",
+        "tags": [
+          "Account"
+        ],
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "X-RateLimit-Limit": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests allowed per minute for this API key"
+              },
+              "X-RateLimit-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests left in the current one-minute window"
+              },
+              "X-RateLimit-Reset": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CurrentKey"
+                },
+                "example": {
+                  "tenantId": "cm1t0e1n2a3n4t5i6d7e8x9m0",
+                  "key": {
+                    "label": "Google Sheets",
+                    "prefix": "deskboy_data_k7Qm2xA",
+                    "scopes": [
+                      "read:properties",
+                      "read:bookings",
+                      "read:documents"
+                    ],
+                    "createdAt": "2026-09-30T09:12:44.000Z",
+                    "expiresAt": "2027-09-30T09:12:44.000Z"
+                  },
+                  "usage": {
+                    "used": 120,
+                    "limit": 1000,
+                    "resetsAt": "2026-10-05T21:00:00.000Z"
+                  },
+                  "errorBudget": {
+                    "remaining": 48,
+                    "limit": 50,
+                    "resetsAt": "2026-10-05T21:00:00.000Z"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid_params — see details",
+            "headers": {
+              "X-RateLimit-Limit": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests allowed per minute for this API key"
+              },
+              "X-RateLimit-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests left in the current one-minute window"
+              },
+              "X-RateLimit-Reset": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                },
+                "example": {
+                  "error": "invalid_params",
+                  "message": "Invalid request parameters. See details.",
+                  "details": {
+                    "fields": {
+                      "limit": [
+                        {
+                          "code": "invalid_value",
+                          "message": "Unknown parameter"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "unauthorized — missing, invalid or revoked API key",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                },
+                "example": {
+                  "error": "unauthorized",
+                  "message": "Missing, invalid or revoked API key."
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "feature_not_in_plan",
+            "headers": {
+              "X-RateLimit-Limit": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests allowed per minute for this API key"
+              },
+              "X-RateLimit-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests left in the current one-minute window"
+              },
+              "X-RateLimit-Reset": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                },
+                "example": {
+                  "error": "feature_not_in_plan",
+                  "message": "Your account does not have access to this endpoint."
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "not_found — no such resource for this account",
+            "headers": {
+              "X-RateLimit-Limit": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests allowed per minute for this API key"
+              },
+              "X-RateLimit-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests left in the current one-minute window"
+              },
+              "X-RateLimit-Reset": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                },
+                "example": {
+                  "error": "not_found",
+                  "message": "The requested resource does not exist."
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "rate_limit_exceeded · daily_limit_exceeded · error_budget_exceeded (too many failed requests from this key today; until the time in Retry-After, every request from this key gets this answer, valid ones included)",
+            "headers": {
+              "X-RateLimit-Limit": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests allowed per minute for this API key"
+              },
+              "X-RateLimit-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests left in the current one-minute window"
+              },
+              "X-RateLimit-Reset": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "UTC epoch seconds when the current one-minute window ends (Remaining resets to the full limit)"
+              },
+              "X-Quota-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Usage left today for the account, all keys together"
+              },
+              "X-Error-Budget-Remaining": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Requests answered 400 or 403 that this key can still make today"
+              },
+              "Retry-After": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Seconds to wait before retrying"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                },
+                "example": {
+                  "error": "rate_limit_exceeded",
+                  "message": "Too many requests. Retry after the number of seconds in the Retry-After header."
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get the current key",
+        "description": "The account and API key making the call, with today's usage. Calls to it do not count towards usage."
       }
     }
   },
@@ -7794,6 +9454,7 @@
                   "nights": 5,
                   "guestCount": 4,
                   "guestCountry": "DE",
+                  "phoneCountry": "DE",
                   "nationality": "DE",
                   "currency": "EUR",
                   "amountCents": 125000,
@@ -7810,6 +9471,20 @@
                     "issuedAt": null,
                     "failedAt": null
                   },
+                  "documents": [
+                    {
+                      "id": "WyJhY2MiLCJFTE9SVVMiLCIzMTA0ODg3Il0",
+                      "type": "service_receipt"
+                    },
+                    {
+                      "id": "WyJwYXkiLCJFTE9SVVMiLCIzMTA0ODg4Il0",
+                      "type": "payment_receipt"
+                    },
+                    {
+                      "id": "WyJmZWUiLCJFTE9SVVMiLCIzMTA0ODg5Il0",
+                      "type": "climate_fee_receipt"
+                    }
+                  ],
                   "historicalImport": false,
                   "bookedAt": "2026-05-21T17:44:03.000Z",
                   "createdAt": "2026-05-21T17:50:00.000Z",
@@ -7904,6 +9579,7 @@
                   "nights": 5,
                   "guestCount": 5,
                   "guestCountry": "DE",
+                  "phoneCountry": "DE",
                   "nationality": "DE",
                   "currency": "EUR",
                   "amountCents": 125000,
@@ -7920,6 +9596,20 @@
                     "issuedAt": null,
                     "failedAt": null
                   },
+                  "documents": [
+                    {
+                      "id": "WyJhY2MiLCJFTE9SVVMiLCIzMTA0ODg3Il0",
+                      "type": "service_receipt"
+                    },
+                    {
+                      "id": "WyJwYXkiLCJFTE9SVVMiLCIzMTA0ODg4Il0",
+                      "type": "payment_receipt"
+                    },
+                    {
+                      "id": "WyJmZWUiLCJFTE9SVVMiLCIzMTA0ODg5Il0",
+                      "type": "climate_fee_receipt"
+                    }
+                  ],
                   "historicalImport": false,
                   "bookedAt": "2026-05-21T17:44:03.000Z",
                   "createdAt": "2026-05-21T17:50:00.000Z",
@@ -8014,6 +9704,7 @@
                   "nights": 5,
                   "guestCount": 4,
                   "guestCountry": "DE",
+                  "phoneCountry": "DE",
                   "nationality": "DE",
                   "currency": "EUR",
                   "amountCents": 125000,
@@ -8021,7 +9712,7 @@
                   "manuallyCorrected": false,
                   "cancelled": true,
                   "cancelledAt": "2026-07-02T11:20:00.000Z",
-                  "cancellationFeeCents": 0,
+                  "cancellationFeeCents": null,
                   "split": null,
                   "invoicing": {
                     "status": "ready",
@@ -8030,6 +9721,20 @@
                     "issuedAt": null,
                     "failedAt": null
                   },
+                  "documents": [
+                    {
+                      "id": "WyJhY2MiLCJFTE9SVVMiLCIzMTA0ODg3Il0",
+                      "type": "service_receipt"
+                    },
+                    {
+                      "id": "WyJwYXkiLCJFTE9SVVMiLCIzMTA0ODg4Il0",
+                      "type": "payment_receipt"
+                    },
+                    {
+                      "id": "WyJmZWUiLCJFTE9SVVMiLCIzMTA0ODg5Il0",
+                      "type": "climate_fee_receipt"
+                    }
+                  ],
                   "historicalImport": false,
                   "bookedAt": "2026-05-21T17:44:03.000Z",
                   "createdAt": "2026-05-21T17:50:00.000Z",
@@ -8124,6 +9829,7 @@
                   "nights": 5,
                   "guestCount": 4,
                   "guestCountry": "DE",
+                  "phoneCountry": "DE",
                   "nationality": "DE",
                   "currency": "EUR",
                   "amountCents": 125000,
@@ -8140,6 +9846,20 @@
                     "issuedAt": "2026-08-15T09:30:12.000Z",
                     "failedAt": null
                   },
+                  "documents": [
+                    {
+                      "id": "WyJhY2MiLCJFTE9SVVMiLCIzMTA0ODg3Il0",
+                      "type": "service_receipt"
+                    },
+                    {
+                      "id": "WyJwYXkiLCJFTE9SVVMiLCIzMTA0ODg4Il0",
+                      "type": "payment_receipt"
+                    },
+                    {
+                      "id": "WyJmZWUiLCJFTE9SVVMiLCIzMTA0ODg5Il0",
+                      "type": "climate_fee_receipt"
+                    }
+                  ],
                   "historicalImport": false,
                   "bookedAt": "2026-05-21T17:44:03.000Z",
                   "createdAt": "2026-05-21T17:50:00.000Z",
@@ -8234,6 +9954,7 @@
                   "nights": 5,
                   "guestCount": 4,
                   "guestCountry": "DE",
+                  "phoneCountry": "DE",
                   "nationality": "DE",
                   "currency": "EUR",
                   "amountCents": 125000,
@@ -8250,6 +9971,20 @@
                     "issuedAt": null,
                     "failedAt": "2026-08-15T09:30:40.000Z"
                   },
+                  "documents": [
+                    {
+                      "id": "WyJhY2MiLCJFTE9SVVMiLCIzMTA0ODg3Il0",
+                      "type": "service_receipt"
+                    },
+                    {
+                      "id": "WyJwYXkiLCJFTE9SVVMiLCIzMTA0ODg4Il0",
+                      "type": "payment_receipt"
+                    },
+                    {
+                      "id": "WyJmZWUiLCJFTE9SVVMiLCIzMTA0ODg5Il0",
+                      "type": "climate_fee_receipt"
+                    }
+                  ],
                   "historicalImport": false,
                   "bookedAt": "2026-05-21T17:44:03.000Z",
                   "createdAt": "2026-05-21T17:50:00.000Z",

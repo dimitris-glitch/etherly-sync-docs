@@ -21,7 +21,7 @@ To get started with DeskBoy, you complete a few quick activation steps. You don'
   <Step title="Capacity & details">
     First you state **in what capacity** you rent out your properties:
 
-    - **I am a private individual** — you declare your short-term rentals to AADE without issuing documents. You fill in your name, tax ID and address.
+    - **I am a private individual** — you don't issue documents. You fill in your name, tax ID and address.
     - **Registered business or company** — you issue receipts or invoices for your bookings. A **tax ID** lookup fills in your details from the registry.
 
     The choice determines what the app does for every booking — and it can change later if your status changes (see [Private individual](/en/guides/private-individual)).

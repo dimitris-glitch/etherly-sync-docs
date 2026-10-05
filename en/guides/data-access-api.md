@@ -29,7 +29,7 @@ declares anything.
 - **Online check-in** for your bookings.
 - **Reports** of revenue and occupancy per month, property and channel.
 - **Monthly files** (CSV or JSON) with a month's bookings, documents or AADE declarations — ready
-  for your accountant.
+  for your accountant; CSV also in a format for Excel with Greek regional settings.
 
 ---
 
@@ -160,8 +160,8 @@ details it did not send before, they are turned off again.
 ## Usage limits
 
 A daily usage limit applies, shared across all your keys, along with a per-minute call limit.
-Today's usage is shown on the Data access page. If a limit is exceeded, the call returns an error
-that says when to retry.
+Today's usage is shown on the Data access page and returned by `GET /me`. If a limit is exceeded,
+the call returns an error that says when to retry.
 
 ---
 
