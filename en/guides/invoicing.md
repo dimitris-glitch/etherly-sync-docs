@@ -1,6 +1,6 @@
 ---
 title: "How Invoicing Works"
-description: "The three documents issued per checkout, the order they're created, and how myDATA submission works."
+description: "The documents per booking (accommodation, payment receipt, climate fee), final send and draft, document description, myDATA, the 'Partial' label, and emailing the document to the guest: which address, how to change it, the temporary Booking.com and Expedia emails, settings under Advanced."
 ---
 
 # How Invoicing Works

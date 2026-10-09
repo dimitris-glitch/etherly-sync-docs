@@ -1,6 +1,6 @@
 ---
 title: "Account activation"
-description: "The activation steps required before entering the panel."
+description: "The activation steps in order: email verification, phone verification with an SMS code and its messages, choosing your capacity (private individual or business) with tax ID lookup, connecting your channel manager (Hosthub, Airbnb, Hospitable, Smoobu, Lodgify, Hostaway or Hostfully), the Free plan at the start, and when you connect your invoicing provider under Integrations."
 ---
 
 # Account activation

@@ -1,6 +1,6 @@
 ---
 title: "Auto-Invoicing"
-description: "Set up daily auto-invoicing and let DeskBoy issue documents at the time you choose, without any manual work."
+description: "Enabling it and the Execution time from Checkouts, which bookings are auto-invoiced, the cancellation check before issuing, the daily report, the split at the climate-fee rate change, per-channel and per-property settings under Channels, tax ID lookup and year-end booking split under Advanced."
 ---
 
 # Auto-Invoicing

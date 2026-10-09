@@ -1,6 +1,6 @@
 ---
 title: "Short-Term Rental Declarations (AADE)"
-description: "Submit declarations to AADE via AADE Connect: manual and automatic submission, guest identification, and platform mapping."
+description: "Stay declarations to AADE via AADE Connect, the difference from myDATA, the To Declare and History tabs, manual and automatic submission, cancelled bookings and Skip, an existing declaration for the same dates, undeclared bookings, guest identification, platform mapping, payment method."
 ---
 
 # Short-Term Rental Declarations

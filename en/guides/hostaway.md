@@ -1,6 +1,6 @@
 ---
 title: "Connect Hostaway"
-description: "Connect your Hostaway account and bring in bookings from every channel you have there — Airbnb, Booking.com, Vrbo and direct."
+description: "Connecting Hostaway for bookings from every channel: where to find the Account ID and API key, connecting under Settings → Integrations, instant updates and 'Paused in Hostaway', what 'Manual review' means, replacing the API key, 'New API key needed', when Hostaway doesn't respond."
 ---
 
 # Connect Hostaway

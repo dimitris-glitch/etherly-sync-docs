@@ -1,6 +1,6 @@
 ---
 title: "Automation and control"
-description: "What DeskBoy does on its own, what you decide, and how you stop it whenever you want."
+description: "The Automatic invoicing and Automatic final declaration switches, Send as Draft, how you narrow automation by time, channel, property and booking, where you choose which documents are emailed to the guest, when a booking waits, where you see what happened and how you stop it."
 ---
 
 # Automation and control

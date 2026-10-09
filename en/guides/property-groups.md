@@ -1,6 +1,6 @@
 ---
 title: "Property Groups"
-description: "Organise your properties into groups to find them and filter your lists faster."
+description: "How you create a group from Settings → Properties, the ways to assign a property to a group (card, menu, Edit group, dragging from Organise), ordering properties inside a group, deleting a group, and where groups appear on other screens, e.g. in the Property filter."
 ---
 
 # Property Groups

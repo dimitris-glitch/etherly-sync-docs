@@ -1,6 +1,6 @@
 ---
 title: "Signing in & security"
-description: "How you sign in and how your account is protected."
+description: "The two ways to sign in, Google or a code by email, what to do if the code does not arrive, the “Devices” list in your profile and how you sign out a device, the email for a new device, and what to do if you get an email about a sign-in you did not make."
 ---
 
 # How I sign in and how my account is protected

@@ -1,6 +1,6 @@
 ---
 title: "Private individual"
-description: "How the app works when you declare short-term rentals as a private individual, without issuing invoices."
+description: "What the app does for a private individual: bookings, AADE declarations and the Climate Resilience Fee without an invoicing provider, where you see your details under Tax details, and registering a business: adding an organization, moving properties, what happens to bookings and registry numbers, when it is mandatory."
 ---
 
 # Private individual

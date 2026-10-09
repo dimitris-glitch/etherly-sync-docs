@@ -1,6 +1,6 @@
 ---
 title: "Where my data is stored"
-description: "Where your data lives, what is encrypted and who can see it."
+description: "Where your account data and backups are kept, when backups are deleted, what is encrypted (the connection keys and the backups), who can see your data, when documents go to your invoicing provider and declarations to AADE, and where to find the other providers that process data."
 ---
 
 # Where and how my data is stored

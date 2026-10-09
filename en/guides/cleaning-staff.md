@@ -1,6 +1,6 @@
 ---
 title: 'Cleaning Staff'
-description: 'Manage your cleaners, assign them to properties, and track which properties are ready.'
+description: "Adding a cleaner under Cleaning Team Management, assigning properties, sending the link by SMS and its delivery status, logging in with a one-time code, installing on the home screen, what they see and the 'Ready' mark, notifications for same-day changes, manual tasks, revoking access."
 ---
 
 ## What it is

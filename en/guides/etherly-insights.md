@@ -1,6 +1,6 @@
 ---
 title: 'DeskBoy MCP'
-description: 'Give AI tools like Claude, ChatGPT, or Grok access to your booking and revenue data.'
+description: "Connecting AI tools (Claude, ChatGPT, Grok) to ask questions about your booking and revenue data: ready-made prompts, guest privacy, enabling it and connection steps per tool, the available tools (revenue, occupancy, arrivals, cleaning, local market), usage limits, disconnecting."
 ---
 
 ## What is DeskBoy MCP

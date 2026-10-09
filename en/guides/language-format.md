@@ -1,6 +1,6 @@
 ---
 title: "Language & format"
-description: "How dates, times and amounts appear in the app."
+description: "The Language & format setting: app language (Ελληνικά or English), region for dates, times and amounts, customizing date, time and numbers, where it applies (app, emails, guest, cleaning staff and owner pages), what the calendar on date fields follows."
 ---
 
 # Language & format

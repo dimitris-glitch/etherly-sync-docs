@@ -1,6 +1,6 @@
 ---
 title: "AADE Connect Settings"
-description: "Connect your AADE account and configure property mappings and default payment methods per booking channel."
+description: "How you create the AADE Connect connection under Integrations (and a second one for another account), how you map each property to its AADE property (AMA), how you set the rental payment method per channel under Channels (bank, cash, other) and which value takes precedence in the declaration."
 ---
 
 # AADE Connect Settings

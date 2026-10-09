@@ -1,6 +1,6 @@
 ---
 title: "Connect Hostfully"
-description: "Connect your Hostfully account and bring in bookings from your channels — Airbnb, Booking.com, Vrbo and direct."
+description: "Connecting Hostfully for bookings from your channels: where to find the API key in Agency Settings, connecting under Settings → Integrations, instant updates, what 'Manual review' means, replacing the API key, 'New API key needed', 'Inactive', when Hostfully doesn't respond."
 ---
 
 # Connect Hostfully

@@ -1,6 +1,6 @@
 ---
 title: "Airbnb connection (Airbnb Live)"
-description: "Connect your Airbnb account once and bookings, amounts and cancellations arrive in DeskBoy automatically."
+description: "How the Airbnb Live connection is made from Integrations (sending your details, the session, approval on Airbnb), what applies if you are a co-host, what arrives automatically (bookings, changes, cancellations, properties), what 'Action needed' means and what happens when you disconnect."
 ---
 
 # Airbnb connection (Airbnb Live)

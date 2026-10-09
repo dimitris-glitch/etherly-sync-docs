@@ -1,6 +1,6 @@
 ---
 title: "Nio"
-description: "The built-in AI assistant that answers setup and performance questions, navigates the app, and saves your conversation history."
+description: "How you open and pin Nio, what it answers (how the app works, VAT, myDATA, the climate fee, performance and analytics, terminology), what it configures on your behalf after confirmation, how it checks sync and looks up bookings, and how you browse, resume or delete past conversations."
 ---
 
 # Nio

@@ -1,6 +1,6 @@
 ---
 title: "Connect Lodgify"
-description: "Connect your Lodgify account and bring in the bookings from your website, your booking engine and your channels."
+description: "Where to find the API key in Lodgify and how to connect the account under Integrations, how instant updates and Re-register work, what “Needs action” means on a booking with an unknown charge, replacing the key, “New key needed”, and one source per property."
 ---
 
 # Connect Lodgify

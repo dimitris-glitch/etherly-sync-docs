@@ -1,6 +1,6 @@
 ---
 title: "Plan & Billing"
-description: "How plans work, what counts as a checkout, and how you pay."
+description: "What counts as a checkout, what the Free, Business and Agency plans include and how the price tiers scale, when an upgrade or downgrade takes effect, each month's breakdown, paying by card or prepaid balance, what happens with an unpaid charge and the card expiry reminder."
 ---
 
 # Plan & Billing

@@ -1,6 +1,6 @@
 ---
 title: "Hospitable connection"
-description: "Connect your Hospitable account and bring in bookings from every channel you have there — Airbnb, Booking.com, Vrbo and direct."
+description: "Connecting Hospitable for bookings from every channel: issuing an API key in Hospitable, connecting under Settings → Integrations, our team finishing the connection, setting up instant updates, what a booking needing action means, replacing the key, the 'New key needed' badge."
 ---
 
 # Hospitable connection

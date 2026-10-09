@@ -1,6 +1,6 @@
 ---
 title: "User Management"
-description: "Add users, set roles, and control who has access to what in your DeskBoy account."
+description: "The Owner, Admin, User and Accountant roles and what each can do, how you invite a new user from “Users” and who assigns which role, what to do with an expired invitation, how you remove a user, and what the activity history records."
 ---
 
 # User Management

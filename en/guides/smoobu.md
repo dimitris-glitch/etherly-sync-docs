@@ -1,6 +1,6 @@
 ---
 title: "Smoobu connection"
-description: "Connect your Smoobu account and bring in bookings from every channel you have there — Airbnb, Booking.com, Vrbo and direct."
+description: "How you create a Key and Secret in Smoobu (Advanced → API Keys) and connect the account under Integrations, how instant updates and Re-register work, what needing action means on a booking with an extra charge or amounts that don't add up, replacing the keys and “New keys needed”."
 ---
 
 # Smoobu connection

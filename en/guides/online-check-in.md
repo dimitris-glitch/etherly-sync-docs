@@ -1,6 +1,6 @@
 ---
 title: 'Online Check-In'
-description: 'Let guests complete their check-in online before arrival.'
+description: "Enabling it under Integrations, the check-in link per booking or per channel with a ready-made message and how long it is valid, per-property settings and requests, form languages and steps, the Online Check-Ins screen with filters, search and cleaning status, email notifications, and what goes to AADE without a check-in."
 ---
 
 ## What is Online Check-In

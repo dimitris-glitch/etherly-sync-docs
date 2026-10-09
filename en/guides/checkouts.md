@@ -1,6 +1,6 @@
 ---
 title: "Checkouts & Statuses"
-description: "Understand the checkout lifecycle: from Hosthub sync to Elorus document issuance."
+description: "What each booking status means and what to do, the actions Send, Draft, Retry, Skip and 'Issued outside DeskBoy', automatic sync with Hosthub (new bookings, changes, cancellations) and the manual Refresh, cancelled bookings and the cancellation fee, the billing contact, a send that did not complete, bookings spanning two years, Sync with invoicing provider, filters in Bookings."
 ---
 
 # Checkouts & Statuses

@@ -1,6 +1,6 @@
 ---
 title: 'Data Access (API)'
-description: 'Programmatic access to your booking, document and revenue data, through a REST API and webhooks.'
+description: "Access to your data with API keys and webhooks: what you can read (bookings, documents, AADE declarations, online check-in, reports, monthly files), what each key can read, when guest details are returned, enabling it, connecting your application, usage limits, revoking access."
 ---
 
 ## What is Data Access

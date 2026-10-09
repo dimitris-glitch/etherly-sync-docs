@@ -1,6 +1,6 @@
 ---
 title: "Property Setup"
-description: "What you set on each property so its documents are issued automatically."
+description: "The fields on each property's card — Organization, Regime, House type, Climate-fee tax, VAT, Stay Tax with municipality, receipts contact, Branch, series, location and coordinates — which are needed to issue documents and which take their value from the organization; copying settings to many properties, properties under different tax IDs (a second organization or a second Elorus connection), and turning invoicing off under Advanced."
 ---
 
 # Property Setup
@@ -45,7 +45,11 @@ Shows the property's AADE category and the organization's tax for summer and win
 
 ### VAT and Stay Tax
 
-**VAT** is the rate of the accommodation documents — the standard rate for accommodation is 13%. If a rate is missing in Elorus, it is created there. Set the **Stay Tax** only if it applies to the property.
+**VAT** is the rate of the accommodation documents — the standard rate for accommodation is 13%. If a rate is missing in Elorus, it is created there.
+
+For the **Stay Tax**, choose the property's municipality and the app sets its rate — 0.5%, or 0.75% where the municipal council has decided an increase. If the property already had 0.75%, or if the municipality does not set one rate for all accommodation (for example, it sets a different rate per area), you choose. **Details** shows the municipality's decision and upcoming changes. You can always choose the other rate.
+
+When the municipality changes its rate or decision, you see a notice on the home page and the **Stay tax: Pending** badge on the property's card until you choose the rate you apply. Municipal rates and decisions are updated once a month.
 
 ### Customer on receipts
 
@@ -81,7 +85,9 @@ If your booking provider sends them, the coordinates are filled in by the sync. 
 
 ### Same settings on many properties
 
-In a card's header press **Copy settings**, then **Paste settings** on each other property: the organization, VAT, Stay Tax, receipts contact, branch and series are carried over. On mobile you'll find them in the card's **⋮** menu.
+In a card's header press **Copy settings**, then **Paste settings** on each other property: the organization, VAT, Stay Tax with its municipality, receipts contact, branch and series are carried over. On mobile you'll find them in the card's **⋮** menu.
+
+For the municipality there is a shorter way: once you set it on one property, press **Use on … more properties** under the Stay Tax and pick the ones in the same municipality — they get the municipality and the rate.
 
 ### Properties under different tax IDs
 
