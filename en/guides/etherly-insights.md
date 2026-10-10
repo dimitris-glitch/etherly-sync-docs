@@ -58,7 +58,7 @@ Guest personal details are **never** shared through DeskBoy MCP: name, email, ph
 
 <Steps>
   <Step title="Go to settings">
-    Go to **Settings → API Keys** and find the **DeskBoy MCP** card under the Apps
+    Go to **Settings → Integrations** and find the **DeskBoy MCP** card under the Apps
     section. Click **"Enable"** — a consent popup opens.
   </Step>
   <Step title="Enable the feature">
